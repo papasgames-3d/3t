@@ -27,33 +27,35 @@
         }
 
         .error-container {
-            max-width: 600px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
         }
 
         .error-image {
-            width: 200px;
-            height: 200px;
-            margin-bottom: 30px;
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            margin: 20px auto;
             animation: bounce 2s infinite;
         }
 
         h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+            font-size: 2.5em;
+            margin: 15px 0;
             color: #8B4513;
         }
 
         p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
+            font-size: 1.1em;
+            margin: 15px 0 25px;
             line-height: 1.6;
             color: #6b3410;
         }
 
         .home-button {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 12px 25px;
             background: #8B4513;
             color: #FFF5E1;
             text-decoration: none;
@@ -61,6 +63,7 @@
             font-weight: bold;
             transition: all 0.3s ease;
             border: 2px solid #8B4513;
+            margin: 0 5px 20px;
         }
 
         .home-button:hover {
@@ -70,12 +73,12 @@
         }
 
         .game-suggestions {
-            margin-top: 40px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            max-width: 800px;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+            max-width: 1200px;
             width: 100%;
+            padding: 20px;
         }
 
         .game-card {
@@ -85,6 +88,9 @@
             text-decoration: none;
             transition: all 0.3s ease;
             border: 2px solid #8B4513;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .game-card:hover {
@@ -94,14 +100,59 @@
 
         .game-card img {
             width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
             border-radius: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .game-card h3 {
             color: #8B4513;
-            font-size: 1em;
+            font-size: 0.9em;
             margin: 0;
+            line-height: 1.2;
+        }
+
+        @media (max-width: 1200px) {
+            .game-suggestions {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .game-suggestions {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .error-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .game-suggestions {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .error-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .home-button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
         }
 
         @keyframes bounce {
@@ -109,7 +160,7 @@
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(-20px);
+                transform: translateY(-15px);
             }
         }
 
@@ -169,17 +220,106 @@
         <a href="https://monkeymart.one/" class="home-button">Home Page</a>
         
         <div class="game-suggestions">
-            <a href="https://monkeymart.one/papas-freezeria.html" class="game-card">
-                <img src="https://monkeymart.one/img/games/papas-freezeria.png" alt="Papa's Freezeria">
-                <h3>Papa's Freezeria</h3>
-            </a>
+            <!-- Monkey Mart -->
             <a href="https://monkeymart.one/go/monkey-mart.html" class="game-card">
                 <img src="https://monkeymart.one/img/games/monkey-mart.png" alt="Monkey Mart">
                 <h3>Monkey Mart</h3>
             </a>
-            <a href="https://monkeymart.one/go/slope.html" class="game-card">
-                <img src="https://monkeymart.one/img/games/slope.png" alt="Slope">
-                <h3>Slope</h3>
+            
+            <!-- 8 Ball Pool -->
+            <a href="https://monkeymart.one/go/8-ball-pool.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/8-ball-pool.png" alt="8 Ball Pool Billiard">
+                <h3>8 Ball Pool</h3>
+            </a>
+            
+            <!-- Snow Rider 3D -->
+            <a href="https://monkeymart.one/go/snow-rider-3d.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/snow-rider-3d.png" alt="Snow Rider 3D">
+                <h3>Snow Rider 3D</h3>
+            </a>
+            
+            <!-- Infinite Craft -->
+            <a href="https://monkeymart.one/go/infinite-craft.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/infinite-craft.png" alt="Infinite Craft">
+                <h3>Infinite Craft</h3>
+            </a>
+            
+            <!-- Flappy Bird -->
+            <a href="https://monkeymart.one/go/flappy-bird.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/flappy-bird.png" alt="Flappy Bird">
+                <h3>Flappy Bird</h3>
+            </a>
+            
+            <!-- Friday Night Funkin -->
+            <a href="https://monkeymart.one/go/friday-night-funkin.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/friday-night-funkin.png" alt="Friday Night Funkin">
+                <h3>Friday Night Funkin</h3>
+            </a>
+            
+            <!-- Block Blast -->
+            <a href="https://monkeymart.one/go/block-blast.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/block-blast.png" alt="Block Blast">
+                <h3>Block Blast</h3>
+            </a>
+            
+            <!-- Pacman 30th Anniversary -->
+            <a href="https://monkeymart.one/go/pacman-30th-anniversary.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/pacman-30th-anniversary.png" alt="Pacman 30th Anniversary">
+                <h3>Pacman 30th Anniversary</h3>
+            </a>
+            
+            <!-- Geometry Dash Lite -->
+            <a href="https://monkeymart.one/go/geometry-dash-lite.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/geometry-dash-lite.png" alt="Geometry Dash Lite">
+                <h3>Geometry Dash Lite</h3>
+            </a>
+            
+            <!-- Poptropica -->
+            <a href="https://monkeymart.one/go/poptropica.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/poptropica.png" alt="Poptropica">
+                <h3>Poptropica</h3>
+            </a>
+            
+            <!-- Cookie Clicker -->
+            <a href="https://monkeymart.one/go/cookie-clicker.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/cookie-clicker.png" alt="Cookie Clicker">
+                <h3>Cookie Clicker</h3>
+            </a>
+            
+            <!-- Bitlife -->
+            <a href="https://monkeymart.one/go/bitlife.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/bitlife.png" alt="Bitlife">
+                <h3>Bitlife</h3>
+            </a>
+            
+            <!-- Papa's Freezeria -->
+            <a href="https://monkeymart.one/go/papas-freezeria.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/papas-freezeria.png" alt="Papa's Freezeria">
+                <h3>Papa's Freezeria</h3>
+            </a>
+            
+            <!-- Retro Bowl -->
+            <a href="https://monkeymart.one/go/retro-bowl.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/retro-bowl.png" alt="Retro Bowl">
+                <h3>Retro Bowl</h3>
+            </a>
+            
+            <!-- Geometry Dash -->
+            <a href="https://monkeymart.one/go/geometry-dash.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/geometry-dash.png" alt="Geometry Dash">
+                <h3>Geometry Dash</h3>
+            </a>
+            
+            <!-- Wordle Game -->
+            <a href="https://monkeymart.one/go/wordle-unlimited.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/wordle-unlimited.png" alt="Wordle unlimited">
+                <h3>Wordle Unlimited</h3>
+            </a>
+            
+            <!-- Tetris -->
+            <a href="https://monkeymart.one/go/tetris.html" class="game-card">
+                <img src="https://monkeymart.one/img/games/tetris.png" alt="Tetris">
+                <h3>Tetris</h3>
             </a>
         </div>
     </div>
