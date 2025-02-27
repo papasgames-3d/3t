@@ -17,35 +17,59 @@
 
 /* Game description styles - Updated */
 .game-description {
-    text-align: left;
-    line-height: 1.6;
-    padding: 15px;
-    background: #8B4513;
+    background: #f0f4f8 !important;
+    padding: 30px;
+    margin: 40px 0;
     border-radius: 8px;
-    margin: 15px 0;
-}
-
-/* Light mode */
-.game-description,
-.game-description li {
-    color: #FFF5E1 !important;
-}
-
-/* Dark mode */
-.dark-mode .game-description,
-.dark-mode .game-description li {
-    color: #FFF5E1 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 /* Style cho list items */
 .game-description ul {
-    margin: 10px 0;
-    padding-left: 20px;
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0;
 }
 
 .game-description li {
-    margin: 5px 0;
-    list-style-type: disc;
+    background: #ffffff;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-left: 4px solid #8B4513;
+    transition: all 0.3s ease;
+    color: #333 !important;
+}
+
+.game-description li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.game-description h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin: 25px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #8B4513;
+}
+
+/* Dark mode support */
+.dark-mode .game-description {
+    background: #2a2a2a !important;
+    color: #fff;
+}
+
+.dark-mode .game-description li {
+    background: #3a3a3a;
+    color: #fff !important;
+    border-left: 4px solid #ec6c00;
+}
+
+.dark-mode .game-description h2 {
+    color: #fff;
+    border-bottom-color: #ec6c00;
 }
 
 .section-title {
