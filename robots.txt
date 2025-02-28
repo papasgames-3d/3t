@@ -15,8 +15,6 @@ Allow: /*.html$
 Disallow: /site.webmanifest
 Disallow: /safari-pinned-tab.svg
 Disallow: /LICENSE
-Disallow: /.git/
-Disallow: /node_modules/
 Disallow: /_config.yml
 Disallow: /README.md
 Disallow: /.gitignore
