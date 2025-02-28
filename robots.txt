@@ -22,13 +22,6 @@ Disallow: /README.md
 Disallow: /.gitignore
 Disallow: /.nojekyll
 
-# Block category pages
-Disallow: /category/
-
-# Block utility pages
-Disallow: /privacy-policy.html
-Disallow: /terms.html
-Disallow: /contact.html
 
 # Sitemaps
 Sitemap: https://monkeymart.one/sitemapindex.xml
