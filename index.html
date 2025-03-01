@@ -504,49 +504,6 @@
         }
     }
     </style>
-
-    <!-- Thêm mobile menu HTML -->
-    <div class="mobile-menu-toggle">
-        <button onclick="toggleMobileMenu()" style="background: none; border: none;">
-            <svg width="30" height="30" viewBox="0 0 100 100">
-                <rect width="80" height="10" x="10" y="25" rx="5"></rect>
-                <rect width="80" height="10" x="10" y="45" rx="5"></rect>
-                <rect width="80" height="10" x="10" y="65" rx="5"></rect>
-            </svg>
-        </button>
-    </div>
-
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="/category/new.html">NEW</a></li>
-            <li><a href="/category/sports.html">Sports</a></li>
-            <li><a href="/category/running.html">Running</a></li>
-            <li><a href="/category/racing.html">Racing</a></li>
-            <li><a href="/category/car.html">Car</a></li>
-            <li><a href="/category/puzzle.html">Puzzle</a></li>
-            <li><a href="/category/skill.html">Skill</a></li>
-            <li><a href="/category/stickman.html">Stickman</a></li>
-            <li><a href="/category/adventure.html">Adventure</a></li>
-            <li><a href="/category/shooting.html">Shooting</a></li>
-            <li><a href="/category/fighting.html">Fighting</a></li>
-            <li><a href="/category/2-player.html">2 Player</a></li>
-        </ul>
-    </div>
-
-    <!-- Thêm mobile menu JavaScript -->
-    <script>
-    function toggleMobileMenu() {
-        document.querySelector('.mobile-menu').classList.toggle('active');
-    }
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-        if (!event.target.closest('.mobile-menu') && 
-            !event.target.closest('.mobile-menu-toggle')) {
-            document.querySelector('.mobile-menu').classList.remove('active');
-        }
-    });
-    </script>
 </head>
 <body>
 <!-- Body main wrapper start -->
