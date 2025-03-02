@@ -11,14 +11,6 @@ Allow: /ads.txt
 # Game pages
 Allow: /*.html$
 
-# Block utility files
-Disallow: /site.webmanifest
-Disallow: /safari-pinned-tab.svg
-Disallow: /LICENSE
-Disallow: /_config.yml
-Disallow: /README.md
-Disallow: /.gitignore
-Disallow: /.nojekyll
 
 
 # Sitemaps
