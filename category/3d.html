@@ -45,7 +45,7 @@
 					<div class="site-logo-wrap">
 						<div class="site-logo">
 							<a href="/"><img decoding="async" loading="lazy" class="lazyload" alt="Papa's Games logo"
-							                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../img/logo.png"></a>
+							                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/../img/logo.png"></a>
 						</div>
 					</div>
 				</div>
@@ -1024,5 +1024,29 @@
 		localStorage.setItem('darkMode', null);
 	}
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Kiểm tra xem lazysizes đã được tải chưa
+    if (typeof lazySizes === 'undefined') {
+        // Nếu chưa, tạo và tải script
+        var lazyScript = document.createElement('script');
+        lazyScript.src = 'https://cdn.jsdelivr.net/npm/lazysizes@5.3/lazysizes.min.js';
+        lazyScript.integrity = 'sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=';
+        lazyScript.crossOrigin = 'anonymous';
+        document.body.appendChild(lazyScript);
+    }
+    
+    // Fallback cho ảnh nếu lazy loading không hoạt động
+    setTimeout(function() {
+        document.querySelectorAll('img.lazyload').forEach(function(img) {
+            if (img.src.includes('data:image/gif') && img.dataset.src) {
+                img.src = img.dataset.src;
+            }
+        });
+    }, 3000);
+});
+</script>
+
 </body>
 </html>
