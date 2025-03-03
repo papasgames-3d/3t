@@ -155,22 +155,22 @@ function loadGameIframe() {
         console.log('Game iframe loaded');
     }
 }
+
+function openFullscreen() {
+    // Đảm bảo iframe đã được load trước khi vào chế độ toàn màn hình
+    loadGameIframe();
+    
+    let elem = document.getElementById("game-arena");
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+    }
+}
 </script>
 </section>
-			<script>
-                " src="${gameUrl}" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>`
-                }
-                function openFullscreen() {
-                    let elem = document.getElementById("game-arena");
-                    if (elem.requestFullscreen) {
-                        elem.requestFullscreen();
-                    } else if (elem.webkitRequestFullscreen) { /* Safari */
-                        elem.webkitRequestFullscreen();
-                    } else if (elem.msRequestFullscreen) { /* IE11 */
-                        elem.msRequestFullscreen();
-                    }
-                }
-			</script>
 			<!-- End iframe Game -->
 			<div class="section-title-area ltn__section-title-1 text-center" style="padding-top:20px">
 				<h1 class="section-title"> Moto X3M </h1>

@@ -142,6 +142,41 @@
 						<iframe title="Poptropica - Award-Winning Educational Adventure Game" data-src="https://html5.gamedistribution.com/rvvASMiM/c5c714ae3a7d4f869a5d41acb93788a6/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.miniplay.com%2Fgame%2Fpoptropica&mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=225550&mp_game_uid=poptropica&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fpoptropica&mp_int=1&mp_locale=en_US&mp_player_type=IFRAME&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=Asia%2FBangkok&mp_view_type=&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5taW5pcGxheS5jb20vZ2FtZS9wb3B0cm9waWNhIiwicGFyZW50RG9tYWluIjoibWluaXBsYXkuY29tIiwidG9wRG9tYWluIjoicG9wdHJvcGljYS5vbmUiLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>
 						
 					</div>
+<script>
+// Load game iframe after page loads or user interaction
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        loadGameIframe();
+    }, 1000); // Đợi 1 giây sau khi trang tải xong
+});
+
+document.addEventListener('click', function() {
+    loadGameIframe();
+}, { once: true }); // Chỉ gọi một lần khi người dùng tương tác đầu tiên
+
+function loadGameIframe() {
+    var gameIframe = document.querySelector('iframe[data-src]');
+    if (gameIframe && !gameIframe.src) {
+        gameIframe.src = gameIframe.getAttribute('data-src');
+        console.log('Game iframe loaded');
+    }
+}
+
+function openFullscreen() {
+    // Đảm bảo iframe đã được load trước khi vào chế độ toàn màn hình
+    loadGameIframe();
+    
+    let elem = document.getElementById("game-arena");
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+    }
+}
+</script>
+
 				</div>
 				<div id="game-controls">
 					
@@ -174,20 +209,7 @@ function loadGameIframe() {
 }
 </script>
 </section>
-			<script>
-                " src="${gameUrl}" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>`
-                }
-                function openFullscreen() {
-                    let elem = document.getElementById("game-arena");
-                    if (elem.requestFullscreen) {
-                        elem.requestFullscreen();
-                    } else if (elem.webkitRequestFullscreen) { /* Safari */
-                        elem.webkitRequestFullscreen();
-                    } else if (elem.msRequestFullscreen) { /* IE11 */
-                        elem.msRequestFullscreen();
-                    }
-                }
-			</script>
+			
 			<!-- End iframe Game -->
 			<div class="section-title-area ltn__section-title-1 text-center" style="padding-top:20px">
 				<h1 class="section-title">Poptropica - Award-Winning Educational Adventure Game</h1>
