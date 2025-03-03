@@ -124,7 +124,7 @@
 			<section id="game" class="game-wrapper">
 				<div class="game-container">
 					<div data-url="https://djblue.github.io/tetris/" id="game-arena">
-						<iframe title="Tetris" src="https://djblue.github.io/tetris/" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>
+						<iframe title="Tetris" data-src="https://djblue.github.io/tetris/" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>
 					</div>
 				</div>
 				<div id="game-controls">
@@ -138,7 +138,7 @@
 				</div>
 			</section>
 			<script>
-                function openFullscreen() {
+function openFullscreen() {
                     let elem = document.getElementById("game-arena");
                     if (elem.requestFullscreen) {
                         elem.requestFullscreen();
@@ -148,7 +148,30 @@
                         elem.msRequestFullscreen();
                     }
                 }
-			</script>
+
+// Load game iframe after page loads or user interaction
+document.addEventListener('DOMContentLoaded', function() {
+    // Delayed loading to allow ads to load first
+    setTimeout(function() {
+        loadGameIframe();
+    }, 1000); // Adjust timing as needed
+    
+    // Alternatively, load on first user interaction
+    document.addEventListener('click', function loadOnFirstInteraction() {
+        loadGameIframe();
+        document.removeEventListener('click', loadOnFirstInteraction);
+    }, {once: true});
+});
+
+function loadGameIframe() {
+    var gameIframe = document.querySelector('iframe[data-src]');
+    if (gameIframe && !gameIframe.src) {
+        gameIframe.src = gameIframe.getAttribute('data-src');
+        console.log('Game iframe loaded');
+    }
+}
+
+</script>
 			<!-- End iframe Game -->
 			<div class="section-title-area ltn__section-title-1 text-center" style="padding-top:20px">
 				<h1 class="section-title">Tetris</h1>
