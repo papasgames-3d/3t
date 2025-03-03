@@ -6,23 +6,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
-    <link rel="preload" href="/css/style.css" as="style">
-    <link rel="preload" href="/js/main.js" as="script">
-    <link rel="preload" href="/img/logo.png" as="image">
+    <link rel="preload" href="/css/main.min.css" as="style" />
+    <link rel="preload" href="/js/main.min.js" as="script" />
+    <link rel="preload" href="/fonts/your-main-font.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/img/logo.png" as="image" />
 
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 	
-	<title>Monkey Mart Unblocked - Play Free Online Games 2025</title>
-	<meta name="description" content="Play Monkey Mart unblocked and other popular games like Slope Game for free! Discover the best collection of online browser games including racing, puzzle, and adventure games.">
-	<meta name="keywords" content="monkey mart unblocked, slope game, online games, browser games, free games">
+	<title>Monkey Mart - Best Free Online Games to Play Now | monkeymart.one</title>
+	<meta name="description" content="Play the best free online games including Monkey Mart, Slope Game, and more at monkeymart.one. Discover hundreds of fun browser games with no download required." />
+	<meta name="keywords" content="monkey mart, slope game, online games, free games, browser games, no download games, html5 games, casual games, idle games" />
 
 	<!-- Open Graph Meta Tags -->
-	<meta property="og:title" content="Monkey Mart Unblocked & Free Online Games">
-	<meta property="og:description" content="Play Monkey Mart unblocked and other popular games like Slope. Free browser games for everyone!">
-	<meta property="og:image" content="/img/games/monkey-mart.png">
-	<meta property="og:url" content="https://monkeymart.one/">
-	<meta property="og:type" content="website">
+	<meta property="og:title" content="Monkey Mart - Best Free Online Games to Play Now" />
+	<meta property="og:description" content="Play the best free online games including Monkey Mart, Slope Game, and more at monkeymart.one. No downloads required!" />
+	<meta property="og:image" content="https://monkeymart.one/img/monkey-mart-social.jpg" />
+	<meta property="og:url" content="https://monkeymart.one/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="monkeymart.one" />
+
+	<!-- Twitter Card Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Monkey Mart - Best Free Online Games to Play Now" />
+	<meta name="twitter:description" content="Play the best free online games including Monkey Mart, Slope Game, and more. No downloads required!" />
+	<meta name="twitter:image" content="https://monkeymart.one/img/monkey-mart-social.jpg" />
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -55,7 +63,7 @@
 	</script>
 	<link rel="dns-prefetch" href="https://universal.wgplayer.com"/><script type="text/javascript" async>!function(e,t){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,a.fetchPriority='high',m.parentNode.insertBefore(a,m)}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search);</script>
 	<!-- Thay thế canonical tag cũ -->
-	<link rel="canonical" href="https://monkeymart.one" />
+	<link rel="canonical" href="https://monkeymart.one/" />
 
 	<!-- Thêm base tag -->
 	<base href="https://monkeymart.one">
@@ -77,13 +85,30 @@
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Monkey Mart",
+        "name": "monkeymart.one",
         "url": "https://monkeymart.one",
-        "description": "Play Monkey Mart online for free! Run your own supermarket, manage inventory, serve customers and become a successful business tycoon.",
+        "headline": "Free Online Games to Play in Browser",
+        "description": "Play the best free online games including Monkey Mart, Slope Game, and more at monkeymart.one. Discover hundreds of fun browser games with no download required.",
+        "keywords": "monkey mart, slope game, online games, free games, browser games",
         "potentialAction": {
-            "@type": "PlayAction",
-            "target": "https://monkeymart.one"
-        }
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://monkeymart.one/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "monkeymart.one",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://monkeymart.one/img/logo.png",
+                "width": "180",
+                "height": "60"
+            }
+        },
+        "inLanguage": "en-US"
     }
     </script>
 	<!-- Thêm vào phần head, sau script schema WebSite hiện tại -->
@@ -91,83 +116,47 @@
 	{
 	  "@context": "https://schema.org",
 	  "@type": "ItemList",
+	  "name": "Featured Games Collection",
+	  "description": "Collection of our most popular online games available to play for free",
+	  "numberOfItems": 6,
 	  "itemListElement": [
 		{
-		  "@type": "VideoGame",
+		  "@type": "ListItem",
 		  "position": 1,
-		  "name": "Geometry Dash",
-		  "description": "A rhythm-based action platformer game with challenging levels and music. Jump, fly and flip your way through dangerous passages and spiky obstacles.",
-		  "genre": ["Platform", "Rhythm", "Action"],
-		  "url": "https://monkeymart.one/go/geometry-dash.html",
-		  "image": "https://monkeymart.one/img/games/geometry-dash.png",
-		  "inLanguage": "en",
-		  "playMode": "SinglePlayer"
+		  "item": {
+			"@type": "VideoGame",
+			"name": "Monkey Mart",
+			"description": "Run your own supermarket in Monkey Mart! Manage inventory, serve customers and become a successful business tycoon.",
+			"url": "https://monkeymart.one/go/monkey-mart.html",
+			"image": "https://monkeymart.one/img/games/monkey-mart.png",
+			"playMode": "SinglePlayer",
+			"applicationCategory": "Game",
+			"genre": "Simulation",
+			"offers": {
+			  "@type": "Offer",
+			  "price": "0",
+			  "priceCurrency": "USD"
+			}
+		  }
 		},
 		{
-		  "@type": "VideoGame", 
+		  "@type": "ListItem",
 		  "position": 2,
-		  "name": "Cookie Clicker",
-		  "description": "An addictive incremental game where you bake cookies by clicking and upgrading your production. Build an empire of cookie-making machines!",
-		  "genre": ["Idle", "Incremental"],
-		  "url": "https://monkeymart.one/go/cookie-clicker.html",
-		  "image": "https://monkeymart.one/img/games/cookie-clicker.png",
-		  "inLanguage": "en",
-		  "playMode": "SinglePlayer"
-		},
-		{
-		  "@type": "VideoGame",
-		  "position": 3,
-		  "name": "Friday Night Funkin",
-		  "description": "A rhythm game where you compete in musical battles. Press arrow keys to the beat and help Boyfriend impress his Girlfriend's parents!",
-		  "genre": ["Rhythm", "Music"],
-		  "url": "https://monkeymart.one/go/friday-night-funkin.html",
-		  "image": "https://monkeymart.one/img/games/friday-night-funkin.png",
-		  "inLanguage": "en",
-		  "playMode": "SinglePlayer"
-		},
-		{
-		  "@type": "VideoGame",
-		  "position": 4,
-		  "name": "Flappy Bird",
-		  "description": "Guide your bird through a series of pipes by tapping to flap. Simple to play but challenging to master!",
-		  "genre": ["Arcade", "Action"],
-		  "url": "https://monkeymart.one/go/flappy-bird.html",
-		  "image": "https://monkeymart.one/img/games/flappy-bird.png",
-		  "inLanguage": "en",
-		  "playMode": "SinglePlayer"
-		},
-		{
-		  "@type": "VideoGame",
-		  "position": 5,
-		  "name": "Slope Game",
-		  "description": "Roll down an endless slope while avoiding obstacles. Test your reflexes in this fast-paced 3D ball game!",
-		  "genre": ["Arcade", "3D"],
-		  "url": "https://monkeymart.one/go/slope.html",
-		  "image": "https://monkeymart.one/img/games/slope.png",
-		  "inLanguage": "en",
-		  "playMode": "SinglePlayer"
-		},
-		{
-		  "@type": "VideoGame",
-		  "position": 6,
-		  "name": "Wordle Unlimited",
-		  "description": "A word puzzle game where you guess a five-letter word in six tries. Each guess provides color-coded clues!",
-		  "genre": ["Puzzle", "Word"],
-		  "url": "https://monkeymart.one/go/wordle-unlimited.html",
-		  "image": "https://monkeymart.one/img/games/wordle-unlimited.png",
-		  "inLanguage": "en",
-		  "playMode": "SinglePlayer"
-		},
-		{
-		  "@type": "VideoGame",
-		  "position": 7,
-		  "name": "Papa's Pizzeria",
-		  "description": "Run your own pizza restaurant! Take orders, make pizzas, and serve customers in this time-management cooking game.",
-		  "genre": ["Simulation", "Time Management", "Cooking"],
-		  "url": "https://monkeymart.one/papas-pizzeria.html",
-		  "image": "https://monkeymart.one/img/games/papas-pizzeria.png",
-		  "inLanguage": "en",
-		  "playMode": "SinglePlayer"
+		  "item": {
+			"@type": "VideoGame",
+			"name": "Slope Game",
+			"description": "Test your reflexes in Slope, a fast-paced 3D ball runner game. Navigate a ball down an endless slope while avoiding obstacles!",
+			"url": "https://monkeymart.one/go/slope.html",
+			"image": "https://monkeymart.one/img/games/slope.png",
+			"playMode": "SinglePlayer",
+			"applicationCategory": "Game",
+			"genre": "Arcade",
+			"offers": {
+			  "@type": "Offer",
+			  "price": "0",
+			  "priceCurrency": "USD"
+			}
+		  }
 		}
 	  ]
 	}
@@ -514,6 +503,11 @@
         }
     }
     </style>
+
+    <!-- Defer non-critical JavaScript -->
+    <script src="/js/non-critical.js" defer></script>
+    <link rel="alternate" hreflang="en" href="https://monkeymart.one/" />
+    <link rel="alternate" hreflang="x-default" href="https://monkeymart.one/" />
 </head>
 <body>
 <!-- Body main wrapper start -->
@@ -586,6 +580,10 @@
 	<!-- GAME FRAME AREA START -->
 	<div class="ltn__product-area ltn__product-gutter pb-70">
 		<div class="container">
+			<header>
+				<h1>Play Free Online Games at monkeymart.one</h1>
+				<h2 class="subtitle">Best Browser Games for Everyone</h2>
+			</header>
 			<section id="game" class="game-wrapper">
 				<div class="game-container" style="margin-top: 15px;">
 					<div data-url="https://papasgames3d.com/MonkeyMart/" id="game-arena">
@@ -649,14 +647,18 @@
 			<div class="featured-games">
 				<h2 class="section-title">Featured Games</h2>
 				<div class="row">
-					<!-- Monkey Mart -->
+					<!-- Xóa hoặc thay thế game card này -->
 					<div class="col-lg-2 col-md-4 col-sm-6">
 						<div class="game-card">
-							<a href="/go/monkey-mart.html">
-								<img decoding="async" class="lazyload" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/img/games/monkey-mart.png" alt="Monkey Mart unblocked">
-								<h3>Monkey Mart Unblocked</h3>
-								<p>Run your own supermarket empire!</p>
-							</a>
+							<div class="game-card-img">
+								<a href="/go/slope.html">
+									<img src="/img/games/slope.png" alt="Slope Game" class="lazyload">
+								</a>
+							</div>
+							<div class="game-card-info">
+								<h3><a href="/go/slope.html">Slope Game</a></h3>
+								<p>Test your reflexes in this fast-paced 3D ball runner game!</p>
+							</div>
 						</div>
 					</div>
 
@@ -828,27 +830,24 @@
 			</div>
 
 			<!-- Popular Categories -->
-			<div class="game-categories" style="margin-top: 40px;">
-				<h2>Popular Game Categories</h2>
-				<div class="category-grid">
-					<div class="category">
-						<h3>Management Games</h3>
-						<ul>
-							<li><a href="/go/monkey-mart.html">Monkey Mart Unblocked</a></li>
-							<li><a href="/go/cookie-clicker.html">Cookie Clicker</a></li>
-							<!-- ... other management games ... -->
-						</ul>
-					</div>
-					<div class="category">
-						<h3>Action Games</h3>
-						<ul>
-							<li><a href="/go/slope.html">Slope</a></li>
-							<li><a href="/go/geometry-dash.html">Geometry Dash</a></li>
-							<!-- ... other action games ... -->
-						</ul>
-					</div>
-					<!-- ... other categories ... -->
-				</div>
+			<div class="popular-categories">
+				<h3>Browse Games by Category</h3>
+				<ul class="category-list">
+					<li><a href="/category/action.html" title="Action Games">Action Games</a></li>
+					<li><a href="/category/arcade.html" title="Arcade Games">Arcade Games</a></li>
+					<li><a href="/category/puzzle.html" title="Puzzle Games">Puzzle Games</a></li>
+					<li><a href="/category/idle.html" title="Idle Games">Idle Games</a></li>
+					<li><a href="/category/multiplayer.html" title="Multiplayer Games">Multiplayer Games</a></li>
+				</ul>
+			</div>
+
+			<div class="popular-games">
+				<h3>Most Popular Games</h3>
+				<ul>
+					<li><a href="/go/slope.html">Slope Game</a></li>
+					<li><a href="/go/cookie-clicker.html">Cookie Clicker</a></li>
+					<li><a href="/go/geometry-dash.html">Geometry Dash</a></li>
+				</ul>
 			</div>
 
 			<!-- GAME DESCRIPTION SECTION START -->
@@ -1073,6 +1072,18 @@
         darkModeText.textContent = 'Dark Mode';
         localStorage.setItem('darkMode', null);
     }
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://monkeymart.one"
+    }]
+}
 </script>
 </body>
 </html>

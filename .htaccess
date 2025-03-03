@@ -50,3 +50,6 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 # Redirect HTTP to HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Chuyển hướng từ trang Monkey Mart về trang chủ
+Redirect 301 /go/monkey-mart.html https://monkeymart.one/
