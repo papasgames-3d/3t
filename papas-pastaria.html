@@ -134,10 +134,7 @@
 			<section id="game" class="game-wrapper">
 			<div class="game-container">
 				<div data-url="/flipline/papas-pastaria/" id="game-arena">
-					<div class="talpa-splash-container">
-						<div class="talpa-splash-top">
-							<div>
-								<div style="--thumb:url(/img/games/papas-pastaria.png)"></div>
+					<iframe title="Papa's Pastaria" src="/flipline/papas-pastaria/" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>
 								<div class="talpa-btn-play">
 										<span onclick="playGame()">Play Now
 										<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path
@@ -170,10 +167,7 @@
 			</div>
 		</section>
 			<script>
-                function playGame() {
-                    let gameUrl = document.querySelector('#game-arena').dataset.url;
-                    let gameTitle = document.querySelector('h1.section-title').innerText;
-                    document.querySelector('#game-arena').innerHTML = `<iframe title="${gameTitle}" src="${gameUrl}" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>`
+                " src="${gameUrl}" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>`
                 }
                 function openFullscreen() {
                     let elem = document.getElementById("game-arena");

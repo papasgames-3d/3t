@@ -122,24 +122,8 @@
 			<section id="game" class="game-wrapper">
 				<div class="game-container">
 					<div data-url="https://edumaths.github.io/s2/detective-loupe-puzzle" id="game-arena">
-						<div class="talpa-splash-container">
-							<div class="talpa-splash-top">
-								<div>
-									<div style="--thumb:url(/img/games/detective-loupe-puzzle.png)"></div>
-									<div class="talpa-btn-play">
-										<span onclick="playGame()">Play Now
-										<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path
-											d="M10 15.0657V8.93426C10 8.53491 10.4451 8.29671 10.7773 8.51823L15.376 11.584C15.6728 11.7819 15.6728 12.2181 15.376 12.416L10.7774 15.4818C10.4451 15.7033 10 15.4651 10 15.0657Z"></path><path
-											fill-rule="evenodd" clip-rule="evenodd"
-											d="M9.5 15.0657V8.93426C9.5 8.13556 10.3901 7.65917 11.0547 8.10221L15.6533 11.1679C16.247 11.5638 16.247 12.4362 15.6533 12.8321L11.0547 15.8978C10.3901 16.3408 9.5 15.8644 9.5 15.0657ZM10 8.93426V15.0657C10 15.4651 10.4451 15.7033 10.7774 15.4818L15.376 12.416C15.6728 12.2181 15.6728 11.7819 15.376 11.584L10.7773 8.51823C10.4451 8.29671 10 8.53491 10 8.93426Z"></path><path
-											fill-rule="evenodd" clip-rule="evenodd"
-											d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path></svg></span>
-									</div>
-									<div class="talpa-loader" style="display: none;">Loading...</div>
-								</div>
-							</div>
-							<div class="talpa-splash-bottom"></div>
-						</div>
+						<iframe title="Detective Loupe Puzzle" src="https://edumaths.github.io/s2/detective-loupe-puzzle" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>
+						
 					</div>
 				</div>
 				<div id="game-controls">
@@ -158,10 +142,7 @@
 				</div>
 			</section>
 			<script>
-                function playGame() {
-                    let gameUrl = document.querySelector('#game-arena').dataset.url;
-                    let gameTitle = document.querySelector('h1.section-title').innerText;
-                    document.querySelector('#game-arena').innerHTML = `<iframe title="${gameTitle}" src="${gameUrl}" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>`
+                " src="${gameUrl}" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>`
                 }
                 function openFullscreen() {
                     let elem = document.getElementById("game-arena");
@@ -476,3 +457,4 @@
 </script>
 </body>
 </html>
+
