@@ -1,11 +1,15 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
 <head>
-	<script type="text/javascript" async>!function(e,t){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,a.fetchPriority='high',m.parentNode.insertBefore(a,m)}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search);</script>
-
-	<link rel="dns-prefetch" href="https://universal.wgplayer.com"/>
-
-
+	<script type="text/javascript" async>!function(e,t){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,a.fetchPriority='high',m.parentNode.insertBefore(a,m)}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search);</script><script src="/js/ad-loader.js"></script>
+<script>
+// Sử dụng ad-loader để tải script quảng cáo thay vì inline script
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.adLoader) {
+        window.adLoader.loadWgPlayerScript();
+    }
+});
+</script>
 	<meta charset="utf-8">
 	<meta content="ie=edge" http-equiv="x-ua-compatible">
 	<title>Papa Louie 2: When Burgers Attack - Papa's Games</title>
@@ -72,7 +76,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col header-menu-column menu-color-white---" style="padding-left: 300px;">
+				<div class="col header-menu-column menu-color-white---" style="padding-inline-start: 300px;">
 					<div class="header-menu d-none d-xl-block">
 						<nav>
 							<div class="ltn__main-menu">
@@ -132,7 +136,28 @@
 				<div class="game-container">
 					<div data-url="/flipline/papa-louie-2/" id="game-arena">
 						<iframe title="Papa Louie 2: When Burgers Attack" data-src="/flipline/papa-louie-2/" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>
+						
+					</div>
 <script>
+// Load game iframe after page loads or user interaction
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        loadGameIframe();
+    }, 1000); // Đợi 1 giây sau khi trang tải xong
+});
+
+document.addEventListener('click', function() {
+    loadGameIframe();
+}, { once: true }); // Chỉ gọi một lần khi người dùng tương tác đầu tiên
+
+function loadGameIframe() {
+    var gameIframe = document.querySelector('iframe[data-src]');
+    if (gameIframe && !gameIframe.src) {
+        gameIframe.src = gameIframe.getAttribute('data-src');
+        console.log('Game iframe loaded');
+    }
+}
+
 function openFullscreen() {
     // Đảm bảo iframe đã được load trước khi vào chế độ toàn màn hình
     loadGameIframe();
@@ -146,34 +171,30 @@ function openFullscreen() {
         elem.msRequestFullscreen();
     }
 }
+</script>
 
-function loadGameIframe() {
-    var gameIframe = document.querySelector('iframe[data-src]');
-    if (gameIframe && !gameIframe.src) {
-        gameIframe.src = gameIframe.getAttribute('data-src');
-        console.log('Game iframe loaded');
-    }
-}
-
+<script>
 // Load game iframe after page loads or user interaction
 document.addEventListener('DOMContentLoaded', function() {
-    // Delayed loading to allow ads to load first
     setTimeout(function() {
         loadGameIframe();
-    }, 1000); // Adjust timing as needed
-    
-    // Alternatively, load on first user interaction
-    document.addEventListener('click', function loadOnFirstInteraction() {
-        loadGameIframe();
-        document.removeEventListener('click', loadOnFirstInteraction);
-    }, {once: true});
+    }, 1000); // Đợi 1 giây sau khi trang tải xong
 });
+
+document.addEventListener('click', function() {
+    loadGameIframe();
+}, { once: true }); // Chỉ gọi một lần khi người dùng tương tác đầu tiên
+
+
+}
+
+ else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+    }
+}
 </script>
-						
-					</div>
-
-
-
 
 				</div>
 				<div id="game-controls">
@@ -768,9 +789,9 @@ document.addEventListener('DOMContentLoaded', function() {
 					<div class="col-md-6 col-12">
 						<div class="ltn__copyright-design clearfix">
 							<p>Monkeymart.one @ <span class="current-year">2024</span>
-								<span style="padding-left:15px"><a href="/privacy-policy.html">Privacy Policy</a></span>
-								<span style="padding-left:15px"><a href="/terms.html">Terms and Conditions</a></span>
-								<span style="padding-left:15px"><a href="/contact.html">Contact Us</a></span>
+								<span style="padding-inline-start:15px"><a href="/privacy-policy.html">Privacy Policy</a></span>
+								<span style="padding-inline-start:15px"><a href="/terms.html">Terms and Conditions</a></span>
+								<span style="padding-inline-start:15px"><a href="/contact.html">Contact Us</a></span>
 							</p>
 						</div>
 					</div>
