@@ -3,7 +3,12 @@
 <html class="no-js" lang="en-US">
 <head>
 <!-- Ad Loader Script -->
-<script defer="" src="/js/ad-loader.js"></script>
+<script defer="" src="/js/ad-loader.js">
+// Also load when window is fully loaded
+window.addEventListener('load', function() {
+    setTimeout(loadGameIframe, 50);
+});
+</script>
 <script type="text/javascript">
 (function(d, u) {
   var s = d.createElement("script");
@@ -146,7 +151,7 @@
 <section class="game-wrapper" id="game">
 <div class="game-container">
 <div data-url="https://html5.gamedistribution.com/rvvASMiM/c5c714ae3a7d4f869a5d41acb93788a6/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.miniplay.com%2Fgame%2Fpoptropica&amp;mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&amp;mp_embed=0&amp;mp_game_id=225550&amp;mp_game_uid=poptropica&amp;mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fpoptropica&amp;mp_int=1&amp;mp_locale=en_US&amp;mp_player_type=IFRAME&amp;mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&amp;mp_site_name=miniplay.com&amp;mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&amp;mp_timezone=Asia%2FBangkok&amp;mp_view_type=&amp;gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5taW5pcGxheS5jb20vZ2FtZS9wb3B0cm9waWNhIiwicGFyZW50RG9tYWluIjoibWluaXBsYXkuY29tIiwidG9wRG9tYWluIjoicG9wdHJvcGljYS5vbmUiLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" id="game-arena">
-<iframe allowfullscreen="" src="https://html5.gamedistribution.com/rvvASMiM/c5c714ae3a7d4f869a5d41acb93788a6/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.miniplay.com%2Fgame%2Fpoptropica&amp;mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&amp;mp_embed=0&amp;mp_game_id=225550&amp;mp_game_uid=poptropica&amp;mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fpoptropica&amp;mp_int=1&amp;mp_locale=en_US&amp;mp_player_type=IFRAME&amp;mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&amp;mp_site_name=miniplay.com&amp;mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&amp;mp_timezone=Asia%2FBangkok&amp;mp_view_type=&amp;gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5taW5pcGxheS5jb20vZ2FtZS9wb3B0cm9waWNhIiwicGFyZW50RG9tYWluIjoibWluaXBsYXkuY29tIiwidG9wRG9tYWluIjoicG9wdHJvcGljYS5vbmUiLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" allow="autoplay" frameborder="0" height="100%" scrolling="none" title="Poptropica - Award-Winning Educational Adventure Game" width="100%"></iframe>
+<iframe allowfullscreen="" data-src="https://html5.gamedistribution.com/rvvASMiM/c5c714ae3a7d4f869a5d41acb93788a6/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.miniplay.com%2Fgame%2Fpoptropica&amp;mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&amp;mp_embed=0&amp;mp_game_id=225550&amp;mp_game_uid=poptropica&amp;mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Fpoptropica&amp;mp_int=1&amp;mp_locale=en_US&amp;mp_player_type=IFRAME&amp;mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&amp;mp_site_name=miniplay.com&amp;mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&amp;mp_timezone=Asia%2FBangkok&amp;mp_view_type=&amp;gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5taW5pcGxheS5jb20vZ2FtZS9wb3B0cm9waWNhIiwicGFyZW50RG9tYWluIjoibWluaXBsYXkuY29tIiwidG9wRG9tYWluIjoicG9wdHJvcGljYS5vbmUiLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" frameborder="0" height="100%" scrolling="none" title="Poptropica - Award-Winning Educational Adventure Game" width="100%"></iframe>
 <script>
 function openFullscreen() {
     // Đảm bảo iframe đã được load trước khi vào chế độ toàn màn hình
@@ -171,9 +176,11 @@ function loadGameIframe() {
 }
 
 // Load game iframe after page loads or user interaction
-document.addEventListener(\'DOMContentLoaded\', function() {
-    // Load iframe immediately
-    loadGameIframe(); // Adjust timing as needed
+document.addEventListener('DOMContentLoaded', function() {
+    // Delayed loading to allow ads to load first
+    setTimeout(function() {
+        loadGameIframe();
+    }, 100); // Adjust timing as needed
     
     // Alternatively, load on first user interaction
     document.addEventListener('click', function loadOnFirstInteraction() {

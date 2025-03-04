@@ -11,6 +11,11 @@
   var m = d.getElementsByTagName("script")[0];
   m.parentNode.insertBefore(s, m);
 })(document, "https://universal.wgplayer.com/tag/");
+
+// Also load when window is fully loaded
+window.addEventListener('load', function() {
+    setTimeout(loadGameIframe, 50);
+});
 </script><script src="/js/ad-loader.js"></script>
 <script>
 // Sử dụng ad-loader để tải script quảng cáo thay vì inline script
@@ -141,14 +146,14 @@ document.addEventListener('DOMContentLoaded', function() {
 <section class="game-wrapper" id="game">
 <div class="game-container">
 <div data-url="/flipline/papa-louie-2/" id="game-arena">
-<iframe allowfullscreen="" src="/flipline/papa-louie-2/" allow="autoplay" frameborder="0" height="100%" scrolling="none" title="Papa Louie 2: When Burgers Attack" width="100%"></iframe>
+<iframe allowfullscreen="" data-src="/flipline/papa-louie-2/" frameborder="0" height="100%" scrolling="none" title="Papa Louie 2: When Burgers Attack" width="100%"></iframe>
 </div>
 <script>
 // Load game iframe after page loads or user interaction
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         loadGameIframe();
-    }, 1000); // Đợi 1 giây sau khi trang tải xong
+    }, 100); // Đợi 1 giây sau khi trang tải xong
 });
 
 document.addEventListener('click', function() {
@@ -182,7 +187,7 @@ function openFullscreen() {
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         loadGameIframe();
-    }, 1000); // Đợi 1 giây sau khi trang tải xong
+    }, 100); // Đợi 1 giây sau khi trang tải xong
 });
 
 document.addEventListener('click', function() {

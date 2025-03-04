@@ -3,7 +3,12 @@
 <html class="no-js" lang="en-US">
 <head>
 <!-- Ad Loader Script -->
-<script defer="" src="/js/ad-loader.js"></script>
+<script defer="" src="/js/ad-loader.js">
+// Also load when window is fully loaded
+window.addEventListener('load', function() {
+    setTimeout(loadGameIframe, 50);
+});
+</script>
 <script type="text/javascript">
 (function(d, u) {
   var s = d.createElement("script");
@@ -132,7 +137,7 @@
 <section class="game-wrapper" id="game">
 <div class="game-container">
 <div data-url="https://edumaths.github.io/s1/idle-ants" id="game-arena">
-<iframe allowfullscreen="" src="https://edumaths.github.io/s1/idle-ants" allow="autoplay" frameborder="0" height="100%" scrolling="none" title="Idle Ants" width="100%"></iframe>
+<iframe allowfullscreen="" data-src="https://edumaths.github.io/s1/idle-ants" frameborder="0" height="100%" scrolling="none" title="Idle Ants" width="100%"></iframe>
 <script>
 function openFullscreen() {
     // Đảm bảo iframe đã được load trước khi vào chế độ toàn màn hình
@@ -157,9 +162,11 @@ function loadGameIframe() {
 }
 
 // Load game iframe after page loads or user interaction
-document.addEventListener(\'DOMContentLoaded\', function() {
-    // Load iframe immediately
-    loadGameIframe(); // Adjust timing as needed
+document.addEventListener('DOMContentLoaded', function() {
+    // Delayed loading to allow ads to load first
+    setTimeout(function() {
+        loadGameIframe();
+    }, 100); // Adjust timing as needed
     
     // Alternatively, load on first user interaction
     document.addEventListener('click', function loadOnFirstInteraction() {

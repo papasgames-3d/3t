@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+<head>
+<!-- Ad Loader Script -->
+<script defer="" src="/js/ad-loader.js"></script>
+<script type="text/javascript">
+(function(d, u) {
+  var s = d.createElement("script");
+  s.async = true;
+  s.src = u + "?lh=" + window.location.hostname + "&wp=" + window.location.pathname + "&ws=" + window.location.search;
+  s.fetchPriority = "high";
+  var m = d.getElementsByTagName("script")[0];
+  m.parentNode.insertBefore(s, m);
+})(document, "https://universal.wgplayer.com/tag/");
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title>Monkey Mart - Build Your Own Supermarket Empire Today!</title>
+<meta content="Dive into Monkey Mart, the addictive supermarket management game. Stock shelves, serve customers, and expand your retail empire! Play now for free!" name="description">
+<meta content="monkey mart, monkey mart game, monkey mart unblocked, idle tycoon game, supermarket game, slope game, online games, free games, browser games" name="keywords">
+<!-- Open Graph and Twitter Card Tags -->
+<meta content="Monkey Mart - Build Your Own Supermarket Empire Today!" property="og:title"/>
+<meta content="Dive into Monkey Mart, the addictive supermarket management game. Stock shelves, serve customers, and expand your retail empire! Play now for free!" property="og:description"/>
+<meta content="https://monkeymart.one/img/games/monkey-mart.png" property="og:image"/>
+<meta content="https://monkeymart.one/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="monkeymart.one" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Monkey Mart - Build Your Own Supermarket Empire Today!" name="twitter:title"/>
+<meta content="Dive into Monkey Mart, the addictive supermarket management game. Stock shelves, serve customers, and expand your retail empire! Play now for free!" name="twitter:description"/>
+<meta content="https://monkeymart.one/img/games/monkey-mart.png" name="twitter:image"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link color="#ec6c00" href="/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#da532c" name="msapplication-TileColor"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<!-- Font Icons css -->
+<link href="css/font-icons.css" rel="stylesheet"/>
+<!-- plugins css -->
+<link href="css/plugins.css" rel="stylesheet"/>
+<!-- Main Stylesheet -->
+<link href="css/style.css" rel="stylesheet"/>
+<!-- Responsive css -->
+<link href="css/responsive.css" rel="stylesheet"/>
+<!-- Layout css -->
+<link href="/css/layout.css" rel="stylesheet"/>
+<script>//window.location.replace('/' + window.location.pathname);</script>
+<meta content="D9A86FEC876270892D9C82565B95072C" name="msvalidate.01">
+<!-- Google tag (gtag.js) -->
+<script async="" crossorigin="anonymous" src="https://www.googletagmanager.com/gtag/js?id=G-54L5E2NJ3K"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-54L5E2NJ3K');
+	</script>
+<!-- Thay thế canonical tag cũ -->
+<link href="https://monkeymart.one/" rel="canonical">
+<!-- Thêm base tag -->
+<base href="https://monkeymart.one"/>
+<!-- Schema.org tối ưu - Kết hợp tất cả schema vào một đoạn duy nhất -->
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@graph": [
+		{
+		  "@type": "WebSite",
+		  "@id": "https://monkeymart.one/#website",
+		  "name": "Monkey Mart - Free Online Game",
+		  "url": "https://monkeymart.one",
+		  "headline": "Monkey Mart - Free Online Management Game",
+		  "description": "Play Monkey Mart, the best free online supermarket management game. Build and run your own store in this addictive idle tycoon game.",
+		  "keywords": "monkey mart, monkey mart game, monkey mart unblocked, supermarket game, idle tycoon game",
+		  "potentialAction": {
+			"@type": "SearchAction",
+			"target": {
+			  "@type": "EntryPoint", 
+			  "urlTemplate": "https://monkeymart.one/search?q={search_term_string}"
+			},
+			"query-input": "required name=search_term_string"
+		  },
+		  "publisher": {
+			"@type": "Organization",
+			"@id": "https://monkeymart.one/#organization",
+			"name": "monkeymart.one",
+			"logo": {
+			  "@type": "ImageObject",
+			  "url": "https://monkeymart.one/img/logo.png",
+			  "width": "180",
+			  "height": "60"
+			}
+		  },
+		  "inLanguage": "en-US"
+		},
+		{
+		  "@type": "VideoGame",
+		  "@id": "https://monkeymart.one/#monkeymart",
+		  "name": "Monkey Mart",
+		  "description": "Run your own supermarket in Monkey Mart, the addictive idle tycoon game! Stock shelves, serve customers, and build your retail empire in this popular management simulation.",
+		  "url": "https://monkeymart.one/",
+		  "image": "https://monkeymart.one/img/games/monkey-mart.png",
+		  "screenshot": "https://monkeymart.one/img/games/monkey-mart.png",
+		  "operatingSystem": "Windows, macOS, Android, iOS, Web Browser",
+		  "applicationCategory": "Game, Browser Game",
+		  "gamePlatform": "Web Browser",
+		  "genre": ["Management", "Simulation", "Idle", "Tycoon"],
+		  "playMode": "SinglePlayer",
+		  "inLanguage": "en-US",
+		  "offers": {
+			"@type": "Offer",
+			"price": "0",
+			"priceCurrency": "USD"
+		  },
+		  "author": {
+			"@type": "Organization",
+			"@id": "https://monkeymart.one/#organization"
+		  }
+		},
+		{
+		  "@type": "ItemList",
+		  "@id": "https://monkeymart.one/#gamelist",
+		  "name": "Popular Free Online Games",
+		  "description": "Popular free online games available on monkeymart.one",
+		  "numberOfItems": 6,
+		  "itemListElement": [
+			{
+			  "@type": "ListItem",
+			  "position": 1,
+			  "item": {
+				"@type": "VideoGame",
+				"@id": "https://monkeymart.one/#monkeymart",
+				"name": "Monkey Mart",
+				"url": "https://monkeymart.one/"
+			  }
+			},
+			{
+			  "@type": "ListItem",
+			  "position": 2,
+			  "item": {
+				"@type": "VideoGame",
+				"name": "Slope Game",
+				"description": "Test your reflexes in Slope, a fast-paced 3D ball runner game. Navigate a ball down an endless slope while avoiding obstacles!",
+				"url": "https://monkeymart.one/go/slope.html",
+				"image": "https://monkeymart.one/img/games/slope.png",
+				"playMode": "SinglePlayer",
+				"applicationCategory": "Game",
+				"genre": "Action",
+				"gamePlatform": "Web Browser",
+				"offers": {
+				  "@type": "Offer",
+				  "price": "0",
+				  "priceCurrency": "USD"
+				}
+			  }
+			}
+		  ]
+		},
+		{
+		  "@type": "BreadcrumbList",
+		  "@id": "https://monkeymart.one/#breadcrumb",
+		  "itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": "https://monkeymart.one"
+		  }]
+		}
+	  ]
+	}
+	</script>
+<script crossorigin="anonymous" defer="" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3/lazysizes.min.js"></script>
+<!-- Cập nhật CSS cho dark mode -->
+<style>
+        .dark-mode {
+            background-color: #1a1a1a;
+            color: #FFF5E1;
+        }
+        
+        /* Fix ảnh không bị trắng trong dark mode */
+        .dark-mode .product-img {
+            background-color: transparent !important;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        
+        /* Fix màu chữ header khi scroll */
+        .dark-mode .sticky-active .ltn__main-menu > ul > li > a {
+            color: #FFF5E1 !important;
+        }
+        
+        .dark-mode .sticky-active {
+            background-color: #2d2d2d !important;
+        }
+        
+        /* Style cho nút scroll up */
+        .ltn__scroll-top,
+        .go-top,
+        .go-top-btn,
+        .scroll-top,
+        #scrollUp {
+            background-color: #8B4513 !important;
+            transition: all 0.3s ease;
+            color: #FFF5E1 !important;
+        }
+        
+        .ltn__scroll-top:hover,
+        .go-top:hover,
+        .go-top-btn:hover,
+        .scroll-top:hover,
+        #scrollUp:hover {
+            background-color: #6b3410 !important;
+            color: #FFF5E1 !important;
+        }
+        
+        .ltn__scroll-top i,
+        .go-top i,
+        .go-top-btn i,
+        .scroll-top i,
+        #scrollUp i,
+        .fa-angle-up {
+            color: #FFF5E1 !important;
+        }
+        
+        .ltn__scroll-top:hover i,
+        .go-top:hover i,
+        .go-top-btn:hover i,
+        .scroll-top:hover i,
+        #scrollUp:hover i,
+        .fa-angle-up:hover {
+            color: #FFF5E1 !important;
+        }
+        
+        /* Dark mode specific */
+        .dark-mode .ltn__scroll-top,
+        .dark-mode .go-top,
+        .dark-mode .go-top-btn,
+        .dark-mode .scroll-top,
+        .dark-mode #scrollUp {
+            background-color: #8B4513 !important;
+            color: #FFF5E1 !important;
+        }
+        
+        .dark-mode .ltn__scroll-top:hover,
+        .dark-mode .go-top:hover,
+        .dark-mode .go-top-btn:hover,
+        .dark-mode .scroll-top:hover,
+        .dark-mode #scrollUp:hover {
+            background-color: #6b3410 !important;
+            color: #FFF5E1 !important;
+        }
+        
+        /* Các style khác giữ nguyên */
+        .dark-mode .ltn__header-middle-area {
+            background-color: #2d2d2d !important;
+        }
+        
+        .dark-mode .ltn__main-menu > ul > li > a {
+            color: #FFF5E1;
+        }
+        
+        .dark-mode .product-info h2 a {
+            color: #FFF5E1;
+        }
+        
+        .dark-mode .ltn__product-item {
+            background-color: #2d2d2d;
+        }
+        
+        .dark-mode #darkModeToggle {
+            background: #6b3410;
+        }
+        
+        .dark-mode .product-title a {
+            color: #FFF5E1 !important;
+        }
+        
+        .dark-mode h1, 
+        .dark-mode h2, 
+        .dark-mode h3, 
+        .dark-mode p {
+            color: #FFF5E1;
+        }
+        
+        #darkModeToggle:hover {
+            background: #6b3410 !important;
+        }
+        
+        /* Fix dark mode cho khu vực Papa's Games */
+        .dark-mode .ltn__product-item-2 {
+            background-color: transparent !important;
+        }
+        
+        .dark-mode .ltn__product-item-2 .product-img {
+            background-color: transparent !important;
+            padding: 0 !important;
+        }
+        
+        .dark-mode .ltn__product-item-2 .product-info {
+            background-color: transparent !important;
+        }
+        
+        .dark-mode .ltn__product-item-2 .product-title a {
+            color: #FFF5E1 !important;
+        }
+        
+        .dark-mode .ltn__product-item-2:hover {
+            box-shadow: 0 0 15px rgba(139, 69, 19, 0.3) !important;
+            transition: all 0.3s ease;
+        }
+        
+        /* Thêm hiệu ứng hover cho ảnh */
+        .dark-mode .ltn__product-item-2 .product-img img {
+            transition: all 0.3s ease;
+        }
+        
+        .dark-mode .ltn__product-item-2:hover .product-img img {
+            transform: scale(1.05);
+        }
+        
+        /* Header trong light mode */
+        .ltn__header-middle-area {
+            background-color: #FFF5E1 !important;
+        }
+        
+        .ltn__main-menu > ul > li > a {
+            color: #8B4513 !important;
+        }
+        
+        /* Header trong dark mode - giữ nguyên */
+        .dark-mode .ltn__header-middle-area {
+            background-color: #2d2d2d !important;
+        }
+        
+        .dark-mode .ltn__main-menu > ul > li > a {
+            color: #FFF5E1 !important;
+        }
+        
+        /* Fix màu chữ header khi scroll */
+        .dark-mode .sticky-active .ltn__main-menu > ul > li > a {
+            color: #FFF5E1 !important;
+        }
+        
+        .dark-mode .sticky-active {
+            background-color: #2d2d2d !important;
+        }
+        
+        /* Style mới cho submenu */
+        .ltn__main-menu .sub-menu {
+        	background-color: #FFF5E1 !important;
+        	border: 1px solid #8B4513;
+        	padding: 8px 0;
+        	min-width: 200px;
+        	box-shadow: 0 2px 15px rgba(139, 69, 19, 0.1);
+        }
+  
+        .ltn__main-menu .sub-menu li {
+        	padding: 0;
+        	margin: 2px 0;
+        	transition: all 0.3s ease;
+        }
+  
+        .ltn__main-menu .sub-menu li:hover {
+        	background-color: #8B4513 !important;
+        }
+  
+        .ltn__main-menu .sub-menu li a {
+        	color: #8B4513 !important;
+        	font-size: 14px;
+        	display: block; 
+        	padding: 8px 20px;
+        	width: 100%;
+        	text-decoration: none;
+        	transition: all 0.3s ease;
+        }
+  
+        .ltn__main-menu .sub-menu li:hover a {
+        	color: #FFF5E1 !important;
+        }
+  
+        /* Dark mode styles cho submenu */
+        .dark-mode .ltn__main-menu .sub-menu {
+        	background-color: #2d2d2d !important;
+        	border: 1px solid #FFF5E1;
+        	box-shadow: 0 2px 15px rgba(255, 245, 225, 0.1);
+        }
+  
+        .dark-mode .ltn__main-menu .sub-menu li a {
+        	color: #FFF5E1 !important;
+        }
+  
+        .dark-mode .ltn__main-menu .sub-menu li:hover {
+        	background-color: #8B4513 !important;
+        }
+        
+        /* Thêm style cho game-container */
+        .game-container {
+            margin-top: 15px !important;
+        }
+        
+        /* Style cho sub-menu */
+        .ltn__main-menu .sub-menu {
+            background-color: #FFF5E1 !important;
+            border: 1px solid #8B4513;
+        }
+        
+        .ltn__main-menu .sub-menu li:hover {
+            background-color: #8B4513 !important;
+        }
+        
+        .ltn__main-menu .sub-menu li a {
+            color: #8B4513 !important;
+        }
+        
+        .ltn__main-menu .sub-menu li:hover a {
+            color: #FFF5E1 !important;
+        }
+        
+        /* Dark mode styles cho sub-menu */
+        .dark-mode .ltn__main-menu .sub-menu {
+            background-color: #2d2d2d !important;
+            border: 1px solid #FFF5E1;
+        }
+        
+        .dark-mode .ltn__main-menu .sub-menu li:hover {
+            background-color: #8B4513 !important;
+        }
+        
+        .dark-mode .ltn__main-menu .sub-menu li a {
+            color: #FFF5E1 !important;
+        }
+    </style>
+<!-- Thêm viewport meta tag -->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<!-- Thêm media queries cho mobile -->
+<style>
+    @media only screen and (max-width: 768px) {
+        .header-menu-column {
+            padding-left: 0 !important;
+        }
+        
+        .ltn__main-menu {
+            display: none;
+        }
+        
+        .mobile-menu {
+            display: block;
+        }
+        
+        .site-logo img {
+            max-width: 150px;
+        }
+        
+        .game-suggestions {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .product-img img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .col-lg-2 {
+            width: 50%;
+        }
+    }
+
+    /* Thêm mobile menu styles */
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
+        z-index: 999;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+
+    .mobile-menu ul {
+        padding: 20px;
+        list-style: none;
+    }
+
+    .mobile-menu ul li {
+        margin: 10px 0;
+    }
+
+    .mobile-menu ul li a {
+        color: #FFF5E1;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 1000;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .mobile-menu-toggle {
+            display: block;
+        }
+    }
+    </style>
+<!-- Defer non-critical JavaScript -->
+<script defer="" src="/js/non-critical.js"></script>
+<link href="https://monkeymart.one/" hreflang="en" rel="alternate">
+<link href="https://monkeymart.one/" hreflang="x-default" rel="alternate">
+</link></link></link></meta></meta></meta><meta content="Lax" name="cookie-same-site"/><meta content="same-site" http-equiv="Cross-Origin-Resource-Policy"/></head>
+<body>
+<!-- Body main wrapper start -->
+<div class="body-wrapper">
+<!-- HEADER AREA START (header-5) -->
+<!-- ltn__header-middle-area start -->
+<div class="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-white sticky-active-into-mobile--- plr--9---">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="site-logo-wrap">
+<div class="site-logo">
+<a href="/"><img alt="Monkey-Mart-games-logo" class="lazyload" data-src="img/logo.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+</div>
+</div>
+</div>
+<div class="col header-menu-column menu-color-white---" style="padding-left: 300px;">
+<div class="header-menu d-none d-xl-block">
+<nav>
+<div class="ltn__main-menu">
+<ul>
+<li><a href="/category/new.html" title="new">NEW</a></li>
+<li><a href="/category/hot-game.html" title="hot games">Hot Games</a></li>
+<li><a href="/category/papa-game.html" title="papa games">Papa Games</a></li>
+<li><a href="/category/racing.html" title="racing">Racing</a></li>
+<li><a href="/category/car.html" title="car">Car</a></li>
+<li><a href="/category/puzzle.html" title="puzzle">Puzzle</a></li>
+<li><a href="#">More</a>
+<ul class="sub-menu">
+<li><a href="/category/sports.html">Sports</a></li>
+<li><a href="/category/running.html">Running</a></li>
+<li><a href="/category/skill.html">Skill</a></li>
+<li><a href="/category/stickman.html">Stickman</a></li>
+<li><a href="/category/adventure.html">Adventure</a></li>
+<li><a href="/category/shooting.html">Shooting</a></li>
+<li><a href="/category/fighting.html">Fighting</a></li>
+<li><a href="/category/2-player.html">2 Player</a></li>
+<li><a href="/category/multiplayer.html">Multiplayer</a></li>
+<li><a href="/category/action.html">Action</a></li>
+<li><a href="/category/3d.html">3D</a></li>
+<li><a href="/category/car.html">Car</a></li>
+<li><a href="/category/moto.html">Moto</a></li>
+<li><a href="/category/idle.html">Idle</a></li>
+<li><a href="/category/fnf.html">FNF</a></li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+</nav>
+</div>
+</div>
+<div class="ltn__header-options ltn__header-options-2">
+<!-- Thêm nút dark mode -->
+<div class="dark-mode-toggle" style="margin-right: 20px;">
+<button id="darkModeToggle" style="background: #8B4513; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer; display: flex; align-items: center;">
+<span id="darkModeIcon" style="color: #FFF5E1; margin-right: 5px;">🌙</span>
+<span id="darkModeText" style="color: #FFF5E1; font-size: 14px;">Dark Mode</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ltn__header-middle-area end -->
+<!-- HEADER AREA END -->
+<!-- GAME FRAME AREA START -->
+<div class="ltn__product-area ltn__product-gutter pb-70">
+<div class="container">
+<section class="game-wrapper" id="game">
+<div class="game-container" style="margin-top: 15px;">
+<div data-url="https://papasgames3d.com/MonkeyMart/" id="game-arena">
+<iframe allowfullscreen="" data-src="https://papasgames3d.com/MonkeyMart/" frameborder="0" height="100%" scrolling="none" title="Monkey Mart" width="100%"></iframe>
+</div>
+</div>
+<div id="game-controls">
+<a class="func-btn" href="javascript:openFullscreen();" id="fullscreen-btn" style="background: #8B4513; color: #FFF5E1;" title="Full Screen">
+<svg class="bi bi-arrows-fullscreen" fill="currentColor" height="23" viewbox="0 0 16 16" width="23" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</section>
+<script>
+				function openFullscreen() {
+					let elem = document.getElementById("game-arena");
+					if (elem.requestFullscreen) {
+						elem.requestFullscreen();
+					} else if (elem.webkitRequestFullscreen) { /* Safari */
+						elem.webkitRequestFullscreen();
+					} else if (elem.msRequestFullscreen) { /* IE11 */
+						elem.msRequestFullscreen();
+					}
+				}
+
+				// Load game iframe after page loads or user interaction
+				document.addEventListener('DOMContentLoaded', function() {
+					// Delayed loading to allow ads to load first
+					setTimeout(function() {
+						loadGameIframe();
+					}, 1000); // Adjust timing as needed
+					
+					// Alternatively, load on first user interaction
+					document.addEventListener('click', function loadOnFirstInteraction() {
+						loadGameIframe();
+						document.removeEventListener('click', loadOnFirstInteraction);
+					}, {once: true});
+				});
+				
+				function loadGameIframe() {
+					var gameIframe = document.querySelector('iframe[data-src]');
+					if (gameIframe && !gameIframe.src) {
+						gameIframe.src = gameIframe.getAttribute('data-src');
+						console.log('Game iframe loaded');
+					}
+				}
+			</script>
+</div>
+</div>
+<!-- GAME FRAME AREA END -->
+<!-- PRODUCT AREA START -->
+<div class="ltn__product-area ltn__product-gutter pb-70">
+<div class="container">
+<div class="welcome-section text-center" style="margin-bottom: 40px;">
+<h1>Monkey Mart - Build Your Own Supermarket Empire Today!</h1>
+<p>Dive into <strong>Monkey Mart</strong>, the addictive supermarket management game that lets you build a retail empire! In this exciting game, you'll stock shelves, serve customers, and expand your business. Also featuring the thrilling <a href="/go/slope.html">Slope game</a> and other popular browser games, Monkey Mart ensures hours of fun without any downloads required—just play instantly!</p>
+</div>
+<div class="featured-games">
+<h2 class="section-title">Featured Games</h2>
+<p>Explore our collection of exciting online games - from fast-paced action to strategic challenges, we have something for everyone!</p>
+<div class="row">
+<!-- Xóa hoặc thay thế game card này -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<div class="game-card-img">
+<a href="/go/slope.html">
+<img alt="monkey-mart-1" class="lazyload" src="/img/games/slope.png"/>
+</a>
+</div>
+<div class="game-card-info">
+<h3><a href="/go/slope.html">Slope Game</a></h3>
+<p>Test your reflexes in this fast-paced 3D ball runner game!</p>
+</div>
+</div>
+</div>
+<!-- 8 Ball Pool -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/8-ball-pool.html">
+<img alt="monkey-mart-2" class="lazyload" data-src="/img/games/8-ball-pool.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>8 Ball Pool</h3>
+<p>Master the art of pool!</p>
+</a>
+</div>
+</div>
+<!-- Snow Rider 3D -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/snow-rider-3d.html">
+<img alt="monkey-mart-3" class="lazyload" data-src="/img/games/snow-rider-3d.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Snow Rider 3D</h3>
+<p>Epic winter sports adventure!</p>
+</a>
+</div>
+</div>
+<!-- Slope Game -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/slope.html">
+<img alt="monkey-mart-4" class="lazyload" data-src="/img/games/slope.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Slope</h3>
+<p>Test your reflexes in this 3D challenge!</p>
+</a>
+</div>
+</div>
+<!-- Infinite Craft -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/infinite-craft.html">
+<img alt="monkey-mart-5" class="lazyload" data-src="/img/games/infinite-craft.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Infinite Craft</h3>
+<p>Unleash your creativity!</p>
+</a>
+</div>
+</div>
+<!-- Flappy Bird -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/flappy-bird.html">
+<img alt="monkey-mart-6" class="lazyload" data-src="/img/games/flappy-bird.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Flappy Bird</h3>
+<p>The classic challenge returns!</p>
+</a>
+</div>
+</div>
+<!-- Friday Night Funkin -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/friday-night-funkin.html">
+<img alt="monkey-mart-7" class="lazyload" data-src="/img/games/friday-night-funkin.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Friday Night Funkin</h3>
+<p>Rhythm game sensation!</p>
+</a>
+</div>
+</div>
+<!-- Block Blast -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/block-blast.html">
+<img alt="monkey-mart-8" class="lazyload" data-src="/img/games/block-blast.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Block Blast</h3>
+<p>Addictive puzzle action!</p>
+</a>
+</div>
+</div>
+<!-- Pacman 30th Anniversary -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/pacman-30th-anniversary.html">
+<img alt="monkey-mart-9" class="lazyload" data-src="/img/games/pacman-30th-anniversary.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Pacman 30th Anniversary</h3>
+<p>Classic arcade action!</p>
+</a>
+</div>
+</div>
+<!-- Cookie Clicker -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/cookie-clicker.html">
+<img alt="monkey-mart-10" class="lazyload" data-src="/img/games/cookie-clicker.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Cookie Clicker</h3>
+<p>Click your way to success!</p>
+</a>
+</div>
+</div>
+<!-- Bitlife -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/bitlife.html">
+<img alt="monkey-mart-11" class="lazyload" data-src="/img/games/bitlife.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Bitlife</h3>
+<p>Live your virtual life!</p>
+</a>
+</div>
+</div>
+<!-- Papa's Freezeria -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/papas-freezeria.html">
+<img alt="monkey-mart-12" class="lazyload" data-src="/img/games/papas-freezeria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Papa's Freezeria</h3>
+<p>Ice cream shop management!</p>
+</a>
+</div>
+</div>
+<!-- Retro Bowl -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/retro-bowl.html">
+<img alt="monkey-mart-13" class="lazyload" data-src="/img/games/retro-bowl.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Retro Bowl</h3>
+<p>Classic football action!</p>
+</a>
+</div>
+</div>
+<!-- Geometry Dash -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/geometry-dash.html">
+<img alt="monkey-mart-14" class="lazyload" data-src="/img/games/geometry-dash.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Geometry Dash</h3>
+<p>Ultimate rhythm challenge!</p>
+</a>
+</div>
+</div>
+<!-- Wordle Game -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/wordle-unlimited.html">
+<img alt="monkey-mart-15" class="lazyload" data-src="/img/games/wordle-unlimited.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Wordle Unlimited</h3>
+<p>Daily word puzzle fun!</p>
+</a>
+</div>
+</div>
+<!-- Tetris -->
+<div class="col-lg-2 col-md-4 col-sm-6">
+<div class="game-card">
+<a href="/go/tetris.html">
+<img alt="monkey-mart-16" class="lazyload" data-src="/img/games/tetris.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<h3>Tetris</h3>
+<p>The timeless puzzle classic!</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Popular Categories -->
+<div class="popular-categories">
+<h3>Browse Games by Category</h3>
+<ul class="category-list">
+<li><a href="/category/action.html" title="Action Games">Action Games</a></li>
+<li><a href="/category/arcade.html" title="Arcade Games">Arcade Games</a></li>
+<li><a href="/category/puzzle.html" title="Puzzle Games">Puzzle Games</a></li>
+<li><a href="/category/idle.html" title="Idle Games">Idle Games</a></li>
+<li><a href="/category/multiplayer.html" title="Multiplayer Games">Multiplayer Games</a></li>
+</ul>
+</div>
+<div class="popular-games">
+<h3>Most Popular Games</h3>
+<ul>
+<li><a href="/go/slope.html">Slope Game</a></li>
+<li><a href="/go/cookie-clicker.html">Cookie Clicker</a></li>
+<li><a href="/go/geometry-dash.html">Geometry Dash</a></li>
+</ul>
+</div>
+<!-- GAME DESCRIPTION SECTION START -->
+<div class="game-description-section" style="margin: 40px auto; max-width: 1200px; padding: 0 15px;">
+<div class="game-info" itemscope="" itemtype="http://schema.org/VideoGame">
+<meta content="Monkey Mart" itemprop="name"/>
+<meta content="Management, Tycoon, Idle Game" itemprop="genre"/>
+<meta content="Web Browser" itemprop="gamePlatform"/>
+<meta content="Game" itemprop="applicationCategory"/>
+<meta content="Windows, macOS, Android, iOS" itemprop="operatingSystem"/>
+<h2>Why Choose Monkey Mart?</h2>
+<p><strong>Monkey Mart</strong> is the #1 supermarket management simulation that puts you in control of your very own retail paradise! This addictive idle tycoon game transforms you into a savvy business owner who must master inventory management, deliver exceptional customer service, and expand a humble shop into a thriving commercial empire. With countless upgrades, strategic decisions, and a satisfying progression system, <strong>Monkey Mart</strong> offers endless hours of entertaining gameplay.</p>
+<p>What makes <strong>Monkey Mart</strong> stand out from other management games is its perfect balance of idle mechanics and active gameplay. Even when you're away, your <strong>Monkey Mart</strong> continues to generate income, but returning to actively manage your store accelerates your progress. The charming monkey-themed graphics, intuitive controls, and constant sense of achievement make <strong>Monkey Mart</strong> appealing to casual gamers and tycoon enthusiasts alike.</p>
+<h2>Best Strategies for Monkey Mart</h2>
+<p>To succeed in <strong>Monkey Mart</strong>, focus on efficient inventory management, quick customer service, and strategic upgrades. Keep your <strong>Monkey Mart</strong> shelves stocked, serve customers promptly to prevent them from leaving, and invest profits in store improvements that maximize income. Balancing immediate needs with long-term investments is key to building the ultimate <strong>Monkey Mart</strong> empire!</p>
+<div class="faq-section" style="margin-top: 30px;">
+<h2>Monkey Mart Game - Frequently Asked Questions</h2>
+<div class="faqs" itemscope="" itemtype="https://schema.org/FAQPage">
+<div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+<h3 itemprop="name">What is Monkey Mart game?</h3>
+<div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+<div itemprop="text"><strong>Monkey Mart</strong> is an addictive idle tycoon game where you manage your own supermarket. Start small and grow your business into a retail empire by stocking shelves, serving customers efficiently, and making strategic upgrades. The Monkey Mart game combines business simulation with fun management mechanics.</div>
+</div>
+</div>
+<div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+<h3 itemprop="name">How do I play Monkey Mart online?</h3>
+<div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+<div itemprop="text">Playing <strong>Monkey Mart</strong> online is easy! Simply visit our website and the game loads automatically in your browser with no downloads required. You'll start with a basic store and learn the basics of stocking shelves and serving customers, then expand your Monkey Mart business as you earn more money.</div>
+</div>
+</div>
+<div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+<h3 itemprop="name">What makes Monkey Mart different from other tycoon games?</h3>
+<div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+<div itemprop="text"><strong>Monkey Mart</strong> stands out with its perfect balance of idle mechanics and active management. Your Monkey Mart store keeps earning even when you're away, but active play accelerates your progress significantly. The game's charming monkey theme, intuitive controls, and constant progression make Monkey Mart uniquely addictive compared to other management games.</div>
+</div>
+</div>
+<div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+<h3 itemprop="name">What are the best strategies for Monkey Mart?</h3>
+<div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+<div itemprop="text">To succeed in <strong>Monkey Mart</strong>, focus on efficient inventory management, quick customer service, and strategic upgrades. Keep your Monkey Mart shelves stocked, serve customers promptly to prevent them from leaving, and invest profits in store improvements that maximize income. Balance your spending between immediate needs and long-term investments to build the ultimate Monkey Mart empire!</div>
+</div>
+</div>
+<div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+<h3 itemprop="name">What can I upgrade in Monkey Mart?</h3>
+<div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+<div itemprop="text">In <strong>Monkey Mart</strong>, you can upgrade various aspects of your store including shelves, checkout counters, store layout, and product variety. Each upgrade helps your Monkey Mart business grow and earn more money. Advanced players can unlock special monkey assistants, premium products, and store decorations to maximize profits and customer satisfaction.</div>
+</div>
+</div>
+<div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+<h3 itemprop="name">Is Monkey Mart free to play online?</h3>
+<div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+<div itemprop="text">Yes! <strong>Monkey Mart</strong> is completely free to play on monkeymart.one. You can enjoy building your Monkey Mart retail empire without spending any money. The game loads instantly in your browser with no downloads or installations required, making it perfect for quick gaming sessions during breaks or longer strategic play.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- GAME DESCRIPTION SECTION END -->
+<div class="cta-section text-center" style="margin: 40px 0; background-color: #FFF5E1; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+<h2>Enjoy Monkey Mart Instantly!</h2>
+<p>Ready to become a retail tycoon? <strong>Monkey Mart</strong> is already loaded and ready for you to start your business journey today! Manage your store, serve customers, and unlock exciting upgrades. Also try <a href="/go/slope.html">Slope Game</a> for an adrenaline rush!</p>
+<div style="margin-top: 20px;">
+<a class="btn btn-primary" href="#game" style="background-color: #8B4513; color: #fff; padding: 12px 25px; font-weight: bold; border-radius: 30px; text-decoration: none; display: inline-block; border: none;">Go to Game</a>
+</div>
+</div>
+<div class="more-games-section" style="margin: 40px 0;">
+<h2>Discover More Games</h2>
+<p>If you enjoy <strong>Monkey Mart</strong>, check out our other games like <a href="/go/cookie-clicker.html">Cookie Clicker</a> and <a href="/go/geometry-dash.html">Geometry Dash</a>. You can find more fun games in our <a href="/category/action.html">Action Games</a>, <a href="/category/puzzle.html">Puzzle Games</a>, and <a href="/category/multiplayer.html">Multiplayer Games</a> categories.</p>
+</div>
+</div>
+</div>
+<!-- PRODUCT AREA END -->
+<!-- GUIDE SECTION START -->
+<div class="ltn__product-area ltn__product-gutter pb-70">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="game-guide-section">
+<h2>The Ultimate Guide to Enjoying Free Online Games</h2>
+<p>In the ever-evolving world of digital entertainment, free online games have established themselves as a cornerstone of fun and relaxation. With options ranging from thrilling action-packed adventures to soothing puzzle challenges, there's something for everyone. This guide will introduce you to the best unblocked games, allowing you to dive into enjoyable gameplay whenever you need a break.</p>
+<h3>Discover the Best Free Games Available</h3>
+<p>When you're on the hunt for free games for free, you'll discover a plethora of choices tailored to various preferences. Whether you're a fan of <a href="/go/slope.html">slope games</a>, <a href="/category/car.html">car games</a>, or engaging <a href="/category/puzzle.html">puzzle games</a>, the internet is a treasure trove awaiting your exploration. Here's a look at the diverse game categories you can enjoy:</p>
+<h4>1. Action Games</h4>
+<p>Get ready for high-octane thrills with <a href="/category/action.html">online action games</a>. These titles deliver fast-paced excitement and are often available for free online play, offering a blend of genres that keeps your heart racing.</p>
+<h4>2. Multiplayer Games</h4>
+<p>Connect and compete with friends or gamers across the globe through <a href="/category/multiplayer.html">online multiplayer gaming</a>. Numerous platforms host free multiplayer games that not only provide entertainment but also foster teamwork and friendly competition.</p>
+<h4>3. Idle Games</h4>
+<p>If you prefer a more relaxed gameplay experience, <a href="/category/idle.html">idle tycoon games</a> are perfect for you. Set them up and watch as they run in the background while you attend to other tasks, combining entertainment with convenience.</p>
+<h4>4. Browser Games</h4>
+<p>Many browser games require no downloads, making them incredibly accessible. From <a href="/category/papa-game.html">papa games</a> to <a href="/">monkey games</a>, there's a diverse selection that caters to all kinds of players, ensuring everyone finds something enjoyable.</p>
+<h3>Embrace Unblocked Fun</h3>
+<p>For those seeking games unblocked, you're in luck! Many websites feature robust libraries of online games and free-to-play games without restrictions. This availability is especially beneficial for students and parents, providing safe and enjoyable options during break times.</p>
+<h4>Highlights of Unblocked Games:</h4>
+<ul>
+<li><strong><a href="/go/cookie-clicker.html">Cookie Clicker Unblocked</a>:</strong> Indulge in delightful clicking fun!</li>
+<li><strong><a href="/go/slope.html">Slope Game</a>:</strong> Experience the thrill of this easy-to-learn downhill adventure.</li>
+<li><strong><a href="/go/geometry-dash.html">Geometry Dash</a>:</strong> Test your reflexes and skills in this iconic game.</li>
+</ul>
+<h3>Categories of Free Online Gaming</h3>
+<h4>Free Games to Play</h4>
+<p>With countless free games available, you can cater to any mood — whether you're solving puzzles or seeking action. Here are some great categories to explore:</p>
+<ul>
+<li>Free downloadable games that you can install directly on your device for offline play.</li>
+<li>Interactive games that immerse you in active participation.</li>
+<li>Fun online games like <a href="/go/friday-night-funkin.html">Friday Night Funkin'</a>, blending music and rhythm into engaging gameplay.</li>
+</ul>
+<h4>Online Action Games</h4>
+<p>Dive into various <a href="/category/action.html">online action games</a> that keep adrenaline pumping. These titles span from exhilarating combat scenarios to thrilling racing experiences, all tailored for free online play.</p>
+<h4>Free Games with No Downloads</h4>
+<p>If you prefer playable games that require no downloads, there's a plethora of free browser games ready for spontaneous gaming sessions. Enjoy hassle-free access to entertainment without lengthy installations.</p>
+<h3>Popular Gaming Themes</h3>
+<p><strong><a href="/category/car.html">Car Games</a>:</strong> Challenge yourself in high-speed races where you can compete against the clock or friends. Titles like <a href="/go/retro-bowl.html">Retro Bowl</a> promise endless enjoyment.</p>
+<p><strong>Arcade Games:</strong> Relive the nostalgia with arcade games free online, bringing back classic gaming vibes through accessible formats. Explore a range of web games and interactive titles that continue to capture hearts.</p>
+<p><strong>Management Games:</strong> Put your strategy skills to the test with management-centric games where you can build and oversee your own empire. Try <a href="/">Monkey Mart</a> to experience the thrill of building your retail empire!</p>
+<h3>Conclusion</h3>
+<p>Whether you're a fan of free online games, interactive games, or just in search of new fun games to play, the possibilities are virtually endless. With just a few clicks, you can immerse yourself in game worlds tailored to your style. Remember to game responsibly, and don't forget to take breaks. Happy gaming, and enjoy exploring the vast universe of free games at your fingertips!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- GUIDE SECTION END -->
+<!-- FOOTER AREA START -->
+<footer class="ltn__footer-area">
+<div class="footer-top-area section-bg-1 plr--5" style="background: #8B4513; padding: 5px;">
+</div>
+<div class="ltn__copyright-area ltn__copyright-2 section-bg-2 ltn__border-top-2--- plr--5" style="background: #8B4513; padding: 10px 0;">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6 col-12">
+<div class="ltn__copyright-design clearfix">
+<p style="color: #FFF5E1; margin-bottom: 0;">monkeymart.one @ <span class="current-year">2024</span>
+<span style="padding-left:15px"><a href="/privacy-policy.html" style="color: #FFF5E1;">Privacy Policy</a></span>
+<span style="padding-left:15px"><a href="/terms.html" style="color: #FFF5E1;">Terms and Conditions</a></span>
+<span style="padding-left:15px"><a href="/contact.html" style="color: #FFF5E1;">Contact Us</a></span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- FOOTER AREA END -->
+</div>
+<!-- Body main wrapper end -->
+<!-- All JS Plugins -->
+<script defer="" src="js/plugins.js"></script>
+<!-- Main JS -->
+<script defer="" src="js/main.js"></script>
+<!-- Thêm script để xử lý dark mode -->
+<script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const darkModeIcon = document.getElementById('darkModeIcon');
+    const darkModeText = document.getElementById('darkModeText');
+    const body = document.body;
+
+    // Kiểm tra trạng thái dark mode từ localStorage
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    if (isDarkMode) {
+        enableDarkMode();
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+        if (body.classList.contains('dark-mode')) {
+            disableDarkMode();
+        } else {
+            enableDarkMode();
+        }
+    });
+
+    function enableDarkMode() {
+        body.classList.add('dark-mode');
+        darkModeIcon.textContent = '☀️';
+        darkModeText.textContent = 'Light Mode';
+        localStorage.setItem('darkMode', 'enabled');
+    }
+
+    function disableDarkMode() {
+        body.classList.remove('dark-mode');
+        darkModeIcon.textContent = '🌙';
+        darkModeText.textContent = 'Dark Mode';
+        localStorage.setItem('darkMode', null);
+    }
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://monkeymart.one"
+    }]
+}
+</script>
+</body>
+</html>

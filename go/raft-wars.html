@@ -1,7 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
 <head>
-	<script type="text/javascript" async>!function(e,t){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,a.fetchPriority='high',m.parentNode.insertBefore(a,m)}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search);</script>
+	<script type="text/javascript" async>!function(e,t){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,a.fetchPriority='high',m.parentNode.insertBefore(a,m)}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search);
+// Also load when window is fully loaded
+window.addEventListener('load', function() {
+    setTimeout(loadGameIframe, 50);
+});
+</script>
 	<meta charset="utf-8">
 	<meta content="ie=edge" http-equiv="x-ua-compatible">
 	<title> Raft Wars </title>
@@ -122,7 +127,7 @@
 			<section id="game" class="game-wrapper">
 				<div class="game-container">
 					<div data-url="https://edumaths.github.io/s77/raft-wars" id="game-arena">
-						<iframe title="Raft Wars" src="https://edumaths.github.io/s77/raft-wars" allow="autoplay" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>
+						<iframe title="Raft Wars" data-src="https://edumaths.github.io/s77/raft-wars" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>
 <script>
 function openFullscreen() {
     // Đảm bảo iframe đã được load trước khi vào chế độ toàn màn hình
@@ -147,9 +152,11 @@ function loadGameIframe() {
 }
 
 // Load game iframe after page loads or user interaction
-document.addEventListener(\'DOMContentLoaded\', function() {
-    // Load iframe immediately
-    loadGameIframe(); // Adjust timing as needed
+document.addEventListener('DOMContentLoaded', function() {
+    // Delayed loading to allow ads to load first
+    setTimeout(function() {
+        loadGameIframe();
+    }, 100); // Adjust timing as needed
     
     // Alternatively, load on first user interaction
     document.addEventListener('click', function loadOnFirstInteraction() {
