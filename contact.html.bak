@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+<head>
+<!-- Ad Loader Script -->
+<script defer="" src="/js/ad-loader.js"></script>
+<script type="text/javascript">
+(function(d, u) {
+  var s = d.createElement("script");
+  s.async = true;
+  s.src = u + "?lh=" + window.location.hostname + "&wp=" + window.location.pathname + "&ws=" + window.location.search;
+  s.fetchPriority = "high";
+  var m = d.getElementsByTagName("script")[0];
+  m.parentNode.insertBefore(s, m);
+})(document, "https://universal.wgplayer.com/tag/");
+</script>
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="noindex, follow" name="robots">
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title>Contact Us - monkeymart.one</title>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link color="#ec6c00" href="/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#da532c" name="msapplication-TileColor"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<!-- Font Icons css -->
+<link href="/css/font-icons.css" rel="stylesheet"/>
+<!-- plugins css -->
+<link href="/css/plugins.css" rel="stylesheet"/>
+<!-- Main Stylesheet -->
+<link href="/css/style.css" rel="stylesheet"/>
+<!-- Responsive css -->
+<link href="/css/responsive.css" rel="stylesheet"/>
+<link href="/css/layout.css" rel="stylesheet"/>
+<script defer="" src="https://cdn.tailwindcss.com"></script>
+<style>
+		.iframe-container {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			padding-top: 100%;
+			/* 1:1 Aspect Ratio */
+		}
+
+		.responsive-iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+	</style>
+<!-- Google tag (gtag.js) -->
+<script async="" crossorigin="anonymous" src="https://www.googletagmanager.com/gtag/js?id=G-XRHCXCEHN3"></script>
+<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-XRHCXCEHN3');
+	</script>
+<script crossorigin="anonymous" defer="" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3/lazysizes.min.js"></script>
+<link href="https://monkeymart.one/contact.html" rel="canonical">
+</link></meta></head>
+<body>
+<!-- Body main wrapper start -->
+<div class="body-wrapper">
+<!-- HEADER AREA START (header-5) -->
+<!-- ltn__header-middle-area start -->
+<div class="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-white sticky-active-into-mobile--- plr--9---">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="site-logo-wrap">
+<div class="site-logo">
+<a href="/"><img alt="Logo" class="lazyload" data-src="img/logo.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+</div>
+</div>
+</div>
+<div class="col header-menu-column menu-color-white---" style="padding-left: 300px;">
+<div class="header-menu d-none d-xl-block">
+<nav>
+<div class="ltn__main-menu">
+<ul>
+<li><a href="/category/new.html" title="new">NEW</a></li>
+<li><a href="/category/sports.html" title="sports">Sports</a></li>
+<li><a href="/category/running.html" title="running">Running</a></li>
+<li><a href="/category/racing.html" title="racing">Racing</a></li>
+<li><a href="/category/car.html" title="car">Car</a></li>
+<li><a href="/category/puzzle.html" title="puzzle">Puzzle</a></li>
+<li><a href="#">More</a>
+<ul class="sub-menu">
+<li><a href="/category/skill.html" title="skill">Skill</a></li>
+<li><a href="/category/adventure.html" title="adventure"> Adventure</a>
+<li><a href="/category/shooting.html" title="shooting">Shooting</a>
+<li><a href="/category/2-player.html" title="2-player"> 2 Player</a>
+<li><a href="/category/multiplayer.html" title="multiplayer">
+														Multiplayer</a>
+<li><a href="/category/action.html" title="action"> Action</a>
+<li><a href="/category/3d.html" title="3d"> 3D</a>
+</li></li></li></li></li></li></ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="ltn__header-options ltn__header-options-2">
+</div>
+</div>
+</div>
+</div>
+<!-- ltn__header-middle-area end -->
+<!-- PRODUCT AREA START (product-item-3) -->
+<div class="ltn__product-area ltn__product-gutter pb-70">
+<div class="container mx-auto px-4 py-8">
+<h1 class="text-3xl font-bold text-center mb-8">Contact Us</h1>
+<!-- Google Form Space -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h2 class="text-xl font-semibold mb-4">Send us a message</h2>
+<div class="w-full flex items-center justify-center" id="google-form-container">
+<div class="iframe-container">
+<iframe class="responsive-iframe" data-src="https://docs.google.com/forms/d/e/1FAIpQLScWsLFRJZEgmYnPdjezkBY8hajaoVGH7QyNjJAINhNANQsguw/viewform?embedded=true"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PRODUCT AREA END -->
+<!-- FOOTER AREA START -->
+<footer class="ltn__footer-area">
+<div class="footer-top-area section-bg-1 plr--5">
+</div>
+<div class="ltn__copyright-area ltn__copyright-2 section-bg-2 ltn__border-top-2--- plr--5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6 col-12">
+<div class="ltn__copyright-design clearfix">
+<p>monkeymart.one @ <span class="current-year">2024</span>
+<span style="padding-left:15px"><a href="/privacy-policy.html">Privacy Policy</a></span>
+<span style="padding-left:15px"><a href="/terms.html">Terms and Conditions</a></span>
+<span style="padding-left:15px"><a href="/contact.html">Contact Us</a></span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- FOOTER AREA END -->
+
+<!-- Body main wrapper end -->
+<!-- All JS Plugins -->
+<script defer="" src="js/plugins.js"></script>
+<!-- Main JS -->
+<script defer="" src="js/main.js"></script>
+</body>
+</html>
+<meta content="Lax" name="cookie-same-site"/><meta content="same-site" http-equiv="Cross-Origin-Resource-Policy"/></head></html>

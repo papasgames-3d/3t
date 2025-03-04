@@ -146,7 +146,7 @@
 <section class="game-wrapper" id="game">
 <div class="game-container">
 <div data-url="https://fridaynight-funkin.github.io/f88/friday-night-funkin/" id="game-arena">
-<iframe allowfullscreen="" data-src="https://fridaynight-funkin.github.io/f88/friday-night-funkin/" frameborder="0" height="100%" scrolling="none" title="Friday Night Funkin" width="100%"></iframe>
+<iframe allowfullscreen="" src="https://fridaynight-funkin.github.io/f88/friday-night-funkin/" allow="autoplay" frameborder="0" height="100%" scrolling="none" title="Friday Night Funkin" width="100%"></iframe>
 <script>
 function openFullscreen() {
     // Đảm bảo iframe đã được load trước khi vào chế độ toàn màn hình
@@ -171,11 +171,9 @@ function loadGameIframe() {
 }
 
 // Load game iframe after page loads or user interaction
-document.addEventListener('DOMContentLoaded', function() {
-    // Delayed loading to allow ads to load first
-    setTimeout(function() {
-        loadGameIframe();
-    }, 1000); // Adjust timing as needed
+document.addEventListener(\'DOMContentLoaded\', function() {
+    // Load iframe immediately
+    loadGameIframe(); // Adjust timing as needed
     
     // Alternatively, load on first user interaction
     document.addEventListener('click', function loadOnFirstInteraction() {
