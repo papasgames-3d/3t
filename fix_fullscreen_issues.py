@@ -16,6 +16,9 @@ broken_script_pattern = re.compile(r'<script>\s*"\s*src="\${gameUrl}".*?</script
 open_fullscreen_func_pattern = re.compile(r'function\s+openFullscreen\s*\(\s*\)\s*{[^}]*}', re.DOTALL)
 load_iframe_func_pattern = re.compile(r'function\s+loadGameIframe\s*\(\s*\)\s*{[^}]*}', re.DOTALL)
 
+# Pattern cho script wgplayer (để sửa lỗi preload)
+wgplayer_script_pattern = re.compile(r'<link rel="dns-prefetch" href="https://universal\.wgplayer\.com"/><script[^>]*>[^<]*universal\.wgplayer\.com[^<]*</script>')
+
 # Script mẫu để thay thế hoặc thêm mới
 correct_script_template = """
 <script>
@@ -54,9 +57,33 @@ function openFullscreen() {
 </script>
 """
 
+# Script mới cho việc tải quảng cáo
+ad_loader_script = """<link rel="dns-prefetch" href="https://universal.wgplayer.com"/>
+<script src="/js/ad-loader.js"></script>
+<script>
+// Sử dụng ad-loader để tải script quảng cáo thay vì inline script
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.adLoader) {
+        window.adLoader.loadWgPlayerScript();
+    }
+});
+</script>"""
+
 def convert_src_to_data_src(content):
     """Chuyển đổi thuộc tính src thành data-src trong các iframe"""
     return iframe_src_pattern.sub(r'<iframe\1 data-src="\2"\3>', content)
+
+def fix_wgplayer_script(content):
+    """Sửa lỗi preload từ script wgplayer"""
+    # Kiểm tra nếu file có chứa script wgplayer
+    match = wgplayer_script_pattern.search(content)
+    if match:
+        print(f"  - Tìm thấy script wgplayer, thay thế bằng cách tải qua ad-loader.js")
+        # In ra để debug
+        print(f"  - Script wgplayer tìm thấy: {match.group(0)[:100]}...")
+        # Thay thế script wgplayer bằng link đến ad-loader.js
+        return wgplayer_script_pattern.sub(ad_loader_script, content)
+    return content
 
 def check_and_fix_file(html_file):
     """Kiểm tra và sửa chữa các vấn đề trong một file HTML cụ thể"""
@@ -79,6 +106,13 @@ def check_and_fix_file(html_file):
         
         original_content = content
         issues_found = False
+        
+        # Sửa lỗi preload từ script wgplayer
+        new_content = fix_wgplayer_script(content)
+        if new_content != content:
+            content = new_content
+            issues_found = True
+            print(f"  - Đã thay thế script wgplayer bằng ad-loader.js")
         
         # Chuyển đổi src thành data-src trong iframe
         if 'src=' in content and '<iframe' in content:
@@ -152,8 +186,8 @@ def check_and_fix_file(html_file):
                 else:
                     print(f"  - Không cần sửa đổi: {html_file}")
             else:
-                print(f"  - Không tìm thấy nút fullscreen, nhưng sẽ cập nhật iframe sang data-src")
-                # Nếu đã thay đổi iframe từ src sang data-src
+                print(f"  - Không tìm thấy nút fullscreen")
+                # Nếu đã thay đổi iframe từ src sang data-src hoặc sửa script wgplayer
                 if content != original_content:
                     # Tạo bản sao lưu
                     backup_file = html_file + ".bak-" + str(int(time.time()))
@@ -166,7 +200,20 @@ def check_and_fix_file(html_file):
                     print(f"  - Đã sửa và lưu file: {html_file}")
                     return True
         else:
-            print(f"  - Không tìm thấy iframe, bỏ qua")
+            # Kiểm tra nếu không có iframe nhưng có script wgplayer cần sửa
+            if content != original_content:
+                # Tạo bản sao lưu
+                backup_file = html_file + ".bak-" + str(int(time.time()))
+                shutil.copy2(html_file, backup_file)
+                print(f"  - Đã tạo bản sao lưu: {backup_file}")
+                
+                # Lưu nội dung đã sửa
+                with open(html_file, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                print(f"  - Đã sửa script wgplayer và lưu file: {html_file}")
+                return True
+            else:
+                print(f"  - Không tìm thấy iframe, bỏ qua")
         
         return False
     
@@ -194,6 +241,7 @@ def scan_and_fix_directories():
     fixed_count = 0
     error_count = 0
     scanned_count = 0
+    ads_fixed_count = 0
     
     # Danh sách thư mục cần quét
     directories = [".", "go"]
@@ -215,6 +263,10 @@ def scan_and_fix_directories():
         try:
             if check_and_fix_file(html_file):
                 fixed_count += 1
+                # Kiểm tra nếu fixed vì quảng cáo
+                with open(html_file, 'r', encoding='utf-8') as f:
+                    if "ad-loader.js" in f.read():
+                        ads_fixed_count += 1
         except Exception as e:
             print(f"Lỗi khi xử lý file {html_file}: {str(e)}")
             error_count += 1
@@ -222,6 +274,7 @@ def scan_and_fix_directories():
     print("\nKết quả:")
     print(f"- Đã quét: {scanned_count} file HTML")
     print(f"- Đã sửa: {fixed_count} file")
+    print(f"- Đã sửa lỗi quảng cáo: {ads_fixed_count} file")
     print(f"- Số lỗi: {error_count} file")
 
 def fix_specific_file(file_path):
@@ -234,6 +287,29 @@ def fix_specific_file(file_path):
                 content = f.read()
             
             print(f"Đã đọc nội dung file: {len(content)} ký tự")
+            
+            # Kiểm tra script wgplayer
+            if 'universal.wgplayer.com' in content:
+                print(f"Tìm thấy script wgplayer trong file")
+                
+                # In ra đoạn có chứa script wgplayer để debug
+                match = re.search(r'<link[^>]*universal\.wgplayer\.com[^>]*>[^<]*<script[^>]*>[^<]*universal\.wgplayer\.com[^<]*</script>', content)
+                if match:
+                    print(f"Script wgplayer tìm thấy: {match.group(0)[:100]}...")
+                
+                new_content = fix_wgplayer_script(content)
+                if new_content != content:
+                    print(f"Đã sửa script wgplayer")
+                    # Lưu nội dung đã sửa
+                    backup_file = file_path + ".bak-" + str(int(time.time()))
+                    shutil.copy2(file_path, backup_file)
+                    print(f"Đã tạo bản sao lưu: {backup_file}")
+                    with open(file_path, 'w', encoding='utf-8') as f:
+                        f.write(new_content)
+                    print(f"Đã lưu nội dung đã sửa")
+                    return True
+                else:
+                    print(f"Không thể thay thế script wgplayer")
             
             # Kiểm tra xem file có iframe không
             if '<iframe' in content:
