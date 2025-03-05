@@ -41,8 +41,17 @@ def create_game_page(game_name, iframe_url, image_path, categories):
         print(f"⚠️ Lỗi: Game {game_name} đã tồn tại tại đường dẫn: {new_game_path}")
         return False
     
-    # Chọn một game mẫu để sao chép (ví dụ: cookie-clicker.html)
-    template_game_path = os.path.join("go", "cookie-clicker.html")
+    # Sử dụng stack-bump-3d.html làm mẫu thay vì cookie-clicker.html
+    template_game_path = os.path.join("go", "stack-bump-3d.html")
+    
+    # Kiểm tra xem file mẫu có tồn tại không
+    if not os.path.exists(template_game_path):
+        print(f"⚠️ Lỗi: Không tìm thấy file mẫu: {template_game_path}")
+        print("Đang chuyển sang sử dụng file mẫu dự phòng...")
+        template_game_path = os.path.join("go", "cookie-clicker.html")
+        if not os.path.exists(template_game_path):
+            print(f"⚠️ Lỗi: Không tìm thấy file mẫu dự phòng: {template_game_path}")
+            return False
     
     try:
         # Đọc nội dung của game mẫu
@@ -50,10 +59,17 @@ def create_game_page(game_name, iframe_url, image_path, categories):
             template_content = file.read()
         
         # Thay thế tên game, iframe URL và các thông tin khác
-        # Thay thế tiêu đề
+        # Thay thế tiêu đề để sử dụng tên game mới
         template_content = re.sub(
             r'<title>.*?</title>',
             f'<title>{game_name} | Monkey Mart Games</title>',
+            template_content
+        )
+        
+        # Thay thế tên game trong tiêu đề H1 nếu có
+        template_content = re.sub(
+            r'<h1.*?>.*?</h1>',
+            f'<h1>{game_name}</h1>',
             template_content
         )
         
@@ -158,6 +174,19 @@ def create_game_page(game_name, iframe_url, image_path, categories):
             template_content
         )
         
+        # Đảm bảo cập nhật tất cả các phần chứa tên game cũ (Stack Bump 3D) thành tên game mới
+        template_content = re.sub(
+            r'Stack Bump 3D',
+            game_name,
+            template_content
+        )
+        
+        template_content = re.sub(
+            r'stack-bump-3d',
+            slug,
+            template_content
+        )
+        
         # Ghi nội dung đã chỉnh sửa vào file mới
         with open(new_game_path, 'w', encoding='utf-8') as file:
             file.write(template_content)
@@ -228,7 +257,6 @@ def update_homepage(game_name, image_path):
             <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/games/{image_filename}" alt="{game_name}">
             <h5>{game_name}</h5>
             <div class="game-card-info">
-                <p>Chơi ngay</p>
             </div>
         </div>
     </a>
