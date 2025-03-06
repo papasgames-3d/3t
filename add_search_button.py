@@ -55,6 +55,10 @@ def add_search_functionality(file_path):
                     <span class="search-close">&times;</span>
                     <h2>Search</h2>
                     <input type="text" id="search-input" placeholder="Enter search keywords...">
+                    <div class="search-tabs">
+                        <button class="search-tab active" data-tab="games">Games</button>
+                        <button class="search-tab" data-tab="pages">All Pages</button>
+                    </div>
                     <div id="search-results"></div>
                 </div>
             </div>
@@ -127,6 +131,29 @@ def add_search_functionality(file_path):
             cursor: pointer;
         }
         
+        .search-tabs {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        
+        .search-tab {
+            background: none;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            color: var(--text-color, #333);
+            opacity: 0.7;
+        }
+        
+        .search-tab.active {
+            opacity: 1;
+            font-weight: bold;
+            border-bottom: 2px solid var(--accent-color, #0066cc);
+        }
+        
         #search-input {
             width: 100%;
             padding: 12px;
@@ -163,9 +190,26 @@ def add_search_functionality(file_path):
             display: block;
         }
         
+        .search-result-item .file-path {
+            font-size: 12px;
+            color: #666;
+            margin-top: 3px;
+        }
+        
+        .search-category {
+            font-weight: bold;
+            margin: 10px 0;
+            padding: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        
         /* Dark mode compatibility */
         [data-theme="dark"] .search-modal-content {
             background-color: #222;
+            color: #eee;
+        }
+        
+        [data-theme="dark"] .search-tab {
             color: #eee;
         }
         
@@ -189,6 +233,14 @@ def add_search_functionality(file_path):
         
         [data-theme="dark"] .search-close {
             color: #eee;
+        }
+        
+        [data-theme="dark"] .search-result-item .file-path {
+            color: #aaa;
+        }
+        
+        [data-theme="dark"] .search-category {
+            border-bottom-color: #444;
         }
         
         @media (max-width: 768px) {
@@ -218,12 +270,28 @@ def add_search_functionality(file_path):
             const searchClose = document.querySelector('.search-close');
             const searchInput = document.getElementById('search-input');
             const searchResults = document.getElementById('search-results');
+            const searchTabs = document.querySelectorAll('.search-tab');
             
             // Game title and URL mapping
             let gameData = [];
+            // All HTML pages data
+            let pageData = [];
+            // Current active tab
+            let activeTab = 'games';
+            
+            // Function to get page title from HTML content
+            function extractTitleFromHtml(html) {
+                const titleMatch = html.match(/<title[^>]*>([^<]+)<\\/title>/i);
+                if (titleMatch && titleMatch[1]) {
+                    return titleMatch[1].trim();
+                }
+                return null;
+            }
             
             // Function to initialize game data
             async function initGameData() {
+                if (gameData.length > 0) return; // Already initialized
+                
                 try {
                     // First, try to get data from any existing list items (for homepage)
                     const gameElements = document.querySelectorAll('.game-item, .game, [class*="game"]');
@@ -274,12 +342,174 @@ def add_search_functionality(file_path):
                 }
             }
             
+            // Function to initialize all HTML pages data
+            async function initPageData() {
+                if (pageData.length > 0) return; // Already initialized
+                
+                try {
+                    // Use a simple sitemap or known directory structure
+                    // This is a simplified approach - in a real-world scenario, 
+                    // you might want to use a proper sitemap.xml or server-side API
+                    
+                    // Common directories where HTML files might be located
+                    const directories = ['/', '/go/', '/category/'];
+                    
+                    // Add the current page
+                    const currentPath = window.location.pathname;
+                    const currentTitle = document.title;
+                    
+                    pageData.push({
+                        title: currentTitle,
+                        url: currentPath,
+                        path: currentPath
+                    });
+                    
+                    // First try to fetch sitemap.xml if it exists
+                    try {
+                        const sitemapResponse = await fetch('/sitemap.xml');
+                        if (sitemapResponse.ok) {
+                            const sitemapText = await sitemapResponse.text();
+                            const parser = new DOMParser();
+                            const sitemapDoc = parser.parseFromString(sitemapText, 'text/xml');
+                            
+                            const locations = sitemapDoc.querySelectorAll('loc');
+                            for (const loc of locations) {
+                                const url = loc.textContent.trim();
+                                if (url.endsWith('.html') || url.endsWith('/')) {
+                                    // Extract the path from the URL
+                                    const urlObj = new URL(url);
+                                    const path = urlObj.pathname;
+                                    
+                                    // Skip duplicates
+                                    if (!pageData.some(page => page.path === path)) {
+                                        pageData.push({
+                                            title: path.split('/').pop().replace('.html', '').replace(/-/g, ' '),
+                                            url: path,
+                                            path: path
+                                        });
+                                    }
+                                }
+                            }
+                            
+                            if (pageData.length > 1) {
+                                console.log(`Loaded ${pageData.length} pages from sitemap.`);
+                                
+                                // Fetch titles for each page
+                                for (const page of pageData) {
+                                    if (page.path === currentPath) continue; // Skip current page
+                                    try {
+                                        const pageResponse = await fetch(page.url);
+                                        const pageText = await pageResponse.text();
+                                        const pageTitle = extractTitleFromHtml(pageText);
+                                        if (pageTitle) {
+                                            page.title = pageTitle;
+                                        }
+                                    } catch (error) {
+                                        console.warn(`Could not fetch title for ${page.url}`);
+                                    }
+                                }
+                                
+                                return; // We already loaded pages from sitemap
+                            }
+                        }
+                    } catch (error) {
+                        console.warn('Could not load sitemap:', error);
+                    }
+                    
+                    // If sitemap didn't work, try to fetch from known directories
+                    for (const dir of directories) {
+                        try {
+                            const response = await fetch(dir);
+                            if (!response.ok) continue;
+                            
+                            const text = await response.text();
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(text, 'text/html');
+                            
+                            // Try to extract links
+                            const links = doc.querySelectorAll('a[href]');
+                            for (const link of links) {
+                                const href = link.getAttribute('href');
+                                if (href && (href.endsWith('.html') || href.endsWith('/'))) {
+                                    // Skip external links
+                                    if (href.startsWith('http') && !href.includes(window.location.hostname)) {
+                                        continue;
+                                    }
+                                    
+                                    // Convert to absolute path if needed
+                                    let path = href;
+                                    if (href.startsWith('/')) {
+                                        path = href;
+                                    } else if (!href.startsWith('http')) {
+                                        path = dir + href;
+                                    } else {
+                                        const urlObj = new URL(href);
+                                        path = urlObj.pathname;
+                                    }
+                                    
+                                    // Clean up path
+                                    path = path.replace(/\\/+/g, '/');
+                                    
+                                    // Skip duplicates
+                                    if (!pageData.some(page => page.path === path)) {
+                                        // Get title from link text or path
+                                        const title = link.textContent.trim() || path.split('/').pop().replace('.html', '').replace(/-/g, ' ');
+                                        
+                                        pageData.push({
+                                            title: title,
+                                            url: path,
+                                            path: path
+                                        });
+                                    }
+                                }
+                            }
+                        } catch (error) {
+                            console.warn(`Error fetching directory ${dir}:`, error);
+                        }
+                    }
+                    
+                    console.log(`Found ${pageData.length} HTML pages.`);
+                    
+                    // If we still don't have many pages, add some common ones
+                    if (pageData.length < 5) {
+                        const commonPages = [
+                            { title: 'Homepage', url: '/', path: '/' },
+                            { title: 'Games', url: '/go/', path: '/go/' },
+                            { title: 'Categories', url: '/category/', path: '/category/' }
+                        ];
+                        
+                        for (const page of commonPages) {
+                            if (!pageData.some(p => p.path === page.path)) {
+                                pageData.push(page);
+                            }
+                        }
+                    }
+                    
+                    // Sort pages by title
+                    pageData.sort((a, b) => a.title.localeCompare(b.title));
+                    
+                } catch (error) {
+                    console.error('Error initializing page data:', error);
+                }
+            }
+            
             // Function to perform search
             function performSearch(query) {
                 // Clear previous results
                 searchResults.innerHTML = '';
                 
+                if (activeTab === 'games') {
+                    searchGames(query);
+                } else {
+                    searchPages(query);
+                }
+            }
+            
+            // Function to search games
+            function searchGames(query) {
                 if (!query.trim()) {
+                    // Show all games if no query
+                    displayAllGames();
                     return;
                 }
                 
@@ -304,6 +534,7 @@ def add_search_functionality(file_path):
                 });
                 
                 // Display results
+                searchResults.innerHTML = '<div class="search-category">Games</div>';
                 results.forEach(game => {
                     const resultItem = document.createElement('div');
                     resultItem.className = 'search-result-item';
@@ -317,14 +548,196 @@ def add_search_functionality(file_path):
                 });
             }
             
+            // Function to search pages
+            function searchPages(query) {
+                if (!query.trim()) {
+                    // Show all pages if no query
+                    displayAllPages();
+                    return;
+                }
+                
+                query = query.toLowerCase();
+                const results = pageData.filter(page => 
+                    page.title.toLowerCase().includes(query) || 
+                    page.path.toLowerCase().includes(query)
+                );
+                
+                if (results.length === 0) {
+                    searchResults.innerHTML = '<div class="no-results">No results found.</div>';
+                    return;
+                }
+                
+                // Sort results by relevance
+                results.sort((a, b) => {
+                    const aTitle = a.title.toLowerCase();
+                    const bTitle = b.title.toLowerCase();
+                    const aPath = a.path.toLowerCase();
+                    const bPath = b.path.toLowerCase();
+                    
+                    const aTitleStarts = aTitle.startsWith(query);
+                    const bTitleStarts = bTitle.startsWith(query);
+                    const aPathStarts = aPath.startsWith(query);
+                    const bPathStarts = bPath.startsWith(query);
+                    
+                    if (aTitleStarts && !bTitleStarts) return -1;
+                    if (!aTitleStarts && bTitleStarts) return 1;
+                    if (aPathStarts && !bPathStarts) return -1;
+                    if (!aPathStarts && bPathStarts) return 1;
+                    
+                    return aTitle.localeCompare(bTitle);
+                });
+                
+                // Display results
+                searchResults.innerHTML = '<div class="search-category">Pages</div>';
+                results.forEach(page => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'search-result-item';
+                    
+                    const link = document.createElement('a');
+                    link.href = page.url;
+                    link.textContent = page.title;
+                    
+                    const filePath = document.createElement('div');
+                    filePath.className = 'file-path';
+                    filePath.textContent = page.path;
+                    
+                    resultItem.appendChild(link);
+                    resultItem.appendChild(filePath);
+                    searchResults.appendChild(resultItem);
+                });
+            }
+            
+            // Function to display all games
+            function displayAllGames() {
+                searchResults.innerHTML = '<div class="search-category">All Games</div>';
+                
+                // Sort games alphabetically
+                const sortedGames = [...gameData].sort((a, b) => 
+                    a.title.localeCompare(b.title)
+                );
+                
+                sortedGames.forEach(game => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'search-result-item';
+                    
+                    const link = document.createElement('a');
+                    link.href = game.url;
+                    link.textContent = game.title;
+                    
+                    resultItem.appendChild(link);
+                    searchResults.appendChild(resultItem);
+                });
+                
+                if (sortedGames.length === 0) {
+                    searchResults.innerHTML = '<div class="no-results">No games found. Try the "All Pages" tab.</div>';
+                }
+            }
+            
+            // Function to display all HTML pages
+            function displayAllPages() {
+                searchResults.innerHTML = '<div class="search-category">All Pages</div>';
+                
+                // Group pages by directory
+                const pagesByDir = {};
+                pageData.forEach(page => {
+                    const path = page.path;
+                    const dirPath = path.substring(0, path.lastIndexOf('/') + 1) || '/';
+                    
+                    if (!pagesByDir[dirPath]) {
+                        pagesByDir[dirPath] = [];
+                    }
+                    
+                    pagesByDir[dirPath].push(page);
+                });
+                
+                // Sort directories
+                const sortedDirs = Object.keys(pagesByDir).sort();
+                
+                // Display pages grouped by directory
+                sortedDirs.forEach(dir => {
+                    // Add directory header
+                    const dirHeader = document.createElement('div');
+                    dirHeader.className = 'search-result-item';
+                    dirHeader.innerHTML = `<strong>${dir}</strong>`;
+                    searchResults.appendChild(dirHeader);
+                    
+                    // Sort pages in this directory
+                    const sortedPages = pagesByDir[dir].sort((a, b) => 
+                        a.title.localeCompare(b.title)
+                    );
+                    
+                    // Add pages
+                    sortedPages.forEach(page => {
+                        const resultItem = document.createElement('div');
+                        resultItem.className = 'search-result-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = page.url;
+                        link.textContent = page.title;
+                        
+                        const filePath = document.createElement('div');
+                        filePath.className = 'file-path';
+                        filePath.textContent = page.path;
+                        
+                        resultItem.appendChild(link);
+                        resultItem.appendChild(filePath);
+                        searchResults.appendChild(resultItem);
+                    });
+                });
+                
+                if (Object.keys(pagesByDir).length === 0) {
+                    searchResults.innerHTML = '<div class="no-results">No pages found.</div>';
+                }
+            }
+            
+            // Handle tab switching
+            searchTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    searchTabs.forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    // Update active tab
+                    activeTab = this.dataset.tab;
+                    
+                    // Clear search input
+                    searchInput.value = '';
+                    
+                    // Reinitialize data if needed
+                    if (activeTab === 'games' && gameData.length === 0) {
+                        initGameData().then(() => displayAllGames());
+                    } else if (activeTab === 'pages' && pageData.length === 0) {
+                        initPageData().then(() => displayAllPages());
+                    } else {
+                        // Show appropriate results
+                        if (activeTab === 'games') {
+                            displayAllGames();
+                        } else {
+                            displayAllPages();
+                        }
+                    }
+                });
+            });
+            
             // Open search modal
             searchButton.addEventListener('click', function() {
                 searchModal.style.display = 'block';
                 searchInput.focus();
                 
-                // Initialize game data if not already done
-                if (gameData.length === 0) {
-                    initGameData();
+                // Initialize data for current tab
+                if (activeTab === 'games') {
+                    if (gameData.length === 0) {
+                        initGameData().then(() => displayAllGames());
+                    } else {
+                        displayAllGames();
+                    }
+                } else {
+                    if (pageData.length === 0) {
+                        initPageData().then(() => displayAllPages());
+                    } else {
+                        displayAllPages();
+                    }
                 }
             });
             
