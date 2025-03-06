@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+<head>
+<!-- Ad Loader Script -->
+<script defer="" src="/js/ad-loader.js">
+// Also load when window is fully loaded
+window.addEventListener('load', function() {
+    setTimeout(loadGameIframe, 50);
+});
+</script>
+<script type="text/javascript">
+(function(d, u) {
+  var s = d.createElement("script");
+  s.async = true;
+  s.src = u + "?lh=" + window.location.hostname + "&wp=" + window.location.pathname + "&ws=" + window.location.search;
+  s.fetchPriority = "high";
+  var m = d.getElementsByTagName("script")[0];
+  m.parentNode.insertBefore(s, m);
+})(document, "https://universal.wgplayer.com/tag/");
+</script>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title> Football Blitz </title>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link color="#ec6c00" href="/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#da532c" name="msapplication-TileColor"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<!-- Font Icons css -->
+<link href="/css/font-icons.css" rel="stylesheet"/>
+<!-- plugins css -->
+<link href="/css/plugins.css" rel="stylesheet"/>
+<!-- Main Stylesheet -->
+<link href="/css/style.css" rel="stylesheet"/>
+<!-- Game Pages Stylesheet -->
+<!-- Responsive css -->
+<link href="/css/responsive.css" rel="stylesheet"/>
+<link href="/css/combined-styles.css" rel="stylesheet"/>
+<script async="" crossorigin="anonymous" src="https://www.googletagmanager.com/gtag/js?id=G-54L5E2NJ3K"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-54L5E2NJ3K');
+	</script>
+<script crossorigin="anonymous" defer="" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3/lazysizes.min.js"></script>
+<link href="https://monkeymart.one/go/football-blitz.html" rel="canonical"/>
+<meta content="Lax" name="cookie-same-site"/><meta content="same-site" http-equiv="Cross-Origin-Resource-Policy"/><meta content="index, follow" name="robots"/></head>
+<body>
+<!-- Body main wrapper start -->
+<div class="body-wrapper">
+<!-- HEADER AREA START (header-5) -->
+<!-- ltn__header-middle-area start -->
+<div class="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-white sticky-active-into-mobile--- plr--9---">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="site-logo-wrap">
+<div class="site-logo">
+<a href="/"><img alt="Logo" class="lazyload" data-src="../img/logo.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+</div>
+</div>
+</div>
+<div class="col header-menu-column menu-color-white---" style="padding-left: 300px;">
+<div class="header-menu d-none d-xl-block">
+<nav>
+<div class="ltn__main-menu">
+<ul>
+<li><a href="/category/new.html" title="new">NEW</a></li>
+<li><a href="/category/hot-game.html" title="hot games">Hot Games</a></li>
+<li><a href="/category/papa-game.html" title="papa games">Papa Games</a></li>
+<li><a href="/category/racing.html" title="racing">Racing</a></li>
+<li><a href="/category/car.html" title="car">Car</a></li>
+<li><a href="/category/puzzle.html" title="puzzle">Puzzle</a></li>
+<li><a href="#">More</a>
+<ul class="sub-menu">
+<li><a href="/category/sports.html">Sports</a></li>
+<li><a href="/category/running.html">Running</a></li>
+<li><a href="/category/skill.html">Skill</a></li>
+<li><a href="/category/stickman.html">Stickman</a></li>
+<li><a href="/category/adventure.html">Adventure</a></li>
+<li><a href="/category/shooting.html">Shooting</a></li>
+<li><a href="/category/fighting.html">Fighting</a></li>
+<li><a href="/category/2-player.html">2 Player</a></li>
+<li><a href="/category/multiplayer.html">Multiplayer</a></li>
+<li><a href="/category/action.html">Action</a></li>
+<li><a href="/category/3d.html">3D</a></li>
+<li><a href="/category/car.html">Car</a></li>
+<li><a href="/category/moto.html">Moto</a></li>
+<li><a href="/category/idle.html">Idle</a></li>
+<li><a href="/category/fnf.html">FNF</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="ltn__header-options ltn__header-options-2">
+<div class="mini-cart-icon mini-cart-icon-2">
+<button id="darkModeToggle" onclick="toggleDarkMode()">
+<svg class="bi bi-moon-stars" fill="currentColor" height="18" id="darkModeIcon" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"></path>
+<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+</svg>
+<span id="darkModeText">Dark Mode</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ltn__header-middle-area end -->
+<!-- PRODUCT AREA START (product-item-3) -->
+<div class="ltn__product-area ltn__product-gutter pb-70">
+<div class="ad-vertical left">
+<div class="ad-title">Advertisement</div>
+<div class="ad-content">
+</div>
+</div>
+<div class="ad-vertical right">
+<div class="ad-title">Advertisement</div>
+<div class="ad-content">
+</div>
+</div>
+<div class="container">
+<section class="game-wrapper" id="game">
+<div class="game-container">
+<div data-url="https://edumaths.github.io/s99/football-blitz" id="game-arena">
+<iframe allowfullscreen="" data-src="https://edumaths.github.io/s99/football-blitz" frameborder="0" height="100%" scrolling="none" title="Football Blitz" width="100%"></iframe>
+<script>
+function openFullscreen() {
+    // Đảm bảo iframe đã được load trước khi vào chế độ toàn màn hình
+    loadGameIframe();
+    
+    let elem = document.getElementById("game-arena");
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+    }
+}
+
+function loadGameIframe() {
+    var gameIframe = document.querySelector('iframe[data-src]');
+    if (gameIframe && !gameIframe.src) {
+        gameIframe.src = gameIframe.getAttribute('data-src');
+        console.log('Game iframe loaded');
+    }
+}
+
+// Load game iframe after page loads or user interaction
+document.addEventListener('DOMContentLoaded', function() {
+    // Delayed loading to allow ads to load first
+    setTimeout(function() {
+        loadGameIframe();
+    }, 100); // Adjust timing as needed
+    
+    // Alternatively, load on first user interaction
+    document.addEventListener('click', function loadOnFirstInteraction() {
+        loadGameIframe();
+        document.removeEventListener('click', loadOnFirstInteraction);
+    }, {once: true});
+});
+</script>
+</div>
+</div>
+<div id="game-controls">
+<a class="func-btn" href="javascript:openFullscreen();" id="fullscreen-btn" title="Full Screen">
+<svg class="bi bi-arrows-fullscreen" fill="currentColor" height="23" viewbox="0 0 16 16" width="23" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707m0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707m-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</section>
+<!-- End iframe Game -->
+<div class="section-title-area ltn__section-title-1 text-center" style="padding-top:20px">
+<h1 class="section-title"> Football Blitz </h1>
+</div>
+<div class="ad-horizontal">
+<div class="ad-title">Advertisement</div>
+<div class="ad-slot">
+</div>
+</div>
+<div class="row ltn__tab-product-slider-one-active--- slick-arrow-1">
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/doge-miner.html" title="doge-miner">
+<div class="product-img">
+<img alt="doge-miner" class="lazyload" data-src="/img/games/doge-miner.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/blumgi-rocket.html" title="blumgi-rocket">
+<div class="product-img">
+<img alt="blumgi-rocket" class="lazyload" data-src="/img/games/blumgi-rocket.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/stick-defenders.html" title="stick-defenders">
+<div class="product-img">
+<img alt="stick-defenders" class="lazyload" data-src="/img/games/stick-defenders.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/stick-merge.html" title="stick-merge">
+<div class="product-img">
+<img alt="stick-merge" class="lazyload" data-src="/img/games/stick-merge.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/temple-of-boom.html" title="temple-of-boom">
+<div class="product-img">
+<img alt="temple-of-boom" class="lazyload" data-src="/img/games/temple-of-boom.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/duck-life-3-evolution.html" title="duck-life-3-evolution">
+<div class="product-img">
+<img alt="duck-life-3-evolution" class="lazyload" data-src="/img/games/duck-life-3-evolution.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/g-switch-3.html" title="g-switch-3">
+<div class="product-img">
+<img alt="g-switch-3" class="lazyload" data-src="/img/games/g-switch-3.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/rooftop-snipers.html" title="rooftop-snipers">
+<div class="product-img">
+<img alt="rooftop-snipers" class="lazyload" data-src="/img/games/rooftop-snipers.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/moto-x3m-pool-party.html" title="moto-x3m-pool-party">
+<div class="product-img">
+<img alt="moto-x3m-pool-party" class="lazyload" data-src="/img/games/moto-x3m-pool-party.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/basketball-line.html" title="basketball-line">
+<div class="product-img">
+<img alt="basketball-line" class="lazyload" data-src="/img/games/basketball-line.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/wrassling.html" title="wrassling">
+<div class="product-img">
+<img alt="wrassling" class="lazyload" data-src="/img/games/wrassling.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/soccer-skills-euro-cup.html" title="soccer-skills-euro-cup">
+<div class="product-img">
+<img alt="soccer-skills-euro-cup" class="lazyload" data-src="/img/games/soccer-skills-euro-cup.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/who-is.html" title="who-is">
+<div class="product-img">
+<img alt="who-is" class="lazyload" data-src="/img/games/who-is.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/rocket-soccer-derby.html" title="rocket-soccer-derby">
+<div class="product-img">
+<img alt="rocket-soccer-derby" class="lazyload" data-src="/img/games/rocket-soccer-derby.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/wizard-mike.html" title="wizard-mike">
+<div class="product-img">
+<img alt="wizard-mike" class="lazyload" data-src="/img/games/wizard-mike.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/tiny-fishing.html" title="tiny-fishing">
+<div class="product-img">
+<img alt="tiny-fishing" class="lazyload" data-src="/img/games/tiny-fishing.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/stickman-hook.html" title="stickman-hook">
+<div class="product-img">
+<img alt="stickman-hook" class="lazyload" data-src="/img/games/stickman-hook.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/escaping-the-prison.html" title="escaping-the-prison">
+<div class="product-img">
+<img alt="escaping-the-prison" class="lazyload" data-src="/img/games/escaping-the-prison.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+</div>
+</div>
+</div>
+<!-- PRODUCT AREA END -->
+<!-- FOOTER AREA START -->
+<footer class="ltn__footer-area">
+<div class="footer-top-area section-bg-1 plr--5">
+</div>
+<div class="ltn__copyright-area ltn__copyright-2 section-bg-2 ltn__border-top-2--- plr--5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6 col-12">
+<div class="ltn__copyright-design clearfix">
+<p>Monkeymart.one @ <span class="current-year">2024</span>
+<span style="padding-left:15px"><a href="/privacy-policy.html">Privacy Policy</a></span>
+<span style="padding-left:15px"><a href="/terms.html">Terms and Conditions</a></span>
+<span style="padding-left:15px"><a href="/contact.html">Contact Us</a></span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- FOOTER AREA END -->
+</div>
+<!-- Body main wrapper end -->
+<!-- All JS Plugins -->
+<script defer="" src="/js/plugins.js"></script>
+<!-- Main JS -->
+<script defer="" src="/js/main.js"></script>
+<script>
+    // Check if dark mode is enabled
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        document.getElementById('darkModeText').textContent = 'Light Mode';
+        document.getElementById('darkModeIcon').innerHTML = '<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>';
+    }
+
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+            document.getElementById('darkModeText').textContent = 'Light Mode';
+            document.getElementById('darkModeIcon').innerHTML = '<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>';
+        } else {
+            localStorage.setItem('darkMode', null);
+            document.getElementById('darkModeText').textContent = 'Dark Mode';
+            document.getElementById('darkModeIcon').innerHTML = '<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/><path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>';
+        }
+    }
+</script>
+</body>
+</html>

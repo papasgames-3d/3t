@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+<head>
+<!-- Ad Loader Script -->
+<script defer="" src="/js/ad-loader.js"></script>
+<script type="text/javascript">
+(function(d, u) {
+  var s = d.createElement("script");
+  s.async = true;
+  s.src = u + "?lh=" + window.location.hostname + "&wp=" + window.location.pathname + "&ws=" + window.location.search;
+  s.fetchPriority = "high";
+  var m = d.getElementsByTagName("script")[0];
+  m.parentNode.insertBefore(s, m);
+})(document, "https://universal.wgplayer.com/tag/");
+</script>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title>Papa Louie Games - Play All Papa's Games Free Online</title>
+<meta content="Play the complete collection of Papa Louie Games including Papa's Freezeria, Burgeria, Pizzeria and more. Free cooking and restaurant management games from the popular Papa Louie series." name="description"/>
+<meta content="papa louie games, papa's games, papa's freezeria, papa's burgeria, papa's pizzeria, cooking games, restaurant games" name="keywords"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link color="#ec6c00" href="/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#da532c" name="msapplication-TileColor"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<!-- Font Icons css -->
+<link href="/css/font-icons.css" rel="stylesheet"/>
+<!-- plugins css -->
+<link href="/css/plugins.css" rel="stylesheet"/>
+<!-- Main Stylesheet -->
+<link href="/css/style.css" rel="stylesheet"/>
+<!-- Category Pages Stylesheet -->
+<link rel="stylesheet" href="/css/combined-styles.css">
+<!-- Google tag (gtag.js) -->
+<script async="" crossorigin="anonymous" src="https://www.googletagmanager.com/gtag/js?id=G-54L5E2NJ3K"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-54L5E2NJ3K');
+	</script>
+<style>
+		/* Style cho dark mode */
+		.dark-mode {
+			background-color: #1a1a1a;
+			color: #FFF5E1;
+		}
+		
+		/* Fix ảnh không bị trắng trong dark mode */
+		.dark-mode .product-img {
+			background-color: transparent !important;
+			padding: 5px;
+			border-radius: 8px;
+		}
+		
+		/* Fix màu chữ header khi scroll */
+		.dark-mode .sticky-active .ltn__main-menu > ul > li > a {
+			color: #FFF5E1 !important;
+		}
+		
+		.dark-mode .sticky-active {
+			background-color: #2d2d2d !important;
+		}
+		
+		/* Style cho nút scroll up */
+		.ltn__scroll-top,
+		.go-top,
+		.go-top-btn,
+		.scroll-top,
+		#scrollUp {
+			background-color: #8B4513 !important;
+			transition: all 0.3s ease;
+			color: #FFF5E1 !important;
+		}
+		
+		.ltn__scroll-top:hover,
+		.go-top:hover,
+		.go-top-btn:hover,
+		.scroll-top:hover,
+		#scrollUp:hover {
+			background-color: #6b3410 !important;
+			color: #FFF5E1 !important;
+		}
+		
+		.ltn__scroll-top i,
+		.go-top i,
+		.go-top-btn i,
+		.scroll-top i,
+		#scrollUp i,
+		.fa-angle-up {
+			color: #FFF5E1 !important;
+		}
+		
+		/* Dark mode specific */
+		.dark-mode .ltn__header-middle-area {
+			background-color: #2d2d2d !important;
+		}
+		
+		.dark-mode .ltn__main-menu > ul > li > a {
+			color: #FFF5E1;
+		}
+		
+		.dark-mode .product-info h2 a {
+			color: #FFF5E1;
+		}
+		
+		.dark-mode .ltn__product-item {
+			background-color: #2d2d2d;
+		}
+		
+		.dark-mode #darkModeToggle {
+			background: #6b3410;
+		}
+		
+		.dark-mode .product-title a {
+			color: #FFF5E1 !important;
+		}
+		
+		.dark-mode h1, 
+		.dark-mode h2, 
+		.dark-mode h3, 
+		.dark-mode p {
+			color: #FFF5E1;
+		}
+		
+		/* Fix dark mode cho khu vực game list */
+		.dark-mode .ltn__product-item-3 {
+			background-color: transparent !important;
+		}
+		
+		.dark-mode .ltn__product-item-3 .product-img {
+			background-color: transparent !important;
+			padding: 0 !important;
+		}
+		
+		.dark-mode .ltn__product-item-3 .product-info {
+			background-color: transparent !important;
+		}
+		
+		.dark-mode .ltn__product-item-3:hover {
+			box-shadow: 0 0 15px rgba(139, 69, 19, 0.3) !important;
+			transition: all 0.3s ease;
+		}
+		
+		/* Header và Footer màu nâu */
+		.ltn__header-middle-area {
+			background-color: #8B4513 !important;
+		}
+		
+		.footer-top-area,
+		.ltn__copyright-area {
+			background: #8B4513 !important;
+			padding: 5px;
+		}
+		
+		.ltn__copyright-area {
+			padding: 10px 0;
+		}
+		
+		.ltn__copyright-design p,
+		.ltn__copyright-design a {
+			color: #FFF5E1 !important;
+		}
+		
+		/* Section titles màu nâu */
+		.section-title-area.ltn__section-title-1 {
+			padding: 0 !important;
+			margin-top: 15px !important;
+			background: #8B4513 !important;
+			margin-bottom: 20px !important;
+		}
+		
+		.section-title {
+			color: #FFF5E1 !important;
+		}
+		
+		/* Header trong light mode */
+		.ltn__header-middle-area {
+			background-color: #FFF5E1 !important;
+		}
+		
+		.ltn__main-menu > ul > li > a {
+			color: #8B4513 !important;
+		}
+	</style>
+<link href="https://monkeymart.one/category/papa-game.html" rel="canonical">
+</link><meta content="Lax" name="cookie-same-site"/><meta content="same-site" http-equiv="Cross-Origin-Resource-Policy"/></head>
+<body>
+<!-- Body main wrapper start -->
+<div class="body-wrapper">
+<!-- HEADER AREA START (header-5) -->
+<!-- ltn__header-middle-area start -->
+<div class="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-white sticky-active-into-mobile--- plr--9---">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="site-logo-wrap">
+<div class="site-logo">
+<a href="/"><img alt="Papa's Games logo" class="lazyload" data-src="/../img/logo.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+</div>
+</div>
+</div>
+<div class="col header-menu-column menu-color-white---" style="padding-left: 300px;">
+<div class="header-menu d-none d-xl-block">
+<nav>
+<div class="ltn__main-menu">
+<ul>
+<li><a href="/category/new.html" title="new">NEW</a></li>
+<li><a href="/category/hot-game.html" title="hot games">Hot Games</a></li>
+<li><a href="/category/papa-game.html" title="papa games">Papa Games</a></li>
+<li><a href="/category/racing.html" title="racing">Racing</a></li>
+<li><a href="/category/car.html" title="car">Car</a></li>
+<li><a href="/category/puzzle.html" title="puzzle">Puzzle</a></li>
+<li><a href="#">More</a>
+<ul class="sub-menu">
+<li><a href="/category/sports.html">Sports</a></li>
+<li><a href="/category/running.html">Running</a></li>
+<li><a href="/category/skill.html">Skill</a></li>
+<li><a href="/category/stickman.html">Stickman</a></li>
+<li><a href="/category/adventure.html">Adventure</a></li>
+<li><a href="/category/shooting.html">Shooting</a></li>
+<li><a href="/category/fighting.html">Fighting</a></li>
+<li><a href="/category/2-player.html">2 Player</a></li>
+<li><a href="/category/multiplayer.html">Multiplayer</a></li>
+<li><a href="/category/action.html">Action</a></li>
+<li><a href="/category/3d.html">3D</a></li>
+<li><a href="/category/car.html">Car</a></li>
+<li><a href="/category/moto.html">Moto</a></li>
+<li><a href="/category/idle.html">Idle</a></li>
+<li><a href="/category/fnf.html">FNF</a></li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+</nav>
+</div>
+</div>
+<div class="ltn__header-options ltn__header-options-2">
+<div class="dark-mode-toggle" style="margin-right: 20px;">
+<button id="darkModeToggle" style="background: #8B4513; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer; display: flex; align-items: center;">
+<span id="darkModeIcon" style="color: #FFF5E1; margin-right: 5px;">🌙</span>
+<span id="darkModeText" style="color: #FFF5E1; font-size: 14px;">Dark Mode</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ltn__header-middle-area end -->
+<!-- PRODUCT AREA START (product-item-3) -->
+<div class="ltn__product-area ltn__product-gutter pb-70">
+<div class="container">
+<!-- PRODUCT AREA START -->
+<div class="section-title-area ltn__section-title-1 text-center" style="background: #8B4513; margin-bottom: 20px !important;">
+<h1 class="section-title" style="color: #FFF5E1;">Papa Louie Games Collection</h1>
+</div>
+<div class="ad-horizontal">
+<div class="ad-title">Advertisement</div>
+<div class="ad-slot">
+</div>
+</div>
+<div class="row ltn__tab-product-slider-one-active--- slick-arrow-1">
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Freezeria">
+<a href="/papas-freezeria.html" title="papas-freezeria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Freezeria" class="lazyload" data-src="/img/games/papas-freezeria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-freezeria.html" title="papas-freezeria">Papa's Freezeria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Burgeria">
+<a href="/papas-burgeria.html" title="papas-burgeria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Burgeria" class="lazyload" data-src="/img/games/papas-burgeria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-burgeria.html" title="papas-burgeria">Papa's Burgeria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Pizzeria">
+<a href="/papas-pizzeria.html" title="papas pizzeria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Pizzeria" class="lazyload" data-src="/img/games/papas-pizzeria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-pizzeria.html" title="papas pizzeria">Papa's Pizzeria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Wingeria">
+<a href="/papas-wingeria.html" title="papas-wingeria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Wingeria" class="lazyload" data-src="/img/games/papas-wingeria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-wingeria.html" title="papas-wingeria">Papa's Wingeria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Sushiria">
+<a href="/papas-sushiria.html" title="papas-sushiria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Sushiria" class="lazyload" data-src="/img/games/papas-sushiria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-sushiria.html" title="papas-sushiria">Papa's Sushiria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Pastaria">
+<a href="/papas-pastaria.html" title="papas-pastaria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Pastaria" class="lazyload" data-src="/img/games/papas-pastaria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-pastaria.html" title="papas-pastaria">Papa's Pastaria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Cheeseria">
+<a href="/papas-cheeseria.html" title="papas-cheeseria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Cheeseria" class="lazyload" data-src="/img/games/papas-cheeseria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-cheeseria.html" title="papas-cheeseria">Papa's Cheeseria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Cupcakeria">
+<a href="/papas-cupcakeria.html" title="papas-cupcakeria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Cupcakeria" class="lazyload" data-src="/img/games/papas-cupcakeria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-cupcakeria.html" title="papas-cupcakeria">Papa's Cupcakeria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Donuteria">
+<a href="/papas-donuteria.html" title="papas-donuteria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Donuteria" class="lazyload" data-src="/img/games/papas-donuteria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-donuteria.html" title="papas-donuteria">Papa's Donuteria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Taco Mia">
+<a href="/papas-taco-mia.html" title="papas-taco-mia">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Taco Mia" class="lazyload" data-src="/img/games/papas-taco-mia.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-taco-mia.html" title="papas-taco-mia">Papa's Taco Mia</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Bakeria">
+<a href="/papas-bakeria.html" title="papas-bakeria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Bakeria" class="lazyload" data-src="/img/games/papas-bakeria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-bakeria.html" title="papas-bakeria">Papa's Bakeria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Hot Doggeria">
+<a href="/papas-hot-doggeria.html" title="papas-hot-doggeria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Hot Doggeria" class="lazyload" data-src="/img/games/papas-hot-doggeria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-hot-doggeria.html" title="papas-hot-doggeria">Papa's Hot Doggeria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Pancakeria">
+<a href="/papas-pancakeria.html" title="papas-pancakeria">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Pancakeria" class="lazyload" data-src="/img/games/papas-pancakeria.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-pancakeria.html" title="papas-pancakeria">Papa's Pancakeria</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa's Scooperia">
+<a href="/papas-scooperia.html" title="papas-scooperia">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa's Scooperia" class="lazyload" data-src="/img/games/papas-scooperia.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papas-scooperia.html" title="papas-scooperia">Papa's Scooperia</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa Louie: When Pizzas Attack!">
+<a href="/papa-louie-when-pizzas-attack.html" title="papa-louie-when-pizzas-attack">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa Louie: When Pizzas Attack!" class="lazyload" data-src="/img/games/papa-louie-1.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papa-louie-when-pizzas-attack.html" title="papa-louie-when-pizzas-attack">Papa Louie: When Pizzas Attack!</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa Louie: When Burgers Attack!">
+<a href="/papa-louie-2-when-burgers-attack.html" title="papa-louie-2-when-burgers-attack">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa Louie: When Burgers Attack!" class="lazyload" data-src="/img/games/papa-louie-2.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papa-louie-2-when-burgers-attack.html" title="papa-louie-2-when-burgers-attack">Papa Louie 2: When Burgers Attack!</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Papa Louie: When Sundaes Attack!">
+<a href="/papa-louie-3-when-sundaes-attack.html" title="papa-louie-3-when-sundaes-attack">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Papa Louie: When Sundaes Attack!" class="lazyload" data-src="/img/games/papa-louie-3.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/papa-louie-3-when-sundaes-attack.html" title="papa-louie-3-when-sundaes-attack">Papa Louie 3: When Sundaes Attack!</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Jacksmith">
+<a href="/jacksmith.html" title="jacksmith">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Jacksmith" class="lazyload" data-src="/img/games/jacksmith.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/jacksmith.html" title="jacksmith">Jacksmith</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Cactus McCoy and the Curse of Thorns">
+<a href="/cactus-mccoy-1.html" title="cactus-mccoy-1">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Cactus McCoy and the Curse of Thorns" class="lazyload" data-src="/img/games/cactus-mccoy-1.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/cactus-mccoy-1.html" title="cactus-mccoy-1">Cactus McCoy and the Curse of Thorns</a></h2>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 col-6" title="Cactus McCoy 2: The Ruins of Calavera">
+<a href="/cactus-mccoy-2.html" title="cactus-mccoy-2">
+<div class="ltn__product-item ltn__product-item-2 text-center">
+<div class="product-img">
+<img alt="Cactus McCoy 2: The Ruins of Calavera" class="lazyload" data-src="/img/games/cactus-mccoy-2.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+</div>
+<div class="product-info">
+<h2 class="product-title"><a href="/cactus-mccoy-2.html" title="cactus-mccoy-2">Cactus McCoy 2: The Ruins of Calavera</a></h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+<!-- ------------------------->
+<!--  ---------------------------------- -->
+<div class="category-description" style="background: #8B4513; color: #FFF5E1; padding: 30px; margin-top: 40px; border-radius: 8px;">
+<p>Welcome to the ultimate collection of Papa Louie Games! Experience the excitement of running your own restaurant in these popular time-management and cooking games. From making pizzas to serving ice cream, each Papa Louie game offers unique challenges and fun gameplay.</p>
+<h2 style="color: #FFF5E1; font-size: 1.5em; margin-top: 25px;">Popular Papa Louie Series</h2>
+<ul style="list-style: none; padding-left: 0; margin: 20px 0;">
+<li>🍔 Papa's Restaurant Games - Manage different restaurants and serve customers</li>
+<li>🎮 Papa Louie Adventure Games - Join Papa Louie in exciting platform adventures</li>
+<li>👨‍🍳 Papa's Cooking Games - Master the art of food preparation and customer service</li>
+</ul>
+<p style="margin-top: 20px;">Choose from our wide selection of Papa Louie games below and start your culinary adventure today!</p>
+</div>
+<!-- 2 Player Games -->
+<div class="section-title-area ltn__section-title-1 text-center" style="padding-top:20px">
+<h1 class="section-title">2 Player Games</h1>
+</div>
+<div class="ad-horizontal">
+<div class="ad-title">Advertisement</div>
+<div class="ad-slot">
+</div>
+</div>
+<div class="row ltn__tab-product-slider-one-active--- slick-arrow-1">
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/wrassling.html" title="wrassling">
+<div class="product-img">
+<img alt="wrassling" class="lazyload" data-src="/img/games/wrassling.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/bubble-trouble-3.html" title="bubble-trouble-3">
+<div class="product-img">
+<img alt="bubble-trouble-3" class="lazyload" data-src="/img/games/bubble-trouble-3.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/getaway-shootout.html" title="getaway-shootout">
+<div class="product-img">
+<img alt="getaway-shootout" class="lazyload" data-src="/img/games/getaway-shootout.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/poor-bunny.html" title="poor-bunny">
+<div class="product-img">
+<img alt="poor-bunny" class="lazyload" data-src="/img/games/poor-bunny.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/bearsus.html" title="bearsus">
+<div class="product-img">
+<img alt="bearsus" class="lazyload" data-src="/img/games/bearsus.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/volleyball-challenge.html" title="volleyball-challenge">
+<div class="product-img">
+<img alt="volleyball-challenge" class="lazyload" data-src="/img/games/volleyball-challenge.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/bumper-cars-soccer.html" title="bumper-cars-soccer">
+<div class="product-img">
+<img alt="bumper-cars-soccer" class="lazyload" data-src="/img/games/bumper-cars-soccer.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/12-minibattles.html" title="12-minibattles">
+<div class="product-img">
+<img alt="12-minibattles" class="lazyload" data-src="/img/games/12-minibattles.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/temple-of-boom.html" title="temple-of-boom">
+<div class="product-img">
+<img alt="temple-of-boom" class="lazyload" data-src="/img/games/temple-of-boom.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/thumb-fighter.html" title="thumb-fighter">
+<div class="product-img">
+<img alt="thumb-fighter" class="lazyload" data-src="/img/games/thumb-fighter.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/thumb-fighter-christmas.html" title="thumb-fighter-christmas">
+<div class="product-img">
+<img alt="thumb-fighter-christmas" class="lazyload" data-src="/img/games/thumb-fighter-christmas.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/football-masters.html" title="football-masters">
+<div class="product-img">
+<img alt="football-masters" class="lazyload" data-src="/img/games/football-masters.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/iron-snout.html" title="iron-snout">
+<div class="product-img">
+<img alt="iron-snout" class="lazyload" data-src="/img/games/iron-snout.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/squish-run.html" title="squish-run">
+<div class="product-img">
+<img alt="squish-run" class="lazyload" data-src="/img/games/squish-run.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/moto-trial-racing-2.html" title="moto-trial-racing-2">
+<div class="product-img">
+<img alt="moto-trial-racing-2" class="lazyload" data-src="/img/games/moto-trial-racing-2.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/tube-jumpers.html" title="tube-jumpers">
+<div class="product-img">
+<img alt="tube-jumpers" class="lazyload" data-src="/img/games/tube-jumpers.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/tictactoe.html" title="tictactoe">
+<div class="product-img">
+<img alt="tictactoe" class="lazyload" data-src="/img/games/tictactoe.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/blumgi-slime.html" title="blumgi-slime">
+<div class="product-img">
+<img alt="blumgi-slime" class="lazyload" data-src="/img/games/blumgi-slime.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/blumgi-castle.html" title="blumgi-castle">
+<div class="product-img">
+<img alt="blumgi-castle" class="lazyload" data-src="/img/games/blumgi-castle.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/gun-mayhem-2.html" title="gun-mayhem-2">
+<div class="product-img">
+<img alt="gun-mayhem-2" class="lazyload" data-src="/img/games/gun-mayhem-2.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/stick-fighter.html" title="stick-fighter">
+<div class="product-img">
+<img alt="stick-fighter" class="lazyload" data-src="/img/games/stick-fighter.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/friday-night-funkin.html" title="friday-night-funkin">
+<div class="product-img">
+<img alt="friday-night-funkin" class="lazyload" data-src="/img/games/friday-night-funkin.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/rooftop-snipers-2.html" title="rooftop-snipers-2">
+<div class="product-img">
+<img alt="rooftop-snipers-2" class="lazyload" data-src="/img/games/rooftop-snipers-2.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/basket-swooshes.html" title="basket-swooshes">
+<div class="product-img">
+<img alt="basket-swooshes" class="lazyload" data-src="/img/games/basket-swooshes.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/superbattle-2.html" title="superbattle-2">
+<div class="product-img">
+<img alt="superbattle-2" class="lazyload" data-src="/img/games/superbattle-2.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/stickman-climb-2.html" title="stickman-climb-2">
+<div class="product-img">
+<img alt="stickman-climb-2" class="lazyload" data-src="/img/games/stickman-climb-2.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/fortz.html" title="fortz">
+<div class="product-img">
+<img alt="fortz" class="lazyload" data-src="/img/games/fortz.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/tunnel-rush.html" title="tunnel-rush">
+<div class="product-img">
+<img alt="tunnel-rush" class="lazyload" data-src="/img/games/tunnel-rush.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/heart-star-html5.html" title="heart-star-html5">
+<div class="product-img">
+<img alt="heart-star-html5" class="lazyload" data-src="/img/games/heart-star-html5.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/g-switch-3.html" title="g-switch-3">
+<div class="product-img">
+<img alt="g-switch-3" class="lazyload" data-src="/img/games/g-switch-3.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/cyber-cars-punk-racing.html" title="cyber-cars-punk-racing">
+<div class="product-img">
+<img alt="cyber-cars-punk-racing" class="lazyload" data-src="/img/games/cyber-cars-punk-racing.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/rooftop-snipers.html" title="rooftop-snipers">
+<div class="product-img">
+<img alt="rooftop-snipers" class="lazyload" data-src="/img/games/rooftop-snipers.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/rowdy-wrestling.html" title="rowdy-wrestling">
+<div class="product-img">
+<img alt="rowdy-wrestling" class="lazyload" data-src="/img/games/rowdy-wrestling.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/real-cars-in-city.html" title="real-cars-in-city">
+<div class="product-img">
+<img alt="real-cars-in-city" class="lazyload" data-src="/img/games/real-cars-in-city.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/ludo-multiplayer.html" title="ludo-multiplayer">
+<div class="product-img">
+<img alt="ludo-multiplayer" class="lazyload" data-src="/img/games/ludo-multiplayer.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/two-neon-boxes.html" title="two-neon-boxes">
+<div class="product-img">
+<img alt="two-neon-boxes" class="lazyload" data-src="/img/games/two-neon-boxes.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/bubble-trouble.html" title="bubble-trouble">
+<div class="product-img">
+<img alt="bubble-trouble" class="lazyload" data-src="/img/games/bubble-trouble.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/go-kart-go-ultra.html" title="go-kart-go-ultra">
+<div class="product-img">
+<img alt="go-kart-go-ultra" class="lazyload" data-src="/img/games/go-kart-go-ultra.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/two-ball-3d-dark.html" title="two-ball-3d-dark">
+<div class="product-img">
+<img alt="two-ball-3d-dark" class="lazyload" data-src="/img/games/two-ball-3d-dark.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/tag.html" title="tag">
+<div class="product-img">
+<img alt="tag" class="lazyload" data-src="/img/games/tag.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/boxing-physics-2.html" title="boxing-physics-2">
+<div class="product-img">
+<img alt="boxing-physics-2" class="lazyload" data-src="/img/games/boxing-physics-2.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/volley-random.html" title="volley-random">
+<div class="product-img">
+<img alt="volley-random" class="lazyload" data-src="/img/games/volley-random.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/heads-arena-soccer-all-stars.html" title="heads-arena-soccer-all-stars">
+<div class="product-img">
+<img alt="heads-arena-soccer-all-stars" class="lazyload" data-src="/img/games/heads-arena-soccer-all-stars.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/striker-dummies.html" title="striker-dummies">
+<div class="product-img">
+<img alt="striker-dummies" class="lazyload" data-src="/img/games/striker-dummies.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/battle-wheels.html" title="battle-wheels">
+<div class="product-img">
+<img alt="battle-wheels" class="lazyload" data-src="/img/games/battle-wheels.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/master-chess.html" title="master-chess">
+<div class="product-img">
+<img alt="master-chess" class="lazyload" data-src="/img/games/master-chess.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/dunkers.html" title="dunkers">
+<div class="product-img">
+<img alt="dunkers" class="lazyload" data-src="/img/games/dunkers.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/head-soccer-2023.html" title="head-soccer-2023">
+<div class="product-img">
+<img alt="head-soccer-2023" class="lazyload" data-src="/img/games/head-soccer-2023.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/basket-bros.html" title="basket-bros">
+<div class="product-img">
+<img alt="basket-bros" class="lazyload" data-src="/img/games/basket-bros.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/minibattles.html" title="minibattles">
+<div class="product-img">
+<img alt="minibattles" class="lazyload" data-src="/img/games/minibattles.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/paper-fighter-3d.html" title="paper-fighter-3d">
+<div class="product-img">
+<img alt="paper-fighter-3d" class="lazyload" data-src="/img/games/paper-fighter-3d.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+</div>
+</div>
+</div>
+<!-- PRODUCT AREA END -->
+<!-- FOOTER AREA START -->
+<footer class="ltn__footer-area">
+<div class="footer-top-area section-bg-1 plr--5">
+</div>
+<div class="ltn__copyright-area ltn__copyright-2 section-bg-2 ltn__border-top-2--- plr--5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6 col-12">
+<div class="ltn__copyright-design clearfix">
+<p>monkeymart.one @ <span class="current-year">2024</span>
+<span style="padding-left:15px"><a href="/privacy-policy.html">Privacy Policy</a></span>
+<span style="padding-left:15px"><a href="/terms.html">Terms and Conditions</a></span>
+<span style="padding-left:15px"><a href="/contact.html">Contact Us</a></span>
+</p>
+</div>
+</div>
+<div class="col-md-6 col-12" style="padding-left: 350px;">
+<div class="ltn__copyright-design clearfix">
+<p> Contact Us: mballjames47@gmail.com
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="game-tags" style="text-align: center; padding: 15px 0; color: #FFF5E1;">
+<p>Related Tags: Papa Louie Games, Papa's Restaurant Games, Cooking Games, Time Management Games, Free Online Games, Restaurant Management Games</p>
+</div>
+</div>
+</footer>
+<!-- FOOTER AREA END -->
+</div>
+<!-- Body main wrapper end -->
+<!-- All JS Plugins -->
+<script defer="" src="/js/plugins.js"></script>
+<!-- Main JS -->
+<script defer="" src="/js/main.js"></script>
+<script>
+	const darkModeToggle = document.getElementById('darkModeToggle');
+	const darkModeIcon = document.getElementById('darkModeIcon');
+	const darkModeText = document.getElementById('darkModeText');
+	const body = document.body;
+
+	const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+	if (isDarkMode) {
+		enableDarkMode();
+	}
+
+	darkModeToggle.addEventListener('click', () => {
+		if (body.classList.contains('dark-mode')) {
+			disableDarkMode();
+		} else {
+			enableDarkMode();
+		}
+	});
+
+	function enableDarkMode() {
+		body.classList.add('dark-mode');
+		darkModeIcon.textContent = '☀️';
+		darkModeText.textContent = 'Light Mode';
+		localStorage.setItem('darkMode', 'enabled');
+	}
+
+	function disableDarkMode() {
+		body.classList.remove('dark-mode');
+		darkModeIcon.textContent = '🌙';
+		darkModeText.textContent = 'Dark Mode';
+		localStorage.setItem('darkMode', null);
+	}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Kiểm tra xem lazysizes đã được tải chưa
+    if (typeof lazySizes === 'undefined') {
+        // Nếu chưa, tạo và tải script
+        var lazyScript = document.createElement('script');
+        lazyScript.src = 'https://cdn.jsdelivr.net/npm/lazysizes@5.3/lazysizes.min.js';
+        lazyScript.integrity = 'sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=';
+        lazyScript.crossOrigin = 'anonymous';
+        document.body.appendChild(lazyScript);
+    }
+    
+    // Fallback cho ảnh nếu lazy loading không hoạt động
+    setTimeout(function() {
+        document.querySelectorAll('img.lazyload').forEach(function(img) {
+            if (img.src.includes('data:image/gif') && img.dataset.src) {
+                img.src = img.dataset.src;
+            }
+        });
+    }, 3000);
+});
+</script>
+</body>
+</html>

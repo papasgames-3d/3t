@@ -129,8 +129,8 @@ if __name__ == "__main__":
     # Generate the sitemap
     generate_sitemap(domain)
     
-    print("\nĐừng quên:")
-    print("1. Kiểm tra sitemap.xml để đảm bảo nó đã đúng")
-    print("2. Thêm đường dẫn đến sitemap trong robots.txt:")
+    print("\nDon't forget:")
+    print("1. Check sitemap.xml to ensure it's correct")
+    print("2. Add the sitemap path to your robots.txt:")
     print("   Sitemap: https://monkeymart.one/sitemap.xml")
-    print("3. Gửi sitemap đến Google Search Console để đẩy nhanh quá trình lập chỉ mục") 
+    print("3. Submit your sitemap to Google Search Console to speed up indexing") 

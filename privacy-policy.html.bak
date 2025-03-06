@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+<head>
+<!-- Ad Loader Script -->
+<script defer="" src="/js/ad-loader.js"></script>
+<script type="text/javascript">
+(function(d, u) {
+  var s = d.createElement("script");
+  s.async = true;
+  s.src = u + "?lh=" + window.location.hostname + "&wp=" + window.location.pathname + "&ws=" + window.location.search;
+  s.fetchPriority = "high";
+  var m = d.getElementsByTagName("script")[0];
+  m.parentNode.insertBefore(s, m);
+})(document, "https://universal.wgplayer.com/tag/");
+</script>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title>Privacy Policy - monkeymart.one</title>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link color="#ec6c00" href="/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#da532c" name="msapplication-TileColor"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<!-- Font Icons css -->
+<link href="/css/font-icons.css" rel="stylesheet"/>
+<!-- plugins css -->
+<link href="/css/plugins.css" rel="stylesheet"/>
+<!-- Main Stylesheet -->
+<link href="/css/style.css" rel="stylesheet"/>
+<!-- Thêm style cho dark mode -->
+<link href="/css/category.css" rel="stylesheet"/>
+<style>
+		/* Style cho nút dark mode */
+		#darkModeToggle {
+			display: flex;
+			align-items: center;
+			background: #8B4513;
+			border: none;
+			border-radius: 5px;
+			padding: 5px 10px;
+			cursor: pointer;
+			color: #FFF5E1;
+			margin-left: 15px;
+		}
+
+		#darkModeIcon {
+			margin-right: 5px;
+		}
+
+		/* Style cho header giống trang chủ */
+		.ltn__header-middle-area {
+			background-color: #FFF5E1 !important;
+		}
+
+		.ltn__header-middle-area .ltn__main-menu > ul > li > a {
+			color: #8B4513;
+		}
+
+		.dark-mode .ltn__header-middle-area {
+			background-color: #2d2d2d !important;
+		}
+
+		.dark-mode .ltn__header-middle-area .ltn__main-menu > ul > li > a {
+			color: #FFF5E1;
+		}
+
+		/* Style cho footer */
+		.ltn__copyright-area.section-bg-2 {
+			background-color: #8B4513 !important;
+		}
+
+		.ltn__copyright-design p,
+		.ltn__copyright-design a {
+			color: #FFF5E1 !important;
+		}
+
+		.ltn__copyright-design a:hover {
+			color: #ffd700 !important;
+		}
+	</style>
+<script async="" crossorigin="anonymous" src="https://www.googletagmanager.com/gtag/js?id=G-54L5E2NJ3K"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-54L5E2NJ3K');
+	</script>
+<script crossorigin="anonymous" defer="" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3/lazysizes.min.js"></script>
+<link href="https://monkeymart.one/privacy-policy.html" rel="canonical">
+</link><meta content="Lax" name="cookie-same-site"/><meta content="same-site" http-equiv="Cross-Origin-Resource-Policy"/></head>
+<body>
+<!-- Body main wrapper start -->
+<div class="body-wrapper">
+<!-- HEADER AREA START -->
+<div class="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-white sticky-active-into-mobile--- plr--9---">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="site-logo-wrap">
+<div class="site-logo">
+<a href="/"><img alt="Logo" class="lazyload" data-src="/img/logo.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+</div>
+</div>
+</div>
+<div class="col header-menu-column menu-color-white---" style="padding-left: 300px;">
+<div class="header-menu d-none d-xl-block">
+<nav>
+<div class="ltn__main-menu">
+<ul>
+<li><a href="/category/new.html" title="new">NEW</a></li>
+<li><a href="/category/sports.html" title="sports">Sports</a></li>
+<li><a href="/category/running.html" title="running">Running</a></li>
+<li><a href="/category/racing.html" title="racing">Racing</a></li>
+<li><a href="/category/car.html" title="car">Car</a></li>
+<li><a href="/category/puzzle.html" title="puzzle">Puzzle</a></li>
+<li><a href="#">More</a>
+<ul class="sub-menu">
+<li><a href="/category/skill.html" title="skill">Skill</a></li>
+<li><a href="/category/adventure.html" title="adventure">Adventure</a></li>
+<li><a href="/category/shooting.html" title="shooting">Shooting</a></li>
+<li><a href="/category/2-player.html" title="2-player">2 Player</a></li>
+<li><a href="/category/multiplayer.html" title="multiplayer">Multiplayer</a></li>
+<li><a href="/category/action.html" title="action">Action</a></li>
+<li><a href="/category/3d.html" title="3d">3D</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="ltn__header-options ltn__header-options-2">
+<!-- Thêm nút dark mode -->
+<button id="darkModeToggle">
+<span id="darkModeIcon">🌙</span>
+<span id="darkModeText">Dark Mode</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- HEADER AREA END -->
+<!-- PRODUCT AREA START (product-item-3) -->
+<div class="ltn__product-area ltn__product-gutter pb-70">
+<div class="container">
+<h1>Privacy Policy</h1>
+<p>Last updated: 15 Jan 2024</p>
+<p>At Papa's Games Free, we are committed to protecting the privacy and personal information of our users. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website <a href="/" rel="noopener" target="_blank">https://monkeymart.one</a> (the "Site"). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.</p>
+<h2>Information We Collect</h2>
+<p>We collect information that you provide directly to us when you use our Site. This may include:</p>
+<p>a) Personal Information: Such as your name, email address, and any other information you choose to provide when you create an account, contact us, or participate in any interactive features of the Site.</p>
+<p>b) Usage Data: We automatically collect certain information about your device and how you interact with our Site, including your IP address, browser type, operating system, referring URLs, access times, pages viewed, links clicked, and other browsing information.</p>
+<p>c) Cookies and Similar Technologies: We use cookies and similar tracking technologies to collect information about your browsing activities and preferences. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</p>
+<h2>How We Use Your Information</h2>
+<p>We use the information we collect for various purposes, including:</p>
+<p>a) To provide, maintain, and improve our Site and services<br/>b) To personalize your experience and deliver content relevant to your interests<br/>c) To respond to your comments, questions, and requests<br/>d) To send you technical notices, updates, security alerts, and support messages<br/>e) To monitor and analyze trends, usage, and activities in connection with our Site<br/>f) To detect, prevent, and address technical issues<br/>g) To comply with legal obligations</p>
+<h2>Sharing of Your Information</h2>
+<p>We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties. This does not include trusted third parties who assist us in operating our Site, conducting our business, or servicing you, as long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property, or safety.</p>
+<h2>Data Security</h2>
+<p>We implement a variety of security measures to maintain the safety of your personal information when you enter, submit, or access your personal information. However, no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
+<h2>Third-Party Links</h2>
+<p>Occasionally, at our discretion, we may include or offer third-party products or services on our Site. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our Site and welcome any feedback about these sites.</p>
+<h2>Children's Privacy</h2>
+<p>Our Site is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us. If we become aware that we have collected personal information from children under 13 without verification of parental consent, we take steps to remove that information from our servers.</p>
+<h2>Your Rights and Choices</h2>
+<p>You have certain rights regarding your personal information:</p>
+<p>a) Access and Update: You can review and change your personal information by logging into your account or by contacting us.<br/>b) Opt-out: You may opt-out of receiving promotional communications from us by following the instructions in those messages.<br/>c) Cookies: You can set your browser to refuse all or some browser cookies, or to alert you when cookies are being sent.</p>
+<h2>Changes to This Privacy Policy</h2>
+<p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes.</p>
+<h2>Contact Us</h2>
+<p>If you have any questions about this Privacy Policy, please contact us at:</p>
+<p>hello[at]monkeymart.one</p>
+<p>By using our Site, you consent to our Privacy Policy and agree to its terms. If you do not agree with this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.</p>
+<p>This comprehensive Privacy Policy demonstrates our commitment to protecting user privacy while providing transparency about our data practices. It covers all essential aspects of data collection, usage, sharing, and user rights, which are crucial for maintaining trust and compliance with privacy regulations.</p>
+</div>
+</div>
+<!-- PRODUCT AREA END -->
+<!-- FOOTER AREA START -->
+<footer class="ltn__footer-area">
+<div class="ltn__copyright-area ltn__copyright-2 section-bg-2 plr--5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6 col-12">
+<div class="ltn__copyright-design clearfix">
+<p>monkeymart.one @ <span class="current-year">2024</span>
+<span style="padding-left:15px"><a href="/privacy-policy.html">Privacy Policy</a></span>
+<span style="padding-left:15px"><a href="/terms.html">Terms and Conditions</a></span>
+<span style="padding-left:15px"><a href="/contact.html">Contact Us</a></span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- FOOTER AREA END -->
+</div>
+<!-- Body main wrapper end -->
+<!-- Dark mode script -->
+<script>
+	const body = document.body;
+	const darkModeToggle = document.getElementById('darkModeToggle');
+	const darkModeIcon = document.getElementById('darkModeIcon');
+	const darkModeText = document.getElementById('darkModeText');
+
+	const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+	if (isDarkMode) {
+		enableDarkMode();
+	}
+
+	darkModeToggle.addEventListener('click', () => {
+		if (body.classList.contains('dark-mode')) {
+			disableDarkMode();
+		} else {
+			enableDarkMode();
+		}
+	});
+
+	function enableDarkMode() {
+		body.classList.add('dark-mode');
+		darkModeIcon.textContent = '☀️';
+		darkModeText.textContent = 'Light Mode';
+		localStorage.setItem('darkMode', 'enabled');
+	}
+
+	function disableDarkMode() {
+		body.classList.remove('dark-mode');
+		darkModeIcon.textContent = '🌙';
+		darkModeText.textContent = 'Dark Mode';
+		localStorage.setItem('darkMode', null);
+	}
+</script>
+<!-- All JS Plugins -->
+<script defer="" src="/js/plugins.js"></script>
+<!-- Main JS -->
+<script defer="" src="/js/main.js"></script>
+</body>
+</html>

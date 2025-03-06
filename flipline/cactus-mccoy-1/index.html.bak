@@ -1,0 +1,43 @@
+<html>
+<head>
+<!-- Ad Loader Script -->
+<script defer="" src="/js/ad-loader.js"></script>
+<script type="text/javascript">
+(function(d, u) {
+  var s = d.createElement("script");
+  s.async = true;
+  s.src = u + "?lh=" + window.location.hostname + "&wp=" + window.location.pathname + "&ws=" + window.location.search;
+  s.fetchPriority = "high";
+  var m = d.getElementsByTagName("script")[0];
+  m.parentNode.insertBefore(s, m);
+})(document, "https://universal.wgplayer.com/tag/");
+</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Cactus McCoy and the Curse of Thorns | Monkeymart.one</title>
+<link href="https://monkeymart.one/flipline/cactus-mccoy-1/" rel="canonical"/>
+<meta content="Lax" name="cookie-same-site"/><meta content="same-site" http-equiv="Cross-Origin-Resource-Policy"/></head>
+<body>
+<style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+<div height="100%" id="ruffle" width="100%"></div>
+<script defer="" src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("ruffle");
+        player.id = "player";
+        player.style.width = "100%";
+        player.style.height = "100%";
+        player.config.quality = "best";
+        container.appendChild(player);
+        player.load("cactus-mccoy-1.swf");
+      });
+    </script>
+</body>
+</html>

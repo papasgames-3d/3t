@@ -51,7 +51,135 @@ window.addEventListener('load', function() {
 	</script>
 <script crossorigin="anonymous" defer="" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3/lazysizes.min.js"></script>
 <link href="https://monkeymart.one/go/build-crush.html" rel="canonical"/>
-<meta content="Lax" name="cookie-same-site"/><meta content="same-site" http-equiv="Cross-Origin-Resource-Policy"/><meta content="index, follow" name="robots"/></head>
+<meta content="Lax" name="cookie-same-site"/><meta content="same-site" http-equiv="Cross-Origin-Resource-Policy"/><meta content="index, follow" name="robots"/>
+<style>
+        /* Search Button and Modal Styles */
+        .search-container {
+            position: relative;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .search-button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            color: inherit;
+        }
+        
+        .search-button:hover {
+            opacity: 0.8;
+        }
+        
+        .search-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: auto;
+        }
+        
+        .search-modal-content {
+            background-color: var(--bg-color, #fff);
+            color: var(--text-color, #333);
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        
+        .search-close {
+            color: var(--text-color, #333);
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        #search-input {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: var(--input-bg, #fff);
+            color: var(--input-color, #333);
+        }
+        
+        #search-results {
+            max-height: 50vh;
+            overflow-y: auto;
+            margin-top: 15px;
+        }
+        
+        .search-result-item {
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            background-color: var(--item-bg, #f9f9f9);
+            transition: background-color 0.2s;
+        }
+        
+        .search-result-item:hover {
+            background-color: var(--item-hover, #eaeaea);
+        }
+        
+        .search-result-item a {
+            color: var(--link-color, #0066cc);
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+        
+        /* Dark mode compatibility */
+        [data-theme="dark"] .search-modal-content {
+            background-color: #222;
+            color: #eee;
+        }
+        
+        [data-theme="dark"] #search-input {
+            background-color: #333;
+            color: #eee;
+            border-color: #444;
+        }
+        
+        [data-theme="dark"] .search-result-item {
+            background-color: #333;
+        }
+        
+        [data-theme="dark"] .search-result-item:hover {
+            background-color: #444;
+        }
+        
+        [data-theme="dark"] .search-result-item a {
+            color: #4da6ff;
+        }
+        
+        [data-theme="dark"] .search-close {
+            color: #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .search-modal-content {
+                width: 95%;
+                margin: 15% auto;
+            }
+        }
+        </style>
+</head>
 <body>
 <!-- Body main wrapper start -->
 <div class="body-wrapper">
@@ -111,6 +239,23 @@ window.addEventListener('load', function() {
 </svg>
 <span id="darkModeText">Dark Mode</span>
 </button>
+<div class="search-container">
+<button aria-label="Search" class="search-button" id="search-button">
+<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+</button>
+<div class="search-modal" id="search-modal">
+<div class="search-modal-content">
+<span class="search-close">×</span>
+<h2>Search</h2>
+<input id="search-input" placeholder="Enter search keywords..." type="text"/>
+<div id="search-results"></div>
+</div>
+</div>
+</div>
+
 </div>
 </div>
 </div>
@@ -478,5 +623,152 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 </script>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get elements
+            const searchButton = document.getElementById('search-button');
+            const searchModal = document.getElementById('search-modal');
+            const searchClose = document.querySelector('.search-close');
+            const searchInput = document.getElementById('search-input');
+            const searchResults = document.getElementById('search-results');
+            
+            // Game title and URL mapping
+            let gameData = [];
+            
+            // Function to initialize game data
+            async function initGameData() {
+                try {
+                    // First, try to get data from any existing list items (for homepage)
+                    const gameElements = document.querySelectorAll('.game-item, .game, [class*="game"]');
+                    if (gameElements.length > 0) {
+                        gameElements.forEach(element => {
+                            const link = element.querySelector('a');
+                            const titleElement = element.querySelector('h2, h3, h4, .title, [class*="title"]');
+                            
+                            if (link && titleElement) {
+                                const url = link.getAttribute('href');
+                                const title = titleElement.textContent.trim();
+                                if (url && title) {
+                                    gameData.push({ title, url });
+                                }
+                            }
+                        });
+                    }
+                    
+                    // If we found games on the current page
+                    if (gameData.length > 0) {
+                        console.log(`Found ${gameData.length} games on the current page.`);
+                        return;
+                    }
+                    
+                    // If not, try to fetch game data from the homepage
+                    const response = await fetch('/index.html');
+                    const text = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(text, 'text/html');
+                    
+                    const homepageGames = doc.querySelectorAll('.game-item, .game, [class*="game"]');
+                    homepageGames.forEach(element => {
+                        const link = element.querySelector('a');
+                        const titleElement = element.querySelector('h2, h3, h4, .title, [class*="title"]');
+                        
+                        if (link && titleElement) {
+                            const url = link.getAttribute('href');
+                            const title = titleElement.textContent.trim();
+                            if (url && title) {
+                                gameData.push({ title, url });
+                            }
+                        }
+                    });
+                    
+                    console.log(`Fetched ${gameData.length} games from homepage.`);
+                } catch (error) {
+                    console.error('Error initializing game data:', error);
+                }
+            }
+            
+            // Function to perform search
+            function performSearch(query) {
+                // Clear previous results
+                searchResults.innerHTML = '';
+                
+                if (!query.trim()) {
+                    return;
+                }
+                
+                query = query.toLowerCase();
+                const results = gameData.filter(game => 
+                    game.title.toLowerCase().includes(query)
+                );
+                
+                if (results.length === 0) {
+                    searchResults.innerHTML = '<div class="no-results">No results found.</div>';
+                    return;
+                }
+                
+                // Sort results by relevance
+                results.sort((a, b) => {
+                    const aStartsWith = a.title.toLowerCase().startsWith(query);
+                    const bStartsWith = b.title.toLowerCase().startsWith(query);
+                    
+                    if (aStartsWith && !bStartsWith) return -1;
+                    if (!aStartsWith && bStartsWith) return 1;
+                    return a.title.localeCompare(b.title);
+                });
+                
+                // Display results
+                results.forEach(game => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'search-result-item';
+                    
+                    const link = document.createElement('a');
+                    link.href = game.url;
+                    link.textContent = game.title;
+                    
+                    resultItem.appendChild(link);
+                    searchResults.appendChild(resultItem);
+                });
+            }
+            
+            // Open search modal
+            searchButton.addEventListener('click', function() {
+                searchModal.style.display = 'block';
+                searchInput.focus();
+                
+                // Initialize game data if not already done
+                if (gameData.length === 0) {
+                    initGameData();
+                }
+            });
+            
+            // Close search modal
+            searchClose.addEventListener('click', function() {
+                searchModal.style.display = 'none';
+            });
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', function(event) {
+                if (event.target === searchModal) {
+                    searchModal.style.display = 'none';
+                }
+            });
+            
+            // Handle search input
+            searchInput.addEventListener('input', function() {
+                performSearch(this.value);
+            });
+            
+            // Close with ESC key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && searchModal.style.display === 'block') {
+                    searchModal.style.display = 'none';
+                }
+            });
+            
+            // Initialize game data on page load
+            initGameData();
+        });
+        </script>
 </body>
 </html>
