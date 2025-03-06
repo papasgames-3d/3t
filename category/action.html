@@ -52,7 +52,7 @@
         .search-container {
             position: relative;
             display: inline-block;
-            margin-left: 10px;
+            margin-inline-start: 10px;
         }
         
         .search-button {
@@ -73,10 +73,10 @@
             display: none;
             position: fixed;
             z-index: 9999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
+            inset-inline-start: 0;
+            inset-block-start: 0;
+            inline-size: 100%;
+            block-size: 100%;
             background-color: rgba(0, 0, 0, 0.7);
             overflow: auto;
         }
@@ -87,8 +87,8 @@
             margin: 10% auto;
             padding: 20px;
             border-radius: 8px;
-            width: 80%;
-            max-width: 600px;
+            inline-size: 80%;
+            max-inline-size: 600px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             position: relative;
         }
@@ -96,15 +96,15 @@
         .search-close {
             color: var(--text-color, #333);
             position: absolute;
-            top: 10px;
-            right: 20px;
+            inset-block-start: 10px;
+            inset-inline-end: 20px;
             font-size: 28px;
             font-weight: bold;
             cursor: pointer;
         }
         
         #search-input {
-            width: 100%;
+            inline-size: 100%;
             padding: 12px;
             margin: 15px 0;
             border: 1px solid #ddd;
@@ -115,14 +115,14 @@
         }
         
         #search-results {
-            max-height: 50vh;
+            max-block-size: 50vh;
             overflow-y: auto;
-            margin-top: 15px;
+            margin-block-start: 15px;
         }
         
         .search-result-item {
             padding: 10px;
-            margin-bottom: 8px;
+            margin-block-end: 8px;
             border-radius: 4px;
             background-color: var(--item-bg, #f9f9f9);
             transition: background-color 0.2s;
@@ -167,14 +167,14 @@
             color: #eee;
         }
         
-        @media (max-width: 768px) {
+        @media (max-inline-size: 768px) {
             .search-modal-content {
-                width: 95%;
+                inline-size: 95%;
                 margin: 15% auto;
             }
         }
         </style>
-</head>
+<script src="/html_files_list.js"></script></head>
 <body>
 <!-- Body main wrapper start -->
 <div class="body-wrapper">
@@ -190,7 +190,7 @@
 </div>
 </div>
 </div>
-<div class="col header-menu-column menu-color-white---" style="padding-left: 300px;">
+<div class="col header-menu-column menu-color-white---" style="padding-inline-start: 300px;">
 <div class="header-menu d-none d-xl-block">
 <nav>
 <div class="ltn__main-menu">
@@ -226,9 +226,9 @@
 </div>
 </div>
 <div class="ltn__header-options ltn__header-options-2">
-<div class="dark-mode-toggle" style="margin-right: 20px;">
+<div class="dark-mode-toggle" style="margin-inline-end: 20px;">
 <button id="darkModeToggle" style="background: #8B4513; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer; display: flex; align-items: center;">
-<span id="darkModeIcon" style="color: #FFF5E1; margin-right: 5px;">🌙</span>
+<span id="darkModeIcon" style="color: #FFF5E1; margin-inline-end: 5px;">🌙</span>
 <span id="darkModeText" style="color: #FFF5E1; font-size: 14px;">Dark Mode</span>
 </button>
 </div>
@@ -248,7 +248,6 @@
 </div>
 </div>
 </div>
-
 </div>
 </div>
 </div>
@@ -1206,13 +1205,13 @@
 <div class="col-md-6 col-12">
 <div class="ltn__copyright-design clearfix">
 <p>Monkeymart.one @ <span class="current-year">2024</span>
-<span style="padding-left:15px"><a href="/privacy-policy.html">Privacy Policy</a></span>
-<span style="padding-left:15px"><a href="/terms.html">Terms and Conditions</a></span>
-<span style="padding-left:15px"><a href="/contact.html">Contact Us</a></span>
+<span style="padding-inline-start:15px"><a href="/privacy-policy.html">Privacy Policy</a></span>
+<span style="padding-inline-start:15px"><a href="/terms.html">Terms and Conditions</a></span>
+<span style="padding-inline-start:15px"><a href="/contact.html">Contact Us</a></span>
 </p>
 </div>
 </div>
-<div class="col-md-6 col-12" style="padding-left: 350px;">
+<div class="col-md-6 col-12" style="padding-inline-start: 350px;">
 <div class="ltn__copyright-design clearfix">
 <p> Contact Us: mballjames47@gmail.com
 </p>
@@ -1284,7 +1283,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 3000);
 });
 </script>
-
 <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Get elements

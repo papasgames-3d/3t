@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+<head>
+<!-- Ad Loader Script -->
+<script defer="" src="/js/ad-loader.js"></script>
+<script type="text/javascript">
+(function(d, u) {
+  var s = d.createElement("script");
+  s.async = true;
+  s.src = u + "?lh=" + window.location.hostname + "&wp=" + window.location.pathname + "&ws=" + window.location.search;
+  s.fetchPriority = "high";
+  var m = d.getElementsByTagName("script")[0];
+  m.parentNode.insertBefore(s, m);
+})(document, "https://universal.wgplayer.com/tag/");
+</script>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title>Fighting Games - monkeymart.one</title>
+<meta content="Play the best fighting games online for free" name="description"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link color="#ec6c00" href="/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#da532c" name="msapplication-TileColor"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<!-- Font Icons css -->
+<link href="/css/font-icons.css" rel="stylesheet"/>
+<!-- plugins css -->
+<link href="/css/plugins.css" rel="stylesheet"/>
+<!-- Main Stylesheet -->
+<link href="/css/style.css" rel="stylesheet"/>
+<!-- Responsive css -->
+<link href="/css/responsive.css" rel="stylesheet"/>
+<!-- Category Pages Stylesheet -->
+<link href="/css/combined-styles.css" rel="stylesheet"/>
+<script async="" crossorigin="anonymous" src="https://www.googletagmanager.com/gtag/js?id=G-54L5E2NJ3K"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-54L5E2NJ3K');
+	</script>
+<link href="https://monkeymart.one/category/fighting.html" rel="canonical"/>
+<meta content="Lax" name="cookie-same-site"/><meta content="same-site" http-equiv="Cross-Origin-Resource-Policy"/>
+<style>
+        /* Search Button and Modal Styles */
+        .search-container {
+            position: relative;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .search-button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            color: inherit;
+        }
+        
+        .search-button:hover {
+            opacity: 0.8;
+        }
+        
+        .search-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: auto;
+        }
+        
+        .search-modal-content {
+            background-color: var(--bg-color, #fff);
+            color: var(--text-color, #333);
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        
+        .search-close {
+            color: var(--text-color, #333);
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        #search-input {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: var(--input-bg, #fff);
+            color: var(--input-color, #333);
+        }
+        
+        #search-results {
+            max-height: 50vh;
+            overflow-y: auto;
+            margin-top: 15px;
+        }
+        
+        .search-result-item {
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            background-color: var(--item-bg, #f9f9f9);
+            transition: background-color 0.2s;
+        }
+        
+        .search-result-item:hover {
+            background-color: var(--item-hover, #eaeaea);
+        }
+        
+        .search-result-item a {
+            color: var(--link-color, #0066cc);
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+        
+        /* Dark mode compatibility */
+        [data-theme="dark"] .search-modal-content {
+            background-color: #222;
+            color: #eee;
+        }
+        
+        [data-theme="dark"] #search-input {
+            background-color: #333;
+            color: #eee;
+            border-color: #444;
+        }
+        
+        [data-theme="dark"] .search-result-item {
+            background-color: #333;
+        }
+        
+        [data-theme="dark"] .search-result-item:hover {
+            background-color: #444;
+        }
+        
+        [data-theme="dark"] .search-result-item a {
+            color: #4da6ff;
+        }
+        
+        [data-theme="dark"] .search-close {
+            color: #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .search-modal-content {
+                width: 95%;
+                margin: 15% auto;
+            }
+        }
+        </style>
+</head>
+<body>
+<!-- Body main wrapper start -->
+<div class="body-wrapper">
+<!-- HEADER AREA START (header-5) -->
+<!-- ltn__header-middle-area start -->
+<div class="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-white sticky-active-into-mobile--- plr--9---">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="site-logo-wrap">
+<div class="site-logo">
+<a href="/"><img alt="Papa's Games logo" class="lazyload" data-src="/../img/logo.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+</div>
+</div>
+</div>
+<div class="col header-menu-column menu-color-white---" style="padding-left: 300px;">
+<div class="header-menu d-none d-xl-block">
+<nav>
+<div class="ltn__main-menu">
+<ul>
+<li><a href="/category/new.html" title="new">NEW</a></li>
+<li><a href="/category/hot-game.html" title="hot games">Hot Games</a></li>
+<li><a href="/category/papa-game.html" title="papa games">Papa Games</a></li>
+<li><a href="/category/racing.html" title="racing">Racing</a></li>
+<li><a href="/category/car.html" title="car">Car</a></li>
+<li><a href="/category/puzzle.html" title="puzzle">Puzzle</a></li>
+<li><a href="#">More</a>
+<ul class="sub-menu">
+<li><a href="/category/sports.html">Sports</a></li>
+<li><a href="/category/running.html">Running</a></li>
+<li><a href="/category/skill.html">Skill</a></li>
+<li><a href="/category/stickman.html">Stickman</a></li>
+<li><a href="/category/adventure.html">Adventure</a></li>
+<li><a href="/category/shooting.html">Shooting</a></li>
+<li><a href="/category/fighting.html">Fighting</a></li>
+<li><a href="/category/2-player.html">2 Player</a></li>
+<li><a href="/category/multiplayer.html">Multiplayer</a></li>
+<li><a href="/category/action.html">Action</a></li>
+<li><a href="/category/3d.html">3D</a></li>
+<li><a href="/category/car.html">Car</a></li>
+<li><a href="/category/moto.html">Moto</a></li>
+<li><a href="/category/idle.html">Idle</a></li>
+<li><a href="/category/fnf.html">FNF</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="ltn__header-options ltn__header-options-2">
+<div class="dark-mode-toggle" style="margin-right: 20px;">
+<button id="darkModeToggle" style="background: #8B4513; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer; display: flex; align-items: center;">
+<span id="darkModeIcon" style="color: #FFF5E1; margin-right: 5px;">🌙</span>
+<span id="darkModeText" style="color: #FFF5E1; font-size: 14px;">Dark Mode</span>
+</button>
+</div>
+<div class="search-container">
+<button aria-label="Search" class="search-button" id="search-button">
+<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+</button>
+<div class="search-modal" id="search-modal">
+<div class="search-modal-content">
+<span class="search-close">×</span>
+<h2>Search</h2>
+<input id="search-input" placeholder="Enter search keywords..." type="text"/>
+<div id="search-results"></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- ltn__header-middle-area end -->
+<!-- PRODUCT AREA START (product-item-3) -->
+<div class="ltn__product-area ltn__product-gutter pb-70">
+<div class="container">
+<div class="section-title-area ltn__section-title-1 text-center">
+<h1 class="section-title">Fighting Games</h1>
+</div>
+<div class="ad-horizontal">
+<div class="ad-title">Advertisement</div>
+<div class="ad-slot">
+</div>
+</div>
+<div class="row ltn__tab-product-slider-one-active--- slick-arrow-1">
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/among-us.html" title="among-us">
+<div class="product-img">
+<img alt="among-us" class="lazyload" data-src="/img/games/among-us.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/maze-path-of-light.html" title="maze-path-of-light">
+<div class="product-img">
+<img alt="maze-path-of-light" class="lazyload" data-src="/img/games/maze-path-of-light.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/where-is-my-cat.html" title="where-is-my-cat">
+<div class="product-img">
+<img alt="where-is-my-cat" class="lazyload" data-src="/img/games/where-is-my-cat.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/brain-for-monster-truck.html" title="brain-for-monster-truck">
+<div class="product-img">
+<img alt="brain-for-monster-truck" class="lazyload" data-src="/img/games/brain-for-monster-truck.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/infinity-loop.html" title="infinity-loop">
+<div class="product-img">
+<img alt="infinity-loop" class="lazyload" data-src="/img/games/infinity-loop.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/wordle-unlimited.html" title="wordle-unlimited">
+<div class="product-img">
+<img alt="wordle-unlimited" class="lazyload" data-src="/img/games/wordle-unlimited.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/2048-cupcakes.html" title="2048-cupcakes">
+<div class="product-img">
+<img alt="2048-cupcakes" class="lazyload" data-src="/img/games/2048-cupcakes.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/word-city-uncrossed.html" title="word-city-uncrossed">
+<div class="product-img">
+<img alt="word-city-uncrossed" class="lazyload" data-src="/img/games/word-city-uncrossed.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/pop-it-master.html" title="pop-it-master">
+<div class="product-img">
+<img alt="pop-it-master" class="lazyload" data-src="/img/games/pop-it-master.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/11-11.html" title="11-11">
+<div class="product-img">
+<img alt="11-11" class="lazyload" data-src="/img/games/11-11.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/flash-tetris.html" title="flash-tetris">
+<div class="product-img">
+<img alt="flash-tetris" class="lazyload" data-src="/img/games/flash-tetris.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/roly-poly-monsters.html" title="roly-poly-monsters">
+<div class="product-img">
+<img alt="roly-poly-monsters" class="lazyload" data-src="/img/games/roly-poly-monsters.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/tetris-flash.html" title="tetris-flash">
+<div class="product-img">
+<img alt="tetris-flash" class="lazyload" data-src="/img/games/tetris-flash.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/recoil.html" title="recoil">
+<div class="product-img">
+<img alt="recoil" class="lazyload" data-src="/img/games/recoil.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/there-is-no-game.html" title="there-is-no-game">
+<div class="product-img">
+<img alt="there-is-no-game" class="lazyload" data-src="/img/games/there-is-no-game.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/riddle-school.html" title="riddle-school">
+<div class="product-img">
+<img alt="riddle-school" class="lazyload" data-src="/img/games/riddle-school.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/2048.html" title="2048">
+<div class="product-img">
+<img alt="2048" class="lazyload" data-src="/img/games/2048.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/brain-test-3-tricky-quests.html" title="brain-test-3-tricky-quests">
+<div class="product-img">
+<img alt="brain-test-3-tricky-quests" class="lazyload" data-src="/img/games/brain-test-3-tricky-quests.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/super-hexbee-merger.html" title="super-hexbee-merger">
+<div class="product-img">
+<img alt="super-hexbee-merger" class="lazyload" data-src="/img/games/super-hexbee-merger.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/icy-purple-head-3.html" title="icy-purple-head-3">
+<div class="product-img">
+<img alt="icy-purple-head-3" class="lazyload" data-src="/img/games/icy-purple-head-3.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/block-the-pig.html" title="block-the-pig">
+<div class="product-img">
+<img alt="block-the-pig" class="lazyload" data-src="/img/games/block-the-pig.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/bloxorz.html" title="bloxorz">
+<div class="product-img">
+<img alt="bloxorz" class="lazyload" data-src="/img/games/bloxorz.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/bubble-shooter.html" title="bubble-shooter">
+<div class="product-img">
+<img alt="bubble-shooter" class="lazyload" data-src="/img/games/bubble-shooter.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/marble-dash.html" title="marble-dash">
+<div class="product-img">
+<img alt="marble-dash" class="lazyload" data-src="/img/games/marble-dash.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/cat-trap.html" title="cat-trap">
+<div class="product-img">
+<img alt="cat-trap" class="lazyload" data-src="/img/games/cat-trap.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/arithmetica.html" title="arithmetica">
+<div class="product-img">
+<img alt="arithmetica" class="lazyload" data-src="/img/games/arithmetica.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/panda-bubble-shooter.html" title="panda-bubble-shooter">
+<div class="product-img">
+<img alt="panda-bubble-shooter" class="lazyload" data-src="/img/games/panda-bubble-shooter.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/2048-multitask.html" title="2048-multitask">
+<div class="product-img">
+<img alt="2048-multitask" class="lazyload" data-src="/img/games/2048-multitask.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/plactions.html" title="plactions">
+<div class="product-img">
+<img alt="plactions" class="lazyload" data-src="/img/games/plactions.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/free-the-key.html" title="free-the-key">
+<div class="product-img">
+<img alt="free-the-key" class="lazyload" data-src="/img/games/free-the-key.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/minesweeper.html" title="minesweeper">
+<div class="product-img">
+<img alt="minesweeper" class="lazyload" data-src="/img/games/minesweeper.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/impossible-tic-tac-toe.html" title="impossible-tic-tac-toe">
+<div class="product-img">
+<img alt="impossible-tic-tac-toe" class="lazyload" data-src="/img/games/impossible-tic-tac-toe.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/jumping-shell.html" title="jumping-shell">
+<div class="product-img">
+<img alt="jumping-shell" class="lazyload" data-src="/img/games/jumping-shell.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/stupid-zombies.html" title="stupid-zombies">
+<div class="product-img">
+<img alt="stupid-zombies" class="lazyload" data-src="/img/games/stupid-zombies.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/wizard-mike.html" title="wizard-mike">
+<div class="product-img">
+<img alt="wizard-mike" class="lazyload" data-src="/img/games/wizard-mike.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/brain-test-tricky-puzzles.html" title="brain-test-tricky-puzzles">
+<div class="product-img">
+<img alt="brain-test-tricky-puzzles" class="lazyload" data-src="/img/games/brain-test-tricky-puzzles.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/mosaic-puzzle-art.html" title="mosaic-puzzle-art">
+<div class="product-img">
+<img alt="mosaic-puzzle-art" class="lazyload" data-src="/img/games/mosaic-puzzle-art.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/heart-star-html5.html" title="heart-star-html5">
+<div class="product-img">
+<img alt="heart-star-html5" class="lazyload" data-src="/img/games/heart-star-html5.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/maze-planet-3d.html" title="maze-planet-3d">
+<div class="product-img">
+<img alt="maze-planet-3d" class="lazyload" data-src="/img/games/maze-planet-3d.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/who-is.html" title="who-is">
+<div class="product-img">
+<img alt="who-is" class="lazyload" data-src="/img/games/who-is.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/water-color-sort.html" title="water-color-sort">
+<div class="product-img">
+<img alt="water-color-sort" class="lazyload" data-src="/img/games/water-color-sort.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/wood-blocks-3d.html" title="wood-blocks-3d">
+<div class="product-img">
+<img alt="wood-blocks-3d" class="lazyload" data-src="/img/games/wood-blocks-3d.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/detective-loupe-puzzle.html" title="detective-loupe-puzzle">
+<div class="product-img">
+<img alt="detective-loupe-puzzle" class="lazyload" data-src="/img/games/detective-loupe-puzzle.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/cubes-king.html" title="cubes-king">
+<div class="product-img">
+<img alt="cubes-king" class="lazyload" data-src="/img/games/cubes-king.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/brain-test-2-tricky-stories.html" title="brain-test-2-tricky-stories">
+<div class="product-img">
+<img alt="brain-test-2-tricky-stories" class="lazyload" data-src="/img/games/brain-test-2-tricky-stories.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/words-search-classic-edition.html" title="words-search-classic-edition">
+<div class="product-img">
+<img alt="words-search-classic-edition" class="lazyload" data-src="/img/games/words-search-classic-edition.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/energy.html" title="energy">
+<div class="product-img">
+<img alt="energy" class="lazyload" data-src="/img/games/energy.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/factory-balls-forever.html" title="factory-balls-forever">
+<div class="product-img">
+<img alt="factory-balls-forever" class="lazyload" data-src="/img/games/factory-balls-forever.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+<!-- ltn__product-item -->
+<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+<a href="/go/word-city-crossed.html" title="word-city-crossed">
+<div class="product-img">
+<img alt="word-city-crossed" class="lazyload" data-src="/img/games/word-city-crossed.png" decoding="async" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+<div class="product-badge">
+</div>
+</div>
+<div class="ltn__product-item ltn__product-item-3 text-left">
+</div>
+</a>
+</div>
+<!-- ltn__product-item -->
+</div>
+</div>
+</div>
+<!-- PRODUCT AREA END -->
+<!-- FOOTER AREA START -->
+<footer class="ltn__footer-area">
+<div class="footer-top-area section-bg-1 plr--5">
+</div>
+<div class="ltn__copyright-area ltn__copyright-2 section-bg-2 ltn__border-top-2--- plr--5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6 col-12">
+<div class="ltn__copyright-design clearfix">
+<p>Monkeymart.one @ <span class="current-year">2024</span>
+<span style="padding-left:15px"><a href="/privacy-policy.html">Privacy Policy</a></span>
+<span style="padding-left:15px"><a href="/terms.html">Terms and Conditions</a></span>
+<span style="padding-left:15px"><a href="/contact.html">Contact Us</a></span>
+</p>
+</div>
+</div>
+<div class="col-md-6 col-12" style="padding-left: 350px;">
+<div class="ltn__copyright-design clearfix">
+<p> Contact Us: mballjames47@gmail.com
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- FOOTER AREA END -->
+</div>
+<!-- Body main wrapper end -->
+<!-- All JS Plugins -->
+<script defer="" src="/js/plugins.js"></script>
+<!-- Main JS -->
+<script defer="" src="/js/main.js"></script>
+<script>
+	const darkModeToggle = document.getElementById('darkModeToggle');
+	const darkModeIcon = document.getElementById('darkModeIcon');
+	const darkModeText = document.getElementById('darkModeText');
+	const body = document.body;
+
+	const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+	if (isDarkMode) {
+		enableDarkMode();
+	}
+
+	darkModeToggle.addEventListener('click', () => {
+		if (body.classList.contains('dark-mode')) {
+			disableDarkMode();
+		} else {
+			enableDarkMode();
+		}
+	});
+
+	function enableDarkMode() {
+		body.classList.add('dark-mode');
+		darkModeIcon.textContent = '☀️';
+		darkModeText.textContent = 'Light Mode';
+		localStorage.setItem('darkMode', 'enabled');
+	}
+
+	function disableDarkMode() {
+		body.classList.remove('dark-mode');
+		darkModeIcon.textContent = '🌙';
+		darkModeText.textContent = 'Dark Mode';
+		localStorage.setItem('darkMode', null);
+	}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Kiểm tra xem lazysizes đã được tải chưa
+    if (typeof lazySizes === 'undefined') {
+        // Nếu chưa, tạo và tải script
+        var lazyScript = document.createElement('script');
+        lazyScript.src = 'https://cdn.jsdelivr.net/npm/lazysizes@5.3/lazysizes.min.js';
+        lazyScript.integrity = 'sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=';
+        lazyScript.crossOrigin = 'anonymous';
+        document.body.appendChild(lazyScript);
+    }
+    
+    // Fallback cho ảnh nếu lazy loading không hoạt động
+    setTimeout(function() {
+        document.querySelectorAll('img.lazyload').forEach(function(img) {
+            if (img.src.includes('data:image/gif') && img.dataset.src) {
+                img.src = img.dataset.src;
+            }
+        });
+    }, 3000);
+});
+</script>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get elements
+            const searchButton = document.getElementById('search-button');
+            const searchModal = document.getElementById('search-modal');
+            const searchClose = document.querySelector('.search-close');
+            const searchInput = document.getElementById('search-input');
+            const searchResults = document.getElementById('search-results');
+            
+            // Game title and URL mapping
+            let gameData = [];
+            
+            // Function to initialize game data
+            async function initGameData() {
+                try {
+                    // First, try to get data from any existing list items (for homepage)
+                    const gameElements = document.querySelectorAll('.game-item, .game, [class*="game"]');
+                    if (gameElements.length > 0) {
+                        gameElements.forEach(element => {
+                            const link = element.querySelector('a');
+                            const titleElement = element.querySelector('h2, h3, h4, .title, [class*="title"]');
+                            
+                            if (link && titleElement) {
+                                const url = link.getAttribute('href');
+                                const title = titleElement.textContent.trim();
+                                if (url && title) {
+                                    gameData.push({ title, url });
+                                }
+                            }
+                        });
+                    }
+                    
+                    // If we found games on the current page
+                    if (gameData.length > 0) {
+                        console.log(`Found ${gameData.length} games on the current page.`);
+                        return;
+                    }
+                    
+                    // If not, try to fetch game data from the homepage
+                    const response = await fetch('/index.html');
+                    const text = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(text, 'text/html');
+                    
+                    const homepageGames = doc.querySelectorAll('.game-item, .game, [class*="game"]');
+                    homepageGames.forEach(element => {
+                        const link = element.querySelector('a');
+                        const titleElement = element.querySelector('h2, h3, h4, .title, [class*="title"]');
+                        
+                        if (link && titleElement) {
+                            const url = link.getAttribute('href');
+                            const title = titleElement.textContent.trim();
+                            if (url && title) {
+                                gameData.push({ title, url });
+                            }
+                        }
+                    });
+                    
+                    console.log(`Fetched ${gameData.length} games from homepage.`);
+                } catch (error) {
+                    console.error('Error initializing game data:', error);
+                }
+            }
+            
+            // Function to perform search
+            function performSearch(query) {
+                // Clear previous results
+                searchResults.innerHTML = '';
+                
+                if (!query.trim()) {
+                    return;
+                }
+                
+                query = query.toLowerCase();
+                const results = gameData.filter(game => 
+                    game.title.toLowerCase().includes(query)
+                );
+                
+                if (results.length === 0) {
+                    searchResults.innerHTML = '<div class="no-results">No results found.</div>';
+                    return;
+                }
+                
+                // Sort results by relevance
+                results.sort((a, b) => {
+                    const aStartsWith = a.title.toLowerCase().startsWith(query);
+                    const bStartsWith = b.title.toLowerCase().startsWith(query);
+                    
+                    if (aStartsWith && !bStartsWith) return -1;
+                    if (!aStartsWith && bStartsWith) return 1;
+                    return a.title.localeCompare(b.title);
+                });
+                
+                // Display results
+                results.forEach(game => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'search-result-item';
+                    
+                    const link = document.createElement('a');
+                    link.href = game.url;
+                    link.textContent = game.title;
+                    
+                    resultItem.appendChild(link);
+                    searchResults.appendChild(resultItem);
+                });
+            }
+            
+            // Open search modal
+            searchButton.addEventListener('click', function() {
+                searchModal.style.display = 'block';
+                searchInput.focus();
+                
+                // Initialize game data if not already done
+                if (gameData.length === 0) {
+                    initGameData();
+                }
+            });
+            
+            // Close search modal
+            searchClose.addEventListener('click', function() {
+                searchModal.style.display = 'none';
+            });
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', function(event) {
+                if (event.target === searchModal) {
+                    searchModal.style.display = 'none';
+                }
+            });
+            
+            // Handle search input
+            searchInput.addEventListener('input', function() {
+                performSearch(this.value);
+            });
+            
+            // Close with ESC key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && searchModal.style.display === 'block') {
+                    searchModal.style.display = 'none';
+                }
+            });
+            
+            // Initialize game data on page load
+            initGameData();
+        });
+        </script>
+</body>
+</html>

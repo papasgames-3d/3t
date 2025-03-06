@@ -1,0 +1,126 @@
+<!-- Cấu trúc schema.org tối ưu cho index.html -->
+<!-- Bạn nên xóa tất cả các schema.org và thẻ Open Graph/Twitter hiện tại, thay thế bằng đoạn code dưới đây -->
+
+<!-- Thẻ Open Graph và Twitter Card tối ưu -->
+<meta property="og:title" content="Monkey Mart - Build Your Own Supermarket Empire Today!" />
+<meta property="og:description" content="Dive into Monkey Mart, the addictive supermarket management game. Stock shelves, serve customers, and expand your retail empire! Play now for free!" />
+<meta property="og:image" content="https://monkeymart.one/img/games/monkey-mart.png" />
+<meta property="og:url" content="https://monkeymart.one/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="monkeymart.one" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Monkey Mart - Build Your Own Supermarket Empire Today!" />
+<meta name="twitter:description" content="Dive into Monkey Mart, the addictive supermarket management game. Stock shelves, serve customers, and expand your retail empire! Play now for free!" />
+<meta name="twitter:image" content="https://monkeymart.one/img/games/monkey-mart.png" />
+
+<!-- Schema.org tối ưu - Kết hợp tất cả schema vào một đoạn duy nhất -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://monkeymart.one/#website",
+      "name": "Monkey Mart - Free Online Game",
+      "url": "https://monkeymart.one",
+      "headline": "Monkey Mart - Free Online Management Game",
+      "description": "Play Monkey Mart, the best free online supermarket management game. Build and run your own store in this addictive idle tycoon game.",
+      "keywords": "monkey mart, monkey mart game, monkey mart unblocked, supermarket game, idle tycoon game",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint", 
+          "urlTemplate": "https://monkeymart.one/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://monkeymart.one/#organization",
+        "name": "monkeymart.one",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://monkeymart.one/img/logo.png",
+          "width": "180",
+          "height": "60"
+        }
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "VideoGame",
+      "@id": "https://monkeymart.one/#monkeymart",
+      "name": "Monkey Mart",
+      "description": "Run your own supermarket in Monkey Mart, the addictive idle tycoon game! Stock shelves, serve customers, and build your retail empire in this popular management simulation.",
+      "url": "https://monkeymart.one/",
+      "image": "https://monkeymart.one/img/games/monkey-mart.png",
+      "screenshot": "https://monkeymart.one/img/games/monkey-mart.png",
+      "operatingSystem": "Windows, macOS, Android, iOS, Web Browser",
+      "applicationCategory": "Game, Browser Game",
+      "gamePlatform": "Web Browser",
+      "genre": ["Management", "Simulation", "Idle", "Tycoon"],
+      "playMode": "SinglePlayer",
+      "inLanguage": "en-US",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "@id": "https://monkeymart.one/#organization"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://monkeymart.one/#gamelist",
+      "name": "Popular Free Online Games",
+      "description": "Popular free online games available on monkeymart.one",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "VideoGame",
+            "@id": "https://monkeymart.one/#monkeymart",
+            "name": "Monkey Mart",
+            "url": "https://monkeymart.one/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "VideoGame",
+            "name": "Slope Game",
+            "description": "Test your reflexes in Slope, a fast-paced 3D ball runner game. Navigate a ball down an endless slope while avoiding obstacles!",
+            "url": "https://monkeymart.one/go/slope.html",
+            "image": "https://monkeymart.one/img/games/slope.png",
+            "playMode": "SinglePlayer",
+            "applicationCategory": "Game",
+            "genre": "Action",
+            "gamePlatform": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://monkeymart.one/#breadcrumb",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://monkeymart.one"
+      }]
+    }
+  ]
+}
+</script> 
