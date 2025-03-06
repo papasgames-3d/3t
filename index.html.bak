@@ -523,10 +523,7 @@ window.addEventListener('load', function() {
 <script defer="" src="/js/non-critical.js"></script>
 <link href="https://monkeymart.one/" hreflang="en" rel="alternate"/>
 <link href="https://monkeymart.one/" hreflang="x-default" rel="alternate"/>
-<meta content="Lax" name="cookie-same-site"/>
-<meta content="same-site" http-equiv="Cross-Origin-Resource-Policy"/>
-<meta content="index, follow" name="robots"/>
-</head>
+</meta></meta></meta><meta content="Lax" name="cookie-same-site"/><meta content="same-site" http-equiv="Cross-Origin-Resource-Policy"/><meta content="index, follow" name="robots"/></head>
 <body>
 <!-- Body main wrapper start -->
 <div class="body-wrapper">
