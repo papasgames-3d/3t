@@ -1,4 +1,0 @@
-Contact: mailto:contact@monkeymart.one
-Expires: 2025-12-31T23:59:59.000Z
-Preferred-Languages: en, vi
-Canonical: https://monkeymart.one/.well-known/security.txt 
