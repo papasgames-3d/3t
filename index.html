@@ -101,60 +101,17 @@
 	</div>
 	<!-- ltn__header-middle-area end -->
 	<!-- HEADER AREA END -->
-	 <!-- GAME FRAME AREA START -->
-<div class="ltn__product-area ltn__product-gutter pb-70">
-	<div class="container">
-	<section class="game-wrapper" id="game">
-	<div class="game-container" style="margin-top: 15px;">
-	<div data-url="https://papasgames3d.com/MonkeyMart/" id="game-arena">
-	<iframe allowfullscreen="" data-src="https://papasgames3d.com/MonkeyMart/" frameborder="0" height="100%" scrolling="none" title="Monkey Mart" width="100%"></iframe>
-	</div>
-	</div>
-	<div id="game-controls">
-	<a class="func-btn" href="javascript:openFullscreen();" id="fullscreen-btn" style="background: #8B4513; color: #FFF5E1;" title="Full Screen">
-	<svg class="bi bi-arrows-fullscreen" fill="currentColor" height="23" viewbox="0 0 16 16" width="23" xmlns="http://www.w3.org/2000/svg">
-	<path d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z" fill-rule="evenodd"></path>
-	</svg>
-	</a>
-	</div>
-	</section>
-	<script>
-					function openFullscreen() {
-						let elem = document.getElementById("game-arena");
-						if (elem.requestFullscreen) {
-							elem.requestFullscreen();
-						} else if (elem.webkitRequestFullscreen) { /* Safari */
-							elem.webkitRequestFullscreen();
-						} else if (elem.msRequestFullscreen) { /* IE11 */
-							elem.msRequestFullscreen();
-						}
-					}
-	
-					// Load game iframe after page loads or user interaction
-					document.addEventListener('DOMContentLoaded', function() {
-						// Delayed loading to allow ads to load first
-						setTimeout(function() {
-							loadGameIframe();
-						}, 100); // Adjust timing as needed
-						
-						// Alternatively, load on first user interaction
-						document.addEventListener('click', function loadOnFirstInteraction() {
-							loadGameIframe();
-							document.removeEventListener('click', loadOnFirstInteraction);
-						}, {once: true});
-					});
-					
-					function loadGameIframe() {
-						var gameIframe = document.querySelector('iframe[data-src]');
-						if (gameIframe && !gameIframe.src) {
-							gameIframe.src = gameIframe.getAttribute('data-src');
-							console.log('Game iframe loaded');
-						}
-					}
-				</script>
-	</div>
-	</div>
-	<!-- GAME FRAME AREA END -->
+	<!-- GAME FRAME AREA START -->  
+<div class="ltn__product-area ltn__product-gutter pb-70">  
+    <div class="container">  
+        <div style="margin-top: 15px; text-align: center;">  
+            <a href="https://monkeymart.one/go/monkey-mart.html" style="display: inline-block; width: 50%;">  
+                <img src="/img/monkey-mart-play-min.jpg" alt="Play Monkey Mart - Free Online Management Game - Run Your Own Supermarket" style="width: 100%; height: auto;">  
+            </a>  
+        </div>  
+    </div>  
+</div>  
+<!-- GAME FRAME AREA END -->  
 	
 	<!-- PRODUCT AREA START (product-item-3) -->
 	<div class="ltn__product-area ltn__product-gutter pb-70">
