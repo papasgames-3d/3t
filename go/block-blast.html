@@ -182,7 +182,7 @@
 </div>
 </div>
 <div class="col header-menu-column menu-color-white---" style="padding-left: 300px;">
-<div class="header-menu d-none d-xl-block">
+<div class="header-menu d-none d-sm-block">
 <nav>
 <div class="ltn__main-menu">
 <ul>
@@ -262,10 +262,10 @@
 <div class="container">
 <section class="game-wrapper" id="game">
 <div class="game-container">
-<div data-url="https://papasgames3d.com/block-blast/" id="game-arena"><iframe allowfullscreen="" frameborder="0" height="100%" scrolling="none" src="https://papasgames3d.com/block-blast/" width="100%"></iframe></div>
+<div data-url="https://papasgames3d.com/block-blast/" id="game-arena"><iframe allowfullscreen="" frameborder="0" height="100%" id="game-iframe" scrolling="none" src="https://papasgames3d.com/block-blast/" width="100%"></iframe></div>
 </div>
 <div id="game-controls">
-<a class="func-btn" href="javascript:openFullscreen();" id="fullscreen-btn" title="Full Screen">
+<a class="func-btn" href="javascript:void(0);" id="fullscreen-btn" onclick="openFullscreen()" title="Full Screen">
 <svg class="bi bi-arrows-fullscreen" fill="currentColor" height="23" viewbox="0 0 16 16" width="23" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707m0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 0 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707m-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707" fill-rule="evenodd"></path>
 </svg>
@@ -744,5 +744,48 @@
             initGameData();
         });
         </script>
+<script>  
+function openFullscreen() {  
+    try {  
+        const iframe = document.getElementById('game-iframe');  
+        if (!iframe) {  
+            console.error('Iframe not found');  
+            return;  
+        }  
+
+        if (iframe.requestFullscreen) {  
+            iframe.requestFullscreen();  
+        } else if (iframe.webkitRequestFullscreen) {  
+            iframe.webkitRequestFullscreen();  
+        } else if (iframe.msRequestFullscreen) {  
+            iframe.msRequestFullscreen();  
+        } else if (iframe.mozRequestFullScreen) {  
+            iframe.mozRequestFullScreen();  
+        }  
+    } catch (error) {  
+        console.error('Error entering fullscreen:', error);  
+    }  
+}  
+
+function shareOnFacebook() {  
+    const url = encodeURIComponent(window.location.href);  
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;  
+    window.open(shareUrl, '_blank', 'width=600,height=400');  
+}  
+
+function shareOnTwitter() {  
+    const url = encodeURIComponent(window.location.href);  
+    const text = encodeURIComponent('Check out this awesome game!');  
+    const shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;  
+    window.open(shareUrl, '_blank', 'width=600,height=400');  
+}  
+
+function shareOnPinterest() {  
+    const url = encodeURIComponent(window.location.href);  
+    const description = encodeURIComponent('Check out this awesome game!');  
+    const shareUrl = `https://pinterest.com/pin/create/button/?url=${url}&description=${description}`;  
+    window.open(shareUrl, '_blank', 'width=600,height=400');  
+}  
+</script>  
 </body>
 </html>
