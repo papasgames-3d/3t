@@ -453,5 +453,38 @@
         window.open(shareUrl, '_blank', 'width=600,height=400');  
     }  
     </script>  
+    <script>
+        let deferredPrompt;
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Ngăn không cho trình duyệt hiển thị banner mặc định
+            e.preventDefault();
+            // Lưu sự kiện để sử dụng sau
+            deferredPrompt = e;
+            // Hiển thị nút cài đặt
+            showInstallButton(); // Hàm này cần được định nghĩa để hiển thị nút cài đặt
+        });
+
+        function showInstallButton() {
+            // Hiển thị nút cài đặt cho người dùng
+            const installButton = document.getElementById('install-button');
+            installButton.style.display = 'block';
+
+            installButton.addEventListener('click', () => {
+                // Ẩn nút cài đặt
+                installButton.style.display = 'none';
+                // Hiển thị banner cài đặt
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the A2HS prompt');
+                    } else {
+                        console.log('User dismissed the A2HS prompt');
+                    }
+                    deferredPrompt = null;
+                });
+            });
+        }
+    </script>
     </body>
 </html>
