@@ -246,25 +246,7 @@
 </div>
 </div>
 <div class="ltn__header-options ltn__header-options-2">
-<div class="dark-mode-toggle" style="margin-right: 20px;">
-<button id="darkModeToggle" style="background: #8B4513; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer; display: flex; align-items: center;">
-<span id="darkModeIcon" style="color: #FFF5E1; margin-right: 5px;">🌙</span>
-<span id="darkModeText" style="color: #FFF5E1; font-size: 14px;">Dark Mode</span>
-</button>
-</div>
-<div class="search-container">
-<button aria-label="Search" class="search-button" id="search-button">
-<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
-<circle cx="11" cy="11" r="8"></circle>
-<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
-</svg>
-</button>
-<div class="search-modal" id="search-modal">
-<div class="search-modal-content">
-<span class="search-close">×</span>
-<h2>Search</h2>
-<input id="search-input" placeholder="Enter search keywords..." type="text"/>
-<div id="search-results"></div>
+
 </div>
 </div>
 </div>
@@ -1252,39 +1234,7 @@
 <script defer="" src="/js/plugins.js"></script>
 <!-- Main JS -->
 <script defer="" src="/js/main.js"></script>
-<script>
-	const darkModeToggle = document.getElementById('darkModeToggle');
-	const darkModeIcon = document.getElementById('darkModeIcon');
-	const darkModeText = document.getElementById('darkModeText');
-	const body = document.body;
 
-	const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
-	if (isDarkMode) {
-		enableDarkMode();
-	}
-
-	darkModeToggle.addEventListener('click', () => {
-		if (body.classList.contains('dark-mode')) {
-			disableDarkMode();
-		} else {
-			enableDarkMode();
-		}
-	});
-
-	function enableDarkMode() {
-		body.classList.add('dark-mode');
-		darkModeIcon.textContent = '☀️';
-		darkModeText.textContent = 'Light Mode';
-		localStorage.setItem('darkMode', 'enabled');
-	}
-
-	function disableDarkMode() {
-		body.classList.remove('dark-mode');
-		darkModeIcon.textContent = '🌙';
-		darkModeText.textContent = 'Dark Mode';
-		localStorage.setItem('darkMode', null);
-	}
-</script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     // Kiểm tra xem lazysizes đã được tải chưa
