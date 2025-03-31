@@ -1,0 +1,26 @@
+name: Generate Sitemap
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs once every 24 hours
+  workflow_dispatch:  # Allows manual execution
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Generate Sitemap
+        run: |
+          curl -s "https://www.xml-sitemaps.com/download/sitemap.xml?url=https://monkeymart.one" -o sitemap.xml
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add sitemap.xml
+          git commit -m "Updated sitemap.xml"
+          git push

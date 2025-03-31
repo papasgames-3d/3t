@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Ubisoft All-Star Blast! Unblocked - ubg235 GameDistribution</title>
+  <meta name="description" content="Legendary heroes of Ubisoft are gearing up for a momentous battle!" />
+
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+  <meta name="viewport"
+    content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="360-fullscreen" content="true" />
+
+  <!-- force screen orientation on some browser -->
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-orientation" content="portrait">
+
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+  <link rel="stylesheet" type="text/css" href="style-mobile.90268.css" />
+  <link rel="icon" href="favicon.1ef3e.png" />
+  <!--#IMPORT [html_header] -->
+
+
+<meta name="robots" content="index, follow">
+    <link rel="canonical" href="/index.html">
+    </head>
+<body style="background-color:black;">
+  <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+  <div id="splash">
+    <img id="game-logo" src="./UASB_logo.fe5fe.png"></img>
+    <img id="cocos-logo" src="./splash.fae61.png"></img>
+    <div class="sk-circle">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
+    </div>
+  </div>
+
+  <script src="src/settings.bace6.js" charset="utf-8"></script>
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!--#IMPORT [html_body] -->
+<!-- center and anchor to top of page -->
+<div id="canvas-ad" style="top: 0px; height:90px; z-index: 1;"/></div>
+
+  <!--#IMPORT [firebase_script] -->
+
+  <!--#IMPORT [gdpr_script] -->
+
+  <script src="main.52b15.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    function getUrlParameter(name) {
+      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      var results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      console.log('window.buildVersion', window.buildVersion);
+    };
+    window.trackingFunnelEvents = [];
+
+    (function () {
+      // <!--#IMPORT [firebase_credentials] -->
+var firebaseCredentials = {
+    apiKey: "AIzaSyC8cwXWl9UrkO1QsS0SnTPv59Gvu4Y1vts",
+    authDomain: "ubisoft-all-star-blast.firebaseapp.com",
+    projectId: "ubisoft-all-star-blast",
+    storageBucket: "ubisoft-all-star-blast.appspot.com",
+    messagingSenderId: "602657067001",
+    appId: "1:602657067001:web:5f524c6a693e8f34df7728",
+    measurementId: "G-54LBXWT5T5"
+};
+
+      // <!--#IMPORT [script_init] -->
+
+
+      var origin = null;
+
+      if (window.loginData && window.loginData.origin) {
+        origin = window.loginData.origin;
+      }
+      else {
+        origin = getUrlParameter("origin");
+      }
+
+      if (!origin) {
+        if (window.location.href.includes('nano.ubisoft.com')) {
+          origin = "Nano";
+        } else {
+          origin = "unknown";
+        }
+      }
+
+      var trackingFunnelEvents = [];
+    // NGC_LoadFunnelTime key for NGC, game team should modify to replace NGC with your gamecode
+      const saveCheckerKey = 'NGC_LoadFunnelTime';
+      var checkerTime = localStorage.getItem(saveCheckerKey) || 1;
+      let isRouletteEnded = localStorage.getItem("IS_ROULETTE_ENDED") || "0";
+      if(isRouletteEnded === "1") {
+        checkerTime++;
+      }
+      checkerTime = Math.min(checkerTime, 3)
+      localStorage.setItem(saveCheckerKey, checkerTime);
+      window.funnel = {
+        checker: checkerTime === 1 ? 'First' : 'Repeat',
+        startTime: Date.now()
+      }
+
+      window.versionInfo = {
+        gameVersion: "20220322.59.48.Gamedistribution",
+        deploymentEnvironment: "Live"
+      }
+
+      if (window.firebase) {
+        var firebaseInfo = {};
+        // NGC_LoadFunnelTime key for NGC, game team should modify to replace NGC with your gamecode
+
+
+        firebaseInfo.firebaseApp = firebase.initializeApp(firebaseCredentials);
+        if (!firebaseInfo.firebaseApp) {
+          console.error("Failed to initialize Firebase");
+        }
+
+
+
+        var adBlockEnabled = false;
+        var testAd = document.createElement('div');
+        testAd.innerHTML = '&nbsp;';
+        testAd.className = 'adsbox';
+        document.body.appendChild(testAd);
+        window.setTimeout(function () {
+          if (testAd.offsetHeight === 0) {
+            adBlockEnabled = true;
+            window.isAdsBlocked = adBlockEnabled;
+          }
+          testAd.remove();
+          console.log('AdBlock Enabled? ', adBlockEnabled)
+        }, 100);
+
+        window.isAdsBlocked = adBlockEnabled;
+
+        firebaseInfo.firebaseAnalytics = firebase.analytics();
+        if (!firebaseInfo.firebaseAnalytics) {
+          console.error("Failed to initialize firebase analytics");
+        }
+        else {
+          let event = {};
+          event.name = 'loading_gameStart';
+          event.param = {
+            "acquisitionChannel": origin,
+            "gameVersion": window.versionInfo.gameVersion,
+            "deploymentEnvironment": window.versionInfo.deploymentEnvironment,
+            "checker": window.funnel.checker,
+            "clientTimestamp": Date.now()
+          }
+          trackingFunnelEvents.push(event);
+
+        }
+
+        firebaseInfo.firebasePerformance = firebase.performance();
+        if (!firebaseInfo.firebasePerformance) {
+          console.error("Failed to init firebase Performance");
+        }
+
+        firebaseInfo.firebaseRemoteConfig = firebase.remoteConfig(this.firebaseApp);
+        if (!firebaseInfo.firebaseRemoteConfig) {
+          console.error("Failed to initialize firebase remoteconfig");
+          return false;
+        } else {
+          firebaseInfo.firebaseRemoteConfig.settings = {
+            minimumFetchIntervalMillis: 3600000,
+            fetchTimeoutMillis: 60000
+          }
+        }
+
+        window.firebaseInfo = firebaseInfo;
+        window.trackingFunnelEvents = trackingFunnelEvents;
+
+      }
+
+      var debug = window._CCSettings.debug;
+      var splash = document.getElementById('splash');
+
+      function loadScript(moduleName, cb) {
+        function scriptLoaded() {
+          document.body.removeChild(domScript);
+          domScript.removeEventListener('load', scriptLoaded, false);
+          cb && cb();
+        };
+        var domScript = document.createElement('script');
+        domScript.async = true;
+        domScript.src = moduleName;
+        domScript.addEventListener('load', scriptLoaded, false);
+
+        document.body.appendChild(domScript);
+      }
+
+      loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.c6481.js', function () {
+        if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
+          loadScript(debug ? 'physics.js' : 'physics-min.js', winboot);
+        } else {
+          let event = {};
+          event.name = 'loading_cocosLoaded';
+          event.param = {
+            "checker": window.funnel.checker,
+            "totalSec": Date.now() - window.funnel.startTime,
+            "clientTimestamp": Date.now(),
+            "gameVersion": window.versionInfo.gameVersion,
+            "deploymentEnvironment": window.versionInfo.deploymentEnvironment
+          }
+          if (window.trackingFunnelEvents)
+            window.trackingFunnelEvents.push(event);
+          window.boot();
+        }
+      });
+
+      // <!--#IMPORT [script_add_function] -->
+
+
+    })();
+  </script>
+  //
+  <!--#IMPORT [gdpr_banner] -->
+
+</body>
+
+</html>

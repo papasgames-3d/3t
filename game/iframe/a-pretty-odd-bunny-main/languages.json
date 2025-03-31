@@ -1,0 +1,1218 @@
+{
+"dialogues":{
+	"level_5": {
+		"NPC_1": {
+			"en-US": "These Bunnies sure are annoying. Always trying to make me work.",
+			"es-LA": "Qué pesados son esos conejos. Siempre quieren hacerme trabajar.",
+			"it": "Sti conigli sono così fastidiosi. Cercano sempre di farmi lavorare",
+			"fr": "Ces lapins sont d'un ennui. Ils essaient toujours de me faire travailler",
+			"de": "Diese Häschen sind echt nervig. Sie versuchen immer, mich zum Arbeiten zu bringen",
+			"pt-br": "Esses coelhos são irritantes. Sempre tentando me fazer trabalhar.",
+			"tc": "這些兔子一定是很討厭的。 總是想我工作",
+			"jp": "まったくウサギた ちにはうんざりだよ。 いつもぼくを働か せようとするんだ。"
+		},
+		"NPC_2": {
+			"en-US": "Bunny Town is just around the corner. If you see Lucy, tell her I say Hi!",
+			"es-LA": "Ciudad Conejo está a la vuelta de la esquina. Si ves a Lucy, salúdala de mi parte.",
+			"it": "Bunny Town è dietro l'angolo. Se vedi Lucy, salutala da parte mia!",
+			"fr": "Bunny Town est juste à côté. Passe le bonjour à Lucy de ma part si tu la croises!",
+			"de": "Hasenstadt ist gleich um die Ecke. Wenn du Lucy siehst, grüß sie von mir!",
+			"pt-br": "A Cidade dos Coelhinhos fica logo depois de virar a esquina. Se você vir Lucy, diga que mandou um oi!",
+			"tc": "兔子鎮就在附近。 如果你見到露西， 就幫我打個招呼！",
+			"jp": "バニータウンはも うすぐそこだよ。 ルーシーに会ったら、 よろしく言っといて！"
+		},
+		"intro": {
+			"en-US": "Oh goodness! You found one of my Bacon Coins!",
+			"es-LA": "¡Madre mía, pero si has encontrado una de mis Monedas Panceta!",
+			"it": "Oh diamine, hai trovato una delle mie monete di pancetta",
+			"fr": "Oh, mon Dieu, tu as trouvé une de mes Pièces de Bacon",
+			"de": "Ach du meine Güte, du hast eine meiner Bacon-Münzen gefunden.",
+			"pt-br": "Oh, meu Deus, você encontrou uma das minhas Moedas de Bacon",
+			"tc": "哦， 天哪， 你發現了我的培根金幣",
+			"jp": "ああ、 わたしのベーコンコイン を見つけて くれたのね"
+		},
+		"line_0": {
+			"en-US": "I was on my way to the store and lost a whole bag.",
+			"es-LA": "Perdí una bolsa llena cuando iba de camino a la tienda.",
+			"pt-br": "Eu estava indo para a loja e perdi uma sacola inteira.",
+			"it": "Stavo tornando dal negozio e ho perso un'intera borsa.",
+			"fr": "J'en ai perdu toute une bourse en chemin pour faire mes courses.",
+			"de": "Ich war auf dem Weg zum Laden und habe eine ganze Tüte verloren.",
+			"tc": "我去商店的途中 遺失了整個袋子。",
+			"jp": "買い物 に行く途中で、 バッグごとなく しちゃったのよ。"
+		},
+		"line_1": {
+			"en-US": "What’s that? …you like Bacon too?",
+			"es-LA": "¿Cómo dices? ¿Qué también te gusta la panceta?",
+			"pt-br": "O que é isso? … Você gosta de Bacon também?",
+			"it": "Cosa? Anche a te piace la pancetta?",
+			"fr": "Qu'est-ce que tu as ? Tu aimes le bacon, toi aussi?",
+			"de": "Wie war das? ... Du magst auch Bacon?",
+			"tc": "那是什麼？ …你也喜歡培根嗎？",
+			"jp": "あらあら？ …あなたもベーコンが好 きなの？"
+		},
+		"line_2": {
+			"en-US": "I’ll tell you what, find all Bacon Coins and I’ll tell you where to find some juicy bacon… Deal?",
+			"es-LA": "Ya sé qué haremos. Si encuentras todas las Monedas, te diré dónde conseguir buena panceta. ¿Trato hecho?",
+			"pt-br": "Vou te dizer uma coisa, encontre todas as Moedas de Bacon e eu direi onde encontrar um pouco de bacon suculento ... Combinado?",
+			"it": "Facciamo così. Trova tutte le monete di pancetta e ti dirò dove trovare della bella pancetta. Che ne dici?",
+			"fr": "Tu sais quoi ? Trouve toutes mes Pièces et je te dirais où trouver du bacon bien juteux... Alors, tu es partant?",
+			"de": "Ich sag dir was: Finde alle Bacon-Münzen und ich sage dir, wo du saftigen Bacon findest ... Abgemacht?",
+			"tc": "我告訴你，尋找培根金幣， 然後我會告訴你在哪裡會找到一 些多汁美味的培根 ……想交易嗎？",
+			"jp": "じゃあ、 こうしましょう。 すべてのベーコンコイン を見つけてくれたら、 ジューシーなベ ーコンが見つかる 場所を教えてあげる。 どうかしら？"
+		},
+		"line_3": {
+			"en-US": "Wonderful! Little bunny. I’ll see you in my hub. Find me on the Level Select Screen… Ciao!",
+			"es-LA": "¡Estupendo! Te veo en mi sala, conejito. Búscame en la pantalla de selección de nivel. ¡Adiós!",
+			"pt-br": "Maravilhoso! Pequeno coelho. Eu vou te ver no meu hub. Ciao!",
+			"it": "Fantastico! Ci vediamo nel mio centro di controllo... Au revoir!",
+			"fr": "Excellent, mon petit lapin ! Je te retrouve dans mon jardin... Ciao !",
+			"de": "Wunderbar! Kleiner Hase. Ich sehe dich in meiner Zentrale... Ciao!",
+			"tc": "太好了！小兔子。 我會在中心等你！",
+			"jp": "ああ、 よかった！ 助かるわ、 ウサギちゃん。 それじゃ、 ハブでまた会いましょう。"
+		}
+		},
+	"level_7": {
+		"NPC_1": {
+			"en-US": "We're getting ready for the Carrot Festival. The most important date in Bunny Town!",
+			"es-LA": "Nos estamos preparando para el Festival Zanahoria, el evento más importante de Ciudad Conejo.",
+			"pt-br": "Estamos nos preparando para o Festival de Cenoura! A data mais importante na cidade de Coelhinho.",
+			"it": "Ci stiamo preparando per il Festival delle carote! L'evento più importante di Bunny Town.",
+			"fr": "On se prépare pour le Festival de la Carotte ! C'est le jour le plus important de Bunny Town.",
+			"de": "Wir machen uns bereit für das Karottenfest! Der wichtigste Termin in Hasenstadt.",
+			"tc": "我們正在為胡蘿蔔節做準備！ 兔子鎮最重要的盛會。",
+			"jp": "キャロットフェ スティバルの 準備をしてるんだ！ バニー タウンで最も 重要な日だから！"
+		},
+		"NPC_2": {
+			"en-US": "I know Lucy wants to go to the Festival. But I don't know if she wants to go with me.",
+			"es-LA": "Sé que Lucy quiere ir al festival, pero no sé si querrá ir conmigo.",
+			"pt-br": "Eu sei que Lucy quer ir ao Festival, mas não sei se ela quer ir comigo.",
+			"it": "So che Lucy vuole andarci, ma non so se vuole farlo con me.",
+			"fr": "Je sais que Lucy veut aller au Festival, mais je ne sais pas si elle voudra y aller avec moi.",
+			"de": "Ich weiß, dass Lucy zum Fest gehen will, aber ich weiß nicht, ob sie mit mir gehen will.",
+			"tc": "我知道露西想參加這個節， 但是我不知道她是否願意和我 一起去。",
+			"jp": "ルーシーがフェス ティバルに 行きたがってるんだけど、 誘ったら、 ぼくと一緒に行 ってくれるかな。"
+		}
+		},
+	"level_8": {
+		"NPC_4": {
+			"en-US": "This year’s festival will be especial! Everybody is helping.",
+			"es-LA": "¡El festival de este año será muy especial! Todos están ayudando.",
+			"pt-br": "O festival deste ano será especial! Todo mundo está ajudando.",
+			"it": "Il festival di quest'anno sarà speciale! Stanno dando tutti una mano.",
+			"fr": "Le festival de cette année sera spécial ! Tout le monde met la main à la pâte.",
+			"de": "Dieses Jahr wird das Fest etwas ganz Besonderes! Alle helfen mit.",
+			"tc": "今年的節日將是特別的！ 大家都在幫手。",
+			"jp": "今年のフェステ ィバルはきっと 最高だよ！ みんなが手伝っ てくれてるからね。"
+		},
+		"NPC_2": {
+			"en-US": "Except for that guy!",
+			"es-LA": "Bueno, todos menos ese de ahí.",
+			"pt-br": "Exceto aquele cara",
+			"it": "Tranne quel tizio",
+			"fr": "Sauf ce type",
+			"de": "Außer dieser Typ.",
+			"tc": "除了那個傢伙",
+			"jp": "あいつ以外はね"
+		}
+		},
+	"level_9": {
+		"dialogue_0": {
+			"en-US": "Look at my beautiful carrots! You’re welcome to try one.",
+			"es-LA": "¡Mira qué zanahorias más bonitas tengo! Si quieres, puedes probar una.",
+			"pt-br": "Olhe minhas lindas cenouras! Você pode provar uma.",
+			"it": "Guarda le mie meravigliose carote! Provane pure una.",
+			"fr": "Regarde mes jolies carottes ! Tu peux en prendre une si tu veux !",
+			"de": "Sieh dir meine schönen Karotten an! Du darfst gern eine probieren.",
+			"tc": "看看我美麗的胡蘿蔔！ 歡迎你品嘗一個。",
+			"jp": "この最高のニ ンジン畑を見てよ！ 一本、食べてみてもいいよ。"
+		},
+		"dialogue_1": {
+			"en-US": "Looks like you are allergic to Carrots! How odd...",
+			"es-LA": "Parece que eres alérgico a las zanahorias. Qué raro...",
+			"pt-br": "Parece que você é alérgico a cenouras! Que estranho…",
+			"it": "Sembra che tu abbia un'allergia alle carote! Che strano...",
+			"fr": "On dirait que tu es allergique aux carottes ! Voilà qui est vraiment bizarre...",
+			"de": "Sieht aus, als wärst du allergisch gegen Karotten! Wie seltsam ...",
+			"tc": "看來你對胡蘿蔔過敏！ 真奇怪",
+			"jp": "きみは、 ニンジンにアレルギ ーがあるんだね！ なんて珍しい…"
+		}
+		},
+	"level_11": {
+		"NPC_1": {
+			"en-US": "ARE YOU OK? …I may have attached those balloons to his back on purpose.",
+			"es-LA": "¡Oye, ¿estás bien?! La verdad es que le até esos globos a propósito...",
+			"pt-br": "VOCÊ ESTÁ BEM? (…) Posso ter prendido aqueles balões em suas costas de propósito. ",
+			"it": "STAI BENE? ...Potrei aver attaccato quei palloncini alla sua schiena di proposito.",
+			"fr": "TU VAS BIEN ? J'ai peut-être volontairement attaché ces ballons à son dos.",
+			"de": "BIST DU OKAY? ... Ich habe diese Ballons vielleicht absichtlich an seinem Rücken befestigt.",
+			"tc": "你還好嗎？ …我可能是故意將那些氣 球貼在他的背上的。",
+			"jp": "大丈夫かーい？…まぁ、 風船をつけたらこうなる、 って分かってたんだけどね。"
+		}
+		},
+	"level_14": {
+		"NPC_1": {
+			"en-US": "I’m taking care of this pig.",
+			"es-LA": "Estoy cuidando de este cerdo.",
+			"pt-br": "Estou cuidando desse porco.",
+			"it": "Ci penso io a questo coniglio.",
+			"fr": "Je m'occupe de ce cochon.",
+			"de": "Ich kümmere mich um dieses Schwein.",
+			"tc": "我正在照顧這頭豬。",
+			"jp": "このブタの世話を してるんだ。"
+		}
+		},
+	"level_19": {
+		"NPC_1": {
+			"en-US": "Did you hear? There's a bunny eating all the pigs. Crazy times!",
+			"es-LA": "¿Te has enterado de que hay un conejo que come cerdos? ¡De locos!",
+			"pt-br": "Você ouviu? Há um coelho comendo todos os porcos. Que loucura!",
+			"it": "Hai sentito? C'è un coniglio che sta mangiando tutti i maiali. Robe da matti!",
+			"fr": "Tu as entendu ? Il paraît qu'il y a un lapin qui dévore les cochons. Quelle époque de fous !",
+			"de": "Hast du schon gehört? Es gibt einen Hasen, der alle Schweine frisst. Verrückte Zeiten!",
+			"tc": "你有聽說嗎？ 有一隻兔子在吃所有的豬。 瘋狂的時代！",
+			"jp": "ねえ、聞いた？ あちこちでブタを襲っ て食べてるウ サギがいるらしいよ。 ひどい話だよね？"
+		}
+		},
+	"level_20": {
+		"NPC_1": {
+			"en-US": "Do you think Lucy would go to the festival with me if I ask?",
+			"es-LA": "¿Crees que Lucy irá al festival conmigo si se lo pido?",
+			"pt-br": "Você acha que Lucy irá ao festival comigo se eu perguntar?",
+			"it": "Pensi che Lucy verrà al festival con me se glielo chiedo?",
+			"fr": "Tu penses que Lucy viendra avec moi au Festival si je le lui demande ?",
+			"de": "Glaubst du, dass Lucy mit mir zum Fest geht, wenn ich sie frage?",
+			"tc": "如果我要求， 露西會不會和我 一起去參加胡蘿蔔節？",
+			"jp": "ルーシーが一 緒にフェスティバルに 行ってくれると思う？"
+		}
+		},
+	"level_22": {
+		"NPC_1": {
+			"en-US": "The Carrot Festival is almost here!",
+			"es-LA": "¡Queda nada para el festival!",
+			"pt-br": "O Festival está quase chegando!",
+			"it": "Manca pochissimo al festival!",
+			"fr": "Le Festival va bientôt commencer !",
+			"de": "Das Festival ist fast da!",
+			"tc": "胡蘿蔔節快到了！”",
+			"jp": "フェスティバルは もうすぐだ！"
+		}
+		},
+	"level_23": {
+		"NPC_1": {
+			"en-US": "I hope the Bouncing Bunnies play this year. They are the best!",
+			"es-LA": "Espero que los Conejos Brincadores actúen este año. ¡Son los mejores!",
+			"pt-br": "Espero que os Coelhinhos Saltitantes joguem este ano. Eles são os melhores!",
+			"it": "Spero che quest'anno si esibiscano i conigli rimbalzini. Sono i migliori!",
+			"fr": "J'espère que les Boucing Bunnies joueront cette année ! Ils sont les meilleurs !",
+			"de": "Ich hoffe die Bouncing Bunnies spielen dieses Jahr. Sie sind die Besten!",
+			"tc": "我希望彈跳兔兔今年能參加。 他們是最棒的！",
+			"jp": "今年はバウンドバニー が演奏してくれたらいいな。 彼らは最高なんだ！"
+		}
+		},	
+	"level_25": {
+		"NPC_1": {
+			"en-US": "Welcome to the Carrot Festival! Enjoy your visit.",
+			"es-LA": "¡Bienvenido al Festival Zanahoria! Pásatelo bien.",
+			"pt-br": "Bem-vindo ao Festival de Cenoura! Aproveite a sua visita.",
+			"it": "Benvenuto al Festival delle carote! Spero che ti diverta.",
+			"fr": "Bienvenue au Festival des Carottes ! J’espère que tu apprécieras la visite !",
+			"de": "Willkommen zum Karottenfest! Viel Spaß.",
+			"tc": "歡迎參加胡蘿蔔節！ 祝你愉快。",
+			"jp": "キャロットフェスティ バルへようこそ！ 楽しんでいってね！"
+		},
+		"NPC_2": {
+			"en-US": "What coin? I’ve no idea what you’re talking about...",
+			"es-LA": "¿Qué moneda? No sé de qué me hablas...",
+			"pt-br": "Que moeda? Não tenho ideia do que você está falando ...",
+			"it": "Quale moneta? Non so di cosa parli...",
+			"fr": "Quelle pièce ? Je ne vois vraiment pas de quoi tu parles...",
+			"de": "Welche Münze? Ich habe keine Ahnung, wovon du sprichst ...",
+			"tc": "什麼金幣？ 我不知道你在說什麼...",
+			"jp": "コイン？何のこ とだか分からないけれど…"
+		}
+		},	
+	"level_203": {
+		"NPC_1": {
+			"en-US": "What are you doing here?",
+			"es-LA": "¿Qué haces aquí?",
+			"pt-br": "O que você está fazendo aqui?",
+			"it": "Che ci fai qui?",
+			"fr": "Qu'est-ce que tu fais là ?",
+			"de": "Was machst du denn hier?",
+			"tc": "你在這裡做什麼？",
+			"jp": "ここで何をしてるの？"
+		}
+		},
+	"level_205": {
+		"NPC_1": {
+			"en-US": "Did you hear? One of the prisoners escaped. They are looking for him like crazy",
+			"es-LA": "¿Te has enterado de que ha escapado un prisionero? Lo están buscando por todas partes.",
+			"pt-br": "Você ouviu? Um dos prisioneiros escapou. Eles estão procurando por ele como loucos.",
+			"it": "Hai sentito? Uno dei prigionieri è fuggito! Lo cercano all'impazzata.",
+			"fr": "Tu as entendu ? L'un des prisonniers s'est échappé. Ils sont tous en train de le traquer.",
+			"de": "Hast du schon gehört? Einer der Gefangenen ist geflohen. Sie suchen wie verrückt nach ihm.",
+			"tc": "你聽到嗎？ 一名囚犯逃脫了。 他們正在瘋狂地尋找他。",
+			"jp": "ねえ、 聞いた？囚人の 一人が逃げたんだって。 みんな必死にそいつを探 してるんだよ。"
+		}
+		},
+	"level_207": {
+		"NPC_1": {
+			"en-US": "There's a vault full of Carrots somewhere in these tunnels.",
+			"es-LA": "Hay una cámara llena de zanahorias por alguna parte de estos túneles.",
+			"pt-br": "Há um cofre cheio de cenouras em algum lugar desses túneis.",
+			"it": "C'è un caveau pieno di carote da qualche parte nei tunnel.",
+			"fr": "Il y a un coffre rempli de Carottes quelque part dans ces tunnels.",
+			"de": "Irgendwo in diesen Tunneln gibt es einen Tresor voller Karotten.",
+			"tc": "在這些隧道的某處有 一個充滿胡蘿蔔的倉庫。",
+			"jp": "トンネルのど こかにニ ンジンでいっぱいの 保管庫 がある んだって。"
+		}
+		},
+	"level_208": {
+		"NPC_1": {
+			"en-US": "Why are your eyes red? Does it hurt?",
+			"es-LA": "¿Cómo es que tienes los ojos rojos? ¿Te duelen?",
+			"pt-br": "Por que seus olhos estão vermelhos? Isso doi?",
+			"it": "Perché hai gli occhi rossi? Fa male?",
+			"fr": "Pourquoi tu as les yeux rouges ? Ça fait mal ?",
+			"de": "Warum sind deine Augen rot? Tun sie weh?",
+			"tc": "為什麼你的眼睛是紅色的？ 疼嗎",
+			"jp": "どうしてきみの目 は赤いの？ 痛いの？"
+		}
+		},	
+	"level_209": {
+		"NPC_1": {
+			"en-US": "Sorry kid, drill is out of juice. Bring me 3 batteries and I’ll go.",
+			"es-LA": "Lo siento, pero la taladradora se ha quedado sin pilas. Me apartaré si me traes 3 pilas.",
+			"pt-br": "Desculpe garoto(a), a furadeira parou. Traga-me 3 pilhas e eu irei.",
+			"it": "Spiacente, siamo a secco. Trovami 3 batterie e vado.",
+			"fr": "Désolé gamin, la foreuse est à court de jus. Rapporte-moi trois batteries, et je pourrais partir.",
+			"de": "Tut mir leid, Kleiner, der Bohrer hat keinen Saft mehr. Bring mir 3 Batterien und ich gehe.",
+			"tc": "孩子對不起， 鑽子沒電了。 給我 3顆電池後，我再去。",
+			"jp": "すまんな、 小僧。 ドリルは電池切れなんだ。 電池を3つ持っ てきてくれたら、 動かせるんだが。"
+		},
+		"NPC_2": {
+			"en-US": "You found the 3 batteries. Thank you!",
+			"es-LA": "¡Has encontrado las 3 pilas! ¡Gracias!",
+			"pt-br": "Você encontrou as 3 pilhas. Obrigado!",
+			"it": "Hai trovato le 3 batterie. Grazie!",
+			"fr": "Tu as trouvé les 3 batteries, merci !",
+			"de": "Du hast die 3 Batterien gefunden. Danke schön!",
+			"tc": "你找到了3顆電池。謝謝！",
+			"jp": "電池を3つ見つけてきてく れたんだな！ありがとう！"
+		}
+		},	
+	"level_2013": {
+		"NPC_1": {
+			"en-US": "People outside think all bunnies are the same. But it's just that the different ones are thrown in here.",
+			"es-LA": "La gente de fuera cree que todos los conejos son iguales, pero es porque los que son distintos acaban aquí.",
+			"pt-br": "Pessoas de fora pensam que todos os coelhos são iguais. Mas é que os diferentes são jogados aqui.",
+			"it": "La gente fuori pensa che tutti i conigli siano uguali. Ma è perché rinchiudono qui quelli diversi.",
+			"fr": "Les gens à l'extérieur pensent que tous les lapins sont identiques. Mais c'est juste que ceux qui sont différents sont envoyés ici.",
+			"de": "Die Leute draußen denken, dass alle Hasen gleich sind. Aber es ist nur so, dass die anderen hier hineingeworfen werden.",
+			"tc": "外面的人認為所有的兔子都是一樣的。 只是不同的東西被扔進了這裡。",
+			"jp": "みんな、 ウサギすべては 同じだと思ってる。 でも実際には、違うやつらはみん なここに閉じ込め られてるんだ。"
+		}
+		},		
+	"level_2014": {
+		"NPC_1": {
+			"en-US": "I’ve been here for so long that I missed the Carrot Festival. How was it?",
+			"es-LA": "Llevo tanto tiempo aquí que me he perdido el Festival Zanahoria. ¿Cómo ha ido?",
+			"pt-br": "Estou aqui há tanto tempo que perdi o Festival de Cenoura. Como foi?",
+			"it": "Sono qui da così tanto che mi sono perso il Festival delle carote. Com'era?",
+			"fr": "Je suis là depuis si longtemps que j'ai raté le Festival des Carottes. C'était comment ?",
+			"de": "Ich bin schon so lange hier, dass ich das Karottenfest verpasst habe. Wie war es?",
+			"tc": "我來這裡已經很久了， 所以錯過了胡蘿蔔節。 它是怎樣的？",
+			"jp": "ずっとここに閉 じ込められてるんだよ。 キャロットフェ スティバルが 懐かしい… どうだった？"
+			
+		}
+		},		
+	"level_2019": {
+		"NPC_1": {
+			"en-US": "Bad Bunnies need to be punished.",
+			"es-LA": "Hay que castigar a los conejos malos.",
+			"pt-br": "Coelhos maus precisam ser punidos.",
+			"it": "I conigli cattivi vanno puniti.",
+			"fr": "Les mauvais Lapins doivent être punis.",
+			"de": "Böse Häschen müssen bestraft werden.",
+			"tc": "壞兔子需要受到懲罰。",
+			"jp": "悪いウサギにはお 仕置きが必要なんだ。"
+			
+		},
+		"NPC_2": {
+			"en-US": "The Carrot Vault is up there.",
+			"es-LA": "La Cámara Zanahoria está ahí arriba.",
+			"pt-br": "O Cofre de Cenoura está lá em cima.",
+			"it": "Il caveau delle carote è qui sopra.",
+			"fr": "Le Coffre à Carottes se trouve là-haut.",
+			"de": "Der Karotten-Tresor ist da oben.",
+			"tc": "胡蘿蔔庫就在那裡。",
+			"jp": "キャロット貯蔵庫 はすぐそこだよ。"
+			
+		}
+		
+		},		
+	"ending2": {
+		"NPC_1": {
+			"en-US": "You know… I always wondered why there are so many pigs in this town.",
+			"es-LA": "Siempre me he preguntado cómo es que hay tantos cerdos en esta ciudad.",
+			"pt-br": "Sabe de uma coisa?...Eu sempre me perguntei por que há tantos porcos nesta cidade.",
+			"it": "Sai... mi sono sempre chiesto perché ci sono tutti questi maiali in città.",
+			"fr": "Tu sais... Je me suis toujours demandé pourquoi il y a autant de cochons dans cette ville.",
+			"de": "Weißt du ... Ich habe mich immer gefragt, warum es in dieser Stadt so viele Schweine gibt.",
+			"tc": "你知道嗎……我 一直想知道為什麼這個鎮上有那麼多豬。",
+			"jp": "ずっと不思議だったの… どうしてこの町にはこんなに たくさんブタがいるのか。"
+			
+		}
+		},	
+	"level_303": {
+		"NPC_1": {
+			"en-US": "Whenever you see my stand, feel free to try one of my masks. Just press 'down'",
+			"es-LA": "Siempre que veas mi puesto, no dudes en usar una de mis máscaras. Basta con pulsar 'abajo'.",
+			"pt-br": "Sempre que vir meu estande, sinta-se à vontade para experimentar uma de minhas máscaras. Basta pressionar 'para baixo'",
+			"it": "Quando vedi il mio banchetto, prova pure una delle mie maschere. Basta che premi 'giù'",
+			"fr": "N'hésite pas à essayer un de mes masques quand tu verras mon stand. Tu n'as qu'à appuyer sur 'Bas'.",
+			"de": "Wann immer du meinen Stand siehst, kannst du gern eine meiner Masken ausprobieren. Drücke einfach „runter“.",
+			"tc": "每當你看到我的展位時， 可以試試 一個我的面具。只需按 “下”",
+			"jp": "このスタン ドを見つけ たときはいつでも、 マスクを試してみて。 「下」を押すだけだよ"
+			
+		}
+		},	
+	"level_304": {
+		"NPC_1": {
+			"en-US": "We're on a diplomatic mission from Bunny Town... But I just came to party",
+			"es-LA": "Venimos de Ciudad Conejo para una misión diplomática, pero... ¡yo lo que quiero es ir de fiesta!",
+			"pt-br": "Estamos em uma missão diplomática da Cidade dos Coelhinhos...Mas eu só vim festejar.",
+			"it": "Siamo in missione diplomatica da Bunny Town... Ma sono qui solo per far festa.",
+			"fr": "Nous sommes venus de Bunny Town en mission diplomatique... Mais je suis juste venu ici pour m'amuser.",
+			"de": "Wir sind auf einer diplomatischen Mission von Hasenstadt ... Aber ich bin nur zum Feiern gekommen.",
+			"tc": "我們正在從兔子鎮進行外交訪問 ...但是我剛剛參加了派對。",
+			"jp": "ぼくたちはバニ ータウンか らの外 交使節団 なんだけど …とりあえず今は、 パーティに参加 したいだけなんだ。"
+			
+		}
+		},	
+	"level_305": {
+		"NPC_1": {
+			"en-US": "Pigs and Bunnies used to get along, but there's been tension lately.",
+			"es-LA": "Los cerdos y los conejos antes se llevaban bien, pero la situación ha empeorado.",
+			"pt-br": "Porcos e coelhos costumavam se dar bem, mas ultimamente tem havido tensão.",
+			"it": "Maiali e conigli una volta andavano d'accordo, ma da qualche tempo c'è un po' di tensione.",
+			"fr": "Les Cochons et les Lapins vivaient ensemble autrefois, mais il y a eu des tensions ces derniers temps.",
+			"de": "Schweine und Hasen haben sich früher gut verstanden, aber in letzter Zeit gibt es Spannungen.",
+			"tc": "豬和兔子曾經相處得很好， 但是最近一直都很緊張。",
+			"jp": "ブタとウサギは、 ずっと仲良 くしてたんだけど、 最近は緊張が 高まってるんだ。"
+			
+		}
+		},		
+	"level_3010": {
+		"NPC_1": {
+			"en-US": "Some Pigs believe Bunnies are eating them but that's not true.",
+			"es-LA": "Algunos cerdos piensan que los conejos se los están comiendo, pero eso no es verdad.",
+			"pt-br": "Alguns Porcos acreditam que os coelhos os estão comendo, mas isso não é verdade.",
+			"it": "Alcuni maiali credono che i conigli li stiano mangiando, ma non è vero.",
+			"fr": "Certains Cochons pensent que certains Lapins les dévorent, mais c'est faux.",
+			"de": "Einige Schweine glauben, dass die Hasen sie fressen, aber das ist nicht wahr.",
+			"tc": "一些豬認為兔子正在吃它們， 但事實並非如此。",
+			"jp": "一部のブタは、 ウサギがブタ を襲って食べてる と主張してるんだけど、 そんなことあるわけないよね。"
+			
+		}
+		},
+	"level_3013": {
+		"NPC_1": {
+			"en-US": "Some times I wonder if being different is not that bad after all.",
+			"es-LA": "A veces pienso que ser distinto no es algo tan malo.",
+			"pt-br": "As vezes me pergunto se ser diferente não é tão ruim assim, afinal.",
+			"it": "A volte mi chiedo se essere differente sia poi così un male.",
+			"fr": "Je me demande parfois si être différent, ce n'est pas si mal finalement.",
+			"de": "Manchmal frage ich mich, ob anders sein nicht doch so schlecht ist.",
+			"tc": "有時候我想知道與眾不同是否也不是太差。",
+			"jp": "時には、 違うってことはそれほど悪 くないんじゃないかと 思うこともある。"
+			
+		}
+		},
+	"level_3015": {
+		"NPC_1": {
+			"en-US": "Bunnies like to control everything. But what if we could choose who we want to be?",
+			"es-LA": "A los conejos les gusta controlarlo todo, ¿pero y si pudiésemos elegir quiénes queremos ser?",
+			"pt-br": "Os coelhos gostam de controlar tudo. Mas e se pudéssemos escolher quem queremos ser?",
+			"it": "Ai conigli piace avere tutto sotto controllo. E se potessimo scegliere quello che vogliamo essere?",
+			"fr": "Les Lapins aiment tout contrôler. Mais si on choisissait d'être ce dont on a envie ?",
+			"de": "Hasen kontrollieren gern alles. Aber was wäre, wenn wir wählen könnten, wer wir sein wollen?",
+			"tc": "兔子喜歡控制一切。但是， 如果我們可以選擇自己可以當誰呢？",
+			"jp": "ウサギっていうのは、 何事もちゃんとコントロール されてる状態 が好きなんだ。 でも、 もし、 自分たちが、 どんな自分になるかを決 められるとしたら？"
+			
+		}
+		},	
+	"level_3019": {
+		"NPC_1": {
+			"en-US": "We came here to recover a couple of problematic bunnies.",
+			"es-LA": "Hemos venido a por un par de conejos problemáticos.",
+			"pt-br": "Viemos aqui para recuperar alguns coelhos problemáticos.",
+			"it": "Siamo qui per recuperare un paio di conigli problematici.",
+			"fr": "Nous sommes venus ici pour récupérer deux Lapins qui posent problème.",
+			"de": "Wir sind hierhergekommen, um ein paar problematische Hasen zu retten.",
+			"tc": "我們來到這裡是為了 找回幾隻有問題的兔子。",
+			"jp": "ここには、 問題のあるウサギを2匹ほど、 回復させるために来たんだよ。"
+			
+		}
+		},	
+	"ending3": {
+		"NPC_1": {
+			"en-US": "Here's your weirdo.",
+			"es-LA": "Aquí está vuestro rarito.",
+			"pt-br": "Aqui está o seu estranho.",
+			"it": "Ecco lo strambo.",
+			"fr": "Voilà votre cinglé.",
+			"de": "Hier ist dein Spinner.",
+			"tc": "你們的怪人就在這裡。",
+			"jp": "その変わったウサギが、 こいつだよ。"
+			
+		},
+		"NPC_2": {
+			"en-US": "And the other one?",
+			"es-LA": "¿Y el otro?",
+			"pt-br": "E o outro?",
+			"it": "E l'altro?",
+			"fr": "Et l'autre ?",
+			"de": "Und der andere?",
+			"tc": "還有另一個？",
+			"jp": "もう1匹は、 って？"
+			
+		},
+		"NPC_3": {
+			"en-US": "There wasn't another one.",
+			"es-LA": "No había otro.",
+			"pt-br": "Não havia outro.",
+			"it": "Non ce ne sono altri.",
+			"fr": "Il n'y en avait pas d'autres.",
+			"de": "Es gab keinen anderen.",
+			"tc": "沒有別的了。",
+			"jp": "そんなの はいないよ。"
+			
+		},
+		"NPC_4": {
+			"en-US": "NOW GET THE HELL OUT OF OUR ISLAND!!!",
+			"es-LA": "¡FUERA DE NUESTRA ISLA INMEDIATAMENTE!",
+			"pt-br": "AGORA SAIA DA NOSSA ILHA !!!",
+			"it": "ORA FUORI DALLA NOSTRA ISOLA!!!",
+			"fr": "DÉGAGE DE NOTRE ÎLE MAINTENANT !!!",
+			"de": "UND JETZT VERSCHWINDET VERDAMMT NOCH MAL VON UNSERER INSEL!!!",
+			"tc": "現在讓我們逃離地獄！！！",
+			"jp": "さぁ、 この島から今す ぐ出 ていけ！！"
+			
+		},
+		"NPC_5": {
+			"en-US": "Roger that, Bacon!",
+			"es-LA": "Entendido, pancetita!",
+			"pt-br": "Entendido, Bacon!",
+			"it": "Ricevuto, pancetta!",
+			"fr": "Bien reçu, Bacon !",
+			"de": "Verstanden, Bacon!",
+			"tc": "收到了， 培根！",
+			"jp": "ラジャー、 ベーコン！"
+			
+		},
+		"NPC_6": {
+			"en-US": "I hate Bunnies.",
+			"es-LA": "Odio a los conejos.",
+			"pt-br": "Eu odeio coelhos.",
+			"it": "Odio i conigli.",
+			"fr": "Je déteste les Lapins.",
+			"de": "Ich hasse Hasen.",
+			"tc": "我討厭兔子。",
+			"jp": "ウサギってのはどう も気に入らないんだ。"
+			
+		}
+		
+		
+		},
+	"OldLady1": {
+		"NPC_1": {
+			"en-US": "Have you found my coins yet?",
+			"es-LA": "¿Has encontrado ya mis monedas?",
+			"pt-br": "Você já encontrou minhas moedas?",
+			"it": "¿Hai già trovato le mie monete?",
+			"fr": "Est-ce que tu as trouvé mes pièces ?",
+			"de": "Hast du meine Münzen schon gefunden?",
+			"tc": "你找到我的金幣嗎？",
+			"jp": "私のコインはも う見つけてくれた？"
+		},
+		"NPC_2": {
+			"en-US": "You got 11 coins already? Here’s a challenge for you!",
+			"es-LA": "¿Ya has encontrado 11 monedas? ¡Pues tengo un desafío para ti!",
+			"pt-br": "Você já tem 11 moedas? Aqui está um desafio para você!",
+			"it": "Hai già trovato 11 monete? Ti propongo una sfida.",
+			"fr": "Tu as déjà trouvé 11 pièces ? Regarde, j'ai un défi pour toi !",
+			"de": "Du hast schon 11 Münzen? Hier ist eine Herausforderung für dich!",
+			"tc": "你已經有11個金幣了？ 對你來說是一個挑戰！",
+			"jp": "もう11枚もコインを見 つけたの？なら、 次の挑戦よ！"
+		},
+		"NPC_3": {
+			"en-US": "Have you found the rest of my coins yet?",
+			"es-LA": "¿Has encontrado ya el resto de mis monedas?",
+			"pt-br": "Você já encontrou minhas moedas?",
+			"it": "¿Hai già trovato le mie monete?",
+			"fr": "Est-ce que tu as trouvé mes pièces ?",
+			"de": "Hast du meine Münzen schon gefunden?",
+			"tc": "你找到我的金幣嗎？",
+			"jp": "私のコインはもう 見つけてくれた？"
+		},
+		"NPC_4": {
+			"en-US": "You got all 21 coins already? Here’s another challenge!",
+			"es-LA": "¿Ya has encontrado las 21 monedas? ¡Pues aquí tienes otro desafío!",
+			"pt-br": "Você já tem todas as 21 moedas? Aqui está outro desafio!",
+			"it": "Hai già trovato le 21 monete? Ti propongo un'altra sfida.",
+			"fr": "Tu as déjà trouvé 21 pièces ? Et bien, voilà un autre défi pour toi !",
+			"de": "Du hast schon alle 21 Münzen gefunden? Hier ist eine weitere Herausforderung!",
+			"tc": "你已經得了所有21個金幣？這是另 一個挑戰！",
+			"jp": "21枚すべてのコイ ンを手に入れて くれたの？なら、 もうひとつ挑戦し てもらおうかしら？"
+		},
+		"NPC_5": {
+			"en-US": "How was the bacon? Did you at least got some eggs with it?",
+			"es-LA": "¿Cómo estaba la panceta? ¿La acompañaste con un huevo?",
+			"pt-br": "Como estava o bacon? Você pelo menos conseguiu alguns ovos com ele?",
+			"it": "Com'è la pancetta? Almeno l'hai mangiata con delle uova?",
+			"fr": "Comment était le bacon ? Tu as préparé des oeufs avec, au moins ?",
+			"de": "Wie war der Bacon? Hast du wenigstens ein paar Eier dazu bekommen?",
+			"tc": "培根怎麼樣？ 你至少有些蛋吧？",
+			"jp": "ベーコンは どうだった？ タマゴも一緒に ついてた？"
+		}
+		
+		
+		},
+	"OldLady2": {
+		"NPC_1": {
+			"en-US": "I don’t know how my coins got all the way down here but if you find any let me know.",
+			"es-LA": "Ni idea de cómo han llegado hasta aquí mis monedas, pero avísame si encuentras alguna.",
+			"pt-br": "Não sei como minhas moedas chegaram até aqui, mas se você encontrar alguma, me avise.",
+			"it": "Non so come hanno fatto ad arrivare qui tutte le mie monete, ma se ne trovi qualcuna, fammelo sapere.",
+			"fr": "Je ne sais pas comment toutes mes pièces ont atterri là en bas, mais fais-moi savoir si tu l'apprends.",
+			"de": "Ich weiß nicht, wie meine Münzen hier runter gekommen sind, aber wenn du welche findest, lass es mich wissen.",
+			"tc": "我不知道我的金幣是怎麼來到這裡的， 但如果有發現，請告訴我。",
+			"jp": "わたしのコインがどうして こんなところまで落 ちてきたの か分からないけれど、 見つけたらおシエテち ょうだいね。"
+		},
+		"NPC_2": {
+			"en-US": "You got 10 coins already? Here’s a challenge for you!",
+			"es-LA": "¿Ya has encontrado 10 monedas? ¡Pues tengo un desafío para ti!",
+			"pt-br": "Você já tem 10 moedas? Aqui está um desafio para você!",
+			"it": "Hai già trovato 10 monete? Ti propongo una sfida.",
+			"fr": "Tu as déjà trouvé 10 pièces ? Alors voilà un défi pour toi !",
+			"de": "Hast du schon 10 Münzen? Hier ist eine Herausforderung für dich!",
+			"tc": "你已經有10個金幣了？對你來說是一個挑戰！",
+			"jp": "もう10枚もコ インを見つけたの？なら、 次の挑戦よ！"
+		},
+		"NPC_3": {
+			"en-US": "Have you found the rest of my coins yet?",
+			"es-LA": "¿Has encontrado ya el resto de mis monedas?",
+			"pt-br": "Você já encontrou minhas moedas?",
+			"it": "¿Hai già trovato le mie monete?",
+			"fr": "Est-ce que tu as trouvé mes pièces ?",
+			"de": "Hast du meine Münzen schon gefunden?",
+			"tc": "你找到我的金幣嗎？",
+			"jp": "私のコインはもう 見つけてくれた？"
+		},
+		"NPC_4": {
+			"en-US": "You got all 20 coins already? Here’s another challenge!",
+			"es-LA": "¿Ya has encontrado las 20 monedas? ¡Pues aquí tienes otro desafío!",
+			"pt-br": "Você já tem todas as 20 moedas? Aqui está outro desafio!",
+			"it": "Hai già trovato le 20 monete? Ti propongo un'altra sfida.",
+			"fr": "Tu as déjà trouvé 20 pièces ? Et bien, voilà un autre défi pour toi !",
+			"de": "Hast du schon alle 20 Münzen? Hier ist eine weitere Herausforderung!",
+			"tc": "你已經得了所有20個金幣？ 這是另一個挑戰！",
+			"jp": "20枚すべてのコイン を手に入れてくれたの？なら、 もうひとつ挑戦してもら おうかしら？"
+		},
+		"NPC_5": {
+			"en-US": "How was the bacon? Did you at least got some eggs with it?",
+			"es-LA": "¿Cómo estaba la panceta? ¿La acompañaste con un huevo?",
+			"pt-br": "Como estava o bacon? Você pelo menos conseguiu alguns ovos com ele?",
+			"it": "Com'è la pancetta? Almeno l'hai mangiata con delle uova?",
+			"fr": "Comment était le bacon ? Tu as préparé des oeufs avec, au moins ?",
+			"de": "Wie war der Bacon? Hast du wenigstens ein paar Eier dazu bekommen?",
+			"tc": "培根怎麼樣？ 你至少有些蛋吧？",
+			"jp": "ベーコンはどうだった？ タマゴも 一緒についてた？"
+		}
+		
+		
+		},	
+	"OldLady3": {
+		"NPC_1": {
+			"en-US": "What? Don't act surprised to see me here. It was a big bag of coins, ok?",
+			"es-LA": "¿Qué pasa? Que no te sorprenda verme aquí. Era una gran bolsa de monedas, ¿vale?",
+			"pt-br": "O que? Não fique surpreso em me ver aqui. Era um grande saco de moedas, ok?",
+			"it": "Cosa? Non fingere che ti sorprenda che sia qui. Era una borsa gonfia di monete, giusto?",
+			"fr": "Quoi ? Ne sois pas surpris de me voir ici. C’était un gros sac de pièces, d'accord ?",
+			"de": "Was? Tu nicht so überrascht, mich hier zu sehen. Es war ein großer Beutel mit Münzen, okay?",
+			"tc": "什麼？不要驚訝地看著我出現在這裡。 那是一大袋金幣，好嗎？",
+			"jp": "なあに？ここでわたしと 会った からって驚かないでちょ うだいね。 わたしのコイ ンバッグは本 当に大きかったのよ。"
+		},
+		"NPC_2": {
+			"en-US": "You got 10 coins already? Here’s a challenge for you!",
+			"es-LA": "¿Ya has encontrado 10 monedas? ¡Pues tengo un desafío para ti!",
+			"pt-br": "Você já tem 10 moedas? Aqui está um desafio para você!",
+			"it": "Hai già trovato 10 monete? Ti propongo una sfida.",
+			"fr": "Tu as déjà trouvé 10 pièces ? Alors voilà un défi pour toi !",
+			"de": "Hast du schon 10 Münzen? Hier ist eine Herausforderung für dich!",
+			"tc": "你已經有10個金幣了？對你來說是一個挑戰！",
+			"jp": "もう10枚もコイン を見つけたの？なら、 次の挑戦よ！"
+		},
+		"NPC_3": {
+			"en-US": "Have you found the rest of my coins yet?",
+			"es-LA": "¿Has encontrado ya el resto de mis monedas?",
+			"pt-br": "Você já encontrou minhas moedas?",
+			"it": "¿Hai già trovato le mie monete?",
+			"fr": "Est-ce que tu as trouvé mes pièces ?",
+			"de": "Hast du meine Münzen schon gefunden?",
+			"tc": "你找到我的金幣嗎？",
+			"jp": "私のコインはもう 見つけてくれた？"
+		},
+		"NPC_4": {
+			"en-US": "You got all 20 coins already? Here’s another challenge!",
+			"es-LA": "¿Ya has encontrado las 20 monedas? ¡Pues aquí tienes otro desafío!",
+			"pt-br": "Você já tem todas as 20 moedas? Aqui está outro desafio!",
+			"it": "Hai già trovato le 20 monete? Ti propongo un'altra sfida.",
+			"fr": "Tu as déjà trouvé 20 pièces ? Et bien, voilà un autre défi pour toi !",
+			"de": "Hast du schon alle 20 Münzen? Hier ist eine weitere Herausforderung!",
+			"tc": "你已經得了所有20個金幣？ 這是另一個挑戰！",
+			"jp": "20枚すべてのコイ ンを手 に入れてくれたの？なら、 もうひとつ挑戦しても らおうかしら？"
+		},
+		"NPC_5": {
+			"en-US": "How was the bacon? Did you at least got some eggs with it?",
+			"es-LA": "¿Cómo estaba la panceta? ¿La acompañaste con un huevo?",
+			"pt-br": "Como estava o bacon? Você pelo menos conseguiu alguns ovos com ele?",
+			"it": "Com'è la pancetta? Almeno l'hai mangiata con delle uova?",
+			"fr": "Comment était le bacon ? Tu as préparé des oeufs avec, au moins ?",
+			"de": "Wie war der Bacon? Hast du wenigstens ein paar Eier dazu bekommen?",
+			"tc": "培根怎麼樣？ 你至少有些蛋吧？",
+			"jp": "ベーコン はどうだった？ タマゴも 一緒についてた？"
+		}
+		
+		
+		},	
+	"OldLady4": {
+		"NPC_1": {
+			"en-US": "This is the last batch. I swear!",
+			"es-LA": "¡Es el último lote, lo prometo!",
+			"pt-br": "Este é o último lote. Juro!",
+			"it": "È l'ultima serie. Giuro!",
+			"fr": "C'est la dernière fois. Juré !",
+			"de": "Das ist die letzte Ladung. Ich schwöre es!",
+			"tc": "這是最後一批。 我發誓！",
+			"jp": "これが最後。 本当に最後！"
+		},
+		"NPC_2": {
+			"en-US": "You got 10 coins already? Here’s a challenge for you!",
+			"es-LA": "¿Ya has encontrado 10 monedas? ¡Pues tengo un desafío para ti!",
+			"pt-br": "Você já tem 10 moedas? Aqui está um desafio para você!",
+			"it": "Hai già trovato 10 monete? Ti propongo una sfida.",
+			"fr": "Tu as déjà trouvé 10 pièces ? Alors voilà un défi pour toi !",
+			"de": "Hast du schon 10 Münzen? Hier ist eine Herausforderung für dich!",
+			"tc": "你已經有10個金幣了？對你來說是一個挑戰！",
+			"jp": "もう10枚もコイン を見つけたの？なら、 次の挑戦よ！"
+		},
+		"NPC_3": {
+			"en-US": "Have you found the rest of my coins yet?",
+			"es-LA": "¿Has encontrado ya el resto de mis monedas?",
+			"pt-br": "Você já encontrou minhas moedas?",
+			"it": "¿Hai già trovato le mie monete?",
+			"fr": "Est-ce que tu as trouvé mes pièces ?",
+			"de": "Hast du meine Münzen schon gefunden?",
+			"tc": "你找到我的金幣嗎？",
+			"jp": "私のコインはも う見つけてくれた？"
+		},
+		"NPC_4": {
+			"en-US": "You got all 20 coins already? Here’s another challenge!",
+			"es-LA": "¿Ya has encontrado las 20 monedas? ¡Pues aquí tienes otro desafío!",
+			"pt-br": "Você já tem todas as 20 moedas? Aqui está outro desafio!",
+			"it": "Hai già trovato le 20 monete? Ti propongo un'altra sfida.",
+			"fr": "Tu as déjà trouvé 20 pièces ? Et bien, voilà un autre défi pour toi !",
+			"de": "Hast du schon alle 20 Münzen? Hier ist eine weitere Herausforderung!",
+			"tc": "你已經得了所有20個金幣？ 這是另一個挑戰！",
+			"jp": "20枚すべてのコイン を手に入れてくれたの？ なら、 もうひとつ挑戦し てもらおうかしら？"
+		},
+		"NPC_5": {
+			"en-US": "How was the bacon? Did you at least got some eggs with it?",
+			"es-LA": "¿Cómo estaba la panceta? ¿La acompañaste con un huevo?",
+			"pt-br": "Como estava o bacon? Você pelo menos conseguiu alguns ovos com ele?",
+			"it": "Com'è la pancetta? Almeno l'hai mangiata con delle uova?",
+			"fr": "Comment était le bacon ? Tu as préparé des oeufs avec, au moins ?",
+			"de": "Wie war der Bacon? Hast du wenigstens ein paar Eier dazu bekommen?",
+			"tc": "培根怎麼樣？ 你至少有些蛋吧？",
+			"jp": "ベーコンは どうだった？ タマゴも一緒 についてた？"
+		}
+		
+		
+		},	
+	"OldBunny": {
+		"NPC_0": {
+			"en-US": "Hello, kid!",
+			"es-LA": "¡Hola, chico!",
+			"pt-br": "Olá, garoto(a)!",
+			"it": "Buonsalve!",
+			"fr": "Salut, gamin !",
+			"de": "Hallo, Kleiner!",
+			"tc": "你好， 孩子！",
+			"jp": "よう、小僧！"
+		},
+		"NPC_1": {
+			"en-US": "You've been causing quite some troubles for us lately",
+			"es-LA": "Has estado causando problemas últimamente.",
+			"pt-br": "Você tem causado alguns problemas para nós ultimamente",
+			"it": "Ci stai causando qualche problema, ultimamente",
+			"fr": "Tu nous as causé pas mal d'ennuis ces derniers temps",
+			"de": "Du hast uns in letzter Zeit ganz schön zu schaffen gemacht.",
+			"tc": "你最近給我們製造了很多麻煩",
+			"jp": "このところ、 ずいぶんといろ いろやらかして くれてるようだな"
+		},
+		"NPC_2": {
+			"en-US": "You destroyed the Carrot Festival...",
+			"es-LA": "Te has cargado el Festival Zanahoria...",
+			"pt-br": "Você destruiu o Festival de Cenoura ...",
+			"it": "Hai distrutto il Festival delle carote...",
+			"fr": "Tu as ruiné le Festival de la Carotte...",
+			"de": "Du hast das Karottenfest zerstört ...",
+			"tc": "你毀了胡蘿蔔節...",
+			"jp": "キャロットフェス ティバルを台無しにして…"
+		},
+		"NPC_3": {
+			"en-US": "You destroyed our Carrot Vault...",
+			"es-LA": "Has destruido la Cámara de Zanahoria...",
+			"pt-br": "Você destruiu nosso Cofre de Cenoura ...",
+			"it": "Hai distrutto il caveau delle carote...",
+			"fr": "Tu as détruit notre Coffre à Carottes...",
+			"de": "Du hast unseren Karotten-Tresor zerstört ...",
+			"tc": "你摧毀了我們的胡蘿蔔庫...",
+			"jp": "キャロッ ト貯蔵庫を破壊して…"
+		},
+		"NPC_4": {
+			"en-US": "You even made the pigs mad at us. And that's not cool.",
+			"es-LA": "Hasta has hecho que los cerdos se enfaden con nosotros, y eso está muy feo.",
+			"pt-br": "Você até deixou os porcos com raiva da gente. E isso não é legal.",
+			"it": "È colpa tua persino se i maiali ce l'hanno con noi. E così non va bene.",
+			"fr": "Tu as même réussi à monter les cochons contre nous. Et ça, c'est pas cool du tout.",
+			"de": "Du hast sogar die Schweine sauer auf uns gemacht. Und das ist nicht cool.",
+			"tc": "你甚至使豬對我們發火。 那不是很酷。",
+			"jp": "おまえのおかげで ブタたちもカンカンだ。 まったく困ったもんだ。"
+		},
+		"NPC_5": {
+			"en-US": "You know, bunnies are all about being cute, fluffy and eating carrots...",
+			"es-LA": "Los conejos siempre son monos, suaves y comen zanahorias.",
+			"pt-br": "Você sabe, ser um coelho é sobre ser bonitinho, fofinho, e comer cenouras…",
+			"it": "Capisci, i conigli devono essere carini, morbidosi e devono mangiare carote...",
+			"fr": "Tu sais, les lapins... c'est fait pour être tout doux, tout mignon, et manger des carottes...",
+			"de": "Weißt du, bei Häschen geht es nur darum, süß und flauschig zu sein und Karotten zu essen ...",
+			"tc": "兔子都是都是可愛， 蓬鬆和吃胡蘿蔔的。",
+			"jp": "いいか、 ウサギってのは、 かわいいからこそ のウサギなんだ。 ふわふわで、 ニンジンをかわいくかじって…"
+		},
+		"NPC_6": {
+			"en-US": "You know why?",
+			"es-LA": "¿Y sabes por qué?",
+			"pt-br": "Você sabe por quê?",
+			"it": "E sai perché",
+			"fr": "Tu sais pourquoi ?",
+			"de": "Weißt du warum?",
+			"tc": "你知道為什麼？",
+			"jp": "わかるか？"
+		},
+		"NPC_7": {
+			"en-US": "Because that's normal...",
+			"es-LA": "Porque es lo normal.",
+			"pt-br": "Porque isso é normal.",
+			"it": "Perché è normale.",
+			"fr": "Parce que c'est carrément normal !",
+			"de": "Weil das normal ist.",
+			"tc": "因為那很正常。",
+			"jp": "それが、 普通、 ってもんだ。"
+		},
+		"NPC_8": {
+			"en-US": "Why do you feel the need to be different? Wouldn't it be easier to just be like everybody else?",
+			"es-LA": "¿Por qué tienes que ser diferente? ¿No sería más fácil ser como los demás?",
+			"pt-br": "Por que você sente necessidade de ser diferente? Não seria mais fácil ser apenas como todo mundo?",
+			"it": "Perché hai bisogno di essere differente? Non sarebbe più facile essere come gli altri?",
+			"fr": "Pourquoi tu ressens le besoin d'être différent ? Ce serait pas plus facile pour toi d'être comme tout le monde ?",
+			"de": "Warum hast du das Bedürfnis, anders zu sein? Wäre es nicht einfacher, einfach so zu sein wie alle anderen?",
+			"tc": "你為什麼覺得需要與眾不同？ 像其他人一樣難道不是更好嗎？",
+			"jp": "どうしてみん なと違う自分になろう とする？他のみんなと 同じようにしてる方が、 おまえだって楽だろう？"
+		},
+		"NPC_9": {
+			"en-US": "Anyway, it is time for you to take responsibility for your actions and to pay your debt with our community.",
+			"es-LA": "En fin, va siendo hora de que asumas la responsabilidad de tus actos y compenses a la comunidad.",
+			"pt-br": "Enfim, é hora de você assumir a responsabilidade por suas ações e pagar sua dívida com nossa comunidade.",
+			"it": "Comunque, è ora che ti assuma la responsabilità delle tue azioni e che paghi il tuo debito verso la nostra comunità.",
+			"fr": "Enfin, peu importe, le moment est venu pour toi de prendre tes responsabilités et de payer ta dette à la communauté.",
+			"de": "Wie auch immer, es ist an der Zeit, dass du Verantwortung für deine Taten übernimmst und deine Schuld bei unserer Gemeinschaft begleichst.",
+			"tc": "無論如何， 現在你要對自己的行為負 責並向我們的社區還債了。",
+			"jp": "とにかく、 おまえには、 自分のしでかしたこと の責任を取ってもらうぞ。 おれたちみんなに、 借りを返してもらわないとな。"
+		},
+		"NPC_10": {
+			"en-US": "And the best way for you to do that is...",
+			"es-LA": "Y la mejor forma de hacer eso es...",
+			"pt-br": "E a melhor maneira de fazer isso é ...",
+			"it": "E il modo migliore per farlo è...",
+			"fr": "Et le meilleur moyen pour ça...",
+			"de": "Und der beste Weg, das zu tun, ist ...",
+			"tc": "最好的方法就是...",
+			"jp": "その方法は たったひとつ…"
+		},
+		"NPC_11": {
+			"en-US": "...by dying!",
+			"es-LA": "¡muriendo!",
+			"pt-br": "... morrendo!",
+			"it": "...morire!",
+			"fr": "C'est de finir en civet !!",
+			"de": "... indem du stirbst!",
+			"tc": "...死！",
+			"jp": "…死んでも らうことだ！"
+		}
+		
+		}
+	
+	},
+"title_screen":{
+	"intro": {
+		"warning": {
+			"en-US": "Are you sure you want to delete all Save Data and start over?",
+			"es-LA": "¿Seguro que quieres borrar los datos y volver a empezar?",
+			"pt-br": "Você tem certeza que deseja excluir todos os dados salvos e começar de novo?",
+			"it": "Vuoi davvero eliminare tutti i dati salvati e ricominciare?",
+			"fr": "Tu es sûr de vouloir effacer toutes les données sauvegardées et recommencer ?",
+			"de": "Bist du sicher, dass du alle Speicherdaten löschen und neu beginnen möchtest?",
+			"tc": "你確定要刪除所有儲存 的數據並重新開始？",
+			"jp": "すべてのセーブデ ータを削除して 最初からやり直し てもよろしいですか？"
+		},
+		"yes": {
+			"en-US": "Yes",
+			"es-LA": "Si",
+			"pt-br": "Sim",
+			"it": "Si",
+			"fr": "Oui",
+			"de": "Ja",
+			"tc": "是",
+			"jp": "はい"
+		},
+		"no": {
+			"en-US": "No",
+			"es-LA": "No",
+			"pt-br": "Não",
+			"it": "No",
+			"fr": "Non",
+			"de": "Nein",
+			"tc": "否",
+			"jp": "いいえ"
+		},
+		"new_game": {
+			"en-US": "New Game",
+			"es-LA": "N. partida",
+			"pt-br": "Jogo novo",
+			"it": "N. partita",
+			"fr": "N. partie",
+			"de": "N. Spiel",
+			"tc": "新遊戲",
+			"jp": "新規ゲーム"
+		},
+		"resume": {
+			"en-US": "Resume",
+			"es-LA": "Continuar",
+			"pt-br": "Retomar",
+			"it": "Riprendi",
+			"fr": "Reprendre",
+			"de": "Fortsetzen",
+			"tc": "恢復",
+			"jp": "再開"
+		},
+		"info": {
+			"en-US": "Info",
+			"es-LA": "Info",
+			"pt-br": "Info",
+			"it": "Info",
+			"fr": "Infos",
+			"de": "Info",
+			"tc": "資訊",
+			"jp": "情報"
+		}
+		}
+		
+		},
+"UI":{
+	"credits": {
+		"1": {
+			"en-US": "Credits",
+			"es-LA": "Créditos",
+			"pt-br": "Créditos",
+			"it": "Crediti",
+			"fr": "Crédits",
+			"de": "Credits",
+			"tc": "開發人員",
+			"jp": "クレジット"
+		},
+		"2": {
+			"en-US": "A game by",
+			"es-LA": "Un juego de",
+			"pt-br": "Um jogo de",
+			"it": "Un gioco di",
+			"fr": "Un jeu de",
+			"de": "Ein Spiel von",
+			"tc": "的遊戲",
+			"jp": "ゲーム制作"
+		},
+		"3": {
+			"en-US": "With music by",
+			"es-LA": "Con música de",
+			"pt-br": "Com música de",
+			"it": "Con le musiche di",
+			"fr": "Musique composee par",
+			"de": "Mit Musik von",
+			"tc": "的音樂",
+			"jp": "音楽制作"
+		},
+		"4": {
+			"en-US": "Ported for consoles by",
+			"es-LA": "Versión para consolas por",
+			"pt-br": "Transferido para consoles por",
+			"it": "Convertito per le console da",
+			"fr": "Porté sur consoles par",
+			"de": "Portiert für Konsolen von",
+			"tc": "移植",
+			"jp": "コンソール用移植"
+		},
+		"5": {
+			"en-US": "Published by",
+			"es-LA": "Publicado por",
+			"pt-br": "Publicado por",
+			"it": "Pubblicato da",
+			"fr": "Publié par...",
+			"de": "Veröffentlicht von",
+			"tc": "發行",
+			"jp": "販売"
+		},
+		"6": {
+			"en-US": "Made with:",
+			"es-LA": "Hecho con:",
+			"pt-br": "Feito com:",
+			"it": "Creato con:",
+			"fr": "Moteur :",
+			"de": "Entwickelt mit:",
+			"tc": "製造",
+			"jp": "Made with:"
+		},
+		"7": {
+			"en-US": "A game by",
+			"es-LA": "Un juego de",
+			"pt-br": "Um jogo de",
+			"it": "Un gioco di",
+			"fr": "Un jeu de",
+			"de": "Ein Spiel von",
+			"tc": "的遊戲",
+			"jp": "ゲーム制作"
+		},
+		"8": {
+			"en-US": "With music by",
+			"es-LA": "Con música de",
+			"pt-br": "Com música de",
+			"it": "Con le musiche di",
+			"fr": "Musique composee par",
+			"de": "Mit Musik von",
+			"tc": "的音樂",
+			"jp": "音楽制作"
+		},
+		"9": {
+			"en-US": "Ported for consoles by",
+			"es-LA": "Versión para consolas por",
+			"pt-br": "Transferido para consoles por",
+			"it": "Convertito per le console da",
+			"fr": "Porté sur consoles par",
+			"de": "Portiert für Konsolen von",
+			"tc": "移植",
+			"jp": "コンソール用移植"
+		},
+		"10": {
+			"en-US": "Published by",
+			"es-LA": "Publicado por",
+			"pt-br": "Publicado por",
+			"it": "Pubblicato da",
+			"fr": "Publié par...",
+			"de": "Veröffentlicht von",
+			"tc": "發行",
+			"jp": "販売"
+		},
+		"11": {
+			"en-US": "Special Thanks",
+			"es-LA": "Agradecimientos especiales",
+			"pt-br": "Agradecimentos especiais",
+			"it": "Ringraziamenti speciali",
+			"fr": "Remerciements spéciaux",
+			"de": "Besonderer Dank",
+			"tc": "特別感謝",
+			"jp": "謝辞"
+		},
+		"12": {
+			"en-US": "And you…",
+			"es-LA": "Y a ti...",
+			"pt-br": "E você…",
+			"it": "E te...",
+			"fr": "Et toi...",
+			"de": "Und dir ...",
+			"tc": "還有你…",
+			"jp": "あなたにも…"
+		},
+		"13": {
+			"en-US": "The End…",
+			"es-LA": "Fin...",
+			"pt-br": "O fim…",
+			"it": "Fine...",
+			"fr": "Fin...",
+			"de": "Ende ...",
+			"tc": "結束…",
+			"jp": "The End…"
+		}
+		
+		},
+	"levels": {
+		"world_1": {
+			"en-US": "Bunny Town",
+			"es-LA": "Ciudad Conejo",
+			"pt-br": "Cidade de Coelhinho",
+			"it": "Bunny Town",
+			"fr": "Bunny Town",
+			"de": "Hasenstadt",
+			"tc": "兔子鎮",
+			"jp": "バニータウン"
+		},
+		"world_2": {
+			"en-US": "The Underground",
+			"es-LA": "El Subterráneo",
+			"pt-br": "The Underground",
+			"it": "Il Sottoterra",
+			"fr": "Le Sous-Sol",
+			"de": "Der Untergrund",
+			"tc": "地底",
+			"jp": "地下"
+		},
+		"world_3": {
+			"en-US": "Piggy Island",
+			"es-LA": "Isla Cerdo",
+			"pt-br": "Ilha do Porquinho",
+			"it": "Isola dei maialini",
+			"fr": "Piggy Island",
+			"de": "Schweincheninsel",
+			"tc": "小豬島",
+			"jp": "ピギーアイランド"
+		},
+		"world_4": {
+			"en-US": "Bunny Town at Night",
+			"es-LA": "Ciudad Conejo por la noche",
+			"pt-br": "Cidade de Coelhinho à noite",
+			"it": "Bunny Town di notte",
+			"fr": "Bunny Town de nuit",
+			"de": "Hasenstadt bei Nacht",
+			"tc": "夜晚的兔子鎮",
+			"jp": "夜のバニータウン"
+		}
+		},
+	"paused": {		
+		"title": {
+			"en-US": "Paused",
+			"es-LA": "Pausa",
+			"pt-br": "Pausado",
+			"it": "In pausa",
+			"fr": "Pause",
+			"de": "Pausiert",
+			"tc": "暫停",
+			"jp": "一時停止中"
+		},	
+		"select": {
+			"en-US": "Levels",
+			"es-LA": "Niveles",
+			"pt-br": "Nível",
+			"it": "Seleziona",
+			"fr": "Niveau",
+			"de": "Level",
+			"tc": "選擇關卡",
+			"jp": "レベルを選択"
+		},	
+		"restart": {
+			"en-US": "Restart",
+			"es-LA": "Reiniciar",
+			"pt-br": "Recomeçar",
+			"it": "Ricomincia",
+			"fr": "Recommencer",
+			"de": "Neustarten",
+			"tc": "重新開始關卡",
+			"jp": "レベルをリスタート"
+		},	
+		"options": {
+			"en-US": "Options",
+			"es-LA": "Opciones",
+			"pt-br": "Opções",
+			"it": "Opzioni",
+			"fr": "Options",
+			"de": "Optionen",
+			"tc": "選項",
+			"jp": "オプション"
+		},	
+		"resume": {
+			"en-US": "Resume",
+			"es-LA": "Continuar",
+			"pt-br": "Retomar",
+			"it": "Riprendi",
+			"fr": "Reprendre",
+			"de": "Fortsetzen",
+			"tc": "恢復",
+			"jp": "再開"
+		},	
+		"fullscreen": {
+			"en-US": "Fullscreen",
+			"es-LA": "P. completa",
+			"pt-br": "Tela cheia",
+			"it": "S. intero",
+			"fr": "P. écran",
+			"de": "Vollbild",
+			"tc": "全屏",
+			"jp": "フルスクリーン"
+		},
+		"controls": {
+			"en-US": "Controls",
+			"es-LA": "Controles",
+			"pt-br": "Controles",
+			"it": "Comandi",
+			"fr": "Contrôles",
+			"de": "Steuerung",
+			"tc": "控制",
+			"jp": "操作"
+		},
+		"back": {
+			"en-US": "Back",
+			"es-LA": "Atrás",
+			"pt-br": "Voltar",
+			"it": "Indietro",
+			"fr": "Retour",
+			"de": "Zurück",
+			"tc": "返回",
+			"jp": "戻る"
+		},
+		"back2": {
+			"en-US": "Back",
+			"es-LA": "Atrás",
+			"pt-br": "Voltar",
+			"it": "Indietro",
+			"fr": "Retour",
+			"de": "Zurück",
+			"tc": "返回",
+			"jp": "戻る"
+		}
+		
+		}
+		},
+"Boss": {
+	"title": {
+			"en-US": "(He thinks he is a mole)",
+			"es-LA": "(Se cree topo)",
+			"pt-br": "(Ele pensa que é uma toupeira)",
+			"it": "(Pensa di essere una talpa)",
+			"fr": "(Il pense qu'il est une taupe)",
+			"de": "(Er hält sich für einen Maulwurf)",
+			"tc": "(他以为自己是痣)",
+			"jp": "(彼は自分がほくろだと思っている)"
+		}
+
+}
+}

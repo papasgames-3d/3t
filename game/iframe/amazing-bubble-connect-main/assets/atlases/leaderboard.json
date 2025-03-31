@@ -1,0 +1,60 @@
+{"frames": [
+
+{
+	"filename": "btn_findme.png",
+	"frame": {"x":1,"y":1011,"w":307,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":307,"h":76},
+	"sourceSize": {"w":307,"h":76}
+},
+{
+	"filename": "btn_monthly.png",
+	"frame": {"x":310,"y":1011,"w":307,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":307,"h":76},
+	"sourceSize": {"w":307,"h":76}
+},
+{
+	"filename": "btn_overall.png",
+	"frame": {"x":619,"y":1011,"w":307,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":307,"h":76},
+	"sourceSize": {"w":307,"h":76}
+},
+{
+	"filename": "btn_rename.png",
+	"frame": {"x":1,"y":1089,"w":307,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":307,"h":76},
+	"sourceSize": {"w":307,"h":76}
+},
+{
+	"filename": "btn_weekly.png",
+	"frame": {"x":310,"y":1089,"w":307,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":307,"h":76},
+	"sourceSize": {"w":307,"h":76}
+},
+{
+	"filename": "dlg_leaderboard.png",
+	"frame": {"x":1,"y":1,"w":1008,"h":1008},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1008,"h":1008},
+	"sourceSize": {"w":1008,"h":1008}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "leaderboard.png",
+	"format": "RGBA8888",
+	"size": {"w":1010,"h":1166},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:02e3e9e406769d29d9c3f69e81d4fec0:f18176bcd1bb60f3a1a7809d9cc80db1:4fe47694e196b86d00aff58650e5f63b$"
+}
+}

@@ -1,0 +1,87 @@
+{
+    "c2array": true,
+    "size": [
+        7,
+        3,
+        1
+    ],
+    "data": [
+        [
+            [
+                "Tarantula"
+            ],
+            [
+                3
+            ],
+            [
+                "Тарантул&Tarantula"
+            ]
+        ],
+        [
+            [
+                "Scorpion"
+            ],
+            [
+                5
+            ],
+            [
+                "Скорпион&Scorpion"
+            ]
+        ],
+        [
+            [
+                "Dung_beetle"
+            ],
+            [
+                6
+            ],
+            [
+                "Жук навозник&Dung beetle"
+            ]
+        ],
+        [
+            [
+                "Scorpion_lega"
+            ],
+            [
+                7
+            ],
+            [
+                "Королевский скорпион&Royal scorpion"
+            ]
+        ],
+        [
+            [
+                "Mantis"
+            ],
+            [
+                8
+            ],
+            [
+                "Богомол&Mantis"
+            ]
+        ],
+        [
+            [
+                "Stag_beetle"
+            ],
+            [
+                9
+            ],
+            [
+                "Жук олень&Stag beetle"
+            ]
+        ],
+        [
+            [
+                "Crystal_spider"
+            ],
+            [
+                10
+            ],
+            [
+                "Хрустальный паук&Crystal spider"
+            ]
+        ]
+    ]
+}

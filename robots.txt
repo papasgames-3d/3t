@@ -1,16 +1,16 @@
-# Allow all crawlers
 User-agent: *
 Allow: /
-Allow: /index.html
-Allow: /go/
+
+Sitemap: https://monkeymart.one/sitemap.xml
+
+# Allow all bots to crawl essential content
+User-agent: *
+Allow: /game/
+Allow: /category/
+Allow: /blog/
+Allow: /assets/
 Allow: /img/
-Allow: /css/
-Allow: /js/
-Allow: /ads.txt
 
-# Game pages
-Allow: /*.html$
-
-# Sitemaps
-Sitemap: https://monkeymart.one/sitemapindex.xml
-Sitemap: https://monkeymart.one/sitemap.xml 
+# Block access to admin or non-essential areas if needed
+# User-agent: *
+# Disallow: /admin/
