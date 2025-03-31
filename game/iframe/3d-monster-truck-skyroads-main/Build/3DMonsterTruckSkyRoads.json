@@ -1,0 +1,14 @@
+{
+"companyName": "VitalityGames",
+"productName": "3D Monster Truck Sky Roads",
+"dataUrl": "3DMonsterTruckSkyRoads.data.unityweb?v=1",
+"asmCodeUrl": "3DMonsterTruckSkyRoads.asm.code.unityweb?v=1",
+"asmMemoryUrl": "3DMonsterTruckSkyRoads.asm.memory.unityweb?v=1",
+"asmFrameworkUrl": "3DMonsterTruckSkyRoads.asm.framework.unityweb?v=1",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#141414",
+"cacheControl": {"dataUrl": "must-revalidate"}
+}

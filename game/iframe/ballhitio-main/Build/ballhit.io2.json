@@ -1,0 +1,12 @@
+{
+"companyName": "DefaultCompany",
+"productName": "BallHit.io",
+"dataUrl": "ballhit.io2.data.unityweb",
+"wasmCodeUrl": "ballhit.io2.wasm.code.unityweb",
+"wasmFrameworkUrl": "ballhit.io2.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

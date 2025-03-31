@@ -1,0 +1,44 @@
+{"frames": [
+
+{
+	"filename": "btn_no.png",
+	"frame": {"x":1,"y":963,"w":681,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":681,"h":110},
+	"sourceSize": {"w":681,"h":110}
+},
+{
+	"filename": "btn_try.png",
+	"frame": {"x":684,"y":963,"w":141,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":141,"h":57},
+	"sourceSize": {"w":141,"h":57}
+},
+{
+	"filename": "btn_yes.png",
+	"frame": {"x":1,"y":1075,"w":681,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":681,"h":110},
+	"sourceSize": {"w":681,"h":110}
+},
+{
+	"filename": "dlg_exit.png",
+	"frame": {"x":1,"y":1,"w":960,"h":960},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":960,"h":960},
+	"sourceSize": {"w":960,"h":960}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "exitdialog.png",
+	"format": "RGBA8888",
+	"size": {"w":962,"h":1186},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7f1b9568cc5aa40e828f9b21cb24ac4f:349f414915b554d955d6a56fbc5fb743:e94441b5c35a898afe7af5e907e6d015$"
+}
+}

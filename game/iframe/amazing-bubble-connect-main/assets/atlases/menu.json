@@ -1,0 +1,92 @@
+{"frames": {
+
+"btncontinue.png":
+{
+	"frame": {"x":1,"y":237,"w":431,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":431,"h":131},
+	"sourceSize": {"w":431,"h":131}
+},
+"btnfb.png":
+{
+	"frame": {"x":903,"y":1,"w":57,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":57,"h":57},
+	"sourceSize": {"w":57,"h":57}
+},
+"btnplay.png":
+{
+	"frame": {"x":1,"y":370,"w":431,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":431,"h":131},
+	"sourceSize": {"w":431,"h":131}
+},
+"btnrank.png":
+{
+	"frame": {"x":704,"y":1,"w":197,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":197,"h":131},
+	"sourceSize": {"w":197,"h":131}
+},
+"btnsettings.png":
+{
+	"frame": {"x":704,"y":134,"w":197,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":197,"h":131},
+	"sourceSize": {"w":197,"h":131}
+},
+"btnstats.png":
+{
+	"frame": {"x":434,"y":237,"w":197,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":197,"h":131},
+	"sourceSize": {"w":197,"h":131}
+},
+"btntheme.png":
+{
+	"frame": {"x":434,"y":370,"w":197,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":197,"h":131},
+	"sourceSize": {"w":197,"h":131}
+},
+"btntw.png":
+{
+	"frame": {"x":903,"y":60,"w":57,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":57,"h":57},
+	"sourceSize": {"w":57,"h":57}
+},
+"hedgehog.png":
+{
+	"frame": {"x":633,"y":267,"w":270,"h":183},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":183},
+	"sourceSize": {"w":270,"h":183}
+},
+"logo.png":
+{
+	"frame": {"x":1,"y":1,"w":701,"h":234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":701,"h":234},
+	"sourceSize": {"w":701,"h":234}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "menu.png",
+	"format": "RGBA8888",
+	"size": {"w":961,"h":502},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e4be2f7e94dad1b1ff58d1378b972f73:0a02e2a1131017e285f1a187cf65f381:e1b68abd82547da08a80c89591506971$"
+}
+}
