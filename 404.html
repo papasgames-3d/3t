@@ -1,20 +1,406 @@
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>404 - Page Not Found | monkeymart.one</title>
+    <meta content="noindex,nofollow" name="robots"/>
+    <link href="https://monkeymart.one/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+    <base href="https://monkeymart.one/"/>
+    <link href="https://monkeymart.one/css/main.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9fafb; /* Màu nền sáng */
+            font-family: 'Arial', sans-serif; /* Font chữ */
+        }
+        .error-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .error-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #e53e3e; /* Màu đỏ cho tiêu đề */
+        }
+        p {
+            font-size: 1.2rem;
+            color: #4a5568; /* Màu chữ tối */
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3182ce; /* Màu xanh cho nút */
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .back-home:hover {
+            background-color: #2b6cb0; /* Màu xanh đậm khi hover */
+        }
+        .product-img {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px; /* Bo tròn hình ảnh */
+        }
+        .product-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            color: #2d3748; /* Màu chữ tối */
+        }
+        .ltn__product-item {
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="logo-container">
+            <img alt="404 Error - Monkey Looking for Page" class="error-image" src="https://monkeymart.one/img/404-monkey.png"/>
+        </div>
+        <h1>Oops! Page Not Found</h1>
+        <p>The page you're looking for doesn't exist or has been moved.</p>
+        <p>Let's get you back to playing some awesome games!</p>
+        <a class="back-home" href="https://monkeymart.one/">Back to Homepage</a>
+        
+        <div class="row ltn__tab-product-slider-one-active--- slick-arrow-1 mt-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Sling Drift -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="go/sling-drift-sling-games.html">
+                        <div class="product-img">
+                            <img alt="Sling Drift : Sling Games" src="img/games/sling-drift-sling-games.jpeg" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Sling Drift</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Galactic Attack -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="go/galactic-attack.html">
+                        <div class="product-img">
+                            <img alt="Galactic Attack" src="img/games/galactic-attack.jpg" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Galactic Attack</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Galaxy Warriors -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="go/galaxy-warriors.html">
+                        <div class="product-img">
+                            <img alt="Galaxy Warriors" src="img/games/galaxy-warriors.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Galaxy Warriors</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Mech Shooter -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="go/mech-shooter.html">
+                        <div class="product-img">
+                            <img alt="Mech Shooter" src="img/games/mech-shooter.jpg" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Mech Shooter</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Warfare 1942 -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="go/warfare-1942-online-shooter.html">
+                        <div class="product-img">
+                            <img alt="Warfare 1942 Online Shooter" src="img/games/warfare-1942-online-shooter.jpg" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Warfare 1942</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Shoot the Duck -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="go/shoot-the-duck.html">
+                        <div class="product-img">
+                            <img alt="Shoot the Duck" src="img/games/shoot-the-duck.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Shoot the Duck</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Rome Simulator -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="go/rome-simulator.html">
+                        <div class="product-img">
+                            <img alt="Rome Simulator" src="img/games/rome-simulator.jpg" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Rome Simulator</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Tetris -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/tetris.html" title="tetris">
+                        <div class="product-img">
+                            <img alt="Tetris" src="/img/games/tetris.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Tetris</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- 8 Ball Pool -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/8-ball-pool.html" title="8-ball-pool-billiard">
+                        <div class="product-img">
+                            <img alt="8-ball-pool-billiard" src="/img/games/8-ball-pool.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>8 Ball Pool</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Snow Rider 3D -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/snow-rider-3d.html" title="snow-rider-3d">
+                        <div class="product-img">
+                            <img alt="Snow Rider 3D" src="/img/games/snow-rider-3d.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Snow Rider 3D</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Infinite Craft -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/infinite-craft.html" title="infinite-craft">
+                        <div class="product-img">
+                            <img alt="Infinite Craft" src="/img/games/infinite-craft.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Infinite Craft</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Flappy Bird -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/flappy-bird.html" title="flappy-bird">
+                        <div class="product-img">
+                            <img alt="Flappy Bird" src="/img/games/flappy-bird.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Flappy Bird</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Friday Night Funkin -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/friday-night-funkin.html" title="friday-night-funkin">
+                        <div class="product-img">
+                            <img alt="Friday Night Funkin" src="/img/games/friday-night-funkin.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Friday Night Funkin</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Block Blast -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/block-blast.html" title="block-blast">
+                        <div class="product-img">
+                            <img alt="Block Blast" src="/img/games/block-blast.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Block Blast</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Pacman 30th Anniversary -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/pacman-30th-anniversary.html" title="pacman-30th-anniversary">
+                        <div class="product-img">
+                            <img alt="Pacman 30th Anniversary" src="/img/games/pacman-30th-anniversary.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Pacman 30th Anniversary</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Geometry Dash Lite -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/geometry-dash-lite.html" title="geometry-dash-lite">
+                        <div class="product-img">
+                            <img alt="Geometry Dash Lite" src="/img/games/geometry-dash-lite.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Geometry Dash Lite</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Poptropica -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/poptropica.html" title="poptropica">
+                        <div class="product-img">
+                            <img alt="Poptropica" src="/img/games/poptropica.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Poptropica</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Cookie Clicker -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/cookie-clicker.html" title="cookie-clicker">
+                        <div class="product-img">
+                            <img alt="Cookie Clicker" src="/img/games/cookie-clicker.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Cookie Clicker</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Bitlife -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/bitlife.html" title="bitlife">
+                        <div class="product-img">
+                            <img alt="Bitlife" src="/img/games/bitlife.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Bitlife</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Papa's Freezeria -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/papas-freezeria.html" title="papas-freezeria">
+                        <div class="product-img">
+                            <img alt="Papa's Freezeria" src="/img/games/papas-freezeria.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Papa's Freezeria</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Retro Bowl -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/retro-bowl.html" title="retro-bowl">
+                        <div class="product-img">
+                            <img alt="Retro Bowl" src="/img/games/retro-bowl.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Retro Bowl</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Wordle Game -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/wordle-unlimited.html" title="wordle-game">
+                        <div class="product-img">
+                            <img alt="Wordle Game" src="/img/games/wordle-unlimited.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Wordle Game</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Match the Colors -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="go/match-the-colors-puzzle-for-everyone.html">
+                        <div class="product-img">
+                            <img alt="Match the Colors - puzzle for everyone" src="img/games/match-the-colors-puzzle-for-everyone.jpg" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Match the Colors</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Vex 6 -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/vex-6.html" title="vex-6">
+                        <div class="product-img">
+                            <img alt="Vex 6" src="/img/games/vex-6.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Vex 6</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Running Fred -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <a href="/go/running-fred.html" title="running-fred">
+                        <div class="product-img">
+                            <img alt="Running Fred" src="/img/games/running-fred.png" decoding="async" loading="lazy"/>
+                            <div class="product-badge"></div>
+                        </div>
+                        <div class="ltn__product-item ltn__product-item-3 text-left">
+                            <h3>Running Fred</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Thêm các game khác nếu cần -->
+            </div>
+        </div>
+    </div>
+    <script>
+        // Google Analytics and other scripts
+        setTimeout(() => {
+            window.location.href = 'https://monkeymart.one/';
+        }, 30000);
+        
+        console.log('404 Error:', window.location.pathname);
+        
+        let startTime = new Date();
+        window.addEventListener('beforeunload', () => {
+            let endTime = new Date();
+            let timeSpent = (endTime - startTime) / 1000;
+            gtag('event', 'time_on_404', {
+                'event_category': 'Error',
+                'event_label': window.location.pathname,
+                'value': timeSpent
+            });
+        });
+    </script>
+</body>
+</html> 
