@@ -31,19 +31,15 @@ window.addEventListener("load", (event) => {
         console.log('Bot Browser');
     } else {
         console.log('Human Browser');
-        if (window.location.href.indexOf("/classroom6x.gitlab.io")> -1) {
-            if (inFrame()) {
-                console.log("Scripts Skip! Frame!");
-            } else if (window.location.href.indexOf(".html")== -1) {
-                console.log("Scripts Skip! Home Page!");
-            } else if (window.location.href.indexOf("-unblockedz.html")> -1) {
-                console.log("Scripts Skip! DMCA!");            
-            } else {
-                console.log("Scripts Served!");
-                loadUserScripts();
-            }
+        if (inFrame()) {
+            console.log("Scripts Skip! Frame!");
+        } else if (window.location.href.indexOf(".html")== -1) {
+            console.log("Scripts Skip! Home Page!");
+        } else if (window.location.href.indexOf("-unblockedz.html")> -1) {
+            console.log("Scripts Skip! DMCA!");            
         } else {
-            console.log("Scripts Skip! Not Games235!");
+            console.log("Scripts Served!");
+            loadUserScripts();
         }
     }
 });
