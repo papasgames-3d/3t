@@ -3,6 +3,19 @@ a {
   color: black;
 }
 
+/* Add styling for the Monkey Mart version link and improve general link visibility */
+.text-center a, .row a, main a:not(.game-link):not(.navbar-brand):not(.nav-link):not(.dropdown-item) {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.text-center a:hover, .row a:hover, main a:not(.game-link):not(.navbar-brand):not(.nav-link):not(.dropdown-item):hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
 .navbar-brand {
   color: rgb(237,29,36);
   font-weight: bold;
