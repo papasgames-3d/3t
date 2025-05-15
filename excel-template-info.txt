@@ -1,0 +1,63 @@
+HƯỚNG DẪN SỬ DỤNG CHỨC NĂNG UPLOAD FILE EXCEL
+
+Chào bạn,
+
+Dưới đây là hướng dẫn cách sử dụng chức năng upload file Excel để thêm nhiều game cùng lúc vào hệ thống:
+
+1. CHUẨN BỊ FILE EXCEL:
+   - File Excel cần có đúng 5 cột theo thứ tự sau:
+     + Cột 1: Tên Game (bắt buộc)
+     + Cột 2: Mô Tả Game (tùy chọn)
+     + Cột 3: URL iframe (bắt buộc)
+     + Cột 4: Danh Mục (bắt buộc - phải là một trong các danh mục có sẵn)
+     + Cột 5: Định dạng hình ảnh (tùy chọn, mặc định là 'png')
+   - Dòng đầu tiên của file được xem là tiêu đề và sẽ bị bỏ qua
+   - Các dòng không có đủ thông tin bắt buộc sẽ bị bỏ qua
+
+2. DANH SÁCH DANH MỤC HỢP LỆ:
+   - 2-player: Trò chơi 2 người chơi
+   - 3d: Trò chơi 3D
+   - adventure: Trò chơi phiêu lưu
+   - car: Trò chơi xe hơi
+   - moto: Trò chơi mô tô
+   - multiplayer: Trò chơi nhiều người chơi
+   - puzzle: Trò chơi giải đố
+   - racing: Trò chơi đua xe
+   - running: Trò chơi chạy
+   - shooting: Trò chơi bắn súng
+   - skill: Trò chơi kỹ năng
+   - sports: Trò chơi thể thao
+   - stickman: Trò chơi người que
+
+3. CHUẨN BỊ HÌNH ẢNH:
+   - Các hình ảnh game cần được đặt trong thư mục img/img-up/
+   - Tên file hình ảnh phải là slug được tạo từ tên game
+   - Slug là tên game được viết thường, bỏ dấu, thay khoảng trắng bằng dấu gạch ngang
+   - Ví dụ: "Đua Xe Mạo Hiểm" sẽ có slug là "dua-xe-mao-hiem" và hình ảnh sẽ là "img/img-up/dua-xe-mao-hiem.png"
+
+4. QUY TRÌNH UPLOAD:
+   a. Chuẩn bị file Excel theo hướng dẫn trên
+   b. Chuẩn bị hình ảnh và đặt vào thư mục img/img-up/
+   c. Truy cập trang add-game.php và chọn tab "Upload Excel"
+   d. Chọn file Excel từ máy tính của bạn
+   e. Nhấn nút "Upload và Thêm Games"
+   f. Hệ thống sẽ xử lý và hiển thị kết quả
+
+5. LƯU Ý:
+   - Nếu máy chủ không có thư viện PhpSpreadsheet, bạn có thể sử dụng file CSV thay thế
+   - Tích vào ô "Sử dụng file CSV thay thế" nếu bạn đang sử dụng file CSV
+   - File CSV cũng cần tuân thủ cùng cấu trúc như file Excel
+
+6. XỬ LÝ LỖI THƯỜNG GẶP:
+   - "Thư viện PhpSpreadsheet không có sẵn": Bạn có thể cài đặt thư viện này bằng Composer hoặc sử dụng CSV thay thế
+   - "Không thể đọc file Excel": Kiểm tra định dạng file, chỉ hỗ trợ .xlsx và .xls
+   - "Các mục sau không hợp lệ": Kiểm tra dữ liệu trong các dòng được đề cập
+
+Mẫu file Excel:
+---------------
+| Tên Game           | Mô Tả Game                        | iframe URL                          | Danh Mục   | Định Dạng Hình |
+|--------------------|-----------------------------------|-------------------------------------|------------|----------------|
+| Đua Xe Mạo Hiểm    | Trò chơi đua xe trên địa hình    | https://example.com/games/game1.html| racing     | png            |
+| Xếp Hình Thông Minh| Trò chơi xếp hình độc đáo        | https://example.com/games/game2.html| puzzle     | jpg            |
+
+Cảm ơn bạn đã sử dụng hệ thống quản lý game của chúng tôi! 
