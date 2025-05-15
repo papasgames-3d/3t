@@ -22,8 +22,8 @@
         /* Image display improvements */
         .about-us-img-wrap img.lazyload,
         .ltn__feature-icon img.lazyload {
-            max-inline-size: 100%;
-            block-size: auto;
+            max-width: 100%;
+            height: auto;
             display: block;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -31,14 +31,14 @@
         }
 
         .about-us-img-wrap img.lazyload {
-            inline-size: 100%;
+            width: 100%;
             object-fit: cover;
             margin: 0 auto;
         }
 
         .ltn__feature-icon img.lazyload {
-            inline-size: 100%;
-            block-size: 200px;
+            width: 100%;
+            height: 200px;
             object-fit: cover;
             margin: 0 auto 15px;
         }
@@ -52,8 +52,8 @@
             transition: all 0.3s ease;
             padding: 20px;
             border-radius: 10px;
-            block-size: 100%;
-            margin-block-end: 25px;
+            height: 100%;
+            margin-bottom: 25px;
         }
 
         .ltn__feature-item:hover {
@@ -61,7 +61,7 @@
         }
 
         .ltn__feature-info h4 {
-            margin-block-start: 15px;
+            margin-top: 15px;
             font-weight: 600;
             color: #333;
         }
@@ -75,7 +75,7 @@
         }
 
         .section-title {
-            margin-block-end: 25px;
+            margin-bottom: 25px;
             color: #333;
             font-weight: 700;
         }
@@ -83,8 +83,8 @@
         .monkey-mart-content h3, 
         .monkey-mart-content h4 {
             color: #8B4513;
-            margin-block-start: 20px;
-            margin-block-end: 15px;
+            margin-top: 20px;
+            margin-bottom: 15px;
         }
 
         .btn-transparent {
@@ -98,14 +98,14 @@
 
         /* Additional SEO-friendly styles */
         .game-iframe {
-            max-inline-size: 100%;
+            max-width: 100%;
             border: none;
         }
         
         .game-card__title {
             font-size: 15px;
             color: #333;
-            margin-block-start: 10px;
+            margin-top: 10px;
             text-align: center;
         }
         
@@ -273,7 +273,7 @@
     <header id="header" class="sticky-top">
         <nav class="navbar navbar-expand-lg py-3">
             <div class="container"><a class="navbar-brand d-flex align-items-center" href="../index.html"><img
-                        src="./assets/img/logo.png" alt="Monkey Mart Logo" style="block-size:40px"></a><button data-bs-toggle="collapse"
+                        src="./assets/img/logo.png" alt="Monkey Mart Logo" style="height:40px"></a><button data-bs-toggle="collapse"
                     class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle
                         navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse nav-right" id="navcol-2">
@@ -339,102 +339,9 @@
                             <div class="heading">
                                 <a href="./category/latest.html">
                                     <h2 class="title-sub">&nbsp;<strong>Latest</strong><span
-                                            style="padding-inline-start:5px">Games</span></h2>
+                                            style="padding-left:5px">Games</span></h2>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/unblock-puzzle.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/unblock-puzzle.png" alt="Unblock Puzzle Game">
-                                <h3 class="game-card__title">Unblock Puzzle</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/ball-puzzle.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/ball-puzzle.png" alt="Ball Puzzle Game">
-                                <h3 class="game-card__title">Ball Puzzle</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/match-the-colors.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/match-the-colors.jpg" alt="Match the Colors Game">
-                                <h3 class="game-card__title">Match the Colors</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/candy-pop-mania.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/candy-pop-mania.png" alt="Candy Pop Mania Game">
-                                <h3 class="game-card__title">Candy Pop Mania</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/commando-force-2.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/commando-force-2.jpg" alt="Commando Force 2 Game">
-                                <h3 class="game-card__title">Commando Force 2</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/russian-fishing-at-sea.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/russian-fishing-at-sea.jpg" alt="Russian Fishing at Sea Game">
-                                <h3 class="game-card__title">Russian Fishing at Sea</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/8-ball-pool-billiard.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/8-ball-pool-billiard.jpg" alt="8 Ball Pool Billiard Game">
-                                <h3 class="game-card__title">8 Ball Pool Billiard</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/billiards-3d-russian-pyramid.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/billiards-3d-russian-pyramid.jpg" alt="Billiards 3D: Russian Pyramid Game">
-                                <h3 class="game-card__title">Billiards 3D: Russian Pyramid</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/robby-bomberman.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/robby-bomberman.jpg" alt="Robby: Bomberman Game">
-                                <h3 class="game-card__title">Robby: Bomberman</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/dig-a-hole-in-russia.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/dig-a-hole-in-russia.jpg" alt="Dig a hole in Russia Game">
-                                <h3 class="game-card__title">Dig a hole in Russia</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/kingdom-match.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/kingdom-match.jpg" alt="Kingdom match Game">
-                                <h3 class="game-card__title">Kingdom match</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/strykon.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/strykon.png" alt="Strykon Game">
-                                <h3 class="game-card__title">Strykon</h3>
-                            </a>
-                        </div>
-                            <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                            <a class="game-link" href="./game/game-up/vexon.html">
-                                <img class="img-fluid game-card__cover"
-                                    src="./assets/img/img-up/vexon.png" alt="Vexon Game">
-                                <h3 class="game-card__title">Vexon</h3>
-                            </a>
-                        
-                            
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-2 game-item">
                             <a class="game-link" href="./game/bacon-may-die.html">
@@ -569,7 +476,7 @@
                             <div class="heading">
                                 <a href="/category/trending.html">
                                     <h2 class="title-sub">&nbsp;<strong>Trending</strong><span
-                                            style="padding-inline-start:5px">Games</span></h2>
+                                            style="padding-left:5px">Games</span></h2>
                                 </a>
                             </div>
                         </div>
@@ -742,44 +649,15 @@
                             </a>
                         </div>
                     </div>
-                    
-                    <!-- Ad placement #1 after Trending Games section -->
-                    <div class="row mt-4 mb-4">
-                        <div class="col-12 text-center">
-                            <script type="text/javascript">
-                                atOptions = {
-                                    'key' : '2e1a345725bbc84d681b99277de57ab4',
-                                    'format' : 'iframe',
-                                    'height' : 250,
-                                    'width' : 300,
-                                    'params' : {}
-                                };
-                            </script>
-                            <script type="text/javascript" src="//www.highperformanceformat.com/2e1a345725bbc84d681b99277de57ab4/invoke.js"></script>
-                        </div>
-                    </div>
 
                     <div class="row">
                         <div class="col" style="flex:none">
                             <div class="heading">
                                 <a href="/category/features.html">
                                     <h2 class="title-sub">&nbsp;<strong>Features</strong><span
-                                            style="padding-inline-start:5px">Games</span></h2>
+                                            style="padding-left:5px">Games</span></h2>
                                 </a>
                             </div>
-                        </div>
-                        <!-- Ad placement #2 next to Features Games section header -->
-                        <div class="col-md-6 d-none d-md-block text-right">
-                            <script type="text/javascript">
-                                atOptions = {
-                                    'key' : '1b4c8dd6e41b84b02f4f4af93bbeda36',
-                                    'format' : 'iframe',
-                                    'height' : 90,
-                                    'width' : 728,
-                                    'params' : {}
-                                };
-                            </script>
-                            <script type="text/javascript" src="//www.highperformanceformat.com/1b4c8dd6e41b84b02f4f4af93bbeda36/invoke.js"></script>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-2 game-item">
                             <a class="game-link" href="./game/4th-and-goal-2022.html">
@@ -961,9 +839,9 @@
                 <div class="col-lg-6 align-self-center">
                     <div class="about-us-img-wrap about-img-left">
                         <img class="lazyload" alt="monkey-mart-1" src="img/banner-monkey-mart.jpg">
-                    </div>
+</div>
                 </div>
-                <div class="col-lg-5 align-self-center">
+                <div class="col-lg-6 align-self-center">
                     <div class="about-us-info-wrap">
                         <div class="section-title-area ltn__section-title-2">
                             <h1 class="section-title">Monkey Mart</h1>
@@ -975,19 +853,6 @@
                             As you progress, you'll unlock new products, upgrade your equipment, and face increasingly demanding animal customers. Are you ready to build your <u>Monkey Market</u> empire?
                         </p>
                     </div>
-                </div>
-                <!-- Ad placement #4 in the about section -->
-                <div class="col-lg-1 d-none d-lg-block">
-                    <script type="text/javascript">
-                        atOptions = {
-                            'key' : 'ec1dfa69c7e56952ff4ceec1900700b5',
-                            'format' : 'iframe',
-                            'height' : 300,
-                            'width' : 160,
-                            'params' : {}
-                        };
-                    </script>
-                    <script type="text/javascript" src="//www.highperformanceformat.com/ec1dfa69c7e56952ff4ceec1900700b5/invoke.js"></script>
                 </div>
             </div>
         </div>
@@ -1010,11 +875,11 @@
                         <div class="ltn__feature-item ltn__feature-item-6 text-center">
                             <div class="ltn__feature-icon">
                                 <img class="lazyload" src="img/monkey-mart-ban-1.jpg" alt="monkey-mart-2">
-                            </div>
+</div>
                             <div class="ltn__feature-info">
                                 <h4>Prioritize Upgrades</h4>
                                 <p>Invest your earnings in upgrading your shelves, counters, and employee skills in your <u>Monkey Market</u>. This will ensure efficient service and attract more animal customers.</p>
-                            </div>
+</div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -1084,21 +949,6 @@
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 class="section-title">Why You Should Try <b>Monkey Mart</b> Today</h2>
-					<!-- Ad placement #5 below Why You Should Try section title -->
-					<div class="row justify-content-center mb-3">
-						<div class="col-md-8">
-							<script type="text/javascript">
-								atOptions = {
-									'key' : '9585de7a185b287b03276211836600ea',
-									'format' : 'iframe',
-									'height' : 60,
-									'width' : 468,
-									'params' : {}
-								};
-							</script>
-							<script type="text/javascript" src="//www.highperformanceformat.com/9585de7a185b287b03276211836600ea/invoke.js"></script>
-						</div>
-					</div>
 					<p class="mb-30">
 						<b>Monkey Mart</b> isn't just a game—it's an experience! With intuitive gameplay, adorable characters, 
 						and endless opportunities to expand your virtual business, <i>Monkey Mart</i> offers countless hours 
@@ -1126,20 +976,6 @@
 							<div class="col-lg-6">
 								<h3>What is <i>Monkey Mart</i>?</h3>
 								<p><b>Monkey Mart</b> is a casual, simulation game where players manage and grow their own virtual supermarket. The game revolves around helping a monkey build their store, stock the shelves, and cater to the needs of adorable animal customers. As you progress, new activities and features are unlocked, creating a fun and addictive gameplay loop.</p>
-								
-								<!-- Ad placement #6 in the content section -->
-								<div class="d-block d-lg-none text-center mt-3 mb-3">
-									<script type="text/javascript">
-										atOptions = {
-											'key' : 'c2f99ce10a6cf0e9e4fc3f2f85333b63',
-											'format' : 'iframe',
-											'height' : 50,
-											'width' : 320,
-											'params' : {}
-										};
-									</script>
-									<script type="text/javascript" src="//www.highperformanceformat.com/c2f99ce10a6cf0e9e4fc3f2f85333b63/invoke.js"></script>
-								</div>
 								
 								<h4>Why is <u>Monkey Mart</u> So Popular?</h4>
 								<p>There are many reasons behind the growing popularity of <b>Monkey Mart</b>, often referred to as <i>Monkey Mart online</i> by players looking to enjoy the game from their browsers. Let's explore some of the key factors that make this game so beloved:</p>
@@ -1182,7 +1018,7 @@
         <div class="copyright">
             <div class="container">
                 <span>Monkey Mart One- Play 639 / 837 games for free!</span>
-                <span style="float:inline-end;">
+                <span style="float:right;">
                     <a href="/dmca/">DMCA</a></li>&nbsp;&nbsp;
                     <a href="/terms/">Terms</a></li>&nbsp;&nbsp;
                     <a href="/privacy/">Privacy</a></li>
@@ -1212,12 +1048,6 @@
             }
         }
     </script>
-    <!-- Ad placement #7 before footer -->
-    <div class="row mt-4 mb-4">
-        <div class="col-12 text-center">
-            <script type='text/javascript' src='//pl26599445.profitableratecpm.com/91/7f/30/917f300824f830b1597cc917900f5d4a.js'></script>
-        </div>
-    </div>
 </body>
 
 </html>
