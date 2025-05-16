@@ -331,6 +331,7 @@ function generateGamePage($gameData, $slug) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="dns-prefetch" href="https://universal.wgplayer.com"/><script type="text/javascript" async>!function(e,t){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,a.fetchPriority='high',m.parentNode.insertBefore(a,m)}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search);</script>
     <title>' . $gameName . ' - Play Online for Free!</title>
     <meta name="description" content="' . $gameDesc . '">
     <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
