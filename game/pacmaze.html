@@ -13,25 +13,49 @@
     <link rel="canonical" href="/index.html">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-body py-3">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bezier">
-                        <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"></path>
-                        <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
-                    </svg></span><span>Monkey Mart One</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-2">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/category/car.html">Car</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/category/skill.html">Skill</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/category/action.html">Action</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/category/sports.html">Sports</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/category/racing.html">Racing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/category/puzzle.html">Puzzle</a></li>
-                </ul>
+    <header id="header" class="sticky-top">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="../../index.html"><img
+                        src="../../assets/img/logo.png" alt="Website Logo" style="height:40px"></a><button data-bs-toggle="collapse"
+                    class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle
+                        navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse nav-right" id="navcol-2">
+                    <div class="search">
+                        <div class="search-game">
+                            <div class="form-search"><input type="text" id="search-bar" class="search-bar"
+                                    placeholder="Search Games"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                    height="1em" fill="currentColor" viewBox="0 0 16 16"
+                                    class="bi bi-search icon-search" id="search-button" aria-label="Search button">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                                    </path>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../../category/2-player.html">2-Player</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../category/3d.html">3D</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../category/adventure.html">Adventure</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../category/car.html">Car</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../category/moto.html">Moto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../category/multiplayer.html">Multiplayer</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false"
+                                data-bs-toggle="dropdown" href="#">More</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../../category/puzzle.html">Puzzle</a>
+                                <a class="dropdown-item" href="../../category/racing.html">Racing</a>
+                                <a class="dropdown-item" href="../../category/running.html">Running</a>
+                                <a class="dropdown-item" href="../../category/shooting.html">Shooting</a>
+                                <a class="dropdown-item" href="../../category/skill.html">Skill</a>
+                                <a class="dropdown-item" href="../../category/sports.html">Sports</a>
+                                <a class="dropdown-item" href="../../category/stickman.html">Stickman</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <div class="container">
         <div class="gameFrame">
             <h1 class="text-center">Pacmaze</h1>

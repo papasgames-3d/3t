@@ -1,0 +1,1636 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Monkey Mart - Advanced</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-5px) rotate(2deg); }
+            75% { transform: translateY(5px) rotate(-2deg); }
+        }
+        @keyframes coinPop {
+            0% { transform: scale(0) translateY(0); opacity: 1; }
+            70% { transform: scale(1.2) translateY(-30px); opacity: 1; }
+            100% { transform: scale(1) translateY(-50px); opacity: 0; }
+        }
+        .customer-bounce {
+            animation: bounce 1s infinite;
+        }
+        .product-float {
+            animation: float 3s infinite;
+        }
+        .coin-pop {
+            position: absolute;
+            animation: coinPop 0.8s forwards;
+            pointer-events: none;
+        }
+        .progress-bar {
+            transition: width 0.3s ease-in-out;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        /* Scrollable container */
+        .scrollable {
+            max-height: 300px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+        }
+        .scrollable::-webkit-scrollbar {
+            width: 6px;
+        }
+        .scrollable::-webkit-scrollbar-thumb {
+            background-color: rgba(156, 163, 175, 0.5);
+            border-radius: 3px;
+        }
+        /* Confetti effect */
+        #confetti {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+        }
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            width: 160px;
+            font-size: 0.875rem;
+        }
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-yellow-100 to-orange-50 min-h-screen font-sans">
+    <div id="confetti"></div>
+    <div id="notification-area" class="fixed top-4 right-4 z-50 flex flex-col gap-2"></div>
+    
+    <div class="container mx-auto p-4">
+        <!-- Game Header -->
+        <div class="flex justify-between items-center mb-6">
+            <div class="flex items-center">
+                <div class="text-4xl mr-2">🐵</div>
+                <h1 class="text-3xl font-bold text-amber-800">Monkey Mart</h1>
+            </div>
+            <div class="flex gap-2">
+                <button id="save-btn" class="px-3 py-1 bg-green-500 text-white rounded-lg hover:bg-green-600">Lưu Game</button>
+                <button id="reset-btn" class="px-3 py-1 bg-red-500 text-white rounded-lg hover:bg-red-600">Đặt Lại</button>
+            </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 mb-6">
+            <div class="bg-white rounded-xl p-3 shadow-lg flex items-center">
+                <div class="text-2xl mr-2">💰</div>
+                <div>
+                    <div class="text-yellow-600 font-bold text-xs">Tiền</div>
+                    <div id="money" class="text-xl font-bold">$100</div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-3 shadow-lg flex items-center">
+                <div class="text-2xl mr-2">✨</div>
+                <div>
+                    <div class="text-blue-600 font-bold text-xs">Cấp độ</div>
+                    <div id="level" class="text-xl font-bold">1</div>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                        <div id="exp-bar" class="progress-bar bg-blue-600 rounded-full h-2" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-3 shadow-lg flex items-center">
+                <div class="text-2xl mr-2">👥</div>
+                <div>
+                    <div class="text-green-600 font-bold text-xs">Khách hàng</div>
+                    <div id="customers" class="text-xl font-bold">0/5</div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-3 shadow-lg flex items-center">
+                <div class="text-2xl mr-2">⚡</div>
+                <div>
+                    <div class="text-purple-600 font-bold text-xs">Tự động bán</div>
+                    <div id="auto-sell" class="text-xl font-bold">0/s</div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-3 shadow-lg flex items-center">
+                <div class="text-2xl mr-2">📊</div>
+                <div>
+                    <div class="text-red-600 font-bold text-xs">Danh tiếng</div>
+                    <div id="reputation" class="text-xl font-bold">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="mb-4 border-b border-gray-200">
+            <ul class="flex flex-wrap -mb-px" id="tab-navigation">
+                <li class="mr-2">
+                    <button class="tab-btn active inline-block p-4 border-b-2 border-blue-500 rounded-t-lg" data-tab="store">Cửa hàng</button>
+                </li>
+                <li class="mr-2">
+                    <button class="tab-btn inline-block p-4 border-b-2 border-transparent hover:border-gray-300 rounded-t-lg" data-tab="upgrades">Nâng cấp</button>
+                </li>
+                <li class="mr-2">
+                    <button class="tab-btn inline-block p-4 border-b-2 border-transparent hover:border-gray-300 rounded-t-lg" data-tab="staff">Nhân viên</button>
+                </li>
+                <li class="mr-2">
+                    <button class="tab-btn inline-block p-4 border-b-2 border-transparent hover:border-gray-300 rounded-t-lg" data-tab="achievements">Thành tựu</button>
+                </li>
+                <li>
+                    <button class="tab-btn inline-block p-4 border-b-2 border-transparent hover:border-gray-300 rounded-t-lg" data-tab="stats">Thống kê</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content active" id="store-tab">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Products Section -->
+                <div class="lg:col-span-2">
+                    <h2 class="text-xl font-bold mb-4 text-amber-800">Sản phẩm</h2>
+                    <div id="products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+                </div>
+
+                <!-- Customers and Info Section -->
+                <div class="space-y-4">
+                    <!-- Store status -->
+                    <div class="bg-white rounded-xl p-4 shadow-lg">
+                        <h2 class="text-xl font-bold mb-2 text-amber-800">Trạng thái cửa hàng</h2>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <div>Doanh thu hôm nay:</div>
+                            <div id="today-revenue" class="font-bold">$0</div>
+                            <div>Sản phẩm đã bán:</div>
+                            <div id="sold-count" class="font-bold">0</div>
+                            <div>Khách phục vụ:</div>
+                            <div id="served-count" class="font-bold">0</div>
+                            <div>Vòng quay kho:</div>
+                            <div id="inventory-turnover" class="font-bold">0</div>
+                        </div>
+                    </div>
+
+                    <!-- Current Event -->
+                    <div id="event-container" class="bg-white rounded-xl p-4 shadow-lg hidden">
+                        <h2 class="text-xl font-bold mb-2 text-amber-800">Sự kiện đặc biệt</h2>
+                        <div id="current-event" class="text-sm"></div>
+                    </div>
+                    
+                    <!-- Customers -->
+                    <div class="bg-white rounded-xl p-4 shadow-lg">
+                        <h2 class="text-xl font-bold mb-2 text-amber-800">Khách hàng đang chờ</h2>
+                        <div id="customer-queue" class="flex flex-wrap gap-3 min-h-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="upgrades-tab">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Store Upgrades -->
+                <div>
+                    <h2 class="text-xl font-bold mb-4 text-amber-800">Nâng cấp cửa hàng</h2>
+                    <div id="store-upgrades" class="space-y-2 scrollable bg-white rounded-xl p-4 shadow-lg"></div>
+                </div>
+
+                <!-- Marketing Campaigns -->
+                <div>
+                    <h2 class="text-xl font-bold mb-4 text-amber-800">Chiến dịch quảng cáo</h2>
+                    <div id="marketing-campaigns" class="space-y-2 scrollable bg-white rounded-xl p-4 shadow-lg"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="staff-tab">
+            <h2 class="text-xl font-bold mb-4 text-amber-800">Thuê nhân viên</h2>
+            <div id="staff-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </div>
+
+        <div class="tab-content" id="achievements-tab">
+            <h2 class="text-xl font-bold mb-4 text-amber-800">Thành tựu</h2>
+            <div id="achievements-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </div>
+
+        <div class="tab-content" id="stats-tab">
+            <h2 class="text-xl font-bold mb-4 text-amber-800">Thống kê chi tiết</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl p-4 shadow-lg">
+                    <h3 class="font-bold mb-2">Thống kê tổng quan</h3>
+                    <div id="overall-stats" class="space-y-1 text-sm"></div>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-lg">
+                    <h3 class="font-bold mb-2">Doanh số theo sản phẩm</h3>
+                    <div id="product-stats" class="space-y-1 text-sm"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class MonkeyMartGame {
+            constructor() {
+                // Core game data
+                this.money = 100;
+                this.level = 1;
+                this.exp = 0;
+                this.expNeeded = 100;
+                this.reputation = 0;
+                this.customers = 0;
+                this.maxCustomers = 5;
+                this.autoSellRate = 0;
+                this.dayCounter = 1;
+                this.timeOfDay = 0; // 0-24 hours
+                
+                // Game statistics
+                this.stats = {
+                    totalRevenue: 0,
+                    totalSold: 0,
+                    totalCustomers: 0,
+                    totalRestocked: 0,
+                    todayRevenue: 0,
+                    dayRecords: [],
+                    productSales: {}
+                };
+
+                // Products
+                this.products = [
+                    { id: 1, name: "Chuối", stock: 5, price: 10, basePrice: 10, restockCost: 5, image: "🍌", demand: 1.0, salesCount: 0 },
+                    { id: 2, name: "Táo", stock: 5, price: 15, basePrice: 15, restockCost: 8, image: "🍎", demand: 1.0, salesCount: 0 },
+                    { id: 3, name: "Cam", stock: 5, price: 12, basePrice: 12, restockCost: 6, image: "🍊", demand: 1.0, salesCount: 0 },
+                    { id: 4, name: "Dứa", stock: 0, price: 20, basePrice: 20, restockCost: 10, image: "🍍", demand: 1.0, salesCount: 0, locked: true, unlockLevel: 3 },
+                    { id: 5, name: "Dâu", stock: 0, price: 25, basePrice: 25, restockCost: 12, image: "🍓", demand: 1.2, salesCount: 0, locked: true, unlockLevel: 5 },
+                    { id: 6, name: "Xoài", stock: 0, price: 30, basePrice: 30, restockCost: 15, image: "🥭", demand: 1.3, salesCount: 0, locked: true, unlockLevel: 7 },
+                    { id: 7, name: "Nho", stock: 0, price: 35, basePrice: 35, restockCost: 20, image: "🍇", demand: 1.4, salesCount: 0, locked: true, unlockLevel: 9 },
+                    { id: 8, name: "Dừa", stock: 0, price: 40, basePrice: 40, restockCost: 25, image: "🥥", demand: 1.5, salesCount: 0, locked: true, unlockLevel: 12 },
+                    { id: 9, name: "Bơ", stock: 0, price: 45, basePrice: 45, restockCost: 30, image: "🥑", demand: 1.6, salesCount: 0, locked: true, unlockLevel: 15 }
+                ];
+
+                // Store upgrades
+                this.storeUpgrades = [
+                    { 
+                        id: 1, 
+                        name: "Tự động bán hàng", 
+                        description: "Tự động bán +1 sản phẩm/giây",
+                        cost: 200, 
+                        level: 0, 
+                        maxLevel: 10,
+                        effect: 1,
+                        type: "autoSell",
+                        unlockLevel: 1
+                    },
+                    { 
+                        id: 2, 
+                        name: "Kệ hàng lớn hơn", 
+                        description: "Tăng số lượng khách +1",
+                        cost: 150, 
+                        level: 0, 
+                        maxLevel: 10,
+                        effect: 1,
+                        type: "maxCustomers",
+                        unlockLevel: 1
+                    },
+                    { 
+                        id: 3, 
+                        name: "Chiến lược giá", 
+                        description: "Tăng giá bán +10%",
+                        cost: 300, 
+                        level: 0, 
+                        maxLevel: 10,
+                        effect: 0.1,
+                        type: "priceMultiplier",
+                        unlockLevel: 2
+                    },
+                    { 
+                        id: 4, 
+                        name: "Hiệu quả nhập hàng", 
+                        description: "Giảm giá nhập hàng -5%",
+                        cost: 250, 
+                        level: 0, 
+                        maxLevel: 10,
+                        effect: 0.05,
+                        type: "restockDiscount",
+                        unlockLevel: 2
+                    },
+                    { 
+                        id: 5, 
+                        name: "EXP Boost", 
+                        description: "Tăng kinh nghiệm nhận được +20%",
+                        cost: 400, 
+                        level: 0, 
+                        maxLevel: 5,
+                        effect: 0.2,
+                        type: "expBoost",
+                        unlockLevel: 3
+                    },
+                    { 
+                        id: 6, 
+                        name: "Kiên nhẫn khách hàng", 
+                        description: "Khách hàng chờ đợi lâu hơn +20%",
+                        cost: 350, 
+                        level: 0, 
+                        maxLevel: 5,
+                        effect: 0.2,
+                        type: "patienceBoost",
+                        unlockLevel: 4
+                    },
+                    { 
+                        id: 7, 
+                        name: "Nhập hàng đa dạng", 
+                        description: "Khi nhập hàng, bạn nhận được +2 thay vì +1",
+                        cost: 500, 
+                        level: 0, 
+                        maxLevel: 3,
+                        effect: 1,
+                        type: "bulkRestock",
+                        unlockLevel: 5
+                    }
+                ];
+
+                // Marketing campaigns
+                this.marketingCampaigns = [
+                    {
+                        id: 1,
+                        name: "Tờ rơi đơn giản",
+                        description: "Tăng tỉ lệ khách hàng đến +20% trong 1 phút",
+                        cost: 50,
+                        duration: 60, // seconds
+                        effect: 0.2,
+                        type: "customerRate",
+                        unlockLevel: 1,
+                        active: false,
+                        timeLeft: 0
+                    },
+                    {
+                        id: 2,
+                        name: "Giảm giá cuối tuần",
+                        description: "Tăng nhu cầu tất cả sản phẩm +30% trong 2 phút",
+                        cost: 150,
+                        duration: 120, // seconds
+                        effect: 0.3,
+                        type: "productDemand",
+                        unlockLevel: 3,
+                        active: false,
+                        timeLeft: 0
+                    },
+                    {
+                        id: 3,
+                        name: "Quảng cáo trên mạng",
+                        description: "Tăng danh tiếng +5 và tỷ lệ khách +25% trong 3 phút",
+                        cost: 300,
+                        duration: 180, // seconds
+                        effect: { reputation: 5, customerRate: 0.25 },
+                        type: "mixed",
+                        unlockLevel: 5,
+                        active: false,
+                        timeLeft: 0
+                    },
+                    {
+                        id: 4,
+                        name: "Sự kiện đặc biệt",
+                        description: "Tăng giá bán +20% và tỷ lệ khách +30% trong 2 phút",
+                        cost: 500,
+                        duration: 120, // seconds
+                        effect: { priceBoost: 0.2, customerRate: 0.3 },
+                        type: "mixed",
+                        unlockLevel: 7,
+                        active: false,
+                        timeLeft: 0
+                    }
+                ];
+
+                // Staff members
+                this.staffMembers = [
+                    {
+                        id: 1,
+                        name: "Thu ngân",
+                        description: "Tự động bán +2/giây",
+                        image: "👩‍💼",
+                        cost: 500,
+                        hired: false,
+                        effect: { autoSell: 2 },
+                        unlockLevel: 4
+                    },
+                    {
+                        id: 2,
+                        name: "Người quản lý kho",
+                        description: "Giảm chi phí nhập hàng -15%",
+                        image: "👨‍🔧",
+                        cost: 750,
+                        hired: false,
+                        effect: { restockDiscount: 0.15 },
+                        unlockLevel: 6
+                    },
+                    {
+                        id: 3,
+                        name: "Nhân viên marketing",
+                        description: "Tăng hiệu quả quảng cáo +25%",
+                        image: "👩‍💻",
+                        cost: 1000,
+                        hired: false,
+                        effect: { marketingBoost: 0.25 },
+                        unlockLevel: 8
+                    },
+                    {
+                        id: 4,
+                        name: "Trợ lý quản lý",
+                        description: "Tăng số lượng khách +3, nhận EXP +10%",
+                        image: "👨‍💼",
+                        cost: 1500,
+                        hired: false,
+                        effect: { maxCustomers: 3, expBoost: 0.1 },
+                        unlockLevel: 10
+                    }
+                ];
+
+                // Customer types
+                this.customerTypes = [
+                    { type: "normal", patience: 10, spending: 1, emoji: "👤", weight: 10 },
+                    { type: "rich", patience: 8, spending: 2, emoji: "👔", weight: 3 },
+                    { type: "hurry", patience: 5, spending: 1.5, emoji: "⚡", weight: 5 },
+                    { type: "family", patience: 12, spending: 2.5, emoji: "👨‍👩‍👧", weight: 2, unlockLevel: 5 },
+                    { type: "tourist", patience: 15, spending: 3, emoji: "🧳", weight: 1, unlockLevel: 8 }
+                ];
+
+                // Active customers
+                this.activeCustomers = [];
+
+                // Achievements
+                this.achievements = [
+                    { id: 1, name: "Khởi nghiệp", description: "Đạt 500 đồng", requirement: { money: 500 }, completed: false, reward: 50 },
+                    { id: 2, name: "Cửa hàng bận rộn", description: "Phục vụ 50 khách hàng", requirement: { customers: 50 }, completed: false, reward: 100 },
+                    { id: 3, name: "Thương nhân cấp cao", description: "Đạt cấp độ 5", requirement: { level: 5 }, completed: false, reward: 200 },
+                    { id: 4, name: "Doanh nhân thành công", description: "Bán 200 sản phẩm", requirement: { sales: 200 }, completed: false, reward: 300 },
+                    { id: 5, name: "Triệu phú", description: "Đạt 10,000 đồng", requirement: { money: 10000 }, completed: false, reward: 1000 },
+                    { id: 6, name: "Chuỗi cửa hàng", description: "Mở khóa tất cả sản phẩm", requirement: { products: 9 }, completed: false, reward: 2000 }
+                ];
+
+                // Events
+                this.randomEvents = [
+                    { 
+                        id: 1, 
+                        name: "Mùa thu hoạch",
+                        description: "Chi phí nhập hàng giảm 50% trong 1 phút!",
+                        effect: { type: "restockDiscount", value: 0.5 },
+                        duration: 60, // seconds
+                        weight: 10
+                    },
+                    { 
+                        id: 2, 
+                        name: "Ngày lễ",
+                        description: "Nhiều khách hàng đến hơn trong 1 phút!",
+                        effect: { type: "customerRateBoost", value: 2 },
+                        duration: 60, // seconds
+                        weight: 8
+                    },
+                    { 
+                        id: 3, 
+                        name: "Hàng chất lượng cao",
+                        description: "Giá sản phẩm tăng 25% trong 1 phút!",
+                        effect: { type: "priceBoost", value: 0.25 },
+                        duration: 60, // seconds
+                        weight: 6
+                    },
+                    { 
+                        id: 4, 
+                        name: "Sóng nhiệt",
+                        description: "Nhu cầu trái cây tăng 50% trong 45 giây!",
+                        effect: { type: "demandBoost", value: 0.5 },
+                        duration: 45, // seconds
+                        weight: 4
+                    }
+                ];
+                
+                this.currentEvent = null;
+                this.customerRateBoost = 0;
+                this.expBoost = 0;
+                this.restockDiscount = 0;
+                this.bulkRestockAmount = 1;
+                this.priceMultiplier = 1;
+                this.patienceBoost = 0;
+                
+                // Load game if saved
+                this.loadGame();
+                
+                // Setup event listeners
+                this.setupEventListeners();
+                
+                // Start game loop
+                this.startGameLoop();
+                
+                // Render initial state
+                this.render();
+            }
+
+            setupEventListeners() {
+                // Tab navigation
+                document.getElementById('tab-navigation').addEventListener('click', (e) => {
+                    if (e.target.classList.contains('tab-btn')) {
+                        // Remove active class from all tabs
+                        document.querySelectorAll('.tab-btn').forEach(btn => {
+                            btn.classList.remove('active', 'border-blue-500');
+                            btn.classList.add('border-transparent');
+                        });
+                        
+                        // Add active class to clicked tab
+                        e.target.classList.add('active', 'border-blue-500');
+                        e.target.classList.remove('border-transparent');
+                        
+                        // Hide all tab contents
+                        document.querySelectorAll('.tab-content').forEach(content => {
+                            content.classList.remove('active');
+                        });
+                        
+                        // Show selected tab content
+                        const tabName = e.target.dataset.tab;
+                        document.getElementById(`${tabName}-tab`).classList.add('active');
+                    }
+                });
+
+                // Product clicks
+                document.getElementById('products').addEventListener('click', (e) => {
+                    const action = e.target.dataset.action;
+                    const productId = parseInt(e.target.dataset.product);
+                    
+                    if (action === 'sell') {
+                        this.sellProduct(productId);
+                        this.createCoinAnimation(e.target);
+                    }
+                    if (action === 'restock') {
+                        this.restockProduct(productId);
+                    }
+                });
+
+                // Store upgrades
+                document.getElementById('store-upgrades').addEventListener('click', (e) => {
+                    if (e.target.dataset.upgrade) {
+                        this.purchaseUpgrade(parseInt(e.target.dataset.upgrade));
+                    }
+                });
+
+                // Marketing campaigns
+                document.getElementById('marketing-campaigns').addEventListener('click', (e) => {
+                    if (e.target.dataset.campaign) {
+                        this.startMarketingCampaign(parseInt(e.target.dataset.campaign));
+                    }
+                });
+
+                // Staff
+                document.getElementById('staff-list').addEventListener('click', (e) => {
+                    if (e.target.dataset.staff) {
+                        this.hireStaff(parseInt(e.target.dataset.staff));
+                    }
+                });
+
+                // Save & Reset
+                document.getElementById('save-btn').addEventListener('click', () => {
+                    this.saveGame();
+                    this.showNotification("Game saved successfully!", "success");
+                });
+                
+                document.getElementById('reset-btn').addEventListener('click', () => {
+                    if (confirm("Are you sure you want to reset the game? All progress will be lost.")) {
+                        localStorage.removeItem('monkeyMartSave');
+                        location.reload();
+                    }
+                });
+            }
+
+            startGameLoop() {
+                // Fast updates (100ms)
+                setInterval(() => {
+                    this.checkAchievements();
+                }, 100);
+                
+                // Main game loop (1 second)
+                setInterval(() => {
+                    this.updateGame();
+                    this.render();
+                }, 1000);
+
+                // Customer spawner (varies by level and upgrades)
+                this.updateCustomerSpawnRate();
+
+                // Random events
+                setInterval(() => {
+                    this.tryTriggerRandomEvent();
+                }, 60000); // Try to trigger event every minute
+            }
+
+            updateGame() {
+                // Update time
+                this.timeOfDay = (this.timeOfDay + 1) % 24;
+                if (this.timeOfDay === 0) {
+                    this.dayCounter++;
+                    this.stats.dayRecords.push({
+                        day: this.dayCounter,
+                        revenue: this.stats.todayRevenue,
+                        sold: this.stats.totalSold - (this.stats.dayRecords.reduce((sum, day) => sum + day.sold, 0))
+                    });
+                    this.stats.todayRevenue = 0;
+                }
+
+                // Auto-sell if available
+                if (this.autoSellRate > 0) {
+                    let productsWithStock = this.products.filter(p => !p.locked && p.stock > 0);
+                    if (productsWithStock.length > 0) {
+                        // Sell from random products that have stock
+                        let autoSellAmount = this.autoSellRate;
+                        while (autoSellAmount > 0 && productsWithStock.length > 0) {
+                            let randomIndex = Math.floor(Math.random() * productsWithStock.length);
+                            let product = productsWithStock[randomIndex];
+                            if (product.stock > 0) {
+                                product.stock--;
+                                this.money += product.price;
+                                this.stats.totalRevenue += product.price;
+                                this.stats.todayRevenue += product.price;
+                                this.stats.totalSold++;
+                                product.salesCount++;
+                                this.addExp(1 * (1 + this.expBoost));
+                                autoSellAmount--;
+                            } else {
+                                productsWithStock.splice(randomIndex, 1);
+                            }
+                        }
+                    }
+                }
+
+                // Update marketing campaigns
+                this.updateMarketingCampaigns();
+
+                // Update current event if there is one
+                this.updateCurrentEvent();
+
+                // Update customers
+                this.updateCustomers();
+
+                // Check for low stock notifications
+                this.checkLowStock();
+            }
+
+            updateMarketingCampaigns() {
+                this.marketingCampaigns.forEach(campaign => {
+                    if (campaign.active) {
+                        campaign.timeLeft--;
+                        if (campaign.timeLeft <= 0) {
+                            campaign.active = false;
+                            this.showNotification(`Chiến dịch "${campaign.name}" đã kết thúc!`, "info");
+                        }
+                    }
+                });
+            }
+
+            updateCurrentEvent() {
+                if (this.currentEvent) {
+                    this.currentEvent.timeLeft--;
+                    if (this.currentEvent.timeLeft <= 0) {
+                        this.showNotification(`Sự kiện "${this.currentEvent.name}" đã kết thúc!`, "info");
+                        this.currentEvent = null;
+                    }
+                }
+            }
+
+            updateCustomers() {
+                // Update existing customers
+                this.activeCustomers = this.activeCustomers.filter(customer => {
+                    customer.patience--;
+                    if (customer.patience <= 0) {
+                        // Customer leaves without buying
+                        this.reputation = Math.max(0, this.reputation - 1);
+                        this.customers--;
+                        return false;
+                    }
+                    return true;
+                });
+            }
+
+            updateCustomerSpawnRate() {
+                // Calculate spawn rate based on level, reputation, time of day
+                const baseInterval = 5000 - (this.level * 200); // Base spawn interval reduces as level increases
+                const reputationBonus = this.reputation * 50; // Reputation reduces interval
+                const effectiveInterval = Math.max(1000, baseInterval - reputationBonus);
+                
+                // Clear previous interval
+                if (this.customerInterval) {
+                    clearInterval(this.customerInterval);
+                }
+                
+                // Set new interval
+                this.customerInterval = setInterval(() => {
+                    const customerRateMultiplier = 1 + this.customerRateBoost;
+                    // Only spawn if not at max customers and random chance passes (affected by boost)
+                    if (this.customers < this.maxCustomers && Math.random() < customerRateMultiplier * 0.7) {
+                        this.spawnCustomer();
+                    }
+                }, effectiveInterval);
+            }
+
+            sellProduct(productId) {
+                const product = this.products.find(p => p.id === productId);
+                
+                if (product && product.stock > 0 && !product.locked) {
+                    // Find if there's a customer to serve
+                    if (this.activeCustomers.length > 0) {
+                        const customer = this.activeCustomers.shift();
+                        this.customers--;
+                        
+                        // Calculate actual price with customer spending multiplier
+                        const actualPrice = Math.round(product.price * customer.spending);
+                        
+                        product.stock--;
+                        this.money += actualPrice;
+                        this.stats.totalRevenue += actualPrice;
+                        this.stats.todayRevenue += actualPrice;
+                        this.stats.totalSold++;
+                        this.stats.totalCustomers++;
+                        product.salesCount++;
+                        
+                        // Add to product stats
+                        if (!this.stats.productSales[product.id]) {
+                            this.stats.productSales[product.id] = {
+                                name: product.name,
+                                sales: 1,
+                                revenue: actualPrice
+                            };
+                        } else {
+                            this.stats.productSales[product.id].sales++;
+                            this.stats.productSales[product.id].revenue += actualPrice;
+                        }
+                        
+                        // Add exp and reputation
+                        this.addExp(1 * (1 + this.expBoost));
+                        this.reputation += 0.1;
+                        
+                        // Show satisfied customer
+                        this.showNotification(`Khách hàng mua ${product.name} với giá $${actualPrice}!`, "success");
+                        
+                        // Check for achievement progress
+                        this.checkAchievements();
+                    } else {
+                        this.showNotification("Không có khách hàng nào!", "warning");
+                    }
+                    
+                    this.render();
+                }
+            }
+
+            restockProduct(productId) {
+                const product = this.products.find(p => p.id === productId);
+                const restockCost = product ? Math.round(product.restockCost * (1 - this.restockDiscount)) : 0;
+                
+                if (product && this.money >= restockCost && !product.locked) {
+                    product.stock += this.bulkRestockAmount;
+                    this.money -= restockCost;
+                    this.stats.totalRestocked += this.bulkRestockAmount;
+                    
+                    this.render();
+                }
+            }
+
+            spawnCustomer() {
+                if (this.customers < this.maxCustomers) {
+                    // Filter eligible customer types based on level
+                    const eligibleCustomers = this.customerTypes.filter(type => 
+                        !type.unlockLevel || type.unlockLevel <= this.level
+                    );
+                    
+                    // Calculate weights
+                    const totalWeight = eligibleCustomers.reduce((sum, type) => sum + type.weight, 0);
+                    let randomValue = Math.random() * totalWeight;
+                    
+                    // Select customer type based on weight
+                    let selectedType = eligibleCustomers[0];
+                    for (const type of eligibleCustomers) {
+                        randomValue -= type.weight;
+                        if (randomValue <= 0) {
+                            selectedType = type;
+                            break;
+                        }
+                    }
+                    
+                    // Apply patience boost
+                    const basePatienceBoost = 1 + this.patienceBoost;
+                    const patience = Math.round(selectedType.patience * basePatienceBoost);
+                    
+                    const customer = {
+                        ...selectedType,
+                        patience: patience,
+                        maxPatience: patience
+                    };
+                    
+                    this.activeCustomers.push(customer);
+                    this.customers++;
+                    
+                    this.render();
+                }
+            }
+
+            purchaseUpgrade(upgradeId) {
+                const upgrade = this.storeUpgrades.find(u => u.id === upgradeId);
+                
+                if (upgrade && this.money >= upgrade.cost && upgrade.level < upgrade.maxLevel) {
+                    this.money -= upgrade.cost;
+                    upgrade.level++;
+                    
+                    // Increase cost for next level
+                    upgrade.cost = Math.floor(upgrade.cost * 1.5);
+                    
+                    // Apply upgrade effect
+                    switch(upgrade.type) {
+                        case "autoSell":
+                            this.autoSellRate += upgrade.effect;
+                            break;
+                        case "maxCustomers":
+                            this.maxCustomers += upgrade.effect;
+                            this.updateCustomerSpawnRate();
+                            break;
+                        case "priceMultiplier":
+                            this.priceMultiplier += upgrade.effect;
+                            this.updateProductPrices();
+                            break;
+                        case "restockDiscount":
+                            this.restockDiscount += upgrade.effect;
+                            break;
+                        case "expBoost":
+                            this.expBoost += upgrade.effect;
+                            break;
+                        case "patienceBoost":
+                            this.patienceBoost += upgrade.effect;
+                            break;
+                        case "bulkRestock":
+                            this.bulkRestockAmount += upgrade.effect;
+                            break;
+                    }
+                    
+                    this.showNotification(`Đã mua nâng cấp: ${upgrade.name}!`, "success");
+                    this.render();
+                }
+            }
+
+            startMarketingCampaign(campaignId) {
+                const campaign = this.marketingCampaigns.find(c => c.id === campaignId);
+                
+                if (campaign && this.money >= campaign.cost && !campaign.active) {
+                    this.money -= campaign.cost;
+                    campaign.active = true;
+                    campaign.timeLeft = campaign.duration;
+                    
+                    // Apply campaign effects
+                    if (campaign.type === "customerRate") {
+                        this.customerRateBoost += campaign.effect;
+                        this.updateCustomerSpawnRate();
+                    } else if (campaign.type === "productDemand") {
+                        this.products.forEach(product => {
+                            product.demand += campaign.effect;
+                            this.updateProductPrices();
+                        });
+                    } else if (campaign.type === "mixed") {
+                        if (campaign.effect.reputation) {
+                            this.reputation += campaign.effect.reputation;
+                        }
+                        if (campaign.effect.customerRate) {
+                            this.customerRateBoost += campaign.effect.customerRate;
+                            this.updateCustomerSpawnRate();
+                        }
+                        if (campaign.effect.priceBoost) {
+                            this.products.forEach(product => {
+                                product.price = Math.round(product.basePrice * (1 + campaign.effect.priceBoost) * this.priceMultiplier);
+                            });
+                        }
+                    }
+                    
+                    this.showNotification(`Đã bắt đầu chiến dịch: ${campaign.name}!`, "success");
+                    this.render();
+                    
+                    // Set timeout to remove effects when campaign ends
+                    setTimeout(() => {
+                        if (campaign.type === "customerRate") {
+                            this.customerRateBoost -= campaign.effect;
+                            this.updateCustomerSpawnRate();
+                        } else if (campaign.type === "productDemand") {
+                            this.products.forEach(product => {
+                                product.demand -= campaign.effect;
+                                this.updateProductPrices();
+                            });
+                        } else if (campaign.type === "mixed") {
+                            if (campaign.effect.customerRate) {
+                                this.customerRateBoost -= campaign.effect.customerRate;
+                                this.updateCustomerSpawnRate();
+                            }
+                            if (campaign.effect.priceBoost) {
+                                this.updateProductPrices(); // Reset prices to normal
+                            }
+                        }
+                    }, campaign.duration * 1000);
+                }
+            }
+
+            hireStaff(staffId) {
+                const staff = this.staffMembers.find(s => s.id === staffId);
+                
+                if (staff && this.money >= staff.cost && !staff.hired) {
+                    this.money -= staff.cost;
+                    staff.hired = true;
+                    
+                    // Apply staff effects
+                    if (staff.effect.autoSell) {
+                        this.autoSellRate += staff.effect.autoSell;
+                    }
+                    if (staff.effect.restockDiscount) {
+                        this.restockDiscount += staff.effect.restockDiscount;
+                    }
+                    if (staff.effect.marketingBoost) {
+                        // This will be applied when marketing campaigns are started
+                    }
+                    if (staff.effect.maxCustomers) {
+                        this.maxCustomers += staff.effect.maxCustomers;
+                        this.updateCustomerSpawnRate();
+                    }
+                    if (staff.effect.expBoost) {
+                        this.expBoost += staff.effect.expBoost;
+                    }
+                    
+                    this.showNotification(`Đã thuê ${staff.name}!`, "success");
+                    this.render();
+                }
+            }
+
+            addExp(amount) {
+                this.exp += amount;
+                
+                while (this.exp >= this.expNeeded) {
+                    this.exp -= this.expNeeded;
+                    this.level++;
+                    this.expNeeded = Math.floor(this.expNeeded * 1.2);
+                    
+                    // Check for level-based unlocks
+                    this.checkLevelUnlocks();
+                    
+                    this.showNotification(`Bạn đã đạt cấp độ ${this.level}!`, "level-up");
+                    this.createConfetti();
+                }
+            }
+
+            checkLevelUnlocks() {
+                // Unlock products
+                this.products.forEach(product => {
+                    if (product.unlockLevel && product.unlockLevel <= this.level && product.locked) {
+                        product.locked = false;
+                        this.showNotification(`Đã mở khóa sản phẩm mới: ${product.name}!`, "unlock");
+                    }
+                });
+                
+                // Check for upgrades to display
+                this.render();
+            }
+
+            tryTriggerRandomEvent() {
+                // Only trigger if no current event
+                if (!this.currentEvent && Math.random() < 0.3) { // 30% chance per minute
+                    // Calculate total weight
+                    const totalWeight = this.randomEvents.reduce((sum, event) => sum + event.weight, 0);
+                    let randomValue = Math.random() * totalWeight;
+                    
+                    // Select event based on weight
+                    let selectedEvent = null;
+                    for (const event of this.randomEvents) {
+                        randomValue -= event.weight;
+                        if (randomValue <= 0) {
+                            selectedEvent = {...event};
+                            break;
+                        }
+                    }
+                    
+                    if (selectedEvent) {
+                        this.currentEvent = {
+                            ...selectedEvent,
+                            timeLeft: selectedEvent.duration
+                        };
+                        
+                        // Apply event effect
+                        this.applyEventEffect(this.currentEvent);
+                        
+                        this.showNotification(`Sự kiện mới: ${this.currentEvent.name}!`, "event");
+                        this.render();
+                    }
+                }
+            }
+
+            applyEventEffect(event) {
+                switch(event.effect.type) {
+                    case "restockDiscount":
+                        this.restockDiscount += event.effect.value;
+                        setTimeout(() => {
+                            this.restockDiscount -= event.effect.value;
+                        }, event.duration * 1000);
+                        break;
+                    case "customerRateBoost":
+                        this.customerRateBoost += event.effect.value;
+                        this.updateCustomerSpawnRate();
+                        setTimeout(() => {
+                            this.customerRateBoost -= event.effect.value;
+                            this.updateCustomerSpawnRate();
+                        }, event.duration * 1000);
+                        break;
+                    case "priceBoost":
+                        // Apply price boost
+                        this.products.forEach(product => {
+                            if (!product.locked) {
+                                product.price = Math.round(product.basePrice * (1 + event.effect.value) * this.priceMultiplier);
+                            }
+                        });
+                        // Schedule reset
+                        setTimeout(() => {
+                            this.updateProductPrices();
+                        }, event.duration * 1000);
+                        break;
+                    case "demandBoost":
+                        this.products.forEach(product => {
+                            product.demand += event.effect.value;
+                        });
+                        this.updateProductPrices();
+                        setTimeout(() => {
+                            this.products.forEach(product => {
+                                product.demand -= event.effect.value;
+                            });
+                            this.updateProductPrices();
+                        }, event.duration * 1000);
+                        break;
+                }
+            }
+
+            updateProductPrices() {
+                this.products.forEach(product => {
+                    product.price = Math.round(product.basePrice * this.priceMultiplier * product.demand);
+                });
+            }
+
+            checkAchievements() {
+                this.achievements.forEach(achievement => {
+                    if (!achievement.completed) {
+                        let completed = false;
+                        
+                        if (achievement.requirement.money && this.money >= achievement.requirement.money) {
+                            completed = true;
+                        } else if (achievement.requirement.customers && this.stats.totalCustomers >= achievement.requirement.customers) {
+                            completed = true;
+                        } else if (achievement.requirement.level && this.level >= achievement.requirement.level) {
+                            completed = true;
+                        } else if (achievement.requirement.sales && this.stats.totalSold >= achievement.requirement.sales) {
+                            completed = true;
+                        } else if (achievement.requirement.products) {
+                            const unlockedProducts = this.products.filter(p => !p.locked).length;
+                            if (unlockedProducts >= achievement.requirement.products) {
+                                completed = true;
+                            }
+                        }
+                        
+                        if (completed) {
+                            achievement.completed = true;
+                            this.money += achievement.reward;
+                            this.showNotification(`Thành tựu đạt được: ${achievement.name}! +$${achievement.reward}`, "achievement");
+                            this.render();
+                        }
+                    }
+                });
+            }
+
+            checkLowStock() {
+                this.products.forEach(product => {
+                    if (!product.locked && product.stock <= 1 && !product.lowStockNotified) {
+                        this.showNotification(`Sản phẩm ${product.name} sắp hết hàng!`, "warning");
+                        product.lowStockNotified = true;
+                    } else if (product.stock > 1) {
+                        product.lowStockNotified = false;
+                    }
+                });
+            }
+
+            // UI Related Functions
+            render() {
+                this.renderProducts();
+                this.renderStats();
+                this.renderUpgrades();
+                this.renderMarketingCampaigns();
+                this.renderStaff();
+                this.renderAchievements();
+                this.renderCustomers();
+                this.renderDetailStats();
+                this.renderCurrentEvent();
+            }
+
+            renderProducts() {
+                const productsHTML = this.products
+                    .filter(product => !product.locked || (product.unlockLevel && product.unlockLevel <= this.level + 2))
+                    .map(product => {
+                        const isLocked = product.locked;
+                        const restockCost = Math.round(product.restockCost * (1 - this.restockDiscount));
+                        
+                        return `
+                            <div class="bg-white rounded-xl p-4 shadow-lg ${isLocked ? 'opacity-70 bg-gray-50' : ''} relative overflow-hidden">
+                                ${isLocked ? `
+                                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                                        <div class="bg-amber-100 px-4 py-2 rounded-lg text-amber-800 font-bold">
+                                            Mở khóa ở cấp ${product.unlockLevel}
+                                        </div>
+                                    </div>
+                                ` : ''}
+                                <div class="text-4xl mb-2 text-center product-float">${product.image}</div>
+                                <div class="font-bold text-lg">${product.name}</div>
+                                <div class="flex justify-between text-sm mb-2">
+                                    <span class="tooltip">
+                                        Kho: ${product.stock}
+                                        <span class="tooltip-text">Số lượng có sẵn</span>
+                                    </span>
+                                    <span class="tooltip">
+                                        Giá: $${product.price}
+                                        <span class="tooltip-text">Giá bán hiện tại</span>
+                                    </span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <button 
+                                        class="px-3 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50 text-sm font-medium"
+                                        data-action="sell"
+                                        data-product="${product.id}"
+                                        ${isLocked || product.stock <= 0 || this.activeCustomers.length === 0 ? 'disabled' : ''}
+                                    >Bán</button>
+                                    <button
+                                        class="px-3 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 disabled:opacity-50 text-sm font-medium tooltip"
+                                        data-action="restock"
+                                        data-product="${product.id}"
+                                        ${isLocked || this.money < restockCost ? 'disabled' : ''}
+                                    >
+                                        Nhập ($${restockCost})
+                                        ${this.bulkRestockAmount > 1 ? `<span class="tooltip-text">Nhập +${this.bulkRestockAmount} ${product.name}</span>` : ''}
+                                    </button>
+                                </div>
+                                ${!isLocked ? `
+                                    <div class="mt-2 w-full bg-gray-200 rounded-full h-1.5">
+                                        <div class="bg-green-500 h-1.5 rounded-full" style="width: ${Math.min(100, (product.demand - 1) * 100)}%"></div>
+                                    </div>
+                                    <div class="text-xs text-gray-500 text-center mt-1">Nhu cầu: ${Math.round((product.demand - 1) * 100)}%</div>
+                                ` : ''}
+                            </div>
+                        `;
+                    }).join('');
+                
+                document.getElementById('products').innerHTML = productsHTML;
+            }
+
+            renderStats() {
+                document.getElementById('money').textContent = `$${Math.floor(this.money)}`;
+                document.getElementById('level').textContent = this.level;
+                document.getElementById('exp-bar').style.width = `${(this.exp / this.expNeeded) * 100}%`;
+                document.getElementById('customers').textContent = `${this.customers}/${this.maxCustomers}`;
+                document.getElementById('auto-sell').textContent = `${this.autoSellRate}/s`;
+                document.getElementById('reputation').textContent = Math.floor(this.reputation);
+                
+                // Store stats
+                document.getElementById('today-revenue').textContent = `$${Math.floor(this.stats.todayRevenue)}`;
+                document.getElementById('sold-count').textContent = this.stats.totalSold;
+                document.getElementById('served-count').textContent = this.stats.totalCustomers;
+                
+                // Calculate inventory turnover if we have some data
+                const totalStock = this.products.reduce((sum, product) => sum + product.stock, 0);
+                const inventoryTurnover = totalStock > 0 ? (this.stats.totalSold / totalStock).toFixed(1) : "0";
+                document.getElementById('inventory-turnover').textContent = inventoryTurnover;
+            }
+
+            renderUpgrades() {
+                const upgradesHTML = this.storeUpgrades
+                    .filter(upgrade => upgrade.unlockLevel <= this.level)
+                    .map(upgrade => {
+                        const maxedOut = upgrade.level >= upgrade.maxLevel;
+                        return `
+                            <button
+                                class="w-full px-4 py-3 ${maxedOut ? 'bg-green-700' : 'bg-purple-500 hover:bg-purple-600'} text-white rounded-lg disabled:opacity-50 text-left"
+                                data-upgrade="${upgrade.id}"
+                                ${this.money < upgrade.cost || maxedOut ? 'disabled' : ''}
+                            >
+                                <div class="font-bold">${upgrade.name} ${maxedOut ? '(MAX)' : `(Lv.${upgrade.level})`}</div>
+                                <div class="text-sm">${upgrade.description}</div>
+                                <div class="text-xs mt-1">${maxedOut ? 'Đã tối đa' : `Giá: $${upgrade.cost}`}</div>
+                            </button>
+                        `;
+                    }).join('');
+                
+                document.getElementById('store-upgrades').innerHTML = upgradesHTML || '<div class="text-center text-gray-500">Không có nâng cấp khả dụng</div>';
+
+                // Marketing campaigns
+                const campaignsHTML = this.marketingCampaigns
+                    .filter(campaign => campaign.unlockLevel <= this.level)
+                    .map(campaign => {
+                        return `
+                            <button
+                                class="w-full px-4 py-3 ${campaign.active ? 'bg-green-600' : 'bg-blue-500 hover:bg-blue-600'} text-white rounded-lg disabled:opacity-50 text-left"
+                                data-campaign="${campaign.id}"
+                                ${this.money < campaign.cost || campaign.active ? 'disabled' : ''}
+                            >
+                                <div class="font-bold">${campaign.name}</div>
+                                <div class="text-sm">${campaign.description}</div>
+                                <div class="text-xs mt-1">${campaign.active ? `Còn lại: ${campaign.timeLeft}s` : `Giá: $${campaign.cost}`}</div>
+                            </button>
+                        `;
+                    }).join('');
+                
+                document.getElementById('marketing-campaigns').innerHTML = campaignsHTML || '<div class="text-center text-gray-500">Không có chiến dịch khả dụng</div>';
+            }
+
+            renderMarketingCampaigns() {
+                // This is handled in renderUpgrades to avoid duplicate code
+            }
+
+            renderStaff() {
+                const staffHTML = this.staffMembers
+                    .filter(staff => staff.unlockLevel <= this.level)
+                    .map(staff => {
+                        return `
+                            <div class="bg-white rounded-xl p-4 shadow-lg">
+                                <div class="flex items-center mb-3">
+                                    <div class="text-4xl mr-3">${staff.image}</div>
+                                    <div>
+                                        <div class="font-bold">${staff.name}</div>
+                                        <div class="text-sm text-gray-600">${staff.description}</div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full px-4 py-2 ${staff.hired ? 'bg-green-600' : 'bg-indigo-500 hover:bg-indigo-600'} text-white rounded-lg disabled:opacity-50"
+                                    data-staff="${staff.id}"
+                                    ${this.money < staff.cost || staff.hired ? 'disabled' : ''}
+                                >
+                                    ${staff.hired ? 'Đã thuê' : `Thuê ($${staff.cost})`}
+                                </button>
+                            </div>
+                        `;
+                    }).join('');
+                
+                document.getElementById('staff-list').innerHTML = staffHTML || '<div class="text-center text-gray-500">Không có nhân viên khả dụng để thuê</div>';
+            }
+
+            renderAchievements() {
+                const achievementsHTML = this.achievements.map(achievement => {
+                    return `
+                        <div class="bg-white rounded-xl p-4 shadow-lg ${achievement.completed ? 'border-2 border-green-500' : ''}">
+                            <div class="font-bold mb-1">${achievement.name}</div>
+                            <div class="text-sm text-gray-600 mb-2">${achievement.description}</div>
+                            <div class="flex justify-between items-center">
+                                <div class="text-xs ${achievement.completed ? 'text-green-600' : 'text-gray-500'}">
+                                    ${achievement.completed ? 'Hoàn thành!' : 'Chưa hoàn thành'}
+                                </div>
+                                <div class="text-sm font-bold">+$${achievement.reward}</div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                
+                document.getElementById('achievements-list').innerHTML = achievementsHTML;
+            }
+
+            renderCustomers() {
+                const customersHTML = this.activeCustomers.map(customer => {
+                    // Calculate patience percentage
+                    const patiencePercentage = (customer.patience / customer.maxPatience) * 100;
+                    let patienceColor = 'bg-green-500';
+                    if (patiencePercentage < 30) patienceColor = 'bg-red-500';
+                    else if (patiencePercentage < 70) patienceColor = 'bg-yellow-500';
+                    
+                    return `
+                        <div class="relative tooltip">
+                            <div class="customer-bounce text-3xl">${customer.emoji}</div>
+                            <div class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-6 h-1 bg-gray-200 rounded-full">
+                                <div class="${patienceColor} h-1 rounded-full" style="width: ${patiencePercentage}%"></div>
+                            </div>
+                            <span class="tooltip-text">${customer.type} - Hệ số chi tiêu: x${customer.spending}</span>
+                        </div>
+                    `;
+                }).join('');
+                
+                document.getElementById('customer-queue').innerHTML = customersHTML || '<div class="text-sm text-gray-500">Không có khách hàng nào</div>';
+            }
+
+            renderDetailStats() {
+                // Overall Stats
+                const overallStatsHTML = `
+                    <div>Tổng doanh thu: $${Math.floor(this.stats.totalRevenue)}</div>
+                    <div>Sản phẩm đã bán: ${this.stats.totalSold}</div>
+                    <div>Khách hàng phục vụ: ${this.stats.totalCustomers}</div>
+                    <div>Sản phẩm đã nhập: ${this.stats.totalRestocked}</div>
+                    <div>Ngày hoạt động: ${this.dayCounter}</div>
+                    <div>Doanh thu trung bình/ngày: $${this.dayCounter > 1 ? Math.floor(this.stats.totalRevenue / this.dayCounter) : this.stats.totalRevenue}</div>
+                `;
+                document.getElementById('overall-stats').innerHTML = overallStatsHTML;
+                
+                // Product Stats
+                let productStatsHTML = '';
+                this.products
+                    .filter(product => !product.locked && product.salesCount > 0)
+                    .forEach(product => {
+                        const sales = product.salesCount;
+                        const revenue = this.stats.productSales[product.id] ? this.stats.productSales[product.id].revenue : 0;
+                        
+                        productStatsHTML += `
+                            <div class="flex items-center mb-2">
+                                <div class="text-xl mr-2">${product.image}</div>
+                                <div class="flex-1">
+                                    <div class="font-medium">${product.name}</div>
+                                    <div class="flex justify-between text-xs">
+                                        <span>Đã bán: ${sales}</span>
+                                        <span>Doanh thu: $${Math.floor(revenue)}</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 h-1 rounded-full mt-1">
+                                        <div class="bg-blue-500 h-1 rounded-full" style="width: ${Math.min(100, (sales / Math.max(1, this.stats.totalSold)) * 100)}%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                
+                document.getElementById('product-stats').innerHTML = productStatsHTML || '<div class="text-gray-500">Chưa có dữ liệu bán hàng</div>';
+            }
+
+            renderCurrentEvent() {
+                const eventContainer = document.getElementById('event-container');
+                const currentEventEl = document.getElementById('current-event');
+                
+                if (this.currentEvent) {
+                    eventContainer.classList.remove('hidden');
+                    currentEventEl.innerHTML = `
+                        <div class="flex items-center mb-2">
+                            <div class="text-2xl mr-2">🎉</div>
+                            <div class="font-bold">${this.currentEvent.name}</div>
+                        </div>
+                        <div>${this.currentEvent.description}</div>
+                        <div class="mt-2 w-full bg-gray-200 h-1.5 rounded-full">
+                            <div class="bg-purple-500 h-1.5 rounded-full transition-all" style="width: ${(this.currentEvent.timeLeft / this.currentEvent.duration) * 100}%"></div>
+                        </div>
+                        <div class="text-xs text-right mt-1">Còn lại: ${this.currentEvent.timeLeft}s</div>
+                    `;
+                } else {
+                    eventContainer.classList.add('hidden');
+                }
+            }
+
+            // Visual effects
+            createCoinAnimation(target) {
+                const coinElement = document.createElement('div');
+                coinElement.className = 'coin-pop text-yellow-500 font-bold';
+                coinElement.textContent = '+$';
+                
+                const rect = target.getBoundingClientRect();
+                coinElement.style.left = `${rect.left + rect.width / 2}px`;
+                coinElement.style.top = `${rect.top}px`;
+                
+                document.body.appendChild(coinElement);
+                
+                // Remove after animation completes
+                setTimeout(() => {
+                    document.body.removeChild(coinElement);
+                }, 800);
+            }
+
+            createConfetti() {
+                const confettiContainer = document.getElementById('confetti');
+                confettiContainer.innerHTML = '';
+                
+                const colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4CAF50', '#8BC34A', '#FFEB3B', '#FFC107', '#FF9800', '#FF5722'];
+                
+                for (let i = 0; i < 100; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.style.width = `${Math.random() * 10 + 5}px`;
+                    confetti.style.height = `${Math.random() * 5 + 5}px`;
+                    confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.position = 'absolute';
+                    confetti.style.top = `-10px`;
+                    confetti.style.left = `${Math.random() * 100}%`;
+                    confetti.style.borderRadius = '2px';
+                    confetti.style.opacity = Math.random() + 0.5;
+                    confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+                    
+                    // Animation
+                    confetti.style.animation = `
+                        fall ${Math.random() * 3 + 2}s linear forwards,
+                        sway ${Math.random() * 4 + 3}s ease-in-out infinite alternate
+                    `;
+                    
+                    // Add animation keyframes
+                    const styleSheet = document.createElement('style');
+                    styleSheet.textContent = `
+                        @keyframes fall {
+                            to { transform: translateY(${window.innerHeight}px) rotate(${Math.random() * 360 + 360}deg); opacity: 0; }
+                        }
+                        @keyframes sway {
+                            from { transform: translateX(-20px); }
+                            to { transform: translateX(20px); }
+                        }
+                    `;
+                    document.head.appendChild(styleSheet);
+                    
+                    confettiContainer.appendChild(confetti);
+                }
+                
+                // Remove confetti after 3 seconds
+                setTimeout(() => {
+                    confettiContainer.innerHTML = '';
+                }, 3000);
+            }
+
+            showNotification(message, type = 'info') {
+                const notificationArea = document.getElementById('notification-area');
+                const notification = document.createElement('div');
+                
+                let bgColor = 'bg-blue-500';
+                let icon = 'ℹ️';
+                
+                switch (type) {
+                    case 'success':
+                        bgColor = 'bg-green-500';
+                        icon = '✅';
+                        break;
+                    case 'warning':
+                        bgColor = 'bg-yellow-500';
+                        icon = '⚠️';
+                        break;
+                    case 'error':
+                        bgColor = 'bg-red-500';
+                        icon = '❌';
+                        break;
+                    case 'level-up':
+                        bgColor = 'bg-purple-500';
+                        icon = '🌟';
+                        break;
+                    case 'unlock':
+                        bgColor = 'bg-indigo-500';
+                        icon = '🔓';
+                        break;
+                    case 'achievement':
+                        bgColor = 'bg-amber-500';
+                        icon = '🏆';
+                        break;
+                    case 'event':
+                        bgColor = 'bg-pink-500';
+                        icon = '🎉';
+                        break;
+                }
+                
+                notification.className = `${bgColor} text-white px-4 py-2 rounded-lg shadow-lg flex items-center opacity-0 transition-opacity duration-200`;
+                notification.innerHTML = `
+                    <div class="mr-2">${icon}</div>
+                    <div>${message}</div>
+                `;
+                
+                notificationArea.appendChild(notification);
+                
+                // Fade in
+                setTimeout(() => {
+                    notification.classList.add('opacity-100');
+                }, 10);
+                
+                // Remove after 3 seconds
+                setTimeout(() => {
+                    notification.classList.remove('opacity-100');
+                    notification.classList.add('opacity-0');
+                    
+                    setTimeout(() => {
+                        notificationArea.removeChild(notification);
+                    }, 200);
+                }, 3000);
+            }
+
+            // Save and load game
+            saveGame() {
+                const gameData = {
+                    money: this.money,
+                    level: this.level,
+                    exp: this.exp,
+                    expNeeded: this.expNeeded,
+                    reputation: this.reputation,
+                    customers: this.customers,
+                    maxCustomers: this.maxCustomers,
+                    autoSellRate: this.autoSellRate,
+                    dayCounter: this.dayCounter,
+                    stats: this.stats,
+                    products: this.products,
+                    storeUpgrades: this.storeUpgrades,
+                    staffMembers: this.staffMembers,
+                    achievements: this.achievements,
+                    restockDiscount: this.restockDiscount,
+                    bulkRestockAmount: this.bulkRestockAmount,
+                    priceMultiplier: this.priceMultiplier,
+                    patienceBoost: this.patienceBoost,
+                    expBoost: this.expBoost
+                };
+                
+                localStorage.setItem('monkeyMartSave', JSON.stringify(gameData));
+            }
+
+            loadGame() {
+                const savedGame = localStorage.getItem('monkeyMartSave');
+                
+                if (savedGame) {
+                    try {
+                        const gameData = JSON.parse(savedGame);
+                        
+                        // Load basic stats
+                        this.money = gameData.money || this.money;
+                        this.level = gameData.level || this.level;
+                        this.exp = gameData.exp || this.exp;
+                        this.expNeeded = gameData.expNeeded || this.expNeeded;
+                        this.reputation = gameData.reputation || this.reputation;
+                        this.customers = gameData.customers || this.customers;
+                        this.maxCustomers = gameData.maxCustomers || this.maxCustomers;
+                        this.autoSellRate = gameData.autoSellRate || this.autoSellRate;
+                        this.dayCounter = gameData.dayCounter || this.dayCounter;
+                        
+                        // Load stats
+                        if (gameData.stats) {
+                            this.stats = gameData.stats;
+                        }
+                        
+                        // Load products
+                        if (gameData.products) {
+                            gameData.products.forEach((savedProduct, index) => {
+                                if (index < this.products.length) {
+                                    this.products[index].stock = savedProduct.stock;
+                                    this.products[index].price = savedProduct.price;
+                                    this.products[index].locked = savedProduct.locked;
+                                    this.products[index].salesCount = savedProduct.salesCount || 0;
+                                }
+                            });
+                        }
+                        
+                        // Load upgrades
+                        if (gameData.storeUpgrades) {
+                            gameData.storeUpgrades.forEach((savedUpgrade, index) => {
+                                if (index < this.storeUpgrades.length) {
+                                    this.storeUpgrades[index].level = savedUpgrade.level;
+                                    this.storeUpgrades[index].cost = savedUpgrade.cost;
+                                }
+                            });
+                        }
+                        
+                        // Load staff
+                        if (gameData.staffMembers) {
+                            gameData.staffMembers.forEach((savedStaff, index) => {
+                                if (index < this.staffMembers.length) {
+                                    this.staffMembers[index].hired = savedStaff.hired;
+                                }
+                            });
+                        }
+                        
+                        // Load achievements
+                        if (gameData.achievements) {
+                            gameData.achievements.forEach((savedAchievement, index) => {
+                                if (index < this.achievements.length) {
+                                    this.achievements[index].completed = savedAchievement.completed;
+                                }
+                            });
+                        }
+                        
+                        // Load effects
+                        this.restockDiscount = gameData.restockDiscount || this.restockDiscount;
+                        this.bulkRestockAmount = gameData.bulkRestockAmount || this.bulkRestockAmount;
+                        this.priceMultiplier = gameData.priceMultiplier || this.priceMultiplier;
+                        this.patienceBoost = gameData.patienceBoost || this.patienceBoost;
+                        this.expBoost = gameData.expBoost || this.expBoost;
+                        
+                        this.showNotification("Game loaded successfully!", "success");
+                    } catch (e) {
+                        console.error("Error loading saved game:", e);
+                        this.showNotification("Error loading saved game.", "error");
+                    }
+                }
+            }
+        }
+
+        // Start the game when page loads
+        window.onload = () => {
+            const game = new MonkeyMartGame();
+        };
+    </script>
+</body>
+</html>
