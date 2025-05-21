@@ -1,0 +1,48 @@
+# Jekyll configuration for Monkey Mart Blog
+title: Monkey Mart Blog
+description: The official blog for Monkey Mart - Your favorite online gaming destination
+url: https://monkeymart.one
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:title/
+highlighter: rouge
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Collections
+collections:
+  games:
+    output: true
+    permalink: /games/:path/
+
+# Social media
+social:
+  twitter: monkeymart
+  facebook: monkeymartgames
+  instagram: monkeymart
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Monkey Mart Team"
+  -
+    scope:
+      path: ""
+      type: "games"
+    values:
+      layout: "game"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed 

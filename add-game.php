@@ -111,15 +111,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $games = [];
             if (($handle = fopen($file, 'r')) !== false) {
                 $headerRow = true;
-                while (($data = fgetcsv($handle, 1000, ',', '"', '\\')) !== false) {
+                while (($data = fgetcsv($handle, 1000, ',', '"')) !== false) {
                     if ($headerRow) { $headerRow = false; continue; }
                     if (count($data) >= 3) {
                         $gameName = trim($data[0]);
                         $gameDesc = trim($data[1]);
                         $gameIframe = trim($data[2]);
+                        // Sửa đường dẫn URL - thay thế backslash bằng forward slash
+                        $gameIframe = str_replace('\\', '/', $gameIframe);
                         $gameCategory = isset($data[3]) ? trim($data[3]) : '';
                         $gameImageExt = isset($data[4]) && trim($data[4]) !== '' ? trim($data[4]) : 'png';
-                        if (empty($gameName) || empty($gameIframe) || empty($gameCategory)) { continue; }
+                        
+                        // Sửa lỗi: xử lý khi gameCategory không được cung cấp
+                        if (empty($gameCategory)) {
+                            // Tự động gán category là 'skill' khi không có category
+                            $gameCategory = 'skill';
+                        }
+                        
+                        if (empty($gameName) || empty($gameIframe)) { continue; }
                         $games[] = [
                             'name' => $gameName,
                             'description' => $gameDesc,
@@ -178,12 +187,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $gameName = $sheet->getCellByColumnAndRow(1, $row)->getValue();
                     $gameDesc = $sheet->getCellByColumnAndRow(2, $row)->getValue();
                     $gameIframe = $sheet->getCellByColumnAndRow(3, $row)->getValue();
+                    // Sửa đường dẫn URL - thay thế backslash bằng forward slash
+                    $gameIframe = str_replace('\\', '/', $gameIframe);
                     $gameCategory = $sheet->getCellByColumnAndRow(4, $row)->getValue();
                     $gameImageExt = $sheet->getCellByColumnAndRow(5, $row)->getValue();
                     
                     // Kiểm tra dữ liệu hợp lệ
-                    if (empty($gameName) || empty($gameIframe) || empty($gameCategory)) {
+                    if (empty($gameName) || empty($gameIframe)) {
                         continue; // Bỏ qua các dòng không có dữ liệu đầy đủ
+                    }
+                    
+                    // Nếu không có category, thiết lập mặc định là 'skill'
+                    if (empty($gameCategory)) {
+                        $gameCategory = 'skill';
                     }
                     
                     $games[] = [
@@ -250,6 +266,16 @@ function addGame($gameData) {
     $gamePageFile = $gameUpDir . $slug . '.html';
     $gamePageContent = generateGamePage($gameData, $slug);
     
+    // Kiểm tra thư mục tồn tại chưa, nếu chưa thì tạo mới
+    if (!file_exists($gameUpDir)) {
+        mkdir($gameUpDir, 0777, true);
+    }
+    
+    // Kiểm tra thư mục hình ảnh tồn tại chưa, nếu chưa thì tạo mới
+    if (!file_exists($imageUpDir)) {
+        mkdir($imageUpDir, 0777, true);
+    }
+    
     // Lưu trang chi tiết game
     if (!file_put_contents($gamePageFile, $gamePageContent)) {
         return ['success' => false, 'message' => 'Không thể tạo trang chi tiết game'];
@@ -260,7 +286,18 @@ function addGame($gameData) {
         return ['success' => false, 'message' => 'Không thể thêm game vào danh sách game nóng'];
     }
     
-    return ['success' => true, 'message' => 'Game đã được thêm thành công!', 'slug' => $slug];
+    // Kiểm tra xem hình ảnh đã tồn tại hay chưa
+    $imageFilePath = $imageUpDir . $slug . '.' . $gameData['imageExt'];
+    $imageExists = file_exists($imageFilePath);
+    
+    return [
+        'success' => true, 
+        'message' => 'Game đã được thêm thành công!' . 
+                  (!$imageExists ? ' LƯU Ý: Bạn cần upload hình ảnh tại đường dẫn: ' . $imageFilePath : ''), 
+        'slug' => $slug,
+        'image_path' => $imageFilePath,
+        'image_exists' => $imageExists
+    ];
 }
 
 /**
@@ -331,7 +368,7 @@ function generateGamePage($gameData, $slug) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="dns-prefetch" href="https://universal.wgplayer.com"/><script type="text/javascript" async>!function(e,t){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,a.fetchPriority='high',m.parentNode.insertBefore(a,m)}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search);</script>
+    <link rel="dns-prefetch" href="https://universal.wgplayer.com"/><script type="text/javascript" async>!function(e,t){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,a.fetchPriority="high",m.parentNode.insertBefore(a,m)}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search);</script>
     <title>' . $gameName . ' - Play Online for Free!</title>
     <meta name="description" content="' . $gameDesc . '">
     <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
