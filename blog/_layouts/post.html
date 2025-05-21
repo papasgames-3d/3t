@@ -14,7 +14,7 @@ layout: default
                 <span class="categories">
                     in 
                     {% for category in page.categories %}
-                    <a href="/categories/{{ category | slugify }}/">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+                    <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
                     {% endfor %}
                 </span>
                 {% endif %}
@@ -22,7 +22,7 @@ layout: default
             
             {% if page.image %}
             <div class="featured-image">
-                <img src="{{ page.image }}" alt="{{ page.title }}">
+                <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}">
             </div>
             {% endif %}
         </header>
@@ -36,7 +36,7 @@ layout: default
             <h3>Tags:</h3>
             <ul>
                 {% for tag in page.tags %}
-                <li><a href="/tags/{{ tag | slugify }}/">#{{ tag }}</a></li>
+                <li><a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/">#{{ tag }}</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -44,9 +44,9 @@ layout: default
         
         <div class="share-buttons">
             <h3>Share this post:</h3>
-            <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url | url_encode }}" target="_blank" rel="noopener" class="twitter">Twitter</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | url_encode }}" target="_blank" rel="noopener" class="facebook">Facebook</a>
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url | url_encode }}&title={{ page.title | url_encode }}" target="_blank" rel="noopener" class="linkedin">LinkedIn</a>
+            <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ site.baseurl }}{{ page.url | url_encode }}" target="_blank" rel="noopener" class="twitter">Twitter</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url | url_encode }}" target="_blank" rel="noopener" class="facebook">Facebook</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url | url_encode }}&title={{ page.title | url_encode }}" target="_blank" rel="noopener" class="linkedin">LinkedIn</a>
         </div>
         
         <div class="related-posts">
@@ -54,7 +54,7 @@ layout: default
             <ul>
                 {% for post in site.related_posts limit:3 %}
                 <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                     <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
                 </li>
                 {% endfor %}

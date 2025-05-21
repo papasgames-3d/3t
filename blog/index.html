@@ -20,8 +20,8 @@ description: Stay updated with the latest news, guides, and updates about Monkey
                 <article class="post-card">
                     {% if post.image %}
                     <div class="post-image">
-                        <a href="{{ post.url }}">
-                            <img src="{{ post.image }}" alt="{{ post.title }}">
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                            <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
                         </a>
                     </div>
                     {% endif %}
@@ -31,16 +31,16 @@ description: Stay updated with the latest news, guides, and updates about Monkey
                             {% if post.categories %}
                             <span class="categories">
                                 {% for category in post.categories %}
-                                <a href="/blog/category/{{ category | slugify }}/">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
                                 {% endfor %}
                             </span>
                             {% endif %}
                         </div>
-                        <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                        <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
                         <div class="post-excerpt">
                             {{ post.excerpt | strip_html | truncatewords: 30 }}
                         </div>
-                        <a href="{{ post.url }}" class="read-more">Read More</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
                     </div>
                 </article>
                 {% endfor %}
@@ -57,7 +57,7 @@ description: Stay updated with the latest news, guides, and updates about Monkey
                 {% if page == paginator.page %}
                 <span class="current-page">{{ page }}</span>
                 {% elsif page == 1 %}
-                <a href="{{ '/blog/' | prepend: site.baseurl }}">{{ page }}</a>
+                <a href="{{ site.baseurl }}/">{{ page }}</a>
                 {% else %}
                 <a href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', page }}">{{ page }}</a>
                 {% endif %}
@@ -84,7 +84,7 @@ description: Stay updated with the latest news, guides, and updates about Monkey
                     <h3 class="widget-title">Categories</h3>
                     <ul>
                         {% for category in site.categories %}
-                        <li><a href="/blog/category/{{ category | first | slugify }}/">{{ category | first }} <span>({{ category | last | size }})</span></a></li>
+                        <li><a href="{{ site.baseurl }}/category/{{ category | first | slugify }}/">{{ category | first }} <span>({{ category | last | size }})</span></a></li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -95,7 +95,7 @@ description: Stay updated with the latest news, guides, and updates about Monkey
                     <ul>
                         {% for post in site.posts limit:5 %}
                         <li>
-                            <a href="{{ post.url }}">{{ post.title }}</a>
+                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                             <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
                         </li>
                         {% endfor %}
@@ -108,7 +108,7 @@ description: Stay updated with the latest news, guides, and updates about Monkey
                     <div class="tag-cloud">
                         {% assign tags = site.tags | sort %}
                         {% for tag in tags %}
-                        <a href="/blog/tag/{{ tag | first | slugify }}/" class="tag">{{ tag | first }}</a>
+                        <a href="{{ site.baseurl }}/tag/{{ tag | first | slugify }}/" class="tag">{{ tag | first }}</a>
                         {% endfor %}
                     </div>
                 </div>

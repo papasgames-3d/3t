@@ -2,16 +2,16 @@
 title: Monkey Mart Blog
 description: The official blog for Monkey Mart - Your favorite online gaming destination
 url: https://monkeymart.one
-baseurl: ""
+baseurl: "/blog"
 
 # Build settings
 markdown: kramdown
-permalink: /blog/:title/
+permalink: /:title/
 highlighter: rouge
 
 # Pagination
 paginate: 10
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"
 
 # Collections
 collections:
