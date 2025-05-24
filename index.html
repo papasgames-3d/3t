@@ -8,17 +8,17 @@
   <meta name="keywords" content="monkey mart, monkey mart game, play monkey mart, monkey mart online, store management game">
   <meta property="og:title" content="Monkey Mart - Fun Store Management Game">
   <meta property="og:description" content="Play Monkey Mart - A fun and free store management game. Build and develop your store!">
-  <meta property="og:image" content="/assets/img/monkey-mart.jpg">
+  <meta property="og:image" content="./assets/img/monkey-mart.jpg">
   <meta property="og:url" content="https://monkeymart.one">
   <link rel="canonical" href="https://monkeymart.one">
   
   <!-- PWA -->
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="./manifest.json">
   <meta name="theme-color" content="#55bbab">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Monkey Mart">
-  <link rel="apple-touch-icon" href="/assets/img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" href="./assets/img/icons/icon-152x152.png">
   
   <!-- DNS Prefetch -->
   <link rel="dns-prefetch" href="https://universal.wgplayer.com"/>
@@ -26,7 +26,7 @@
   <!-- Fonts and Styles -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:600,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   
   <!-- Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-54L5E2NJ3K"></script>
@@ -86,12 +86,12 @@
   <div class="main-wrapper">
     <aside class="sidebar" id="sidebar">
       <div class="logo">
-        <a href="/"></a><img src="assets/img/monkey-mart.jpg" alt="Monkey Mart Logo" /></a>
+        <a href="./"><img src="./assets/img/monkey-mart.jpg" alt="Monkey Mart Logo" /></a>
         <span>Monkey Mart</span>
       </div>
       <nav class="sidebar-menu">
         <ul>
-          <li class="active"><a href="/" title="Monkey Mart Home"><i class="fas fa-home"></i> Home</a></li>
+          <li class="active"><a href="./" title="Monkey Mart Home"><i class="fas fa-home"></i> Home</a></li>
           <li><a href="./category/game.html" title="All Games at Monkey Mart"><i class="fas fa-gamepad"></i> All Games</a></li>
           <li><a href="./category/play-more.html" title="Play More at Monkey Mart"><i class="fas fa-cogs"></i> Play More</a></li>
           <!-- <li><a href="../category/battle-royale.html"><i class="fas fa-crosshairs"></i> Battle Royale</a></li>
@@ -137,7 +137,7 @@
         
         <!-- Game Frame Container -->
         <div class="game-frame-container">
-          <iframe src="https://papasgames3d.com/MonkeyMart" allowfullscreen id="game-frame"></iframe>
+          <iframe src="https://papasgames3d.com/MonkeyMart" sandbox="allow-scripts allow-same-origin" allowfullscreen id="game-frame"></iframe>
           <div class="game-controls">
             <button class="control-btn" id="share-btn" title="Share Game">
               <i class="fas fa-share-alt"></i>
@@ -707,6 +707,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="assets/js/games.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/analytics.js"></script>
   <script src="assets/js/script.js"></script>
