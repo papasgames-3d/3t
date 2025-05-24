@@ -1,14 +1,14 @@
 const CACHE_NAME = 'monkey-mart-v1';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/assets/css/style.css',
-  '/assets/js/games.js',
-  '/assets/js/main.js',
-  '/assets/img/monkey-mart.jpg',
-  '/assets/img/icons/icon-192x192.png',
-  '/assets/img/icons/icon-512x512.png'
+  './',
+  './index.html',
+  './manifest.json',
+  './assets/css/style.css',
+  './assets/js/games.js',
+  './assets/js/main.js',
+  './assets/img/monkey-mart.jpg',
+  './assets/img/icons/icon-192x192.png',
+  './assets/img/icons/icon-512x512.png'
 ];
 
 // Install service worker and cache assets
@@ -44,8 +44,8 @@ self.addEventListener('fetch', (event) => {
         // Return cached version or fetch from network
         return response || fetch(event.request)
           .then((response) => {
-            // Cache new resources
-            if (response.status === 200) {
+            // Only cache same-origin requests
+            if (response.status === 200 && event.request.url.startsWith(self.location.origin)) {
               const responseClone = response.clone();
               caches.open(CACHE_NAME)
                 .then((cache) => {
@@ -53,6 +53,10 @@ self.addEventListener('fetch', (event) => {
                 });
             }
             return response;
+          })
+          .catch(() => {
+            // Return offline fallback if network request fails
+            return caches.match('./index.html');
           });
       })
   );
