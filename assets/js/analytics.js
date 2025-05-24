@@ -1,22 +1,3 @@
-// Google Analytics
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-54L5E2NJ3K');
-
-// WGPlayer Universal Tag
-!function(e,t){
-  a=e.createElement("script"),
-  m=e.getElementsByTagName("script")[0],
-  a.async=1,
-  a.src=t,
-  a.fetchPriority='high',
-  m.parentNode.insertBefore(a,m)
-}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search);
-
-// Google AdSense
-(adsbygoogle = window.adsbygoogle || []).push({});
-
 // Google Analytics Event Tracking
 function trackEvent(category, action, label = null, value = null) {
   if (typeof gtag !== 'undefined') {
@@ -45,16 +26,6 @@ function trackPageView(path, title) {
 // Track game interactions
 function trackGameInteraction(gameId, action) {
   trackEvent('Game', action, gameId);
-}
-
-// Track ad impressions
-function trackAdImpression(adUnit) {
-  trackEvent('Advertisement', 'Impression', adUnit);
-}
-
-// Track ad clicks
-function trackAdClick(adUnit) {
-  trackEvent('Advertisement', 'Click', adUnit);
 }
 
 // Track social shares
@@ -89,22 +60,4 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   }
-  
-  // Track ad containers
-  const adContainers = document.querySelectorAll('.ad-container');
-  adContainers.forEach((container, index) => {
-    const adUnit = container.id || `ad-unit-${index}`;
-    
-    // Use Intersection Observer to track ad impressions
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          trackAdImpression(adUnit);
-          observer.unobserve(entry.target);
-        }
-      });
-    });
-    
-    observer.observe(container);
-  });
-}); 
+});

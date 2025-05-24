@@ -582,48 +582,14 @@ body {
     padding: 0 1rem;
   }
   
-  /* Ad containers */
-  .ad-container {
-    background: #23263a;
-    border-radius: 13px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 3px 14px 0 rgba(30,32,56,0.11);
-    padding: 10px;
-    position: relative;
-    margin: 15px 0;
-  }
-  
-  .ad-container::before {
-    content: 'Advertisement';
-    position: absolute;
-    top: 3px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.7rem;
-    color: #8a93a7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .ad-horizontal {
-    grid-column: 1 / -1;
-    height: 120px;
-    margin: 20px 0;
-  }
-  
-  .ad-square {
-    grid-column: span 2;
-    grid-row: span 2;
-    height: 250px;
-  }
-  
-  .ad-vertical {
-    height: 600px;
-    grid-column: span 1;
-    grid-row: span 4;
+  /* Remove ad container styles */
+  .ad-container,
+  .ad-horizontal,
+  .ad-square,
+  .ad-vertical,
+  .ad-sticky-bottom,
+  .ad-sticky-close {
+    display: none !important;
   }
   
   /* Responsive styles */
@@ -1130,99 +1096,6 @@ body {
     .game-frame-title {
       font-size: 1rem;
       padding: 8px;
-    }
-  }
-  
-  /* Ad containers - updated styles */
-  .ad-container {
-    background: #23263a;
-    border-radius: 13px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 3px 14px 0 rgba(30,32,56,0.11);
-    padding: 10px;
-    position: relative;
-    margin: 15px 0;
-  }
-  
-  .ad-container::before {
-    content: 'Advertisement';
-    position: absolute;
-    top: 3px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.7rem;
-    color: #8a93a7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .ad-horizontal {
-    grid-column: 1 / -1;
-    height: 120px;
-    margin: 20px 0;
-  }
-  
-  .ad-square {
-    grid-column: span 2;
-    grid-row: span 2;
-    height: 250px;
-  }
-  
-  .ad-vertical {
-    height: 600px;
-    grid-column: span 1;
-    grid-row: span 4;
-  }
-  
-  /* Sticky ad for mobile */
-  .ad-sticky-bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 90px;
-    z-index: 99;
-    display: none;
-  }
-  
-  .ad-sticky-close {
-    position: absolute;
-    top: -20px;
-    right: 5px;
-    background: #23263a;
-    color: #fff;
-    border: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    font-size: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  @media (max-width: 768px) {
-    .ad-vertical {
-      height: 250px;
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-    .ad-sticky-bottom {
-      display: block;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .ad-square, .ad-vertical {
-      grid-column: 1 / -1;
-      height: 250px;
-    }
-    .ad-horizontal {
-      height: 100px;
     }
   }
   
