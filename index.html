@@ -723,65 +723,6 @@
   <script src="assets/js/analytics.js"></script>
   <script src="assets/js/script.js"></script>
 
-  <!-- PWA Install Prompt -->
-  <div id="pwa-install-prompt" class="pwa-prompt" style="display: none;">
-    <div class="pwa-prompt-content">
-      <img src="/assets/img/icons/icon-192x192.png" alt="Monkey Mart App Icon" width="64" height="64">
-      <div class="pwa-prompt-text">
-        <h3>Install Monkey Mart</h3>
-        <p>Add to your home screen for the best experience</p>
-      </div>
-      <div class="pwa-prompt-buttons">
-        <button id="pwa-install-btn" class="pwa-install-btn">Install</button>
-        <button id="pwa-close-btn" class="pwa-close-btn">Not Now</button>
-      </div>
-    </div>
-  </div>
 
-  <!-- PWA Registration -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
-          .then(registration => {
-            console.log('ServiceWorker registered:', registration);
-          })
-          .catch(error => {
-            console.log('ServiceWorker registration failed:', error);
-          });
-      });
-    }
-
-    // PWA Install Prompt
-    let deferredPrompt;
-    const pwaPrompt = document.getElementById('pwa-install-prompt');
-    const pwaInstallBtn = document.getElementById('pwa-install-btn');
-    const pwaCloseBtn = document.getElementById('pwa-close-btn');
-
-    window.addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault();
-      deferredPrompt = e;
-      pwaPrompt.style.display = 'block';
-    });
-
-    pwaInstallBtn.addEventListener('click', async () => {
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        const { outcome } = await deferredPrompt.userChoice;
-        console.log(`User response to the install prompt: ${outcome}`);
-        deferredPrompt = null;
-        pwaPrompt.style.display = 'none';
-      }
-    });
-
-    pwaCloseBtn.addEventListener('click', () => {
-      pwaPrompt.style.display = 'none';
-    });
-
-    window.addEventListener('appinstalled', () => {
-      console.log('PWA was installed');
-      pwaPrompt.style.display = 'none';
-    });
-  </script>
 </body>
 </html> 
