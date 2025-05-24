@@ -1,58 +1,145 @@
-function initMenu() {
-const nav = document.querySelector("nav.greedy");
-const btn = nav.querySelector("button");
-const vlinks = nav.querySelector(".links");
-const hlinks = nav.querySelector(".hidden-links");
-
-let numOfItems = 0;
-let totalSpace = 0;
-const breakWidths = [];
-
-// Calculate the total width of visible links
-Array.from(vlinks.children).forEach((child) => {
-  const width = child.offsetWidth;
-  totalSpace += width;
-  numOfItems += 1;
-  breakWidths.push(totalSpace);
-});
-
-let availableSpace, numOfVisibleItems, requiredSpace;
-
-function check() {
-  availableSpace = vlinks.clientWidth - 10; // Subtracting some padding
-  numOfVisibleItems = vlinks.children.length;
-  requiredSpace = breakWidths[numOfVisibleItems - 1];
-
-  if (requiredSpace > availableSpace) {
-    // Move last item to hidden links
-    hlinks.insertBefore(vlinks.lastElementChild, hlinks.firstChild);
-    numOfVisibleItems -= 1;
-    check();
-  } else if (availableSpace > breakWidths[numOfVisibleItems]) {
-    // Move first hidden item to visible links
-    vlinks.appendChild(hlinks.firstElementChild);
-    numOfVisibleItems += 1;
+// Menu functionality
+class MenuManager {
+  constructor() {
+    this.menuToggle = document.getElementById('menu-toggle');
+    this.sidebar = document.getElementById('sidebar');
+    this.menuOverlay = document.getElementById('menuOverlay') || document.getElementById('menu-overlay');
+    this.init();
   }
 
-  // Update button count and visibility
-  btn.setAttribute("count", numOfItems - numOfVisibleItems);
-  if (numOfVisibleItems === numOfItems) {
-    btn.classList.add("hidden");
-  } else {
-    btn.classList.remove("hidden");
+  init() {
+    this.setupMenuToggle();
+    this.setupOverlayClick();
+    this.setupMenuItemsClick();
+    this.setupEscapeKey();
+  }
+
+  toggleMenu() {
+    this.sidebar.classList.toggle('active');
+    if (this.menuOverlay) {
+      this.menuOverlay.classList.toggle('active');
+    }
+    this.toggleIcon();
+  }
+
+  toggleIcon() {
+    const icon = this.menuToggle.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+  }
+
+  setupMenuToggle() {
+    if (this.menuToggle) {
+      this.menuToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.toggleMenu();
+      });
+    }
+  }
+
+  setupOverlayClick() {
+    if (this.menuOverlay) {
+      this.menuOverlay.addEventListener('click', () => this.toggleMenu());
+    }
+  }
+
+  setupMenuItemsClick() {
+    const menuItems = document.querySelectorAll('.sidebar-menu a, .sidebar-categories li');
+    menuItems.forEach(item => {
+      item.addEventListener('click', () => {
+        if (window.innerWidth <= 768 && this.sidebar.classList.contains('active')) {
+          this.toggleMenu();
+        }
+      });
+    });
+  }
+
+  setupEscapeKey() {
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && this.sidebar.classList.contains('active')) {
+        this.toggleMenu();
+      }
+    });
   }
 }
 
-// Resize event listener
-window.addEventListener("resize", check);
+// Ad performance optimization
+class AdManager {
+  constructor() {
+    this.connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    this.init();
+  }
 
-// Button click event listener
-btn.addEventListener("click", () => {
-  hlinks.classList.toggle("hidden");
-});
+  init() {
+    this.checkConnection();
+    this.optimizeAdLoading();
+  }
 
-// Initial check
-check();
+  checkConnection() {
+    if (this.connection && this.isSlowConnection()) {
+      this.reduceAds();
+    }
+  }
+
+  isSlowConnection() {
+    return this.connection.effectiveType === '2g' || this.connection.effectiveType === 'slow-2g';
+  }
+
+  reduceAds() {
+    const adContainers = document.querySelectorAll('.ad-container');
+    adContainers.forEach((container, index) => {
+      if (index > 0) container.style.display = 'none';
+    });
+  }
+
+  optimizeAdLoading() {
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const adScripts = document.querySelectorAll('.ad-container script');
+        adScripts.forEach(script => {
+          const parent = script.parentNode;
+          const newScript = document.createElement('script');
+          newScript.textContent = script.textContent;
+          parent.removeChild(script);
+          setTimeout(() => parent.appendChild(newScript), 100);
+        });
+      }, 1000);
+    });
+  }
 }
 
-initMenu();
+// Search functionality
+class SearchManager {
+  constructor() {
+    this.searchInput = document.getElementById('game-search');
+    this.gameItems = document.querySelectorAll('.game-item');
+    this.init();
+  }
+
+  init() {
+    if (this.searchInput) {
+      this.setupSearch();
+    }
+  }
+
+  setupSearch() {
+    this.searchInput.addEventListener('input', () => {
+      const searchTerm = this.searchInput.value.toLowerCase().trim();
+      this.filterGames(searchTerm);
+    });
+  }
+
+  filterGames(searchTerm) {
+    this.gameItems.forEach(item => {
+      const gameName = item.querySelector('span').textContent.toLowerCase();
+      item.style.display = gameName.includes(searchTerm) || searchTerm === '' ? '' : 'none';
+    });
+  }
+}
+
+// Initialize all managers when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  new MenuManager();
+  new AdManager();
+  new SearchManager();
+}); 

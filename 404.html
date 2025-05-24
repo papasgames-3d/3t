@@ -1,199 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>404 - Page Not Found | monkeymart.one</title>
-    <meta content="noindex,nofollow" name="robots"/>
-    <link href="https://monkeymart.one/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-    <base href="https://monkeymart.one/"/>
-    <link href="https://monkeymart.one/css/main.min.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Monkey Mart</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
     <style>
-        body {
-            background-color: #f9fafb; /* Màu nền sáng */
-            font-family: 'Arial', sans-serif; /* Font chữ */
-        }
         .error-container {
-            max-width: 800px;
-            margin: 0 auto;
             text-align: center;
-            padding: 20px;
+            padding: 100px 20px;
+            max-width: 600px;
+            margin: 0 auto;
         }
-        .error-image {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
+        .error-code {
+            font-size: 120px;
+            color: #55bbab;
+            margin: 0;
+            line-height: 1;
         }
-        h1 {
-            font-size: 2.5rem;
-            color: #e53e3e; /* Màu đỏ cho tiêu đề */
+        .error-title {
+            font-size: 24px;
+            color: #fff;
+            margin: 20px 0;
         }
-        p {
-            font-size: 1.2rem;
-            color: #4a5568; /* Màu chữ tối */
+        .error-text {
+            color: #8a93a7;
+            margin-bottom: 30px;
         }
         .back-home {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #3182ce; /* Màu xanh cho nút */
-            color: white;
-            border-radius: 5px;
+            background: #55bbab;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 8px;
             text-decoration: none;
-            transition: background-color 0.3s;
+            transition: background 0.3s;
         }
         .back-home:hover {
-            background-color: #2b6cb0; /* Màu xanh đậm khi hover */
+            background: #476cbc;
         }
-        .product-img {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px; /* Bo tròn hình ảnh */
+        .suggested-links {
+            margin-top: 40px;
+            text-align: left;
         }
-        .product-badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 5px;
-            border-radius: 5px;
-            font-size: 0.8rem;
-            color: #2d3748; /* Màu chữ tối */
+        .suggested-links h3 {
+            color: #55bbab;
+            margin-bottom: 15px;
         }
-        .ltn__product-item {
-            margin-top: 10px;
-            text-align: center;
+        .suggested-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .suggested-links li {
+            margin-bottom: 10px;
+        }
+        .suggested-links a {
+            color: #8a93a7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .suggested-links a:hover {
+            color: #55bbab;
         }
     </style>
 </head>
 <body>
-    <div class="error-container">
-        <div class="logo-container">
-            <img alt="404 Error - Monkey Looking for Page" class="error-image" src="https://monkeymart.one/img/404-monkey.png"/>
-        </div>
-        <h1>Oops! Page Not Found</h1>
-        <p>The page you're looking for doesn't exist or has been moved.</p>
-        <p>Let's get you back to playing some awesome games!</p>
-        <a class="back-home" href="https://monkeymart.one/">Back to Homepage</a>
-        
-        <div class="row ltn__tab-product-slider-one-active--- slick-arrow-1 mt-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/unblock-puzzle.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/unblock-puzzle.png" alt="Unblock Puzzle Game">
-                        <h3 class="game-card__title">Unblock Puzzle</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/ball-puzzle.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/ball-puzzle.png" alt="Ball Puzzle Game">
-                        <h3 class="game-card__title">Ball Puzzle</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/match-the-colors.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/match-the-colors.png" alt="Match the Colors Game">
-                        <h3 class="game-card__title">Match the Colors</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/candy-pop-mania.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/candy-pop-mania.png" alt="Candy Pop Mania Game">
-                        <h3 class="game-card__title">Candy Pop Mania</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/commando-force-2.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/commando-force-2.png" alt="Commando Force 2 Game">
-                        <h3 class="game-card__title">Commando Force 2</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/russian-fishing-at-sea.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/russian-fishing-at-sea.png" alt="Russian Fishing at Sea Game">
-                        <h3 class="game-card__title">Russian Fishing at Sea</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/8-ball-pool-billiard.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/8-ball-pool-billiard.png" alt="8 Ball Pool Billiard Game">
-                        <h3 class="game-card__title">8 Ball Pool Billiard</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/billiards-3d-russian-pyramid.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/billiards-3d-russian-pyramid.png" alt="Billiards 3D: Russian Pyramid Game">
-                        <h3 class="game-card__title">Billiards 3D: Russian Pyramid</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/robby-bomberman.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/robby-bomberman.png" alt="Robby: Bomberman Game">
-                        <h3 class="game-card__title">Robby: Bomberman</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/dig-a-hole-in-russia.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/dig-a-hole-in-russia.png" alt="Dig a hole in Russia Game">
-                        <h3 class="game-card__title">Dig a hole in Russia</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/kingdom-match.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/kingdom-match.png" alt="Kingdom match Game">
-                        <h3 class="game-card__title">Kingdom match</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/strykon.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/strykon.png" alt="Strykon Game">
-                        <h3 class="game-card__title">Strykon</h3>
-                    </a>
-                </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 game-item">
-                    <a class="game-link" href="./game/game-up/vexon.html">
-                        <img class="img-fluid game-card__cover"
-                            src="./assets/img/img-up/vexon.png" alt="Vexon Game">
-                        <h3 class="game-card__title">Vexon</h3>
-                    </a>
+    <div class="container">
+        <div class="error-container">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">Oops! Page Not Found</h2>
+            <p class="error-text">The page you're looking for might have been moved, deleted, or never existed. Don't worry though, we've got plenty of other fun games for you!</p>
+            <a href="/" class="back-home">Back to Home</a>
+            
+            <div class="suggested-links">
+                <h3>Popular Games</h3>
+                <ul>
+                    <li><a href="/game/monkey-mart.html">Monkey Mart</a></li>
+                    <li><a href="/game/1v1-lol.html">1v1.LOL</a></li>
+                    <li><a href="/game/among-us.html">Among Us</a></li>
+                    <li><a href="/game/minecraft.html">Minecraft</a></li>
+                </ul>
                 
-                    
-                </div>
-                <!-- Thêm các game khác nếu cần -->
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/category/game.html">All Games</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                </ul>
             </div>
         </div>
     </div>
-    <script>
-        // Google Analytics and other scripts
-        setTimeout(() => {
-            window.location.href = 'https://monkeymart.one/';
-        }, 30000);
-        
-        console.log('404 Error:', window.location.pathname);
-        
-        let startTime = new Date();
-        window.addEventListener('beforeunload', () => {
-            let endTime = new Date();
-            let timeSpent = (endTime - startTime) / 1000;
-            gtag('event', 'time_on_404', {
-                'event_category': 'Error',
-                'event_label': window.location.pathname,
-                'value': timeSpent
-            });
-        });
-    </script>
 </body>
 </html> 

@@ -1,118 +1,69 @@
----
-layout: default
-title: Monkey Mart Blog - Gaming News, Updates and Guides
-description: Stay updated with the latest news, guides, and updates about Monkey Mart and other popular online games.
----
-
-<div class="page-banner">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Monkey Mart</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
     <div class="container">
-        <h1>Monkey Mart Blog</h1>
-        <p>Latest news, guides, and updates for Monkey Mart gamers</p>
-        <a href="/" class="btn-primary">Back to Main Site</a>
-    </div>
-</div>
+        <main class="main-content">
+            <section class="blog-section">
+                <h1>Monkey Mart Blog</h1>
+                <div class="blog-categories">
+                    <a href="#" class="category-tag active">All</a>
+                    <a href="#" class="category-tag">Gaming Tips</a>
+                    <a href="#" class="category-tag">News</a>
+                    <a href="#" class="category-tag">Updates</a>
+                    <a href="#" class="category-tag">Reviews</a>
+                    <a href="#" class="category-tag">Tutorials</a>
+                </div>
+                
+                <div class="blog-grid">
+                    <!-- Sample blog posts -->
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="../assets/images/blog/sample-1.jpg" alt="Blog post image">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-category">Gaming Tips</div>
+                            <h2>Top 10 Gaming Tips for Beginners</h2>
+                            <p>Essential tips and tricks for new gamers to improve their gaming experience...</p>
+                            <div class="blog-card-meta">
+                                <span class="date">June 1, 2024</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                        </div>
+                    </article>
 
-<div class="container blog-container">
-    <div class="row">
-        <div class="col-md-8">
-            <div class="posts-list">
-                {% for post in site.posts %}
-                <article class="post-card">
-                    {% if post.image %}
-                    <div class="post-image">
-                        <a href="{{ site.baseurl }}{{ post.url }}">
-                            <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
-                        </a>
-                    </div>
-                    {% endif %}
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
-                            {% if post.categories %}
-                            <span class="categories">
-                                {% for category in post.categories %}
-                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
-                                {% endfor %}
-                            </span>
-                            {% endif %}
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="../assets/images/blog/sample-2.jpg" alt="Blog post image">
                         </div>
-                        <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-                        <div class="post-excerpt">
-                            {{ post.excerpt | strip_html | truncatewords: 30 }}
+                        <div class="blog-card-content">
+                            <div class="blog-card-category">News</div>
+                            <h2>New Games Coming This Summer</h2>
+                            <p>Exciting new titles coming to Monkey Mart this summer season...</p>
+                            <div class="blog-card-meta">
+                                <span class="date">May 28, 2024</span>
+                                <span class="read-time">3 min read</span>
+                            </div>
                         </div>
-                        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-                    </div>
-                </article>
-                {% endfor %}
-            </div>
-            
-            <!-- Pagination -->
-            {% if paginator.total_pages > 1 %}
-            <div class="pagination">
-                {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="prev">&laquo; Previous</a>
-                {% endif %}
-                
-                {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                <span class="current-page">{{ page }}</span>
-                {% elsif page == 1 %}
-                <a href="{{ site.baseurl }}/">{{ page }}</a>
-                {% else %}
-                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', page }}">{{ page }}</a>
-                {% endif %}
-                {% endfor %}
-                
-                {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next &raquo;</a>
-                {% endif %}
-            </div>
-            {% endif %}
-        </div>
-        
-        <div class="col-md-4">
-            <div class="sidebar">
-                <!-- About Widget -->
-                <div class="widget about-widget">
-                    <h3 class="widget-title">About Monkey Mart</h3>
-                    <p>Monkey Mart is a popular simulation game where players manage their own supermarket filled with adorable animal customers.</p>
-                    <a href="/" class="btn-secondary">Visit Main Site</a>
+                    </article>
+
+                    <!-- Add more blog cards as needed -->
                 </div>
-                
-                <!-- Categories Widget -->
-                <div class="widget categories-widget">
-                    <h3 class="widget-title">Categories</h3>
-                    <ul>
-                        {% for category in site.categories %}
-                        <li><a href="{{ site.baseurl }}/category/{{ category | first | slugify }}/">{{ category | first }} <span>({{ category | last | size }})</span></a></li>
-                        {% endfor %}
-                    </ul>
+
+                <div class="blog-pagination">
+                    <a href="#" class="pagination-prev disabled">Previous</a>
+                    <a href="#" class="pagination-number active">1</a>
+                    <a href="#" class="pagination-number">2</a>
+                    <a href="#" class="pagination-number">3</a>
+                    <a href="#" class="pagination-next">Next</a>
                 </div>
-                
-                <!-- Recent Posts Widget -->
-                <div class="widget recent-posts-widget">
-                    <h3 class="widget-title">Recent Posts</h3>
-                    <ul>
-                        {% for post in site.posts limit:5 %}
-                        <li>
-                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                            <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                
-                <!-- Tags Widget -->
-                <div class="widget tags-widget">
-                    <h3 class="widget-title">Popular Tags</h3>
-                    <div class="tag-cloud">
-                        {% assign tags = site.tags | sort %}
-                        {% for tag in tags %}
-                        <a href="{{ site.baseurl }}/tag/{{ tag | first | slugify }}/" class="tag">{{ tag | first }}</a>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
-</div> 
+</body>
+</html> 
