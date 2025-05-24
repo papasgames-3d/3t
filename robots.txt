@@ -1,13 +1,28 @@
 User-agent: *
 Allow: /
-Allow: /sitemap.xml
-Allow: /assets/css/
-Allow: /assets/js/
-Allow: /assets/img/
-Allow: /blog/
-Allow: /category/
+Sitemap: https://monkeymart.one/sitemap.xml
+
+# Block access to admin and private areas
 Disallow: /admin/
 Disallow: /private/
-Disallow: /.git/
+Disallow: /includes/
+Disallow: /cgi-bin/
 
-Sitemap: https://monkeymart.one/sitemap.xml 
+# Allow CSS, JS, and image files
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Block certain file types
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /*.md$
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.zip$ 
