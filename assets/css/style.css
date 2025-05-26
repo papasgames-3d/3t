@@ -1,18 +1,22 @@
 /* Base styles */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    position: relative;
-    touch-action: pan-y pinch-zoom;
+html {
+    font-display: swap;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', Arial, sans-serif;
     background: #1c1e2c;
     color: #fff;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    content-visibility: auto;
+    contain: paint;
 }
 
 .main-wrapper {
@@ -20,7 +24,7 @@ body {
     min-height: 100vh;
     position: relative;
     width: 100%;
-    overflow: hidden;
+    contain: layout;
 }
 
 /* Menu Toggle Button */
@@ -61,8 +65,9 @@ body {
     left: 0;
     top: 0;
     z-index: 1000;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s ease;
     will-change: transform;
+    transform: translateZ(0);
     overscroll-behavior: contain;
 }
 
@@ -80,6 +85,7 @@ body {
     width: 34px;
     height: 34px;
     margin-right: 8px;
+    font-display: block;
 }
 
 .sidebar-menu ul,
@@ -168,6 +174,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 18px 14px;
+    contain: layout style paint;
 }
 
 .game-item {
@@ -193,12 +200,13 @@ body {
 }
 
 .game-item img {
-    width: 96px;
-    height: 96px;
-    border-radius: 6px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     margin-bottom: 13px;
     border: 1.5px solid #1c1e2c;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .game-item span {
@@ -448,6 +456,8 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+    contain: layout size;
+    will-change: transform;
 }
 
 .game-frame-container iframe {
