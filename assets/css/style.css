@@ -633,6 +633,8 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(85, 187, 171, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 .game-thumbnail {
@@ -700,9 +702,9 @@ body {
     color: #fff;
     text-align: center;
     padding: 15px;
-    background: #292e4a;
-    margin-top: 0;
-    border-radius: 0 0 12px 12px;
+    background: rgba(28, 30, 44, 0.95);
+    margin: 0;
+    border-top: 1px solid rgba(85, 187, 171, 0.1);
 }
 
 /* Game controls */
