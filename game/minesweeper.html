@@ -82,109 +82,42 @@
        
         
         <!-- Game Frame Container -->
-        <div class="game-frame-container">
-          <iframe src="https://game.monkeymart.one/projects/minesweeper/" allowfullscreen id="game-frame"></iframe>
-          <div class="game-controls">
-            <button class="control-btn" id="share-btn" title="Share">
-              <i class="fas fa-share-alt"></i>
-            </button>
-            <button class="control-btn" id="fullscreen-btn" title="Fullscreen">
-              <i class="fas fa-expand"></i>
-            </button>
-          </div>
-          <div class="share-menu" id="share-menu">
-            <button class="control-btn" id="copy-link-btn" title="Copy Link">
-              <i class="fas fa-link"></i>
-            </button>
-            <button class="control-btn" id="facebook-btn" title="Share on Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </button>
-            <button class="control-btn" id="twitter-btn" title="Share on Twitter">
-              <i class="fab fa-twitter"></i>
-            </button>
-            <button class="control-btn" id="pinterest-btn" title="Share on Pinterest">
-              <i class="fab fa-pinterest-p"></i>
-            </button>
-          </div>
-          <div class="game-frame-title">minesweeper</div>
-        </div>
-        <a class="game-item" href="../game/monkey-mart.html">
-            <img src="../assets/img/img-up/monkey-mart-2.png" alt="monkey-mart" />
-            <span>Monkey Mart 2</span>
-          </a>
-        <a class="game-item" href="./8-ball-pool-billiard.html">
-          <img src="../assets/img/img-up/8-ball-pool-billiard.png" alt="8-ball-pool" />
-          <span>8 Ball Pool</span>
-        </a>
-        <a class="game-item" href="./9007199254740992.html">
-          <img src="../assets/img/img-up/9007199254740992.png" alt="9007199254740992" />
-          <span>9007199254740992</span>
-        </a>
-        <a class="game-item" href="./2048.html">
-          <img src="../assets/img/img-up/2048.png" alt="2048" />
-          <span>2048</span>
-        </a>
-        <a class="game-item" href="./a-small-world-cup.html">
-          <img src="../assets/img/img-up/a-small-world-cup.png" alt="a-small-world-cup" />
-          <span>A Small World Cup</span>
-        </a>
-        <a class="game-item" href="./ages-of-conflict.html">
-          <img src="../assets/img/img-up/ages-of-conflict.png" alt="ages-of-conflict" />
-          <span>Ages of Conflict</span>
-        </a>
-        <a class="game-item" href="./among-us.html">
-          <img src="../assets/img/img-up/among-us.png" alt="among-us" />
-          <span>Among Us</span>
-        </a>
-        <a class="game-item" href="./baldis-basics.html">
-          <img src="../assets/img/img-up/baldis-basics.png" alt="baldis-basics" />
-          <span>Baldis Basics</span>
-        </a>
-        <a class="game-item" href="./ball-puzzle.html">
-          <img src="../assets/img/img-up/ball-puzzle.png" alt="ball-puzzle" />
-          <span>Ball Puzzle</span>
-        </a>
-        <a class="game-item" href="./ball-sort-puzzle.html">
-          <img src="../assets/img/img-up/ball-sort-puzzle.png" alt="ball-sort-puzzle" />
-          <span>Ball Sort Puzzle</span>
-        </a>
-        <a class="game-item" href="./basket-and-ball.html">
-          <img src="../assets/img/img-up/basket-and-ball.png" alt="basket-and-ball" />
-          <span>Basket and Ball</span>
-        </a>
-        <a class="game-item" href="./basket-random.html">
-          <img src="../assets/img/img-up/basket-random.png" alt="basket-random" />
-          <span>Basket Random</span>
-        </a>
-        <a class="game-item" href="./bitlife.html">
-          <img src="../assets/img/img-up/bitlife.png" alt="bitlife" />
-          <span>Bitlife</span>
-        </a>
-        <a class="game-item" href="./blackjack.html">
-          <img src="../assets/img/img-up/blackjack.png" alt="blackjack" />
-          <span>Blackjack</span>
-        </a>
-        
-        <a class="game-item" href="./bloons-td.html">
-          <img src="../assets/img/img-up/bloons-td.png" alt="bloons-td" />
-          <span>Bloons TD</span>
-        </a>
-        <a class="game-item" href="./bloons-td-2.html">
-          <img src="../assets/img/img-up/bloons-td-2.png" alt="bloons-td-2" />
-          <span>Bloons TD 2</span>
-        </a>
-        <a class="game-item" href="./bloons-td-3.html">
-          <img src="../assets/img/img-up/bloons-td-3.png" alt="bloons-td-3" />
-          <span>Bloons TD 3</span>
-        </a>
-        <a class="game-item" href="./bloons-td-4.html">
-          <img src="../assets/img/img-up/bloons-td-4.png" alt="bloons-td-4" />
-          <span>Bloons TD 4</span>
-        </a>
-                 
-      
-      
-      <!-- Related Games -->
+<!-- Game Frame Container -->
+<div class="game-frame-container">
+    <div class="game-thumbnail">
+        <img src="../assets/img/img-up/minesweeper.png" alt="minesweeper" />
+        <button class="play-frame-button" id="playGameButton">
+            <i class="fas fa-play"></i>
+            Play Game
+        </button>
+    </div>
+    <iframe src="https://game.monkeymart.one/projects/minesweeper/" allowfullscreen id="game-frame" style="display: none;"></iframe>
+    <div class="game-controls">
+        <button class="control-btn" id="share-btn" title="Share">
+            <i class="fas fa-share-alt"></i>
+        </button>
+        <button class="control-btn" id="fullscreen-btn" title="Fullscreen">
+            <i class="fas fa-expand"></i>
+        </button>
+    </div>
+    <div class="share-menu" id="share-menu">
+        <button class="control-btn" id="copy-link-btn" title="Copy Link">
+            <i class="fas fa-link"></i>
+        </button>
+        <button class="control-btn" id="facebook-btn" title="Share on Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </button>
+        <button class="control-btn" id="twitter-btn" title="Share on Twitter">
+            <i class="fab fa-twitter"></i>
+        </button>
+        <button class="control-btn" id="pinterest-btn" title="Share on Pinterest">
+            <i class="fab fa-pinterest-p"></i>
+        </button>
+    </div>
+</div>
+<div class="game-frame-title">minesweeper</div>
+
+      <!-- Related Games --><!-- Related Games -->
       <h2 class="related-games-title">Popular Games</h2>
       
       <!-- First row of related games -->

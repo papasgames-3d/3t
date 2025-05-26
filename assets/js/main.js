@@ -138,6 +138,54 @@ class MenuManager {
   }
 }
 
+// Game functionality
+class GameManager {
+  constructor() {
+    this.init();
+  }
+
+  init() {
+    this.setupPlayButtons();
+    this.setupFramePlayButton();
+  }
+
+  setupPlayButtons() {
+    const gameItems = document.querySelectorAll('.game-item');
+    gameItems.forEach(item => {
+      const playButton = item.querySelector('.play-button');
+      if (playButton) {
+        playButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          // Get the href from parent anchor tag
+          const gameUrl = item.getAttribute('href');
+          if (gameUrl) {
+            window.location.href = gameUrl;
+          }
+        });
+      }
+    });
+  }
+
+  setupFramePlayButton() {
+    const playButton = document.getElementById('playGameButton');
+    const gameFrame = document.getElementById('game-frame');
+    const thumbnail = document.querySelector('.game-thumbnail');
+    
+    if (playButton && gameFrame && thumbnail) {
+      playButton.addEventListener('click', () => {
+        // Hide thumbnail and show iframe
+        thumbnail.style.display = 'none';
+        gameFrame.style.display = 'block';
+        
+        // Focus on the game frame
+        gameFrame.focus();
+      });
+    }
+  }
+}
+
 // Ad performance optimization
 class AdManager {
   constructor() {
@@ -212,9 +260,10 @@ class SearchManager {
   }
 }
 
-// Initialize all managers when DOM is loaded
+// Initialize managers
 document.addEventListener('DOMContentLoaded', () => {
   new MenuManager();
+  new GameManager();
   new AdManager();
   new SearchManager();
 }); 

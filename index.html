@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
@@ -14,20 +14,7 @@
   <link rel="canonical" href="https://monkeymart.one">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   
-  <!-- PWA -->
-  <link rel="manifest" href="./manifest.json">
-  <meta name="theme-color" content="#55bbab">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Monkey Mart">
-  <link rel="apple-touch-icon" href="./assets/img/icons/icon-192x192.png">
-  
-  <!-- DNS Prefetch -->
-  <link rel="dns-prefetch" href="https://universal.wgplayer.com"/>
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
   <!-- Fonts and Styles -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:600,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   
@@ -140,31 +127,38 @@
         
         <!-- Game Frame Container -->
         <div class="game-frame-container">
-          <iframe src="https://papasgames3d.com/MonkeyMart/" allowfullscreen id="game-frame"></iframe>
-          <div class="game-controls">
-            <button class="control-btn" id="share-btn" title="Share">
-              <i class="fas fa-share-alt"></i>
-            </button>
-            <button class="control-btn" id="fullscreen-btn" title="Fullscreen">
-              <i class="fas fa-expand"></i>
-            </button>
-          </div>
-          <div class="share-menu" id="share-menu">
-            <button class="control-btn" id="copy-link-btn" title="Copy Link">
-              <i class="fas fa-link"></i>
-            </button>
-            <button class="control-btn" id="facebook-btn" title="Share on Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </button>
-            <button class="control-btn" id="twitter-btn" title="Share on Twitter">
-              <i class="fab fa-twitter"></i>
-            </button>
-            <button class="control-btn" id="pinterest-btn" title="Share on Pinterest">
-              <i class="fab fa-pinterest-p"></i>
-            </button>
-          </div>
-          <div class="game-frame-title">Monkey Mart</div>
+            <div class="game-thumbnail">
+                <img src="../assets/img/img-up/monkey-mart-2.png" alt="Monkey Mart" />
+                <button class="play-frame-button" id="playGameButton">
+                    <i class="fas fa-play"></i>
+                    Play Game
+                </button>
+            </div>
+            <iframe src="https://papasgames3d.com/MonkeyMart/" allowfullscreen id="game-frame" style="display: none;"></iframe>
+            <div class="game-controls">
+                <button class="control-btn" id="share-btn" title="Share">
+                    <i class="fas fa-share-alt"></i>
+                </button>
+                <button class="control-btn" id="fullscreen-btn" title="Fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+            <div class="share-menu" id="share-menu">
+                <button class="control-btn" id="copy-link-btn" title="Copy Link">
+                    <i class="fas fa-link"></i>
+                </button>
+                <button class="control-btn" id="facebook-btn" title="Share on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button class="control-btn" id="twitter-btn" title="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button class="control-btn" id="pinterest-btn" title="Share on Pinterest">
+                    <i class="fab fa-pinterest-p"></i>
+                </button>
+            </div>
         </div>
+        <div class="game-frame-title">Monkey Mart</div>
         <a class="game-item" href="game/monkey-mart.html">
             <img src="../assets/img/img-up/monkey-mart-2.png" alt="monkey-mart" />
             <span>Monkey Mart 2</span>
