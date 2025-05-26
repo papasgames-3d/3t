@@ -5,7 +5,8 @@ const AppState = {
   currentCategory: null,
   searchTerm: '',
   isLoading: false,
-  error: null
+  error: null,
+  initialized: false
 };
 
 // UI Components
@@ -14,7 +15,8 @@ class UI {
     searchInput: document.getElementById('searchInput'),
     featuredGames: document.getElementById('featuredGames'),
     newGames: document.getElementById('newGames'),
-    heroGames: document.querySelector('.hero-games')
+    heroGames: document.querySelector('.hero-games'),
+    gamesGrid: document.querySelector('.games-grid')
   };
 
   static init() {
@@ -99,11 +101,16 @@ class UI {
 // Game Management
 class GameManager {
   static async init() {
+    if (AppState.initialized) {
+      return;
+    }
+
     try {
       UI.showLoading();
       await this.loadGames();
-      this.renderGames();
+      this.setupGameItems();
       UI.hideLoading();
+      AppState.initialized = true;
     } catch (error) {
       UI.showError('Failed to load games');
       console.error('Error initializing games:', error);
@@ -111,60 +118,70 @@ class GameManager {
   }
 
   static async loadGames() {
-    // Simulate API call - Replace with actual API call
-    AppState.games = [
-      {
-        id: 1,
-        title: 'Zombie Tag',
-        category: 'action',
-        image: 'assets/img/games/zombie-tag.jpg',
-        description: 'Survive in a world of zombies',
-        featured: true,
-        new: true
-      },
-      // Add more games...
-    ];
-  }
+    // Get games from the DOM
+    const gameItems = document.querySelectorAll('.game-item');
+    AppState.games = Array.from(gameItems).map(item => ({
+      id: item.getAttribute('href'),
+      title: item.querySelector('span').textContent,
+      image: item.querySelector('img').getAttribute('src'),
+      href: item.getAttribute('href')
+    }));
 
-  static renderGames() {
-    if (UI.elements.featuredGames) {
-      const featured = AppState.games.filter(game => game.featured);
-      UI.elements.featuredGames.innerHTML = this.createGameCards(featured);
-    }
-
-    if (UI.elements.newGames) {
-      const newGames = AppState.games.filter(game => game.new);
-      UI.elements.newGames.innerHTML = this.createGameCards(newGames);
-    }
-
-    if (UI.elements.heroGames) {
-      const heroGames = AppState.games.filter(game => game.featured).slice(0, 3);
-      UI.elements.heroGames.innerHTML = this.createHeroGameCards(heroGames);
+    // Cache the games in localStorage
+    try {
+      localStorage.setItem('cachedGames', JSON.stringify(AppState.games));
+    } catch (e) {
+      console.warn('Failed to cache games:', e);
     }
   }
 
-  static createGameCards(games) {
-    return games.map(game => `
-      <div class="game-card">
-        <img src="${game.image}" alt="${game.title}">
-        <div class="game-card-content">
-          <h3>${game.title}</h3>
-          <p>${game.description}</p>
-        </div>
-      </div>
+  static setupGameItems() {
+    const gameItems = document.querySelectorAll('.game-item');
+    gameItems.forEach(item => {
+      // Remove existing click listeners
+      const newItem = item.cloneNode(true);
+      item.parentNode.replaceChild(newItem, item);
+      
+      // Add click listener
+      newItem.addEventListener('click', (e) => {
+        const href = newItem.getAttribute('href');
+        if (href) {
+          e.preventDefault();
+          window.location.href = href;
+        }
+      });
+    });
+  }
+
+  static renderGames(games = AppState.games) {
+    if (!UI.elements.gamesGrid) return;
+
+    const gameElements = games.map(game => `
+      <a class="game-item" href="${game.href}">
+        <img src="${game.image}" alt="${game.title}" />
+        <span>${game.title}</span>
+      </a>
     `).join('');
-  }
 
-  static createHeroGameCards(games) {
-    return games.map(game => `
-      <div class="hero-game-card">
-        <img src="${game.image}" alt="${game.title}">
-        <h3>${game.title}</h3>
-      </div>
-    `).join('');
+    // Find the position to insert games (after game-frame-container)
+    const gameFrame = UI.elements.gamesGrid.querySelector('.game-frame-container');
+    if (gameFrame) {
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = gameElements;
+      
+      // Insert each game element after the game frame
+      Array.from(tempDiv.children).reverse().forEach(element => {
+        gameFrame.insertAdjacentElement('afterend', element);
+      });
+    }
   }
 
   static filterGames() {
+    if (!AppState.searchTerm) {
+      this.renderGames(AppState.games);
+      return;
+    }
+
     const filtered = AppState.games.filter(game => {
       const matchesSearch = game.title.toLowerCase().includes(AppState.searchTerm);
       const matchesCategory = !AppState.currentCategory || game.category === AppState.currentCategory;
@@ -173,10 +190,30 @@ class GameManager {
 
     this.renderGames(filtered);
   }
+
+  static restoreFromCache() {
+    try {
+      const cached = localStorage.getItem('cachedGames');
+      if (cached) {
+        AppState.games = JSON.parse(cached);
+        return true;
+      }
+    } catch (e) {
+      console.warn('Failed to restore from cache:', e);
+    }
+    return false;
+  }
 }
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
   UI.init();
+  
+  // Try to restore from cache first
+  if (GameManager.restoreFromCache()) {
+    GameManager.renderGames();
+  }
+  
+  // Then initialize fresh data
   GameManager.init();
 });
