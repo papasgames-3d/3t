@@ -3,7 +3,8 @@ const games = [
   {
     id: 'monkey-mart',
     name: 'Monkey Mart',
-    image: '../assets/img/img-up/monkey-mart.png',
+    link: '/',
+    image: '../assets/img/img-up/monkey-mart-2.png',
     categories: ['simulation', 'management']
   },
   {
@@ -605,6 +606,7 @@ function createGameElement(game) {
     </a>
   `;
 }
+
 
 // Hàm hiển thị danh sách trò chơi với phân trang
 function displayGames(gameList = games, page = 1, gamesPerPage = 24) {
