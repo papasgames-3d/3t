@@ -1,12 +1,36 @@
 // Danh sách trò chơi
 const games = [
   {
-    id: 'monkey-mart',
-    name: 'Monkey Mart',
-    link: '/',
-    image: '../assets/img/img-up/monkey-mart-2.png',
-    categories: ['simulation', 'management']
+    id: 'candy-pop-mania',
+    name: 'Candy Pop Mania',
+    image: '../assets/img/img-up/candy-pop-mania.png',
+    categories: ['puzzle', 'casual']
   },
+  {
+    id: 'blocky-blast',
+    name: 'Blocky Blast',
+    image: '../assets/img/img-up/blocky-blast.png',
+    categories: ['puzzle', 'casual']
+  },
+  {
+    id: 'age-of-tanks-warriors-td-war',
+    name: 'Age of Tanks Warriors TD War',
+    image: '../assets/img/img-up/age-of-tanks-warriors-td-war.png',
+    categories: ['strategy', 'action']
+  },
+  {
+    id: 'screw-out-master-story-puzzle',
+    name: 'Screw Out Master Story Puzzle',
+    image: '../assets/img/img-up/screw-out-master-story-puzzle.png',
+    categories: ['puzzle', 'casual']
+  },
+  {
+    id: 'bus-escape-traffic-jam',
+    name: 'Bus Escape Traffic Jam',
+    image: '../assets/img/img-up/bus-escape-traffic-jam.png',
+    categories: ['racing', 'casual']
+  },
+
   {
     id: '2048',
     name: '2048',
