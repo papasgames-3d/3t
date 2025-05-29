@@ -14,7 +14,7 @@
 <link href="https://monkeymart.one" rel="canonical"/>
 <!-- Fonts and Styles -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
-<link href="../assets/css/style.css" rel="stylesheet">
+<link href="../assets/css/style2.css" rel="stylesheet">
 <!-- Analytics -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-54L5E2NJ3K"></script>
@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 gameContainer.msRequestFullscreen();
             }
             fullscreenButton.innerHTML = '<i class="fas fa-compress"></i>';
+            document.body.classList.add('fullscreen');
         } else {
             if (document.exitFullscreen) {
                 document.exitFullscreen();
@@ -106,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.msExitFullscreen();
             }
             fullscreenButton.innerHTML = '<i class="fas fa-expand"></i>';
+            document.body.classList.remove('fullscreen');
         }
     });
 
@@ -113,6 +115,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('fullscreenchange', function() {
         if (!document.fullscreenElement) {
             fullscreenButton.innerHTML = '<i class="fas fa-expand"></i>';
+            document.body.classList.remove('fullscreen');
+        } else {
+            document.body.classList.add('fullscreen');
         }
     });
 });</script><style>/* Loading overlay styles */
@@ -246,6 +251,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <img alt="monkey-mart" src="../assets/img/img-up/monkey-mart-2.png"/>
 <span>Monkey Mart 2</span>
 </a>
+<a class="game-item" href="../game/traffic-jam-3d.html">
+    <img alt="traffic-jam-3d" src="../assets/img/img-up/traffic-jam-3d.png"/>
+    <span>Traffic Jam 3D</span>
+    </a>
 <a class="game-item" href="../game/bus-escape-traffic-jam.html">
     <img alt="bus-escape-traffic-jam" src="../assets/img/img-up/bus-escape-traffic-jam.png"/>
     <span>Bus Escape Traffic Jam</span>
