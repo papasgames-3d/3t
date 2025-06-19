@@ -1,3 +1,231 @@
-<script>
-        window.location.href = "https://monkey-mart.one/";
-    </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey Mart - Ultimate Gaming Guide</title>
+    <link rel="icon" href="https://example.com/monkey-favicon.ico" type="image/x-icon">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #FFC107;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .game-intro {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .game-intro img {
+            max-width: 300px; /* Thay đổi kích thước ảnh */
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .game-tips, .game-mechanics {
+            margin: 30px 0;
+        }
+
+        .game-tips h2, .game-mechanics h2 {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tip-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .tip-card {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .tip-card:hover {
+            transform: scale(1.05);
+        }
+
+        .play-button {
+            display: block;
+            width: 100%;
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin: 20px 0; /* Thêm khoảng cách cho nút */
+        }
+
+        .play-button:hover {
+            background-color: #FFA000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .game-intro {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .tip-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐒 Monkey Mart: Master the Store! 🏪</h1>
+            <p>The Ultimate Strategy Game of Monkey Entrepreneurship</p>
+        </header>
+
+        <a href="https://monkeymart.one/game/monkey-mart.html" 
+           target="_blank" 
+           class="play-button">
+           Play Monkey Mart Now!
+        </a>
+
+        <section class="game-intro">
+            <img src="https://monkeymart.one/assets/img/img-up/monkey-mart.png" alt="Monkey Mart Game">
+            <div>
+                <h2>Welcome to Monkey Mart!</h2>
+                <p>Dive into the most exciting store management game where you control a monkey-run marketplace. Stock shelves, serve customers, and expand your business in this addictive strategy game! In <strong>Monkey Mart</strong>, you will encounter various cute animal characters, each with their own preferences and needs. Your ultimate goal is to grow your store from a small kiosk into a bustling shopping destination for the entire jungle.</p>
+                <p>This game not only focuses on business management but also introduces elements of strategy, quick thinking, and decision-making. With vibrant graphics and engaging gameplay, <strong>Monkey Mart</strong> keeps players both entertained and challenged.</p>
+            </div>
+        </section>
+
+        <div class="video-container">
+            <h2>Watch the Gameplay Video</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ByOSEEbv03g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <section class="game-mechanics">
+            <h2>Game Mechanics</h2>
+            <p>Understanding the game mechanics is essential for your success in <strong>Monkey Mart</strong>. Here’s how it works:</p>
+            <ol>
+                <li><strong>Manage Your Inventory:</strong> Keep track of the items your customers like. Cheese, bananas, and fruits are among the top choices for monkeys! Stocking popular items is crucial to attracting more customers.</li>
+                <li><strong>Serve Customers:</strong> Different animals have different needs. Some may prefer quick service, while others may require special items. Pay attention to their requests to provide the best service.</li>
+                <li><strong>Facilitate Upgrades:</strong> Earn coins by providing excellent service and use them to upgrade your store. Enhancements can include faster checkouts, more shelf space, and new product lines.</li>
+                <li><strong>Participate in Events:</strong> The game regularly features time-limited events and seasonal promotions, giving you opportunities to earn extra rewards and attract even more customers.</li>
+                <li><strong>Complete Missions:</strong> Engaging in daily and weekly missions is a great way to earn bonus rewards while keeping the game interesting.</li>
+            </ol>
+        </section>
+
+        <section class="game-tips">
+            <h2>Pro Tips for Success</h2>
+            <div class="tip-grid">
+                <div class="tip-card">
+                    <h3>🍌 Inventory Management</h3>
+                    <p>Always keep your shelves stocked with diverse products to attract more customers. Monitoring supply levels will help you avoid losing sales.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>💰 Economy Strategies</h3>
+                    <p>Invest wisely in upgrades that increase your store's efficiency and profit. Use your earnings to focus on high-demand items that will keep your customers coming back.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>⏱️ Time Management</h3>
+                    <p>Serve customers quickly to maximize your earnings and store reputation. Building a loyal customer base is key!</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🌟 Customer Preferences</h3>
+                    <p>Take note of each customer’s preferences and tailor your inventory accordingly. Knowing what your customers want can improve satisfaction significantly.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🎉 Special Promotions</h3>
+                    <p>Launch promotional events to boost sales. Free samples or discounts can draw in larger crowds and enhance your store’s visibility.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>👥 Build Your Team</h3>
+                    <p>Don’t hesitate to hire helpers to ease your workload and improve service efficiency. A well-staffed store can handle higher customer volumes effortlessly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-features">
+            <h2>Key Features of Monkey Mart</h2>
+            <p><strong>Monkey Mart</strong> offers a variety of features that enhance the gameplay experience:</p>
+            <ul>
+                <li><strong>Stunning Graphics:</strong> The colorful and lively graphics bring the jungle to life, making every gameplay moment enjoyable.</li>
+                <li><strong>Diverse Customer Base:</strong> Interact with various animal customers, each with unique characteristics and preferences.</li>
+                <li><strong>Engaging Soundtrack:</strong> Enjoy an upbeat soundtrack that pairs perfectly with the vibrant visuals, enhancing your gameplay experience.</li>
+                <li><strong>Regular Updates:</strong> The game receives regular updates with new features, items, and events, ensuring that gameplay remains fresh.</li>
+                <li><strong>Community Events:</strong> Participate in community-driven events and challenges to earn exclusive rewards and collaborate with other players.</li>
+            </ul>
+        </section>
+
+        <section class="community-forum">
+            <h2>Join the Monkey Mart Community</h2>
+            <p>Connect with fellow players and share your strategies, tips, and custom designs! Join online forums, social media groups, or in-game chats to discuss all things <strong>Monkey Mart</strong>. Getting involved with the community can also help you stay updated on the latest game news and strategies.</p>
+            <p>Many players share their experiences and solutions to common challenges. Whether you’re a beginner or an expert, learning from others can enhance your gameplay experience and provide fresh perspectives.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Monkey Mart Gaming Guide | All Rights Reserved</p>
+        <p>Created by Game Enthusiasts, For Game Lovers</p>
+    </footer>
+</body>
+</html>
