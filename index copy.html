@@ -1,570 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Monkey Mart - Fun Store Management Game | Play Free Online</title>
-  <meta name="description" content="Play Monkey Mart - A fun and free store management game. Build and develop your store, serve customers, and become a successful business owner!">
-  <meta name="keywords" content="monkey mart, monkey mart game, play monkey mart, monkey mart online, store management game">
-  <meta property="og:title" content="Monkey Mart - Fun Store Management Game">
-  <meta property="og:description" content="Play Monkey Mart - A fun and free store management game. Build and develop your store!">
-  <meta property="og:image" content="assets/img/monkey-mart.jpg">
-  <meta property="og:url" content="https://monkeymart.one">
-  <link rel="canonical" href="https://monkeymart.one">
-  
-  <!-- DNS Prefetch -->
-  <link rel="dns-prefetch" href="https://universal.wgplayer.com"/>
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
-  <!-- Fonts and Styles -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:600,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-54L5E2NJ3K"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monkey Mart - Fun Store Management Game | Play Free Online</title>
+    <meta name="description" content="Play Monkey Mart - A fun and free store management game. Build and develop your store, serve customers, and become a successful business owner!" />
+    <meta name="keywords" content="monkey mart, monkey mart game, play monkey mart, monkey mart online, store management game" />
+    <meta property="og:title" content="Monkey Mart - Fun Store Management Game" />
+    <meta property="og:description" content="Play Monkey Mart - A fun and free store management game. Build and develop your store!" />
+    <meta property="og:image" content="https://monkeymart.one/assets/img/monkey-mart.jpg" />
+    <meta property="og:url" content="https://monkeymart.one" />
+    <link rel="canonical" href="https://monkeymart.one" />
 
-    gtag('config', 'G-54L5E2NJ3K');
-  </script>
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://universal.wgplayer.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+    <!-- Fonts and Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-54L5E2NJ3K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        
+        gtag('config', 'G-54L5E2NJ3K');
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #FFC107;
+            --text-color: #333;
+            --body-bg-color: #f4f4f4;
+            --card-bg-color: #f9f9f9;
+            --tip-bg-color: #f1f1f1;
+            --footer-bg-color: #333;
+            --highlight-color: #FFEB3B; /* Màu vàng nhấn mạnh */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--body-bg-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Bố cục giới thiệu game */
+        .game-intro {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            background-color: var(--card-bg-color);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .game-intro img {
+            max-width: 300px; /* Thay đổi kích thước ảnh */
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Nội dung mẹo và cơ chế game */
+        .game-tips, .game-mechanics {
+            margin: 30px 0;
+        }
+
+        .game-tips h2, .game-mechanics h2 {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tip-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .tip-card {
+            background-color: var(--tip-bg-color);
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .tip-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .play-button {
+            display: block;
+            width: 100%;
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin: 20px 0;
+            font-size: 1.1em; /* Tăng kích thước chữ */
+        }
+
+        .play-button:hover {
+            background-color: #FFA000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--footer-bg-color);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .game-intro {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .tip-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Thêm một hiệu ứng gạch chân cho liên kết */
+        a {
+            text-decoration: none;
+            color: inherit; /* Giữ nguyên màu sắc văn bản của liên kết */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Gạch chân khi di chuột */
+        }
+    </style>
+    
+    <!-- Schema.org Markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Monkey Mart",
+        "url": "https://monkeymart.one",
+        "description": "Play Monkey Mart - A fun and free store management game. Build and develop your store, serve customers, and become a successful business owner!",
+        "image": "https://monkeymart.one/assets/img/monkey-mart.jpg",
+        "potentialAction": {
+            "@type": "PlayAction",
+            "target": "https://monkeymart.one/game/monkey-mart.html"
+        }
+    }
+    </script>
 </head>
 <body>
-  <button class="menu-toggle" id="menu-toggle">
-    <i class="fas fa-bars"></i>
-  </button>
-  <div class="menu-overlay" id="menu-overlay"></div>
-  <div class="main-wrapper">
-    <aside class="sidebar" id="sidebar">
-      <div class="logo">
-        <a href="/"></a><img src="assets/img/monkey-mart.jpg" alt="Monkey Mart Logo" /></a>
-        <span>Monkey Mart</span>
-      </div>
-      <nav class="sidebar-menu">
-        <ul>
-          <li class="active"><a href="/" title="Monkey Mart Home"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="./category/game.html" title="All Games at Monkey Mart"><i class="fas fa-gamepad"></i> All Games</a></li>
-          <li><a href="../category/battle-royale.html"><i class="fas fa-crosshairs"></i> Battle Royale</a></li>
-          <li><a href="../category/survival.html"><i class="fas fa-campground"></i> Survival</a></li>
-          <li><a href="../category/shooter.html"><i class="fas fa-gun"></i> Shooter</a></li>
-          <li><a href="../category/strategy.html"><i class="fas fa-chess"></i> Strategy</a></li>
-          <li><a href="../category/puzzle.html"><i class="fas fa-puzzle-piece"></i> Puzzle</a></li>
-          <li><a href="../category/arcade.html"><i class="fas fa-gamepad"></i> Arcade</a></li>
-          <li><a href="../category/racing.html"><i class="fas fa-car-side"></i> Racing</a></li>
-          <li><a href="../category/sports.html"><i class="fas fa-football"></i> Sports</a></li>
-          <li><a href="../category/multiplayer.html"><i class="fas fa-users"></i> Multiplayer</a></li>
-          <li><a href="../category/action.html"><i class="fas fa-running"></i> Action</a></li>
-          <li><a href="../category/adventure.html"><i class="fas fa-mountain"></i> Adventure</a></li>
-          <li><a href="../category/role-playing.html"><i class="fas fa-hat-wizard"></i> Role-Playing</a></li>
-          <li><a href="../category/simulation.html"><i class="fas fa-vr-cardboard"></i> Simulation</a></li>
-          <li><a href="../category/casual.html"><i class="fas fa-dice"></i> Casual</a></li>
-          <li><a href="../category/educational.html"><i class="fas fa-graduation-cap"></i> Educational</a></li>
-          <li><a href="../category/sandbox.html"><i class="fas fa-cubes"></i> Sandbox</a></li>
-          <li><a href="../category/clicker.html"><i class="fas fa-mouse-pointer"></i> Clicker</a></li>
-          <li><a href="../category/tower-defense.html"><i class="fas fa-chess-rook"></i> Tower Defense</a></li>
-          <li><a href="../category/board.html"><i class="fas fa-chess-board"></i> Board</a></li>
-        </ul>
-      </nav>
-      
-    </aside>
-    <main class="main-content">
-      <header class="header">
-        <div class="container">
-          <h1>Monkey Mart</h1>
-          <!-- Header Ad -->
-          <div id="header-ad-container" class="ad-container">
-            <!-- Ad will be inserted here -->
-          </div>
-        </div>
-      </header>
-        
-      <section class="games-grid">
-        
-       
-        
-        <!-- Game Frame Container -->
-        <div class="game-frame-container">
-          <iframe src="https://papasgames3d.com/MonkeyMart" allowfullscreen id="game-frame"></iframe>
-          <div class="game-controls">
-            <button class="control-btn" id="share-btn" title="Share Game">
-              <i class="fas fa-share-alt"></i>
-            </button>
-            <button class="control-btn" id="fullscreen-btn" title="Play Fullscreen">
-              <i class="fas fa-expand"></i>
-            </button>
-          </div>
-          <div class="share-menu" id="share-menu">
-            <button class="control-btn" id="copy-link-btn" title="Copy Game Link">
-              <i class="fas fa-link"></i>
-            </button>
-            <button class="control-btn" id="facebook-btn" title="Share on Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </button>
-            <button class="control-btn" id="twitter-btn" title="Share on Twitter">
-              <i class="fab fa-twitter"></i>
-            </button>
-            <button class="control-btn" id="pinterest-btn" title="Share on Pinterest">
-              <i class="fab fa-pinterest-p"></i>
-            </button>
-          </div>
-          <div class="game-frame-title">Monkey Mart</div>
-        </div>
-        <a class="game-item" href="game/1v1-lol.html">
-            <img src="../assets/img/1v1-lol.png" alt="1v1.lol" />
-            <span>1v1.lol</span>
-          </a>
-          <a class="game-item" href="game/8-ball-pool-billiard.html">
-            <img src="../assets/img/img-up/8-ball-pool-billiard.png" alt="8-ball-pool" />
-            <span>8 Ball Pool</span>
-          </a>
-          <a class="game-item" href="game/9007199254740992.html">
-            <img src="../assets/img/img-up/9007199254740992.png" alt="9007199254740992" />
-            <span>9007199254740992</span>
-          </a>
-          <a class="game-item" href="game/2048.html">
-            <img src="../assets/img/img-up/2048.png" alt="2048" />
-            <span>2048</span>
-          </a>
-          <a class="game-item" href="game/a-small-world-cup.html">
-            <img src="../assets/img/img-up/a-small-world-cup.png" alt="a-small-world-cup" />
-            <span>A Small World Cup</span>
-          </a>
-          <a class="game-item" href="game/ages-of-conflict.html">
-            <img src="../assets/img/img-up/ages-of-conflict.png" alt="ages-of-conflict" />
-            <span>Ages of Conflict</span>
-          </a>
-          <a class="game-item" href="game/among-us.html">
-            <img src="../assets/img/img-up/among-us.png" alt="among-us" />
-            <span>Among Us</span>
-          </a>
-        <!-- Square Ad after 6 games -->
-        <div class="ad-container ad-square">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- Square Ad Unit -->
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-               data-ad-slot="XXXXXXXXXX"
-               data-ad-format="auto"></ins>
-          <script>
-               (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-          <a class="game-item" href="game/baldis-basics.html">
-            <img src="../assets/img/img-up/baldis-basics.png" alt="baldis-basics" />
-            <span>Baldis Basics</span>
-          </a>
-          <a class="game-item" href="game/ball-puzzle.html">
-            <img src="../assets/img/img-up/ball-puzzle.png" alt="ball-puzzle" />
-            <span>Ball Puzzle</span>
-          </a>
-          <a class="game-item" href="game/ball-sort-puzzle.html">
-            <img src="../assets/img/img-up/ball-sort-puzzle.png" alt="ball-sort-puzzle" />
-            <span>Ball Sort Puzzle</span>
-          </a>
-          <a class="game-item" href="game/basket-and-ball.html">
-            <img src="../assets/img/img-up/basket-and-ball.png" alt="basket-and-ball" />
-            <span>Basket and Ball</span>
-          </a>
-          <a class="game-item" href="game/basket-random.html">
-            <img src="../assets/img/img-up/basket-random.png" alt="basket-random" />
-            <span>Basket Random</span>
-          </a>
-          <a class="game-item" href="game/bitlife.html">
-            <img src="../assets/img/img-up/bitlife.png" alt="bitlife" />
-            <span>Bitlife</span>
-          </a>
-          <a class="game-item" href="game/blackjack.html">
-            <img src="../assets/img/img-up/blackjack.png" alt="blackjack" />
-            <span>Blackjack</span>
-          </a>
-          
-          <a class="game-item" href="game/bloons-td.html">
-            <img src="../assets/img/img-up/bloons-td.png" alt="bloons-td" />
-            <span>Bloons TD</span>
-          </a>
-          <a class="game-item" href="game/bloons-td-2.html">
-            <img src="../assets/img/img-up/bloons-td-2.png" alt="bloons-td-2" />
-            <span>Bloons TD 2</span>
-          </a>
-          <a class="game-item" href="game/bloons-td-3.html">
-            <img src="../assets/img/img-up/bloons-td-3.png" alt="bloons-td-3" />
-            <span>Bloons TD 3</span>
-          </a>
-          <a class="game-item" href="game/bloons-td-4.html">
-            <img src="../assets/img/img-up/bloons-td-4.png" alt="bloons-td-4" />
-            <span>Bloons TD 4</span>
-          </a>
-                   
-        
-        
-        <!-- Related Games -->
-        <h2 class="related-games-title">Popular Games</h2>
-        
-        <!-- First row of related games -->
-        <a class="game-item" href="game/block-the-pig.html">
-          <img src="../assets/img/img-up/block-the-pig.png" alt="block-the-pig" />
-          <span>Block the Pig</span>
-        </a>
-        <a class="game-item" href="game/boxing-random.html">
-          <img src="../assets/img/img-up/boxing-random.png" alt="boxing-random" />
-          <span>Boxing Random</span>
-        </a>
-        <a class="game-item" href="game/cell-machine.html">
-          <img src="../assets/img/img-up/cell-machine.png" alt="cell-machine" />
-          <span>Cell Machine</span>
-        </a>
-        <a class="game-item" href="game/chrome-dino.html">
-          <img src="../assets/img/img-up/chrome-dino.png" alt="chrome-dino" />
-          <span>Chrome Dino</span>
-        </a>
-        <a class="game-item" href="game/circlo.html">
-          <img src="../assets/img/img-up/circlo.png" alt="circlo" />
-          <span>Circlo</span>
-        </a>
-        <a class="game-item" href="game/commando-force-2.html">
-          <img src="../assets/img/img-up/commando-force-2.png" alt="commando-force-2" />
-          <span>Commando Force 2</span>
-        </a>
-        <a class="game-item" href="game/cookie-clicker.html">
-          <img src="../assets/img/img-up/cookie-clicker.png" alt="cookie-clicker" />
-          <span>Cookie Clicker</span>
-        </a>
-        <a class="game-item" href="game/core-ball.html">
-          <img src="../assets/img/img-up/core-ball.png" alt="core-ball" />
-          <span>Core Ball</span>
-        </a>
-        <a class="game-item" href="game/ctr-time-travel.html">
-          <img src="../assets/img/img-up/ctr-time-travel.png" alt="ctr-time-travel" />
-          <span>CTR Time Travel</span>
-        </a>
-        <a class="game-item" href="game/death-run-3d.html">
-          <img src="../assets/img/img-up/death-run-3d.png" alt="death-run-3d" />
-          <span>Death Run 3D</span>
-        </a>
-        <a class="game-item" href="game/delta-force-airborne.html">
-          <img src="../assets/img/img-up/delta-force-airborne.png" alt="delta-force-airborne" />
-          <span>Delta Force Airborne</span>
-        </a>
-        
-        <!-- Horizontal Ad after game frame -->
-        <div class="ad-container ad-horizontal">
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-4151519079019358"
-               data-ad-slot="HORIZONTAL_AD_SLOT"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
-          <script>
-               (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-        
-        
-        <!-- Game Description -->
-        <div class="game-description">
-          <h1>Monkey Mart - Fun Store Management Game</h1>
-          <p>Welcome to Monkey Mart - the exciting store management game where you become a clever monkey running your own shop! In Monkey Mart, you'll serve customers, manage inventory, and grow your business into a thriving retail empire. Experience the perfect blend of casual gameplay and strategic management!</p>
-          
-          <h2>Key Features:</h2>
-          <ul>
-            <li>Run your own Monkey Mart store with unique management mechanics</li>
-            <li>Serve diverse customers with different shopping needs</li>
-            <li>Upgrade your Monkey Mart with new features and improvements</li>
-            <li>Enjoy cute graphics and lively sound effects</li>
-            <li>Simple yet engaging gameplay suitable for all ages</li>
-          </ul>
-          
-          <h2>How to Play Monkey Mart:</h2>
-          <p>Use your mouse to interact with objects in the game. Click on items to pick them up and move them around. Serve customers by giving them the items they request. Keep your Monkey Mart organized and customers happy to earn more profits!</p>
-          
-          <h3>Controls:</h3>
-          <ul>
-            <li>Left Click: Select and move items in your Monkey Mart</li>
-            <li>Right Click: Cancel selection</li>
-            <li>Mouse Movement: Navigate your monkey character</li>
-          </ul>
-          
-          <h2>Tips for Success in Monkey Mart:</h2>
-          <ul>
-            <li>Organize your Monkey Mart store efficiently</li>
-            <li>Prioritize customers who have been waiting longer</li>
-            <li>Regularly check and restock your inventory</li>
-            <li>Time your store upgrades strategically</li>
-            <li>Keep your Monkey Mart clean and attractive to customers</li>
-          </ul>
+    <div class="container">
+        <header>
+            <h1>🐒 Monkey Mart: Master the Store! 🏪</h1>
+            <p>The Ultimate Strategy Game of Monkey Entrepreneurship</p>
+        </header>
 
-          <h2>About Monkey Mart:</h2>
-          <p>Monkey Mart is more than just a store management game - it's a delightful adventure in retail! As the proud owner of your Monkey Mart, you'll learn the ins and outs of running a successful business while having fun. With its charming monkey theme and engaging gameplay mechanics, Monkey Mart offers endless hours of entertainment for players of all skill levels.</p>
-        </div>
-        
-        
-        <!-- Square Ad after 6 games -->
-        <div class="ad-container ad-square">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- Square Ad Unit -->
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-               data-ad-slot="XXXXXXXXXX"
-               data-ad-format="auto"></ins>
-          <script>
-               (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-        
-        <!-- More related games -->
-        <a class="game-item" href="game/dig-a-hole-in-russia.html">
-          <img src="../assets/img/img-up/dig-a-hole-in-russia.png" alt="dig-a-hole-in-russia" />
-          <span>Dig a Hole in Russia</span>
+        <a href="https://monkeymart.one/game/monkey-mart.html" 
+           target="_blank" 
+           class="play-button">
+           Play Monkey Mart Now!
         </a>
-        <a class="game-item" href="game/doodle-jump.html">
-          <img src="../assets/img/img-up/doodle-jump.png" alt="doodle-jump" />
-          <span>Doodle Jump</span>
-        </a>
-        <a class="game-item" href="game/drift-boss.html">
-          <img src="../assets/img/img-up/drift-boss.png" alt="drift-boss" />
-          <span>Drift Boss</span>
-        </a>
-        <a class="game-item" href="game/drift-hunters.html">
-          <img src="../assets/img/img-up/drift-hunters.png" alt="drift-hunters" />
-          <span>Drift Hunters</span>
-        </a>
-        <a class="game-item" href="game/duck-life-4.html">
-          <img src="../assets/img/img-up/duck-life-4.png" alt="duck-life-4" />
-          <span>Duck Life 4</span>
-        </a>
-        <a class="game-item" href="game/eaglercraft.html">
-          <img src="../assets/img/img-up/eaglercraft.png" alt="eaglercraft" />
-          <span>Eaglercraft</span>
-        </a>
-        
-        
-        
-        <!-- Vertical Ad after more games -->
-        <div class="ad-container ad-vertical">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- Vertical Ad Unit -->
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-               data-ad-slot="XXXXXXXXXX"
-               data-ad-format="auto"></ins>
-          <script>
-               (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-        <a class="game-item" href="game/edge-surf.html">
-          <img src="../assets/img/img-up/edge-surf.png" alt="edge-surf" />
-          <span>Edge Surf</span>
-        </a>
-        <a class="game-item" href="game/fireboy-and-watergirl-1.html">
-          <img src="../assets/img/img-up/fireboy-and-watergirl-1.png" alt="fireboy-and-watergirl-1" />
-          <span>Fireboy and Watergirl 1</span>
-        </a>
-        <a class="game-item" href="game/fireboy-and-watergirl-2.html">
-          <img src="../assets/img/img-up/fireboy-and-watergirl-2.png" alt="fireboy-and-watergirl-2" />
-          <span>Fireboy and Watergirl 2</span>
-        </a>
-        <a class="game-item" href="game/fireboy-and-watergirl-3.html">
-          <img src="../assets/img/img-up/fireboy-and-watergirl-3.png" alt="fireboy-and-watergirl-3" />
-          <span>Fireboy and Watergirl 3</span>
-        </a>
-        <a class="game-item" href="game/fireboy-and-watergirl-4.html">
-          <img src="../assets/img/img-up/fireboy-and-watergirl-4.png" alt="fireboy-and-watergirl-4" />
-          <span>Fireboy and Watergirl 4</span>
-        </a>
-        <a class="game-item" href="game/fireboy-and-watergirl-5.html">
-          <img src="../assets/img/img-up/fireboy-and-watergirl-5.png" alt="fireboy-and-watergirl-5" />
-          <span>Fireboy and Watergirl 5</span>
-        </a>
-        <a class="game-item" href="game/fireboy-and-watergirl-6.html">
-          <img src="../assets/img/img-up/fireboy-and-watergirl-6.png" alt="fireboy-and-watergirl-6" />
-          <span>Fireboy and Watergirl 6</span>
-        </a>
-        
-        <a class="game-item" href="game/fnaf-1.html">
-          <img src="../assets/img/img-up/fnaf-1.png" alt="fnaf-1" />
-          <span>FNAF 1</span>
-        </a>
-        <a class="game-item" href="game/fnaf-2.html">
-          <img src="../assets/img/img-up/fnaf-2.png" alt="fnaf-2" />
-          <span>FNAF 2</span>
-        </a>
-        <a class="game-item" href="game/fnaf-3.html">
-          <img src="../assets/img/img-up/fnaf-3.png" alt="fnaf-3" />
-          <span>FNAF 3</span>
-        </a>
-        <a class="game-item" href="game/fnaf-4.html">
-          <img src="../assets/img/img-up/fnaf-4.png" alt="fnaf-4" />
-          <span>FNAF 4</span>
-        </a>
-        <a class="game-item" href="game/fnaf-5.html">
-          <img src="../assets/img/img-up/fnaf-5.png" alt="fnaf-5" />
-          <span>FNAF 5</span>
-        </a>
-        <a class="game-item" href="game/fnaf-ucn.html">
-          <img src="../assets/img/img-up/fnaf-ucn.png" alt="fnaf-ucn" />
-          <span>FNAF UCN</span>
-        </a>
-        <a class="game-item" href="game/fruit-ninja.html">
-          <img src="../assets/img/img-up/fruit-ninja.png" alt="fruit-ninja" />
-          <span>Fruit Ninja</span>
-        </a>
-        <a class="game-item" href="game/geodash.html">
-          <img src="../assets/img/img-up/geodash.png" alt="geodash" />
-          <span>Geodash</span>
-        </a>
-        <a class="game-item" href="game/geodash-subzero.html">
-          <img src="../assets/img/img-up/geodash-subzero.png" alt="geodash-subzero" />
-          <span>Geodash Subzero</span>
-        </a>
-        <a class="game-item" href="game/google-feud.html">
-          <img src="../assets/img/img-up/google-feud.png" alt="google-feud" />
-          <span>Google Feud</span>
-        </a>
-        <a class="game-item" href="game/google-snake.html">
-          <img src="../assets/img/img-up/google-snake.png" alt="google-snake" />
-          <span>Google Snake</span>
-        </a>
-        <a class="game-item" href="game/gta-advance.html">
-          <img src="../assets/img/img-up/gta-advance.png" alt="gta-advance" />
-          <span>GTA Advance</span>
-        </a>
-        <a class="game-item" href="game/hextris.html">
-          <img src="../assets/img/img-up/hextris.png" alt="hextris" />
-          <span>Hextris</span>
-        </a>
-        <a class="game-item" href="game/idle-breakout.html">
-          <img src="../assets/img/img-up/idle-breakout.png" alt="idle-breakout" />
-          <span>Idle Breakout</span>
-        </a>
-        <a class="game-item" href="game/kingdom-match.html">
-          <img src="../assets/img/img-up/kingdom-match.png" alt="kingdom-match" />
-          <span>Kingdom Match</span>
-        </a>
-        <a class="game-item" href="game/legend-of-zelda-link-to-the-past.html">
-          <img src="../assets/img/img-up/legend-of-zelda-link-to-the-past.png" alt="legend-of-zelda-link-to-the-past" />
-          <span>Legend of Zelda Link to the Past</span>
-        </a>
-        <a class="game-item" href="game/legend-of-zelda-minish-cap.html">
-          <img src="../assets/img/img-up/legend-of-zelda-minish-cap.png" alt="legend-of-zelda-minish-cap" />
-          <span>Legend of Zelda Minish Cap</span>
-        </a>
-        <a class="game-item" href="game/little-alchemy.html">
-          <img src="../assets/img/img-up/little-alchemy.png" alt="little-alchemy" />
-          <span>Little Alchemy</span>
-        </a>
-        <a class="game-item" href="game/madalin-stunt-cars-2.html">
-          <img src="../assets/img/img-up/madalin-stunt-cars-2.png" alt="madalin-stunt-cars-2" />
-          <span>Madalin Stunt Cars 2</span>
-        </a>
-        <a class="game-item" href="game/madalin-stunt-cars-3.html">
-          <img src="../assets/img/img-up/madalin-stunt-cars-3.jpg" alt="madalin-stunt-cars-3" />
-          <span>Madalin Stunt Cars 3</span>
-        </a>
-        <a class="game-item" href="game/mario.html">
-          <img src="../assets/img/img-up/mario.png" alt="mario" />
-          <span>Mario</span>
-        </a>
-        <a class="game-item" href="game/mario-party.html">
-          <img src="../assets/img/img-up/mario-party.png" alt="mario-party" />
-          <span>Mario Party</span>
-        </a>
-        <a class="game-item" href="game/mario-party-2.html">
-          <img src="../assets/img/img-up/mario-party-2.png" alt="mario-party-2" />
-          <span>Mario Party 2</span>
-        </a>
-        <a class="game-item" href="game/mario-party-3.html">
-          <img src="../assets/img/img-up/mario-party-3.png" alt="mario-party-3" />
-          <span>Mario Party 3</span>
-        </a>
-        <a class="game-item" href="game/match-the-colors.html">
-          <img src="../assets/img/img-up/match-the-colors.png" alt="match-the-colors" />
-          <span>Match the Colors</span>
-        </a>
-        <a class="game-item" href="game/minecraft.html">
-          <img src="../assets/img/img-up/minecraft.png" alt="minecraft" />
-          <span>Minecraft</span>
-        </a>
-        <a class="game-item" href="game/minesweeper.html">
-          <img src="../assets/img/img-up/minesweeper.png" alt="minesweeper" />
-          <span>Minesweeper</span>
-        </a>
-        <a class="game-item" href="game/moto-x3m.html">
-          <img src="../assets/img/img-up/moto-x3m.png" alt="moto-x3m" />
-          <span>Moto x3m</span>
-        </a>
-        <a class="game-item" href="game/moto-x3m-2.html">
-          <img src="../assets/img/img-up/moto-x3m-2.png" alt="moto-x3m-2" />
-          <span>Moto x3m 2</span>
-        </a>
-        <a class="game-item" href="game/moto-x3m-pool-party.html">
-          <img src="../assets/img/img-up/moto-x3m-pool-party.png" alt="moto-x3m-pool-party" />
-          <span>Moto x3m pool party</span>
-        </a>
-        <a class="game-item" href="game/moto-x3m-spooky-land.html">
-          <img src="../assets/img/img-up/moto-x3m-spooky-land.png" alt="moto-x3m-spooky-land" />
-          <span>Moto x3m spooky land</span>
-        </a>
-        <a class="game-item" href="game/moto-x3m-winter.html">
-          <img src="../assets/img/img-up/moto-x3m-winter.png" alt="moto-x3m-winter" />
-          <span>Moto x3m winter</span>
-        </a>
-        <a class="game-item" href="game/ms-solitaire.html">
-          <img src="../assets/img/img-up/ms-solitaire.png" alt="ms-solitaire" />
-          <span>Ms solitaire</span>
-        </a>
-        
-        
-        
-        
-    </main>
-  </div>
-  
-						
 
-  <!-- Footer Section -->
-  <footer class="site-footer">
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>About</h3>
-            <ul>
-                <li><a href="/about.html">About Us</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/faq.html">FAQ</a></li>
-                <li><a href="/blog/index.html">Blog</a></li>
-            </ul>
+        <section class="game-intro">
+            <img src="https://monkeymart.one/assets/img/img-up/monkey-mart.png" alt="Monkey Mart Game">
+            <div>
+                <h2>Welcome to Monkey Mart!</h2>
+                <p>Dive into the most exciting store management game where you control a monkey-run marketplace. Stock shelves, serve customers, and expand your business in this addictive strategy game! In <strong>Monkey Mart</strong>, you will encounter various cute animal characters, each with their own preferences and needs. Your ultimate goal is to grow your store from a small kiosk into a bustling shopping destination for the entire jungle.</p>
+                <p>This game not only focuses on business management but also introduces elements of strategy, quick thinking, and decision-making. With vibrant graphics and engaging gameplay, <strong>Monkey Mart</strong> keeps players both entertained and challenged.</p>
+            </div>
+        </section>
+
+        <div class="video-container">
+            <h2>Watch the Gameplay Video</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ByOSEEbv03g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="footer-section">
-            <h3>Quick Links</h3>
+
+        <section class="game-mechanics">
+            <h2>Game Mechanics</h2>
+            <p>Understanding the game mechanics is essential for your success in <strong>Monkey Mart</strong>. Here’s how it works:</p>
+            <ol>
+                <li><strong>Manage Your Inventory:</strong> Keep track of the items your customers like. Cheese, bananas, and fruits are among the top choices for monkeys! Stocking popular items is crucial to attracting more customers.</li>
+                <li><strong>Serve Customers:</strong> Different animals have different needs. Some may prefer quick service, while others may require special items. Pay attention to their requests to provide the best service.</li>
+                <li><strong>Facilitate Upgrades:</strong> Earn coins by providing excellent service and use them to upgrade your store. Enhancements can include faster checkouts, more shelf space, and new product lines.</li>
+                <li><strong>Participate in Events:</strong> The game regularly features time-limited events and seasonal promotions, giving you opportunities to earn extra rewards and attract even more customers.</li>
+                <li><strong>Complete Missions:</strong> Engaging in daily and weekly missions is a great way to earn bonus rewards while keeping the game interesting.</li>
+            </ol>
+        </section>
+
+        <section class="game-tips">
+            <h2>Pro Tips for Success</h2>
+            <div class="tip-grid">
+                <div class="tip-card">
+                    <h3>🍌 Inventory Management</h3>
+                    <p>Always keep your shelves stocked with diverse products to attract more customers. Monitoring supply levels will help you avoid losing sales.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>💰 Economy Strategies</h3>
+                    <p>Invest wisely in upgrades that increase your store's efficiency and profit. Use your earnings to focus on high-demand items that will keep your customers coming back.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>⏱️ Time Management</h3>
+                    <p>Serve customers quickly to maximize your earnings and store reputation. Building a loyal customer base is key!</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🌟 Customer Preferences</h3>
+                    <p>Take note of each customer’s preferences and tailor your inventory accordingly. Knowing what your customers want can improve satisfaction significantly.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🎉 Special Promotions</h3>
+                    <p>Launch promotional events to boost sales. Free samples or discounts can draw in larger crowds and enhance your store’s visibility.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>👥 Build Your Team</h3>
+                    <p>Don’t hesitate to hire helpers to ease your workload and improve service efficiency. A well-staffed store can handle higher customer volumes effortlessly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-features">
+            <h2>Key Features of Monkey Mart</h2>
+            <p><strong>Monkey Mart</strong> offers a variety of features that enhance the gameplay experience:</p>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="./category/game.html">Games</a></li>
-                <li><a href="./category/play-more.html">Leaderboard</a></li>
-                <li><a href="/community">Community</a></li>
+                <li><strong>Stunning Graphics:</strong> The colorful and lively graphics bring the jungle to life, making every gameplay moment enjoyable.</li>
+                <li><strong>Diverse Customer Base:</strong> Interact with various animal customers, each with unique characteristics and preferences.</li>
+                <li><strong>Engaging Soundtrack:</strong> Enjoy an upbeat soundtrack that pairs perfectly with the vibrant visuals, enhancing your gameplay experience.</li>
+                <li><strong>Regular Updates:</strong> The game receives regular updates with new features, items, and events, ensuring that gameplay remains fresh.</li>
+                <li><strong>Community Events:</strong> Participate in community-driven events and challenges to earn exclusive rewards and collaborate with other players.</li>
             </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Legal</h3>
-            <ul>
-                <li><a href="/terms.html">Terms of Service</a></li>
-                <li><a href="/privacy.html">Privacy Policy</a></li>
-                <li><a href="/cookie-policy.html">Cookie Policy</a></li>
-                <li><a href="/disclaimer.html">Disclaimer</a></li>
-            </ul>
-        </div>
-        
+        </section>
+
+        <section class="community-forum">
+            <h2>Join the Monkey Mart Community</h2>
+            <p>Connect with fellow players and share your strategies, tips, and custom designs! Join online forums, social media groups, or in-game chats to discuss all things <strong>Monkey Mart</strong>. Getting involved with the community can also help you stay updated on the latest game news and strategies.</p>
+            <p>Many players share their experiences and solutions to common challenges. Whether you’re a beginner or an expert, learning from others can enhance your gameplay experience and provide fresh perspectives.</p>
+        </section>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 Monkey Mart. All rights reserved.</p>
-    </div>
-  </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/analytics.js"></script>
-  <script src="assets/js/script.js"></script>
+    <footer>
+        <p>© 2025 Monkey Mart Gaming Guide | All Rights Reserved</p>
+        <p>Created by Game Enthusiasts, For Game Lovers</p>
+    </footer>
 </body>
-</html> 
+</html>
