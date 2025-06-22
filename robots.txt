@@ -17,11 +17,11 @@ Allow: /*.png$
 Allow: /*.gif$
 Allow: /*.svg$
 Allow: /*.webp$
+Allow: /*.txt$
 
 # Block certain file types
 Disallow: /*.json$
 Disallow: /*.xml$
-Disallow: /*.txt$
 Disallow: /*.md$
 Disallow: /*.log$
 Disallow: /*.sql$
