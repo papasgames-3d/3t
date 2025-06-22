@@ -180,6 +180,81 @@
             color: var(--white);
         }
 
+        .play-button-floating {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF5722 0%, #FF9800 100%);
+            color: var(--white);
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 87, 34, 0.4);
+            border: 3px solid rgba(255,255,255,0.2);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .play-button-floating::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .play-button-floating:hover::before {
+            left: 100%;
+        }
+
+        .play-button-floating:hover {
+            background: linear-gradient(135deg, #FF9800 0%, #FF5722 100%);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(255, 87, 34, 0.6);
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        .play-button-floating:active {
+            transform: translateY(-1px) scale(1.02);
+        }
+
+        .play-section-header {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(255, 193, 7, 0.1) 100%);
+            border-radius: var(--border-radius);
+            border: 2px solid rgba(76, 175, 80, 0.2);
+        }
+
+        .play-section-footer {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(255, 87, 34, 0.1) 0%, rgba(255, 193, 7, 0.1) 100%);
+            border-radius: var(--border-radius);
+            border: 2px solid rgba(255, 87, 34, 0.2);
+        }
+
+        .play-section-footer h2 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .play-section-footer p {
+            color: var(--text-light);
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
         .game-intro {
             display: grid;
             grid-template-columns: 1fr 2fr;
@@ -390,6 +465,15 @@
             <p>The Ultimate Strategy Game of Monkey Entrepreneurship</p>
         </header>
 
+        <div class="play-section-header">
+            <a href="https://monkeymart.one/game/monkey-mart.html" 
+               target="_blank" 
+               class="play-button-floating"
+               aria-label="Play Monkey Mart 2 Game Now">
+               🎮 Play Monkey Mart 2 Now! 🎮
+            </a>
+        </div>
+
         <div class="play-section">
             <a href="https://monkeymart.one/game/monkey-mart.html" target="_blank"><img src="monkeymart-half.png" alt="Monkey Mart 2 - Free Online Store Management Game"></a></a>
             <a href="https://monkeymart.one/game/monkey-mart.html" 
@@ -474,6 +558,16 @@
             <p>Many players share their experiences and solutions to common challenges. Whether you're a beginner or an expert, learning from others can enhance your gameplay experience and provide fresh perspectives.</p>
         </section>
 
+        <div class="play-section-footer">
+            <h2>🎯 Ready to Start Your Monkey Business Adventure?</h2>
+            <p>Join thousands of players who are already building their monkey empires! Click the button below to start playing Monkey Mart 2 for free.</p>
+            <a href="https://monkeymart.one/game/monkey-mart.html" 
+               target="_blank" 
+               class="play-button-floating"
+               aria-label="Start Playing Monkey Mart 2 Game">
+               🚀 Start Playing Now! 🚀
+            </a>
+        </div>
     </div>
 
     <footer>
