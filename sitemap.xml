@@ -1,94 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
-  <url>
-    <loc>https://monkeymart.one/</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Main Category Pages -->
-  <url>
-    <loc>https://monkeymart.one/category/game.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://monkeymart.one/category/play-more.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Game Pages -->
-  <url>
-    <loc>https://monkeymart.one/game/1v1-lol.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://monkeymart.one/game/8-ball-pool-billiard.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://monkeymart.one/game/9007199254740992.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://monkeymart.one/game/2048.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://monkeymart.one/game/a-small-world-cup.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://monkeymart.one/game/ages-of-conflict.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://monkeymart.one/game/among-us.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Info Pages -->
-  <url>
-    <loc>https://monkeymart.one/about.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://monkeymart.one/contact.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://monkeymart.one/privacy.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://monkeymart.one/terms.html</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-</urlset> 
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://monkeymart.one/</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/slope3.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/slope-city.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/slope-ball.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/slope-racing-3d.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/slope-tunnel.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/monkey-mart.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/10-minutes-till-dawn.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/smash-karts.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/cookie-clicker.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/merge-round-racers.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/bob-the-robber-4.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/slope-plus.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/slope-minus.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/slope-xtreme.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/slope2.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://monkeymart.one/detail/pako-highway.html</loc>
+  <lastmod>2025-04-03T04:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+</urlset>
