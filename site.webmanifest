@@ -1,9 +1,9 @@
 {
-    "name": "Slope Game",
-    "short_name": "Slope Game",
+    "name": "monkeymart.one",
+    "short_name": "monkeymart.one",
     "icons": [
         {
-            "src": "/android-chrome-96x96.png",
+            "src": "/favicon-96x96.png",
             "sizes": "96x96",
             "type": "image/png"
         }
