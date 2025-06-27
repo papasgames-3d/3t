@@ -1,15 +1,8 @@
 User-agent: *
 Allow: /
+Allow: /ads.txt
 Sitemap: https://monkeymart.one/sitemap.xml
 
-# Allow ads.txt specifically
-Allow: /ads.txt
-
-# Block access to admin and private areas
-Disallow: /admin/
-Disallow: /private/
-Disallow: /includes/
-Disallow: /cgi-bin/
 
 # Allow CSS, JS, and image files
 Allow: /*.css$
@@ -20,12 +13,4 @@ Allow: /*.png$
 Allow: /*.gif$
 Allow: /*.svg$
 Allow: /*.webp$
-Allow: /*.txt$
 
-# Block certain file types (but allow ads.txt)
-Disallow: /*.json$
-Disallow: /*.xml$
-Disallow: /*.md$
-Disallow: /*.log$
-Disallow: /*.sql$
-Disallow: /*.zip$
