@@ -1,46 +1,31 @@
 User-agent: *
 Allow: /
-
-# Sitemap
 Sitemap: https://monkeymart.one/sitemap.xml
 
-# Allow all search engines to crawl
-Allow: /detail/
-Allow: /images/
-Allow: /css/
-Allow: /js/
-Allow: /fonts/
+# Allow ads.txt specifically
+Allow: /ads.txt
 
-# Disallow unnecessary files
-Disallow: /master-loader.js
-Disallow: /poki-sdk*.js
-Disallow: /unity*.js
-Disallow: /UnityLoader*.js
+# Block access to admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /cgi-bin/
 
-# Crawl delay (optional)
-Crawl-delay: 1
+# Allow CSS, JS, and image files
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.txt$
 
-# Popular search engines
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: / 
+# Block certain file types (but allow ads.txt)
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.md$
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.zip$
