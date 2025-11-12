@@ -13,7 +13,7 @@ def create_game_file(game_data, template_content):
     # Replace content in template
     content = template_content
     content = content.replace('1v1.lol', title)
-    content = content.replace('https://game.monkeymart.one/projects/1v1.lol/', frame_url)
+    content = content.replace('https://games.monkeymart.one/projects/1v1.lol/', frame_url)
     content = content.replace('assets/img/1v1-battle.jpg', image_path)
     
     # Write new game file
