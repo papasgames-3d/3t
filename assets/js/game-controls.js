@@ -8,26 +8,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const shareMenu = document.getElementById('share-menu');
     const fullscreenButton = document.getElementById('fullscreen-btn');
     const loadingOverlay = document.querySelector('.loading-overlay');
-    
+
+    if (!gameContainer || !playButton || !gameFrame || !thumbnail) {
+        return;
+    }
+
     // Play button click handler
     playButton.addEventListener('click', function() {
         thumbnail.style.display = 'none';
-        loadingOverlay.style.display = 'flex';
-        
-        // Get the game URL from data-src
+        if (loadingOverlay) loadingOverlay.style.display = 'flex';
+
         const gameUrl = gameFrame.getAttribute('data-src');
-        
-        // Set the actual src to load the game
         gameFrame.src = gameUrl;
-        
-        // Show game frame once loaded
+
         gameFrame.onload = function() {
-            loadingOverlay.style.display = 'none';
+            if (loadingOverlay) loadingOverlay.style.display = 'none';
             gameFrame.style.display = 'block';
         };
     });
 
     // Share button functionality
+    if (shareButton && shareMenu) {
     shareButton.addEventListener('click', function(e) {
         e.stopPropagation();
         shareMenu.classList.toggle('active');
@@ -39,26 +40,29 @@ document.addEventListener('DOMContentLoaded', function() {
             shareMenu.classList.remove('active');
         }
     });
+    }
 
     // Share buttons functionality
-    document.getElementById('copy-link-btn').addEventListener('click', function() {
+    const copyLinkBtn = document.getElementById('copy-link-btn');
+    const facebookBtn = document.getElementById('facebook-btn');
+    const twitterBtn = document.getElementById('twitter-btn');
+    const pinterestBtn = document.getElementById('pinterest-btn');
+    if (copyLinkBtn) copyLinkBtn.addEventListener('click', function() {
         navigator.clipboard.writeText(window.location.href);
         alert('Link copied to clipboard!');
     });
-
-    document.getElementById('facebook-btn').addEventListener('click', function() {
+    if (facebookBtn) facebookBtn.addEventListener('click', function() {
         window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank');
     });
-
-    document.getElementById('twitter-btn').addEventListener('click', function() {
+    if (twitterBtn) twitterBtn.addEventListener('click', function() {
         window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}`, '_blank');
     });
-
-    document.getElementById('pinterest-btn').addEventListener('click', function() {
+    if (pinterestBtn) pinterestBtn.addEventListener('click', function() {
         window.open(`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(window.location.href)}`, '_blank');
     });
 
     // Fullscreen functionality
+    if (!fullscreenButton) return;
     fullscreenButton.addEventListener('click', function() {
         if (!document.fullscreenElement) {
             if (gameContainer.requestFullscreen) {
