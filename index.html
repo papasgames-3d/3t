@@ -85,7 +85,24 @@
     }
   }
   </script>
- 
+  <style>
+    .video-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .video-item {
+      flex: 1 1 48%;
+      aspect-ratio: 16 / 9;
+    }
+    
+    .video-item iframe {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
+    
 </head>
 <body>
   <button class="menu-toggle" id="menu-toggle">
@@ -180,7 +197,9 @@
                 <div class="loading-spinner"></div>
                 <div class="loading-text">Loading Game...</div>
             </div>
+            
         </div>
+        
         <div class="game-frame-title">Monkey Mart</div>
           <a class="game-item" href="./game/solitaire-pro-plus.html">
             <img loading="lazy" alt="solitaire-pro-plus" src="../assets/img/solitaire-pro-plus.png"/>
@@ -625,7 +644,27 @@
     </main>
   </div>
   
-						
+  <div class="video-row">
+    <div class="video-item">
+      <iframe 
+        src="https://www.youtube.com/embed/ymEHvYlVeP4" 
+        title="Monkey Mart Level 2"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  
+    <div class="video-item">
+      <iframe 
+        src="https://www.youtube.com/embed/BFX6-Y4030I" 
+        title="Monkey Mart Level 1"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>				
 
   <footer class="site-footer">
     <div class="footer-content">
