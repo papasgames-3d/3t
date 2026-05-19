@@ -233,8 +233,50 @@ document.addEventListener('DOMContentLoaded', function() {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}</style></head>
-<body>
+}
+
+/* Cookie Clicker only: taller game frame ~viewport height */
+.page-cookie-clicker .cookie-clicker-frame {
+    aspect-ratio: unset !important;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto 16px;
+    box-sizing: border-box;
+    height: calc(100dvh - 12.5rem);
+    min-height: 420px;
+    max-height: min(88dvh, 920px);
+}
+
+.page-cookie-clicker .cookie-clicker-frame .game-thumbnail,
+.page-cookie-clicker .cookie-clicker-frame iframe {
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.page-cookie-clicker .cookie-clicker-frame .game-frame-title {
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .page-cookie-clicker .cookie-clicker-frame {
+        width: 100%;
+        max-width: 100%;
+        height: calc(100dvh - 11rem);
+        min-height: 340px;
+        max-height: 78dvh;
+        margin: 0 0 12px;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page-cookie-clicker .cookie-clicker-frame {
+        height: calc(100vh - 11rem);
+        max-height: min(90vh, 960px);
+    }
+}
+</style></head>
+<body class="page-cookie-clicker">
 <button class="menu-toggle" id="menu-toggle">
 <i class="fas fa-bars"></i>
 </button>
@@ -285,44 +327,45 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="/game/slope.html" title="Slope">Slope</a>
 </div>
 </section>
+<div class="game-frame-container cookie-clicker-frame">
+    <div class="game-thumbnail">
+    <img alt="cookie" src="../assets/img/img-up/cookie-clicker.png"/>
+    <button class="play-frame-button" id="playGameButton">
+    <i class="fas fa-play"></i>
+                Play Game
+            </button>
+    </div>
+    <iframe allowfullscreen="" data-src="https://games-online.io/game/cake-maker/" id="game-frame" style="display: none;"></iframe>
+    <div class="game-controls">
+    <button class="control-btn" id="share-btn" title="Share">
+    <i class="fas fa-share-alt"></i>
+    </button>
+    <button class="control-btn" id="fullscreen-btn" title="Fullscreen">
+    <i class="fas fa-expand"></i>
+    </button>
+    </div>
+    <div class="share-menu" id="share-menu">
+    <button class="control-btn" id="copy-link-btn" title="Copy Link">
+    <i class="fas fa-link"></i>
+    </button>
+    <button class="control-btn" id="facebook-btn" title="Share on Facebook">
+    <i class="fab fa-facebook-f"></i>
+    </button>
+    <button class="control-btn" id="twitter-btn" title="Share on Twitter">
+    <i class="fab fa-twitter"></i>
+    </button>
+    <button class="control-btn" id="pinterest-btn" title="Share on Pinterest">
+    <i class="fab fa-pinterest-p"></i>
+    </button>
+    </div>
+    <div class="game-frame-title">cookie</div>
+    <div class="loading-overlay" style="display: none;">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Loading Game...</div>
+    </div>
+    </div><!-- Game Frame Container -->
 <section class="games-grid"><!-- Game Frame Container -->
-<div class="game-frame-container">
-<div class="game-thumbnail">
-<img alt="cookie" src="../assets/img/img-up/cookie-clicker.png"/>
-<button class="play-frame-button" id="playGameButton">
-<i class="fas fa-play"></i>
-            Play Game
-        </button>
-</div>
-<iframe allowfullscreen="" data-src="https://games-online.io/game/cake-maker/" id="game-frame" style="display: none;"></iframe>
-<div class="game-controls">
-<button class="control-btn" id="share-btn" title="Share">
-<i class="fas fa-share-alt"></i>
-</button>
-<button class="control-btn" id="fullscreen-btn" title="Fullscreen">
-<i class="fas fa-expand"></i>
-</button>
-</div>
-<div class="share-menu" id="share-menu">
-<button class="control-btn" id="copy-link-btn" title="Copy Link">
-<i class="fas fa-link"></i>
-</button>
-<button class="control-btn" id="facebook-btn" title="Share on Facebook">
-<i class="fab fa-facebook-f"></i>
-</button>
-<button class="control-btn" id="twitter-btn" title="Share on Twitter">
-<i class="fab fa-twitter"></i>
-</button>
-<button class="control-btn" id="pinterest-btn" title="Share on Pinterest">
-<i class="fab fa-pinterest-p"></i>
-</button>
-</div>
-<div class="game-frame-title">cookie</div>
-<div class="loading-overlay" style="display: none;">
-<div class="loading-spinner"></div>
-<div class="loading-text">Loading Game...</div>
-</div>
-</div><!-- Game Frame Container -->
+
 
 <!-- Game Frame Container -->
 <!-- Game Frame Container -->
