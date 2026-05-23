@@ -211,12 +211,57 @@ body {
         margin-left: 0;
         margin-right: 0;
         border-radius: 0;
+        aspect-ratio: unset;
+        min-height: clamp(210px, 58vw, 300px);
+        height: auto;
+    }
+
+    .game-frame-container .game-thumbnail {
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 12px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .game-frame-container .game-thumbnail img {
+        width: 80px;
+        height: 80px;
+        max-width: 22vmin;
+        max-height: 22vmin;
+        flex: 0 0 auto;
+        object-fit: cover;
+    }
+
+    .game-frame-container .play-frame-button {
+        flex: 0 0 auto;
+        flex-shrink: 0;
+        padding: 10px 22px;
+        font-size: 15px;
+        z-index: 5;
+        white-space: nowrap;
+    }
+
+    .game-frame-container .play-frame-button i {
+        font-size: 18px;
+    }
+
+    .game-frame-container .game-frame-title {
+        flex: 0 0 auto;
+        flex-shrink: 0;
     }
 
     .game-frame-title {
         border-radius: 0;
         width: 100%;
         box-sizing: border-box;
+        padding: 8px 12px;
+        font-size: 0.95rem;
     }
 
     .nav-menu {
@@ -256,26 +301,6 @@ body {
         padding-right: 0;
     }
 
-    .game-thumbnail {
-        gap: 20px;
-    }
-    
-    .game-thumbnail img {
-        width: 120px;
-        height: 120px;
-        aspect-ratio: 1;
-        object-fit: cover;
-    }
-    
-    .play-frame-button {
-        padding: 15px 30px;
-        font-size: 20px;
-    }
-    
-    .play-frame-button i {
-        font-size: 24px;
-    }
-    
     .games-grid {
         padding-left: 0;
         padding-right: 0;
@@ -327,26 +352,26 @@ body {
         padding: 6px 10px;
     }
 
-    .game-thumbnail {
-        gap: 15px;
+    .game-frame-container {
+        min-height: clamp(200px, 62vw, 280px);
     }
-    
-    .game-thumbnail img {
-        width: 100px;
-        height: 100px;
-        aspect-ratio: 1;
-        object-fit: cover;
+
+    .game-frame-container .game-thumbnail img {
+        width: 64px;
+        height: 64px;
+        max-width: 20vmin;
+        max-height: 20vmin;
     }
-    
-    .play-frame-button {
-        padding: 12px 25px;
+
+    .game-frame-container .play-frame-button {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+
+    .game-frame-container .play-frame-button i {
         font-size: 16px;
     }
-    
-    .play-frame-button i {
-        font-size: 20px;
-    }
-    
+
     .games-grid {
         grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
         gap: 10px;
@@ -1100,10 +1125,6 @@ body {
         font-size: 0.9rem;
     }
 
-    .game-thumbnail {
-        gap: 20px;
-    }
-
     .menu-toggle {
         display: flex;
         left: 8px;
@@ -1172,16 +1193,6 @@ body {
 
     .game-item {
         padding: 8px 4px;
-    }
-
-    
-    .play-frame-button {
-        padding: 12px 25px;
-        font-size: 16px;
-    }
-    
-    .play-frame-button i {
-        font-size: 20px;
     }
 }
 
@@ -1473,6 +1484,9 @@ body {
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;
+        aspect-ratio: unset;
+        min-height: clamp(210px, 58vw, 300px);
+        height: auto;
     }
     .game-frame-title {
         grid-column: 1 / -1;
