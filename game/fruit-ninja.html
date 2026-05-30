@@ -20,74 +20,57 @@
 <meta name="robots" content="index, follow"/>
 <meta name="author" content="Monkey Mart"/>
 
-<!-- Structured Data -->
+<!-- Monkey Mart: structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Game",
-  "name": "Fruit Ninja",
+  "@type": "VideoGame",
+  "name": "Fruit Ninja Game",
   "description": "Play Fruit Ninja online for free! Slice fruits with your finger, avoid bombs, and achieve high scores in this addictive action arcade game.",
   "url": "https://monkeymart.one/game/fruit-ninja.html",
   "image": "https://monkeymart.one/assets/img/img-up/fruit-ninja.png",
-  "genre": "Action",
+  "genre": [
+    "Action"
+  ],
   "gamePlatform": "Web Browser",
-  "operatingSystem": "Any",
   "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "playMode": "SinglePlayer",
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "USD"
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Monkey Mart",
-    "url": "https://monkeymart.one"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "ratingCount": "5600"
+    "url": "https://monkeymart.one/"
   }
 }
 </script>
-
-<!-- FAQ Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@type": "Question",
-      "name": "How do you play Fruit Ninja?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Swipe your finger across the screen to slice fruits that appear. Avoid hitting bombs and try to slice multiple fruits in one swipe for combo points."
-      }
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://monkeymart.one/"
     },
     {
-      "@type": "Question",
-      "name": "What happens if you hit a bomb in Fruit Ninja?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hitting a bomb will end your game immediately. Always avoid the black bombs and focus only on slicing the colorful fruits."
-      }
+      "@type": "ListItem",
+      "position": 2,
+      "name": "All Games",
+      "item": "https://monkeymart.one/category/game.html"
     },
     {
-      "@type": "Question",
-      "name": "How do you get high scores in Fruit Ninja?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Get high scores by slicing multiple fruits in one swipe, creating combos, and avoiding bombs. Special fruits give bonus points."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you play Fruit Ninja on computer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you can play Fruit Ninja on computer using your mouse to slice fruits. The web version works on all devices including desktop computers."
-      }
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Fruit Ninja Game",
+      "item": "https://monkeymart.one/game/fruit-ninja.html"
     }
   ]
 }
@@ -254,6 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li class="active"><a href="/" title="Monkey Mart"><i class="fas fa-home"></i> Home</a></li>
 <li><a href="../category/game.html" title="Tất Cả Game Tại Monkey Mart"><i class="fas fa-gamepad"></i> All Games</a></li>
 <li><a href="../category/play-more.html"><i class="fas fa-cogs"></i> Play More</a></li>
+<li><a href="/blog/" title="Game Guides"><i class="fas fa-book"></i> Game Guides</a></li>
 <!-- <li><a href="../category/battle-royale.html"><i class="fas fa-crosshairs"></i> Battle Royale</a></li>
                 <li><a href="../category/survival.html"><i class="fas fa-campground"></i> Survival</a></li>
                 <li><a href="../category/shooter.html"><i class="fas fa-gun"></i> Shooter</a></li>
@@ -285,6 +269,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="/game/slope.html" title="Slope">Slope</a>
 </div>
 </section>
+<!-- Monkey Mart: breadcrumb nav -->
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+  <div class="breadcrumb-container">
+    <a href="/">Home</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="../category/game.html">All Games</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current" aria-current="page">Fruit Ninja Game</span>
+  </div>
+</nav>
 <section class="games-grid"><!-- Game Frame Container -->
 <div class="game-frame-container">
 <div class="game-thumbnail">
@@ -754,9 +748,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="./category/game.html">Games</a></li>
-                <li><a href="./category/play-more.html">Leaderboard</a></li>
-                <li><a href="/community">Community</a></li>
+                <li><a href="../category/game.html">Games</a></li>
+                <li><a href="../category/play-more.html">Leaderboard</a></li>
+                <li><a href="/blog/">Community</a></li>
             </ul>
         </div>
         <div class="footer-section">

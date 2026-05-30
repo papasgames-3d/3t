@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>FNAF 1 - Play Five Nights at Freddy's 1 Online Free | Horror Game</title>
-<meta name="description" content="Play FNAF 1 online for free. Survive the night at Freddy Fazbear's Pizza, watch the cameras, save power, and avoid the animatronics in this classic horror game.">
+<title>FNAF 1 - Play Five Nights at Freddy's Online</title>
+<meta name="description" content="Play FNAF 1 online for free. Watch the cameras, manage power, close doors, and survive the animatronics in this classic horror game.">
 <meta name="keywords" content="fnaf 1, five nights at freddys 1, fnaf game, horror game, survival game, freddy fazbear, fnaf online, scary game"/>
 <meta property="og:title" content="FNAF 1 - Play Five Nights at Freddy's 1 Online Free | Horror Game"/>
 <meta property="og:description" content="Play FNAF 1 (Five Nights at Freddy's 1) online for free! Survive 5 nights as a security guard at Freddy Fazbear's Pizza."/>
@@ -20,74 +20,57 @@
 <meta name="robots" content="index, follow"/>
 <meta name="author" content="Monkey Mart"/>
 
-<!-- Structured Data -->
+<!-- Monkey Mart: structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Game",
-  "name": "Five Nights at Freddy's 1",
-  "description": "Play FNAF 1 (Five Nights at Freddy's 1) online for free! Survive 5 nights as a security guard at Freddy Fazbear's Pizza. Classic horror survival game.",
+  "@type": "VideoGame",
+  "name": "Fnaf 1",
+  "description": "Play FNAF 1 online for free. Watch the cameras, manage power, close doors, and survive the animatronics in this classic horror game.",
   "url": "https://monkeymart.one/game/fnaf-1.html",
   "image": "https://monkeymart.one/assets/img/img-up/fnaf-1.png",
-  "genre": "Horror",
+  "genre": [
+    "Horror"
+  ],
   "gamePlatform": "Web Browser",
-  "operatingSystem": "Any",
   "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "playMode": "SinglePlayer",
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "USD"
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Monkey Mart",
-    "url": "https://monkeymart.one"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.6",
-    "ratingCount": "4200"
+    "url": "https://monkeymart.one/"
   }
 }
 </script>
-
-<!-- FAQ Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@type": "Question",
-      "name": "How do you survive FNAF 1?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Monitor cameras, close doors when animatronics approach, and manage your power carefully. Listen for audio cues and watch for movement patterns."
-      }
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://monkeymart.one/"
     },
     {
-      "@type": "Question",
-      "name": "What is the goal in FNAF 1?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Survive 5 nights (6 AM each night) as a security guard at Freddy Fazbear's Pizza while avoiding the animatronic characters."
-      }
+      "@type": "ListItem",
+      "position": 2,
+      "name": "All Games",
+      "item": "https://monkeymart.one/category/game.html"
     },
     {
-      "@type": "Question",
-      "name": "Is FNAF 1 scary?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, FNAF 1 is a horror game with jump scares, creepy atmosphere, and suspenseful gameplay. It's designed to be frightening."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I play FNAF 1 for free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you can play FNAF 1 online for free in your browser without downloading or purchasing the game."
-      }
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Fnaf 1",
+      "item": "https://monkeymart.one/game/fnaf-1.html"
     }
   ]
 }
@@ -254,6 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li class="active"><a href="/" title="Monkey Mart"><i class="fas fa-home"></i> Home</a></li>
 <li><a href="../category/game.html" title="Tất Cả Game Tại Monkey Mart"><i class="fas fa-gamepad"></i> All Games</a></li>
 <li><a href="../category/play-more.html"><i class="fas fa-cogs"></i> Play More</a></li>
+<li><a href="/blog/" title="Game Guides"><i class="fas fa-book"></i> Game Guides</a></li>
 <!-- <li><a href="../category/battle-royale.html"><i class="fas fa-crosshairs"></i> Battle Royale</a></li>
                 <li><a href="../category/survival.html"><i class="fas fa-campground"></i> Survival</a></li>
                 <li><a href="../category/shooter.html"><i class="fas fa-gun"></i> Shooter</a></li>
@@ -285,6 +269,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="/game/slope.html" title="Slope">Slope</a>
 </div>
 </section>
+<!-- Monkey Mart: breadcrumb nav -->
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+  <div class="breadcrumb-container">
+    <a href="/">Home</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="../category/game.html">All Games</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current" aria-current="page">Fnaf 1</span>
+  </div>
+</nav>
 <section class="games-grid"><!-- Game Frame Container -->
 <div class="game-frame-container">
 <div class="game-thumbnail">
@@ -757,9 +751,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="./category/game.html">Games</a></li>
-                <li><a href="./category/play-more.html">Leaderboard</a></li>
-                <li><a href="/community">Community</a></li>
+                <li><a href="../category/game.html">Games</a></li>
+                <li><a href="../category/play-more.html">Leaderboard</a></li>
+                <li><a href="/blog/">Community</a></li>
             </ul>
         </div>
         <div class="footer-section">

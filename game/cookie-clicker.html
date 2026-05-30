@@ -20,74 +20,57 @@
 <meta name="robots" content="index, follow"/>
 <meta name="author" content="Monkey Mart"/>
 
-<!-- Structured Data -->
+<!-- Monkey Mart: structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Game",
+  "@type": "VideoGame",
   "name": "Cookie Clicker",
   "description": "Play Cookie Clicker online for free! The addictive idle clicker game where you bake cookies, buy upgrades, and build your cookie empire. Click to start!",
   "url": "https://monkeymart.one/game/cookie-clicker.html",
   "image": "https://monkeymart.one/assets/img/img-up/cookie-clicker.png",
-  "genre": "Idle",
+  "genre": [
+    "Idle"
+  ],
   "gamePlatform": "Web Browser",
-  "operatingSystem": "Any",
   "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "playMode": "SinglePlayer",
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "USD"
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Monkey Mart",
-    "url": "https://monkeymart.one"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.5",
-    "ratingCount": "7200"
+    "url": "https://monkeymart.one/"
   }
 }
 </script>
-
-<!-- FAQ Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@type": "Question",
-      "name": "How do you play Cookie Clicker?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Click the big cookie to earn cookies, then use cookies to buy buildings and upgrades that automatically generate more cookies for you."
-      }
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://monkeymart.one/"
     },
     {
-      "@type": "Question",
-      "name": "What is the goal in Cookie Clicker?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The goal is to bake as many cookies as possible by clicking and purchasing upgrades that increase your cookie production rate."
-      }
+      "@type": "ListItem",
+      "position": 2,
+      "name": "All Games",
+      "item": "https://monkeymart.one/category/game.html"
     },
     {
-      "@type": "Question",
-      "name": "What are the best Cookie Clicker strategies?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Focus on buying the most efficient buildings first, purchase upgrades when available, and use golden cookies for bonus effects."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Cookie Clicker free to play?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Cookie Clicker is completely free to play online in your browser without any downloads or registration required."
-      }
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cookie Clicker",
+      "item": "https://monkeymart.one/game/cookie-clicker.html"
     }
   ]
 }
@@ -316,6 +299,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li class="active"><a href="/" title="Monkey Mart"><i class="fas fa-home"></i> Home</a></li>
 <li><a href="../category/game.html" title="Tất Cả Game Tại Monkey Mart"><i class="fas fa-gamepad"></i> All Games</a></li>
 <li><a href="../category/play-more.html"><i class="fas fa-cogs"></i> Play More</a></li>
+<li><a href="/blog/" title="Game Guides"><i class="fas fa-book"></i> Game Guides</a></li>
 <!-- <li><a href="../category/battle-royale.html"><i class="fas fa-crosshairs"></i> Battle Royale</a></li>
                 <li><a href="../category/survival.html"><i class="fas fa-campground"></i> Survival</a></li>
                 <li><a href="../category/shooter.html"><i class="fas fa-gun"></i> Shooter</a></li>
@@ -347,6 +331,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="/game/slope.html" title="Slope">Slope</a>
 </div>
 </section>
+<!-- Monkey Mart: breadcrumb nav -->
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+  <div class="breadcrumb-container">
+    <a href="/">Home</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="../category/game.html">All Games</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current" aria-current="page">Cookie Clicker</span>
+  </div>
+</nav>
 <div class="game-frame-container cookie-clicker-frame">
     <div class="game-thumbnail">
     <img alt="cookie" src="../assets/img/img-up/cookie-clicker.png"/>
@@ -832,9 +826,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="./category/game.html">Games</a></li>
-                <li><a href="./category/play-more.html">Leaderboard</a></li>
-                <li><a href="/community">Community</a></li>
+                <li><a href="../category/game.html">Games</a></li>
+                <li><a href="../category/play-more.html">Leaderboard</a></li>
+                <li><a href="/blog/">Community</a></li>
             </ul>
         </div>
         <div class="footer-section">

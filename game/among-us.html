@@ -20,75 +20,57 @@
 <meta name="robots" content="index, follow"/>
 <meta name="author" content="Monkey Mart"/>
 
-<!-- Structured Data -->
+<!-- Monkey Mart: structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Game",
+  "@type": "VideoGame",
   "name": "Among Us",
   "description": "Play Among Us online for free! The popular social deduction game where crewmates complete tasks while impostors sabotage. Find the impostor!",
   "url": "https://monkeymart.one/game/among-us.html",
   "image": "https://monkeymart.one/assets/img/img-up/among-us.png",
-  "genre": "Social Deduction",
+  "genre": [
+    "Social Deduction"
+  ],
   "gamePlatform": "Web Browser",
-  "operatingSystem": "Any",
   "applicationCategory": "Game",
-  "numberOfPlayers": "4-10",
+  "operatingSystem": "Any",
+  "playMode": "SinglePlayer",
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "USD"
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Monkey Mart",
-    "url": "https://monkeymart.one"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.6",
-    "ratingCount": "8900"
+    "url": "https://monkeymart.one/"
   }
 }
 </script>
-
-<!-- FAQ Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@type": "Question",
-      "name": "How do you play Among Us?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "As a crewmate, complete tasks and find the impostor. As an impostor, sabotage and eliminate crewmates without being caught. Vote out suspicious players."
-      }
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://monkeymart.one/"
     },
     {
-      "@type": "Question",
-      "name": "What is the goal in Among Us?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Crewmates win by completing all tasks or voting out all impostors. Impostors win by eliminating enough crewmates or sabotaging critical systems."
-      }
+      "@type": "ListItem",
+      "position": 2,
+      "name": "All Games",
+      "item": "https://monkeymart.one/category/game.html"
     },
     {
-      "@type": "Question",
-      "name": "How many players can play Among Us?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Among Us supports 4-10 players in a single game, with 1-3 impostors depending on the lobby settings."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I play Among Us for free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you can play Among Us online for free in your browser without downloading or purchasing the game."
-      }
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Among Us",
+      "item": "https://monkeymart.one/game/among-us.html"
     }
   ]
 }
@@ -255,6 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li class="active"><a href="/" title="Monkey Mart"><i class="fas fa-home"></i> Home</a></li>
 <li><a href="../category/game.html" title="Tất Cả Game Tại Monkey Mart"><i class="fas fa-gamepad"></i> All Games</a></li>
 <li><a href="../category/play-more.html"><i class="fas fa-cogs"></i> Play More</a></li>
+<li><a href="/blog/" title="Game Guides"><i class="fas fa-book"></i> Game Guides</a></li>
 <!-- <li><a href="../category/battle-royale.html"><i class="fas fa-crosshairs"></i> Battle Royale</a></li>
                 <li><a href="../category/survival.html"><i class="fas fa-campground"></i> Survival</a></li>
                 <li><a href="../category/shooter.html"><i class="fas fa-gun"></i> Shooter</a></li>
@@ -286,6 +269,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="/game/slope.html" title="Slope">Slope</a>
 </div>
 </section>
+<!-- Monkey Mart: breadcrumb nav -->
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+  <div class="breadcrumb-container">
+    <a href="/">Home</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="../category/game.html">All Games</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current" aria-current="page">Among Us</span>
+  </div>
+</nav>
 <section class="games-grid"><!-- Game Frame Container -->
 <div class="game-frame-container">
 <div class="game-thumbnail">
@@ -786,9 +779,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="./category/game.html">Games</a></li>
-                <li><a href="./category/play-more.html">Leaderboard</a></li>
-                <li><a href="/community">Community</a></li>
+                <li><a href="../category/game.html">Games</a></li>
+                <li><a href="../category/play-more.html">Leaderboard</a></li>
+                <li><a href="/blog/">Community</a></li>
             </ul>
         </div>
         <div class="footer-section">

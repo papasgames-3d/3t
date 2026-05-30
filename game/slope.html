@@ -20,38 +20,35 @@
 <meta name="robots" content="index, follow"/>
 <meta name="author" content="Monkey Mart"/>
 
-<!-- Structured Data -->
+<!-- Monkey Mart: structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Game",
+  "@type": "VideoGame",
   "name": "Slope Game",
   "description": "Play Slope game online for free! Control a ball rolling down a 3D slope, avoid obstacles and achieve high scores. Addictive endless runner game.",
   "url": "https://monkeymart.one/game/slope.html",
   "image": "https://monkeymart.one/assets/img/img-up/slope.png",
-  "genre": "Arcade",
+  "genre": [
+    "Arcade"
+  ],
   "gamePlatform": "Web Browser",
-  "operatingSystem": "Any",
   "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "playMode": "SinglePlayer",
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "USD"
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Monkey Mart",
-    "url": "https://monkeymart.one"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.6",
-    "ratingCount": "2150"
+    "url": "https://monkeymart.one/"
   }
 }
 </script>
-
-<!-- Breadcrumb Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,12 +58,12 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://monkeymart.one"
+      "item": "https://monkeymart.one/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Games",
+      "name": "All Games",
       "item": "https://monkeymart.one/category/game.html"
     },
     {
@@ -74,48 +71,6 @@
       "position": 3,
       "name": "Slope Game",
       "item": "https://monkeymart.one/game/slope.html"
-    }
-  ]
-}
-</script>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How do you play Slope game?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use A/D keys or left/right arrow keys to steer the ball. Avoid red obstacles and stay on the platform. The game gets faster as you progress."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Slope game free to play?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Slope game is completely free to play online. No download or registration required."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the highest score in Slope game?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "There's no maximum score limit in Slope. The game continues indefinitely until you hit an obstacle, so scores can reach very high numbers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I play Slope on mobile?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Slope game works on mobile devices. You can tilt your device or use touch controls to steer the ball."
-      }
     }
   ]
 }
@@ -301,6 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li class="active"><a href="/" title="Monkey Mart"><i class="fas fa-home"></i> Home</a></li>
 <li><a href="../category/game.html" title="Tất Cả Game Tại Monkey Mart"><i class="fas fa-gamepad"></i> All Games</a></li>
 <li><a href="../category/play-more.html"><i class="fas fa-cogs"></i> Play More</a></li>
+<li><a href="/blog/" title="Game Guides"><i class="fas fa-book"></i> Game Guides</a></li>
 <!-- <li><a href="../category/battle-royale.html"><i class="fas fa-crosshairs"></i> Battle Royale</a></li>
                 <li><a href="../category/survival.html"><i class="fas fa-campground"></i> Survival</a></li>
                 <li><a href="../category/shooter.html"><i class="fas fa-gun"></i> Shooter</a></li>
@@ -332,6 +288,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="/game/slope.html" title="Slope">Slope</a>
 </div>
 </section>
+<!-- Monkey Mart: breadcrumb nav -->
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+  <div class="breadcrumb-container">
+    <a href="/">Home</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="../category/game.html">All Games</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current" aria-current="page">Slope Game</span>
+  </div>
+</nav>
 <section class="games-grid"><!-- Game Frame Container -->
 <div class="game-frame-container">
 <div class="game-thumbnail">
@@ -793,9 +759,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="./category/game.html">Games</a></li>
-                <li><a href="./category/play-more.html">Leaderboard</a></li>
-                <li><a href="/community">Community</a></li>
+                <li><a href="../category/game.html">Games</a></li>
+                <li><a href="../category/play-more.html">Leaderboard</a></li>
+                <li><a href="/blog/">Community</a></li>
             </ul>
         </div>
         <div class="footer-section">

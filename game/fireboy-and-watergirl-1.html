@@ -20,39 +20,35 @@
 <meta name="robots" content="index, follow"/>
 <meta name="author" content="Monkey Mart"/>
 
-<!-- Structured Data -->
+<!-- Monkey Mart: structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Game",
-  "name": "Fireboy and Watergirl 1: Forest Temple",
+  "@type": "VideoGame",
+  "name": "Fireboy And Watergirl 1",
   "description": "Play Fireboy and Watergirl 1 Forest Temple online for free! Control both characters to solve puzzles and collect gems. Perfect 2-player cooperative game.",
   "url": "https://monkeymart.one/game/fireboy-and-watergirl-1.html",
   "image": "https://monkeymart.one/assets/img/img-up/fireboy-and-watergirl-1.png",
-  "genre": "Puzzle",
+  "genre": [
+    "Puzzle"
+  ],
   "gamePlatform": "Web Browser",
-  "operatingSystem": "Any",
   "applicationCategory": "Game",
-  "numberOfPlayers": "1-2",
+  "operatingSystem": "Any",
+  "playMode": "SinglePlayer",
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "USD"
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Monkey Mart",
-    "url": "https://monkeymart.one"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "ratingCount": "3800"
+    "url": "https://monkeymart.one/"
   }
 }
 </script>
-
-<!-- Breadcrumb Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,61 +58,19 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://monkeymart.one"
+      "item": "https://monkeymart.one/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Games",
+      "name": "All Games",
       "item": "https://monkeymart.one/category/game.html"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Fireboy and Watergirl 1",
+      "name": "Fireboy And Watergirl 1",
       "item": "https://monkeymart.one/game/fireboy-and-watergirl-1.html"
-    }
-  ]
-}
-</script>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How do you play Fireboy and Watergirl 1?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use WASD keys to control Watergirl and arrow keys to control Fireboy. Work together to solve puzzles, avoid hazards, and collect gems to reach the exit."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you play Fireboy and Watergirl alone?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you can play solo by controlling both characters, but it's more fun with a friend as a 2-player cooperative game."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the goal in Fireboy and Watergirl 1?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The goal is to guide both characters through the Forest Temple, collect all gems, and reach their respective exits while avoiding deadly traps."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How many levels are in Fireboy and Watergirl 1?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Fireboy and Watergirl 1: Forest Temple contains 32 challenging levels with increasing difficulty and complexity."
-      }
     }
   ]
 }
@@ -302,6 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li class="active"><a href="/" title="Monkey Mart"><i class="fas fa-home"></i> Home</a></li>
 <li><a href="../category/game.html" title="Tất Cả Game Tại Monkey Mart"><i class="fas fa-gamepad"></i> All Games</a></li>
 <li><a href="../category/play-more.html"><i class="fas fa-cogs"></i> Play More</a></li>
+<li><a href="/blog/" title="Game Guides"><i class="fas fa-book"></i> Game Guides</a></li>
 <!-- <li><a href="../category/battle-royale.html"><i class="fas fa-crosshairs"></i> Battle Royale</a></li>
                 <li><a href="../category/survival.html"><i class="fas fa-campground"></i> Survival</a></li>
                 <li><a href="../category/shooter.html"><i class="fas fa-gun"></i> Shooter</a></li>
@@ -333,6 +288,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="/game/slope.html" title="Slope">Slope</a>
 </div>
 </section>
+<!-- Monkey Mart: breadcrumb nav -->
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+  <div class="breadcrumb-container">
+    <a href="/">Home</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="../category/game.html">All Games</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current" aria-current="page">Fireboy And Watergirl 1</span>
+  </div>
+</nav>
 <section class="games-grid"><!-- Game Frame Container -->
 <div class="game-frame-container">
 <div class="game-thumbnail">
@@ -805,9 +770,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="./category/game.html">Games</a></li>
-                <li><a href="./category/play-more.html">Leaderboard</a></li>
-                <li><a href="/community">Community</a></li>
+                <li><a href="../category/game.html">Games</a></li>
+                <li><a href="../category/play-more.html">Leaderboard</a></li>
+                <li><a href="/blog/">Community</a></li>
             </ul>
         </div>
         <div class="footer-section">

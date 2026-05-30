@@ -1,10 +1,18 @@
 User-agent: *
 Allow: /
-Allow: /ads.txt
+
+# Block non-public / duplicate pages from indexing
+Disallow: /404.html
+Disallow: /indexbackup.html
+Disallow: /tools/
+Disallow: /game/example-game.html
+Disallow: /game/monkey-mart-2/null
+Disallow: /game/template.html
+
 Sitemap: https://monkeymart.one/sitemap.xml
 
-
-# Allow CSS, JS, and image files
+# Allow static assets for rendering
+Allow: /assets/
 Allow: /*.css$
 Allow: /*.js$
 Allow: /*.jpg$
@@ -13,4 +21,3 @@ Allow: /*.png$
 Allow: /*.gif$
 Allow: /*.svg$
 Allow: /*.webp$
-
