@@ -30,6 +30,36 @@ const games = [
     image: '../assets/img/img-up/bus-escape-traffic-jam.png',
     categories: ['racing', 'casual']
   },
+  {
+    id: 'merge-and-blast-2048',
+    name: 'Merge and Blast 2048',
+    image: '../assets/img/img-up/merge-and-blast-2048.png',
+    categories: ['puzzle', 'casual']
+  },
+  {
+    id: 'hex-match',
+    name: 'Hex Match',
+    image: '../assets/img/img-up/hex-match.png',
+    categories: ['puzzle', 'casual']
+  },
+  {
+    id: 'smash-the-ants',
+    name: 'Smash the Ants',
+    image: '../assets/img/img-up/smash-the-ants.png',
+    categories: ['arcade', 'casual']
+  },
+  {
+    id: 'cool-tuning-paint-the-car',
+    name: 'Cool Tuning - Paint the Car',
+    image: '../assets/img/img-up/cool-tuning-paint-the-car.png',
+    categories: ['simulation', 'casual']
+  },
+  {
+    id: 'dinosaurs-vs-asteroids',
+    name: 'Dinosaurs vs Asteroids',
+    image: '../assets/img/img-up/dinosaurs-vs-asteroids.png',
+    categories: ['action', 'arcade', 'casual']
+  },
 
   {
     id: '2048',
