@@ -35,6 +35,11 @@
     "image_path": "/assets/img/img-up/among-us.png"
   },
   {
+    "title": "Arrows Escaper",
+    "frame_url": "https://play.wgplayground.com/ifr/041768e3c3d0c151225e14831a659027",
+    "image_path": "/assets/img/img-up/arrows-escaper.jpg"
+  },
+  {
     "title": "baldis-basics",
     "frame_url": "https://games.monkeymart.one/projects/baldis-basics/",
     "image_path": "/assets/img/img-up/baldis-basics.png"
@@ -150,6 +155,11 @@
     "image_path": "/assets/img/img-up/ctr-time-travel.png"
   },
   {
+    "title": "Cubica",
+    "frame_url": "https://play.wgplayground.com/ifr/4fc4ffb122ae7b5fb6071dddf01ec643",
+    "image_path": "/assets/img/img-up/cubica.jpg"
+  },
+  {
     "title": "death-run-3d",
     "frame_url": "https://games.monkeymart.one/projects/death-run-3d/",
     "image_path": "/assets/img/img-up/death-run-3d.png"
@@ -218,6 +228,11 @@
     "title": "edge-surf",
     "frame_url": "https://games.monkeymart.one/projects/edge-surf/",
     "image_path": "/assets/img/img-up/edge-surf.png"
+  },
+  {
+    "title": "Europe at War",
+    "frame_url": "https://play.wgplayground.com/ifr/861c34f57a7fecf1d4110fbeea15b7a4",
+    "image_path": "/assets/img/img-up/europe-at-war.jpg"
   },
   {
     "title": "Example Game",
@@ -295,6 +310,11 @@
     "image_path": "/assets/img/img-up/fruit-ninja.png"
   },
   {
+    "title": "Future War: Bot Battle in Space 3D",
+    "frame_url": "https://play.wgplayground.com/ifr/205ebbac498b8bbeb9a511d0e4b240de",
+    "image_path": "/assets/img/img-up/future-war-bot-battle-in-space-3d.jpg"
+  },
+  {
     "title": "geodash",
     "frame_url": "https://games.monkeymart.one/projects/geodash/",
     "image_path": "/assets/img/img-up/geodash.png"
@@ -323,6 +343,11 @@
     "title": "Hex Match",
     "frame_url": "https://play.wgplayground.com/ifr/b1df5d28867e3ec22bb6a6913c11d037",
     "image_path": "/assets/img/img-up/hex-match.png"
+  },
+  {
+    "title": "HexaFill",
+    "frame_url": "https://play.wgplayground.com/ifr/54375b997808f24ceffb10fdb5363b17",
+    "image_path": "/assets/img/img-up/hexafill.jpg"
   },
   {
     "title": "hextris",
@@ -355,6 +380,11 @@
     "image_path": "/assets/img/img-up/little-alchemy.png"
   },
   {
+    "title": "Loop Ghost",
+    "frame_url": "https://play.wgplayground.com/ifr/2c65883c1f27f6c9221f7f24ad98dd05",
+    "image_path": "/assets/img/img-up/loop-ghost.jpg"
+  },
+  {
     "title": "madalin-stunt-cars-2",
     "frame_url": "https://games.monkeymart.one/projects/madalin-stunt-cars-2/",
     "image_path": "/assets/img/img-up/madalin-stunt-cars-2.png"
@@ -363,6 +393,16 @@
     "title": "madalin-stunt-cars-3",
     "frame_url": "https://games.monkeymart.one/projects/madalin-stunt-cars-3/",
     "image_path": "/assets/img/img-up/madalin-stunt-cars-3.png"
+  },
+  {
+    "title": "Magic Forest - Merge the Secrets",
+    "frame_url": "https://play.wgplayground.com/ifr/6beb5254295bc74aa2c5413f078f2852",
+    "image_path": "/assets/img/img-up/magic-forest-merge-the-secrets.jpg"
+  },
+  {
+    "title": "Mahjong Classic",
+    "frame_url": "https://play.wgplayground.com/ifr/43b7e5ec648ecc832dc8e30edbec2fb1",
+    "image_path": "/assets/img/img-up/mahjong-classic.jpg"
   },
   {
     "title": "mario",
@@ -435,9 +475,24 @@
     "image_path": "/assets/img/img-up/ms-solitaire.png"
   },
   {
+    "title": "Nerd Fight",
+    "frame_url": "https://play.wgplayground.com/ifr/33d6273a6a03389b219342df0550ce4a",
+    "image_path": "/assets/img/img-up/nerd-fight.jpg"
+  },
+  {
     "title": "ocarina-of-time",
     "frame_url": "https://games.monkeymart.one/emulation/N64/ocarina-of-time/",
     "image_path": "/assets/img/img-up/ocarina-of-time.png"
+  },
+  {
+    "title": "Oddball Detective",
+    "frame_url": "https://play.wgplayground.com/ifr/ad61c519a8d812ba2073c32fcc26aec8",
+    "image_path": "/assets/img/img-up/oddball-detective.jpg"
+  },
+  {
+    "title": "Onet Monster Book",
+    "frame_url": "https://play.wgplayground.com/ifr/1bcd4304de4633c552e2f2d83194dc17",
+    "image_path": "/assets/img/img-up/onet-monster-book.jpg"
   },
   {
     "title": "pacman",
@@ -473,6 +528,11 @@
     "title": "papery-planes",
     "frame_url": "https://games.monkeymart.one/projects/papery-planes/",
     "image_path": "/assets/img/img-up/papery-planes.png"
+  },
+  {
+    "title": "Pet Fall",
+    "frame_url": "https://play.wgplayground.com/ifr/4ea234984ed7c50aa7928991467ff583",
+    "image_path": "/assets/img/img-up/pet-fall.jpg"
   },
   {
     "title": "pokemon-black",
@@ -513,6 +573,11 @@
     "title": "poker",
     "frame_url": "https://games.monkeymart.one/projects/poker/",
     "image_path": "/assets/img/img-up/poker.png"
+  },
+  {
+    "title": "Princesses at Horror School",
+    "frame_url": "https://play.wgplayground.com/ifr/b92f54bd99a1c77a72585a6669c11f8a",
+    "image_path": "/assets/img/img-up/princesses-at-horror-school.jpg"
   },
   {
     "title": "project-sand",
@@ -590,9 +655,19 @@
     "image_path": "/assets/img/img-up/russian fishing at sea.png"
   },
   {
+    "title": "Russian Fishing New",
+    "frame_url": "https://play.wgplayground.com/ifr/25564434361680d756a58941a5dd79f9",
+    "image_path": "/assets/img/img-up/russian-fishing-new.jpg"
+  },
+  {
     "title": "sandtrix",
     "frame_url": "https://games.monkeymart.one/projects/sandtrix/",
     "image_path": "/assets/img/img-up/sandtrix.png"
+  },
+  {
+    "title": "Savage Defenders",
+    "frame_url": "https://play.wgplayground.com/ifr/4d441808701ca712215375cf688c3815",
+    "image_path": "/assets/img/img-up/savage-defenders.jpg"
   },
   {
     "title": "save-the-doge",

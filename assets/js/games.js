@@ -1,6 +1,96 @@
 // Danh sách trò chơi
 const games = [
   {
+    id: 'hexafill',
+    name: 'HexaFill',
+    image: '../assets/img/img-up/hexafill.jpg',
+    categories: ['puzzle', 'casual']
+  },
+  {
+    id: 'arrows-escaper',
+    name: 'Arrows Escaper',
+    image: '../assets/img/img-up/arrows-escaper.jpg',
+    categories: ['puzzle', 'logic']
+  },
+  {
+    id: 'loop-ghost',
+    name: 'Loop Ghost',
+    image: '../assets/img/img-up/loop-ghost.jpg',
+    categories: ['puzzle', 'arcade']
+  },
+  {
+    id: 'savage-defenders',
+    name: 'Savage Defenders',
+    image: '../assets/img/img-up/savage-defenders.jpg',
+    categories: ['action', 'defense']
+  },
+  {
+    id: 'europe-at-war',
+    name: 'Europe at War',
+    image: '../assets/img/img-up/europe-at-war.jpg',
+    categories: ['strategy', 'war']
+  },
+  {
+    id: 'cubica',
+    name: 'Cubica',
+    image: '../assets/img/img-up/cubica.jpg',
+    categories: ['puzzle', 'casual']
+  },
+  {
+    id: 'magic-forest-merge-the-secrets',
+    name: 'Magic Forest - Merge the Secrets',
+    image: '../assets/img/img-up/magic-forest-merge-the-secrets.jpg',
+    categories: ['merge', 'puzzle']
+  },
+  {
+    id: 'russian-fishing-new',
+    name: 'Russian Fishing New',
+    image: '../assets/img/img-up/russian-fishing-new.jpg',
+    categories: ['simulation', 'fishing']
+  },
+  {
+    id: 'mahjong-classic',
+    name: 'Mahjong Classic',
+    image: '../assets/img/img-up/mahjong-classic.jpg',
+    categories: ['mahjong', 'puzzle']
+  },
+  {
+    id: 'nerd-fight',
+    name: 'Nerd Fight',
+    image: '../assets/img/img-up/nerd-fight.jpg',
+    categories: ['action', 'casual']
+  },
+  {
+    id: 'oddball-detective',
+    name: 'Oddball Detective',
+    image: '../assets/img/img-up/oddball-detective.jpg',
+    categories: ['puzzle', 'casual']
+  },
+  {
+    id: 'onet-monster-book',
+    name: 'Onet Monster Book',
+    image: '../assets/img/img-up/onet-monster-book.jpg',
+    categories: ['puzzle', 'casual']
+  },
+  {
+    id: 'future-war-bot-battle-in-space-3d',
+    name: 'Future War: Bot Battle in Space 3D',
+    image: '../assets/img/img-up/future-war-bot-battle-in-space-3d.jpg',
+    categories: ['action', 'strategy']
+  },
+  {
+    id: 'pet-fall',
+    name: 'Pet Fall',
+    image: '../assets/img/img-up/pet-fall.jpg',
+    categories: ['puzzle', 'casual']
+  },
+  {
+    id: 'princesses-at-horror-school',
+    name: 'Princesses at Horror School',
+    image: '../assets/img/img-up/princesses-at-horror-school.jpg',
+    categories: ['girls', 'horror']
+  },
+  {
     id: 'candy-pop-mania',
     name: 'Candy Pop Mania',
     image: '../assets/img/img-up/candy-pop-mania.png',
