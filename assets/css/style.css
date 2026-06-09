@@ -1459,7 +1459,7 @@ body {
 
 .game-description h2 {
     color: #55bbab;
-    margin-top: 0;
+    margin-top: 1.75rem;
     font-size: 1.5rem;
 }
 
@@ -1481,6 +1481,123 @@ body {
 
 .game-description li {
     margin-bottom: 5px;
+}
+
+.game-description h1 {
+    color: #fff;
+    font-size: 1.75rem;
+    margin: 0 0 1rem;
+}
+
+/* Text links in article — teal accent (not browser default blue) */
+.game-description a {
+    color: #55bbab;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.game-description a:hover {
+    color: #7ad4c8;
+    text-decoration: underline;
+}
+
+/* Featured guide pills — same visual language as keyword bar */
+.guide-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 12px 0 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.guide-links li {
+    margin: 0;
+}
+
+.guide-links a {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #1c1e2c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #3a4158;
+    transition: all 0.25s ease;
+}
+
+.guide-links a:hover {
+    background: #292e4a;
+    color: #55bbab;
+    border-color: #55bbab;
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+/* Pipe-separated inline guide row */
+.guide-inline-links a {
+    font-weight: 500;
+}
+
+/* Compact play CTA inside guide articles */
+.guide-cta {
+    margin: 0 0 1.25rem;
+    text-align: center;
+}
+
+.guide-cta .guide-play-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 28px;
+    background: #55bbab;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guide-cta .guide-play-btn:hover {
+    background: #476cbc;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(85, 187, 171, 0.25);
+}
+
+/* Blog / related article list */
+.game-description ul.article-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+    display: grid;
+    gap: 8px;
+}
+
+.game-description ul.article-links li {
+    margin: 0;
+}
+
+.game-description ul.article-links a {
+    display: block;
+    padding: 10px 14px;
+    background: #1c1e2c;
+    border-radius: 8px;
+    border: 1px solid #292e4a;
+    color: #c7d7e7;
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.game-description ul.article-links a:hover {
+    border-color: #55bbab;
+    color: #55bbab;
+    background: #292e4a;
+    text-decoration: none;
 }
 
 /* Related Games */

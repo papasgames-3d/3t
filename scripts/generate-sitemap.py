@@ -16,6 +16,7 @@ EXCLUDE_PARTS = {
     "404.html",
     "indexbackup.html",
     "example-game.html",
+    "lesson-15.html",
 }
 EXCLUDE_DIRS = {"tools", "assets", "scripts", "community"}
 EXCLUDE_PATTERNS = [
@@ -32,6 +33,16 @@ PRIORITY_RULES = [
     (lambda p: p.startswith("category/"), 0.8, "weekly"),
     (lambda p: p.startswith("note/"), 0.6, "monthly"),
     (lambda p: p in {"cookie-clicker-2/index.html"}, 0.75, "weekly"),
+    (
+        lambda p: p
+        in {
+            "how-to-play-monkey-mart/index.html",
+            "monkey-mart-tips/index.html",
+            "monkey-mart-unblocked/index.html",
+        },
+        0.9,
+        "weekly",
+    ),
     (lambda p: p.endswith(("about.html", "contact.html", "faq.html")), 0.4, "monthly"),
     (lambda p: p.endswith(("privacy.html", "terms.html", "cookie-policy.html", "disclaimer.html")), 0.3, "yearly"),
 ]

@@ -7,7 +7,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SKIP = {"404.html", "indexbackup.html", "example-game.html", "tools"}
+SKIP = {"404.html", "indexbackup.html", "example-game.html", "tools", "scripts"}
 
 
 def extract(text: str, pattern: str) -> str | None:
@@ -21,8 +21,10 @@ def audit_file(path: Path) -> dict:
     return {
         "path": rel,
         "title": extract(text, r"<title[^>]*>(.*?)</title>"),
-        "description": extract(text, r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']*)'),
-        "canonical": extract(text, r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']*)'),
+        "description": extract(text, r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']*)')
+        or extract(text, r'<meta[^>]+content=["\']([^"\']*)["\'][^>]+name=["\']description'),
+        "canonical": extract(text, r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']*)')
+        or extract(text, r'<link[^>]+href=["\']([^"\']*)["\'][^>]+rel=["\']canonical'),
         "robots": extract(text, r'<meta[^>]+name=["\']robots["\'][^>]+content=["\']([^"\']*)'),
         "h1_count": len(re.findall(r"<h1\b", text, re.I)),
         "lang": extract(text, r"<html[^>]+lang=[\"']([^\"']+)"),

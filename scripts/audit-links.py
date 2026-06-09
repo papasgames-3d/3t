@@ -13,8 +13,14 @@ def resolve(base: Path, href: str):
         return root / href.lstrip("/").replace("/", os.sep)
     return (base.parent / href).resolve()
 
+SKIP_PARTS = {"scripts", "tools", "node_modules"}
+
 for f in root.rglob("*.html"):
+    rel_parts = f.relative_to(root).parts
+    if any(p in SKIP_PARTS for p in rel_parts):
+        continue
     text = f.read_text(encoding="utf-8", errors="ignore")
+    text = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
     for href in re.findall(r'href=["\']([^"\']+)["\']', text):
         target = resolve(f, href)
         if target is None:
